@@ -1,0 +1,91 @@
+
+// 1. Header
+// ---------
+
+header {
+	background:$primary-color;
+	padding: 5px 0;
+	a {color:white;}
+}
+.main-banners {
+	position: relative;
+	.slick-arrow {position: absolute;height: 100%;width: 40px;top:0;z-index: 1;}
+	.slick-prev {left: 0;}
+	.slick-next {right: 0;}
+}
+.search-modal {
+	input {
+		padding-top: 40px;
+		border: none;
+		box-shadow: none;
+		border-bottom: $code-border;
+		padding-bottom: 20px;
+		font-size: 1.2rem;
+		&:focus {
+			border: none;
+			box-shadow: none;
+			border-bottom: $code-border;
+		}
+	}
+}
+.suggestion-box {
+	margin-top: 20px;
+	ul li {
+		border-bottom: $code-border;
+		border-color: #F1F1F1;
+		padding: 5px 0;
+		a {
+			padding: 5px 0;
+			display: block;
+			small {color:$dark-gray;}
+		}
+	}
+}
+
+// 2. Main Content
+// ---------
+
+.main-content {
+	
+}
+.content-marketing {
+	margin-bottom: 20px;
+}
+.cm-title {
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	border-top: $code-border;
+	border-bottom: $code-border;
+	font-weight: bold;
+	a {font-weight: normal;}
+}
+.product-listing{
+	.product-title {
+		font-weight: bold;
+		font-size:$font-size-small;
+		color: $black;
+	}
+	.product-price {
+		span {color: $primary-color;}
+		span.striked {font-size: $font-size-smaller;color: $dark-gray;text-decoration:line-through;}
+	}
+}
+.product-listing-grid {
+	.product-title {
+		padding-right: 10px;
+		height: 45px;
+		overflow: hidden;
+		margin-top: 5px;
+	}
+	.product-price {
+		span {display: block;}
+	}
+}
+
+.cat-list-home {
+	ul {
+		li {
+			a {display: block;padding: 10px 15px;color: $black;font-size:$font-size-small;}
+		}
+	}
+}
