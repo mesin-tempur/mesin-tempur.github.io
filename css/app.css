@@ -4153,8 +4153,7 @@ small {
   border-right: 1px solid #cacaca; }
 
 .js-off-canvas-exit {
-  z-index: 10;
-  position: relative; }
+  z-index: 10; }
 
 header {
   background: #009688;
@@ -4238,3 +4237,25 @@ header {
   padding: 10px 15px;
   color: #414143;
   font-size: 0.9rem; }
+
+.footer-top {
+  padding: 20px 0;
+  background: #e6e6e6; }
+
+.footer-bottom {
+  padding: 20px 0;
+  background: #009688;
+  color: white; }
+  .footer-bottom a {
+    color: white; }
+  .footer-bottom .link-group {
+    text-align: center; }
+    .footer-bottom .link-group a {
+      margin: 0 10px; }
+  .footer-bottom .social-link {
+    margin: 20px 0; }
+
+.copyright {
+  padding: 10px;
+  background-color: #00635a;
+  color: white; }

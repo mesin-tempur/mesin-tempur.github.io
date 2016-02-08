@@ -89,3 +89,30 @@ header {
 		}
 	}
 }
+
+// 3. FOOTER
+// ---------
+
+footer {}
+.footer-top {
+	padding: 20px 0;
+	background:$light-gray;
+}
+.footer-bottom {
+	padding: 20px 0;
+	background:$primary-color;
+	color:white;
+	a {color: white;}
+	.link-group {
+		text-align: center;
+		a {margin: 0 10px;}
+	}
+	.social-link {
+		margin: 20px 0;
+	}
+}
+.copyright {
+	padding: 10px;
+	background-color:darken($primary-color, 10%);
+	color:white;
+}
