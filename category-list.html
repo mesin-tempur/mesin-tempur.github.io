@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semua Kategori | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/slick.css">
   </head>
   <body>
   <div class="off-canvas-wrapper">
@@ -119,7 +118,7 @@
         <div class="section main-content">
           <div class="bordered-list cat-list">
             <ul>
-              <li class="top-list blocked-li first-level-cat">Semua Kategori</li>
+              <li class="top-list blocked-li first-level-cat"><strong>Semua Kategori</strong></li>
               <li>
                 <a href="#" class="has-child first-level-cat" data-target="#handphone-tablet">
                   <span class="icon ic-cat"></span>
@@ -127,31 +126,77 @@
                 </a>
                 <!-- 2nd LEVEL -->
                 <ul class="second-level-cat hidden" id="handphone-tablet">
-                  <li class="top-list"><a href="#" class="back">Kembali</a></li>
-                  <li>
-                    <a href="listing.html">
-                      <span class="icon ic-cat"></span>
-                      Semua produk Handphone &amp; Tablet
-                    </a>
-                  </li>
-                  <li><a href="listing.html">Handphone</a></li>
-                  <li><a href="listing.html">Aksesoris Handphone</a></li>
-                  <li><a href="listing.html">Tablet</a></li>
-                  <li><a href="listing.html">Aksesoris Tablet</a></li>
+                  <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+                  <li><a href="listing-category.html"><span class="icon ic-cat"></span>Semua produk Handphone &amp; Tablet</a></li>
+                  <li><a href="listing-subcategory.html">Handphone</a></li>
+                  <li><a href="listing-subcategory.html">Aksesoris Handphone</a></li>
+                  <li><a href="listing-subcategory.html">Tablet</a></li>
+                  <li><a href="listing-subcategory.html">Aksesoris Tablet</a></li>
                 </ul>
                 <!-- End 2nd LEVEL -->
               </li>
               <li>
-                <a href="#" class="has-child first-level-cat">
+                <a href="#" class="has-child first-level-cat" data-target="#fashion">
                   <span class="icon ic-cat"></span>
-                  Fashion &amp; Aksesoris
+                  Fashion
                 </a>
+                <!-- 2nd LEVEL -->
+                <ul class="second-level-cat hidden" id="fashion">
+                  <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+                  <li><a href="listing-category.html"><span class="icon ic-cat"></span>Semua produk Fashion</a></li>
+                  <li><a href="listing-subcategory.html">Fashion Pria</a></li>
+                  <li><a href="listing-subcategory.html">Fashion Wanita</a></li>
+                  <li><a href="listing-subcategory.html">Anak Laki-laki</a></li>
+                  <li><a href="listing-subcategory.html">Anak Perempuan</a></li>
+                  <li><a href="listing-subcategory.html">Busana Muslim</a></li>
+                </ul>
+                <!-- End 2nd LEVEL -->
               </li>
               <li>
-                <a href="#" class="has-child first-level-cat">
+                <a href="#" class="has-child first-level-cat" data-target="#elektronik">
                   <span class="icon ic-cat"></span>
                   Elektronik
                 </a>
+                <!-- 2nd LEVEL -->
+                <ul class="second-level-cat hidden" id="elektronik">
+                  <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+                  <li><a href="listing-category.html"><span class="icon ic-cat"></span>Semua produk Elektronik</a></li>
+                  <li><a href="listing-subcategory.html">Televisi</a></li>
+                  <li><a href="listing-subcategory.html">Speaker</a></li>
+                  <li><a href="listing-subcategory.html">Headphone</a></li>
+                  <li><a href="listing-subcategory.html">Proyektor</a></li>
+                  <li><a href="listing-subcategory.html">Home Theater</a></li>
+                </ul>
+                <!-- End 2nd LEVEL -->
+              </li>
+              <li>
+                <a href="#" class="has-child first-level-cat" data-target="#rumahtangga">
+                  <span class="icon ic-cat"></span>
+                  Rumah Tangga
+                </a>
+                <!-- 2nd LEVEL -->
+                <ul class="second-level-cat hidden" id="rumahtangga">
+                  <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+                  <li><a href="listing-category.html"><span class="icon ic-cat"></span>Semua produk Rumah Tangga</a></li>
+                  <li><a href="#" class="has-child second-level-cat-link" data-target="#elektronik-rt">Elektronik Rumah Tangga</a></li>
+                  <li><a href="listing-subcategory.html">Dapur</a></li>
+                  <li><a href="listing-subcategory.html">Kamar Tidur</a></li>
+                  <li><a href="listing-subcategory.html">Kamar Mandi</a></li>
+                  <li><a href="listing-subcategory.html">Ruang Makan</a></li>
+                  <li><a href="listing-subcategory.html">Perkakas</a></li>
+                </ul>
+                <!-- End 2nd LEVEL -->
+                <!-- 3rd LEVEL -->
+                <ul class="third-level-cat hidden" id="elektronik-rt">
+                  <li class="top-list"><a href="#" class="back back-to-second" data-target="#rumahtangga">Kembali ke Rumah Tangga</a></li>
+                  <li><a href="listing-subcategory.html"><span class="icon ic-cat"></span>Semua produk Elektronik Rumah Tangga</a></li>
+                  <li><a href="listing-subcategory.html">Kulkas</a></li>
+                  <li><a href="listing-subcategory.html">AC</a></li>
+                  <li><a href="listing-subcategory.html">Mesin Cuci</a></li>
+                  <li><a href="listing-subcategory.html">Dispenser</a></li>
+                  <li><a href="listing-subcategory.html">Vacuum Cleaner</a></li>
+                </ul>
+                <!-- End 3rd LEVEL -->
               </li>
             </ul>
           </div>
@@ -200,9 +245,7 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="js/min/slick.min.js"></script>
     <script src="js/min/app-min.js"></script>
-    <script>$('.main-banners').slick();$('.cm-slide').slick();</script>
   </div>
   </body>
 </html>

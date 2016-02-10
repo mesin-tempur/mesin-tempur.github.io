@@ -4206,15 +4206,14 @@ small {
 
 .slick-prev:before,
 .slick-next:before {
-  font-family: 'slick';
   font-size: 20px;
   line-height: 1;
   opacity: .75;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  color: white; }
 
-.slick-arrow:before {
+.slick-arrow:before,
+a.has-child:after,
+a.back:before {
   font-family: "belanjaqu" !important;
   font-style: normal !important;
   font-weight: normal !important;
@@ -4224,6 +4223,12 @@ small {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+a.has-child:after {
+  content: "\62"; }
+
+a.back:before {
+  content: "\66"; }
 
 .slick-prev:before {
   content: "\61"; }
@@ -4339,7 +4344,25 @@ header {
   display: block;
   padding: 10px 15px;
   color: #414143;
-  border-bottom: 1px solid #cacaca; }
+  border-bottom: 1px solid #cacaca;
+  position: relative; }
+
+.cat-list ul li a.has-child:after {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -6px;
+  color: #8a8a8a; }
+
+.cat-list ul li a.back {
+  padding-left: 30px;
+  color: #009688; }
+
+.cat-list ul li a.back:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  left: 10px; }
 
 .cat-list ul li.top-list {
   background: #e6e6e6; }

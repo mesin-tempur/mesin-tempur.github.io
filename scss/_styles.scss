@@ -103,7 +103,10 @@ header {
 .cat-list {
 	ul {
 		li {
-			a {display: block;padding: 10px 15px;color: $black;border-bottom: $code-border;}
+			a {display: block;padding: 10px 15px;color: $black;border-bottom: $code-border;position: relative;}
+			a.has-child:after {position: absolute;right: 10px;top:50%;margin-top:-6px;color:$dark-gray}
+			a.back {padding-left: 30px;color:$primary-color;}
+			a.back:before {position: absolute;top:50%;margin-top: -7px;left:10px;}
 			&.top-list {background:$light-gray;}
 			&.blocked-li {padding: 10px 15px;border-bottom: $code-border;}
 		}

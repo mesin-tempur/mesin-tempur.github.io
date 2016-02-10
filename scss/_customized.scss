@@ -122,17 +122,19 @@ small {font-size: $font-size-small;}
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
     font-size: 20px;
     line-height: 1;
-
     opacity: .75;
     color: white;
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
-.slick-arrow:before {
+
+// USE ICON FONT
+
+.slick-arrow:before,
+a.has-child:after,
+a.back:before
+ {
 	font-family: "belanjaqu" !important;
 	  font-style: normal !important;
 	  font-weight: normal !important;
@@ -142,6 +144,12 @@ small {font-size: $font-size-small;}
 	  line-height: 1;
 	  -webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
+}
+a.has-child:after {
+    content: "\62";
+}
+a.back:before {
+    content: "\66";
 }
 .slick-prev:before {
 	content: "\61";
