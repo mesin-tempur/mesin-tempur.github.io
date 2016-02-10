@@ -4082,10 +4082,10 @@ small {
   margin-bottom: 10px; }
 
 .shown {
-  display: block; }
+  display: block !important; }
 
 .hidden {
-  display: none; }
+  display: none !important; }
 
 .mb10 {
   margin-bottom: 10px; }
@@ -4335,6 +4335,19 @@ header {
   color: #414143;
   font-size: 0.9rem; }
 
+.cat-list ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: #414143;
+  border-bottom: 1px solid #cacaca; }
+
+.cat-list ul li.top-list {
+  background: #e6e6e6; }
+
+.cat-list ul li.blocked-li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #cacaca; }
+
 .footer-top {
   padding: 20px 0;
   background: #e6e6e6; }
@@ -4403,3 +4416,11 @@ header {
   .side-canvas-menu .side-menu-list .under {
     color: #8a8a8a;
     font-size: 0.8rem; }
+
+.side-link-main {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca; }
+  .side-link-main a {
+    color: #009688; }

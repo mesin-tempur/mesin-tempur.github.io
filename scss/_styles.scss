@@ -100,6 +100,15 @@ header {
 		}
 	}
 }
+.cat-list {
+	ul {
+		li {
+			a {display: block;padding: 10px 15px;color: $black;border-bottom: $code-border;}
+			&.top-list {background:$light-gray;}
+			&.blocked-li {padding: 10px 15px;border-bottom: $code-border;}
+		}
+	}
+}
 
 // 3. FOOTER
 // ---------
@@ -166,4 +175,11 @@ footer {}
 		.under {color:$dark-gray;font-size: 0.8rem;}
 		.with-info {}
 	}
+}
+.side-link-main {
+	text-align: center;
+	padding: 10px 0;
+	border-top: $code-border;
+	border-bottom: $code-border;
+	a {color:$primary-color;}
 }
