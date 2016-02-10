@@ -4295,6 +4295,9 @@ header {
 .content-marketing {
   margin-bottom: 40px; }
 
+.cm-slide .item {
+  margin: 0 2px; }
+
 .cm-title {
   padding: 10px 15px;
   margin-bottom: 10px;
@@ -4353,3 +4356,50 @@ header {
   padding: 10px;
   background-color: #00635a;
   color: white; }
+
+.side-canvas-menu .icon, .side-canvas-menu .menu-list-title, .side-canvas-menu .ava {
+  display: inline-block;
+  vertical-align: middle; }
+
+.side-canvas-menu a {
+  color: #414143; }
+
+.side-canvas-menu .top-user {
+  padding: 10px; }
+  .side-canvas-menu .top-user a {
+    display: block; }
+  .side-canvas-menu .top-user span {
+    float: left; }
+
+.side-canvas-menu .ava {
+  margin-right: 10px; }
+  .side-canvas-menu .ava img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px; }
+
+.side-canvas-menu .side-menu-list {
+  padding-top: 10px;
+  border-top: 1px solid #cacaca;
+  margin-bottom: 20px; }
+  .side-canvas-menu .side-menu-list a {
+    display: block;
+    margin: 10px 0; }
+  .side-canvas-menu .side-menu-list span {
+    display: block; }
+  .side-canvas-menu .side-menu-list .menu-item {
+    font-size: 1rem; }
+  .side-canvas-menu .side-menu-list .icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    color: white;
+    background: #009688;
+    font-size: 1.6rem;
+    line-height: 48px;
+    font-weight: normal;
+    text-align: center;
+    margin-right: 10px; }
+  .side-canvas-menu .side-menu-list .under {
+    color: #8a8a8a;
+    font-size: 0.8rem; }
