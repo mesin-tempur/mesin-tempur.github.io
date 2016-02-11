@@ -257,9 +257,10 @@ footer {
 .push-filter {
 	a, span {font-size: $font-size-small;}
 	.back {font-size: 1rem;}
-	.label-area {width: 35%;font-size: $font-size-small;}
+	.label-area,.label-input-area,.button-area,.input-area {display: inline-block;vertical-align: middle;}
+	.label-area {width: 32%;font-size: $font-size-small;}
 	.button-area {width: 65%;text-align: right;color: $dark-gray;}
-	.label-input-area {width: 40%;font-size: $font-size-small;}
+	.label-input-area {width: 38%;font-size: $font-size-small;}
 	.input-area {
 		text-align: right;
 		width: 60%;font-size: $font-size-small;

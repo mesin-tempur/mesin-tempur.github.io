@@ -4578,8 +4578,12 @@ footer {
 .push-filter .back {
   font-size: 1rem; }
 
+.push-filter .label-area, .push-filter .label-input-area, .push-filter .button-area, .push-filter .input-area {
+  display: inline-block;
+  vertical-align: middle; }
+
 .push-filter .label-area {
-  width: 35%;
+  width: 32%;
   font-size: 0.9rem; }
 
 .push-filter .button-area {
@@ -4588,7 +4592,7 @@ footer {
   color: #8a8a8a; }
 
 .push-filter .label-input-area {
-  width: 40%;
+  width: 38%;
   font-size: 0.9rem; }
 
 .push-filter .input-area {
