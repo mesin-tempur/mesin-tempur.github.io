@@ -105,9 +105,11 @@
       <!-- END SIDE MENU -->
       <!-- FILTER & CATEGORY CANVAS RIGHT -->
       <div class="off-canvas position-right side-canvas-filter" id="off-canvas-filter-cat" data-off-canvas data-position="right">
-        <button class="close-button" aria-label="Close alert" type="button" data-close>
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <div class="canvas-gray-header">
+          <button class="close-button" aria-label="Close alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
         <div id="off-canvas-category" class="off-canvas-filter-cat-content hidden">
           <div class="row">
             <div class="small-12 column">
@@ -172,6 +174,25 @@
                   <li class="push-opt"><a href="#">Nike<span class="fr blue icon ic-checkmark"></span></a></li>
                 </ul>
               </div>
+              <div id="filter-harga" class="filter-action hidden">
+                <div class="filter-header">
+                  <a href="#" class="back back-to-filter-menu">Selesai</a>
+                </div>
+                <div class="fblock">
+                  <div class="label-input-area fl">Harga Minimal</div>
+                  <div class="input-area fr">
+                    <span>Rp</span>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="fblock">
+                  <div class="label-input-area fl">Harga Maksimal</div>
+                  <div class="input-area fr">
+                    <span>Rp</span>
+                    <input type="text">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -204,8 +225,18 @@
           </div>
           <div class="listings">
             <div class="top-filter-sort clr">
-              <div class="third tac"><div class="inner"><a href="#" class="elipsis canvas-filter-trigger" data-target="#off-canvas-category" data-toggle="off-canvas-filter-cat" aria-expanded="false" aria-controls="off-canvas-filter-cat">Fashion</a></div></div>
-              <div class="third tac"><div class="inner"><a href="#" class="elipsis canvas-filter-trigger" data-target="#off-canvas-filter" data-toggle="off-canvas-filter-cat" aria-expanded="false" aria-controls="off-canvas-filter-cat">Filter</a></div></div>
+              <div class="third tac">
+                <div class="inner">
+                  <a href="#" class="elipsis canvas-filter-trigger" data-target="#off-canvas-category" data-toggle="off-canvas-filter-cat" aria-expanded="false" aria-controls="off-canvas-filter-cat">Fashion</a>
+                  <div class="check-sticker"><span class="icon ic-checkmark"></span></div>
+                </div>
+              </div>
+              <div class="third tac">
+                <div class="inner">
+                  <a href="#" class="elipsis canvas-filter-trigger" data-target="#off-canvas-filter" data-toggle="off-canvas-filter-cat" aria-expanded="false" aria-controls="off-canvas-filter-cat">Filter</a>
+                  <div class="check-sticker"><span class="icon ic-checkmark"></span></div>
+                </div>
+              </div>
               <div class="third tac">
                 <div class="inner">
                   <select name="sort-opt" id="sort-opt">

@@ -1,3 +1,8 @@
+// 0. GLOBAL
+// ---------
+
+body {background:$light-gray;}
+.off-canvas-wrapper {background:white;}
 
 // 1. Header
 // ---------
@@ -94,8 +99,7 @@ header {
 		span {display: block;}
 	}
 	.item {
-		display: block;
-		float: left;
+		display: inline-block;
 		width: 48%;
 		margin-bottom: 10px;
 	}
@@ -112,6 +116,8 @@ header {
 	}
 	.inner {padding:2px;}
 	select {margin-bottom: 0;border:1px solid #DADADA}
+	.third {position: relative;}
+	.check-sticker {position: absolute;top: -1px;right: -1px;z-index: 10;}
 }
 
 // Push Category
@@ -146,6 +152,14 @@ header {
 a.back {padding-left: 20px;position: relative;}
 a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
 
+.check-sticker {
+	background:$primary-color;
+	width: 16px;height: 16px;
+	border-radius: 16px;
+	text-align: center;
+	.icon {color:white;display: inline-block;vertical-align: middle;font-size: 12px;margin-top: -8px;}
+}
+
 // 3. FOOTER
 // ---------
 
@@ -178,6 +192,13 @@ footer {
 // 4. SIDE MENU
 // ---------
 
+.off-canvas.position-right {
+	right:-86%;
+    width:86%;
+}
+.is-open-right {
+    transform: translateX(-86%);
+}
 .side-canvas-menu {
 	.icon, .menu-list-title, .ava{
 		display: inline-block;
@@ -223,9 +244,8 @@ footer {
 }
 
 .off-canvas-filter-cat-content {
-	padding-top: 60px;
+	padding-top: 20px;
 	position: relative;
-	// .select-styling:first-child {margin-top: 20px;}
 	.submit-group {
 		margin-top:10px;	
 		button, a {margin-bottom:10px;}
@@ -239,10 +259,17 @@ footer {
 	.back {font-size: 1rem;}
 	.label-area {width: 35%;font-size: $font-size-small;}
 	.button-area {width: 65%;text-align: right;color: $dark-gray;}
+	.label-input-area {width: 40%;font-size: $font-size-small;}
+	.input-area {
+		text-align: right;
+		width: 60%;font-size: $font-size-small;
+		input {display: inline-block;width: 80%;margin-bottom: 0;}
+		span {margin-right: 5px;}
+	}
 	.fblock {float: left;width: 100%;padding: 10px 0;border-bottom: $code-border;}
 	.filter-action {
 		position: relative;
-		.filter-header {position: absolute;top:-45px;left: 0;}
+		.filter-header {position: absolute;top:-60px;left: 0;}
 		.push-opt {
 			.ic-checkmark {display: none;}
 			&.selected {
@@ -251,6 +278,11 @@ footer {
 			}
 		}
 	}
+}
+.canvas-gray-header {
+	height: 55px;
+	background:$lighter-gray;
+	border-bottom:1px solid $light-gray;
 }
 .close-button {z-index: 10;}
 .with-right-arrow {position: relative;padding-right: 20px;}
