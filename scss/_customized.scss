@@ -36,6 +36,15 @@ small {font-size: $font-size-small;}
 .shown {display: block !important;}
 .hidden {display: none !important;}
 
+.elipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+select, input {border-radius: 4px;}
+
 // MARGIN
 .mb10 {margin-bottom: 10px;}
 .mb15 {margin-bottom: 15px;}
@@ -65,6 +74,16 @@ small {font-size: $font-size-small;}
 // BORDER
 .bdl {border-left:$code-border;}
 .bdr {border-right:$code-border;}
+
+// BUTTON 
+.button {
+    border-radius:4px;
+    &.bordered-btn {
+        color:$black;
+        border: $code-border;
+        background:$lighter-gray;
+    }
+}
 
 //OFF-CANVAS
 .js-off-canvas-exit {z-index: 10;}
@@ -133,7 +152,8 @@ small {font-size: $font-size-small;}
 
 .slick-arrow:before,
 a.has-child:after,
-a.back:before
+a.back:before,
+.with-right-arrow:after
  {
 	font-family: "belanjaqu" !important;
 	  font-style: normal !important;
@@ -154,6 +174,7 @@ a.back:before {
 .slick-prev:before {
 	content: "\61";
 }
+.with-right-arrow:after,
 .slick-next:before {
 	content: "\62";
 }

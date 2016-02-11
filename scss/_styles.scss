@@ -9,6 +9,10 @@ header {
 	.ic-cart {margin-right: 15px;}
 	.ic-hamburger,  .ic-cart {font-size: 1.5rem;}
 	.ic-search {font-size: 1.3rem;}
+	.hamburger {
+		@include hamburger(white, $light-gray, 18px, 16px, 2px, 3);
+		margin-right: 5px;
+	}
 }
 .logo {
 	width: 100px;height: 19px;background:url(../images/logo.png);display: block;
@@ -22,8 +26,8 @@ header {
 	.slick-next {right: 0;}
 }
 .search-modal {
+	padding-top: 40px;
 	input {
-		padding-top: 40px;
 		border: none;
 		box-shadow: none;
 		border-bottom: $code-border;
@@ -59,9 +63,6 @@ header {
 .content-marketing {
 	margin-bottom: 40px;
 }
-.cm-slide {
-	.item {margin: 0 2px;}
-}
 .cm-title {
 	padding: 10px 15px;
 	margin-bottom: 10px;
@@ -80,6 +81,7 @@ header {
 		span {color: $primary-color;}
 		span.striked {font-size: $font-size-smaller;color: $dark-gray;text-decoration:line-through;}
 	}
+	.item {margin: 0 2px;}
 }
 .product-listing-grid {
 	.product-title {
@@ -91,8 +93,28 @@ header {
 	.product-price {
 		span {display: block;}
 	}
+	.item {
+		display: block;
+		float: left;
+		width: 48%;
+		margin-bottom: 10px;
+	}
+}
+// listing
+.top-filter-sort {
+	background:$lighter-gray;
+	padding: 5px 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #DADADA;
+	a {
+		display: block;color: $black;background:white;border-radius: 4px;
+		border:1px solid #DADADA;height: 39px;line-height: 36px;
+	}
+	.inner {padding:2px;}
+	select {margin-bottom: 0;border:1px solid #DADADA}
 }
 
+// Push Category
 .cat-list-home {
 	ul {
 		li {
@@ -103,20 +125,33 @@ header {
 .cat-list {
 	ul {
 		li {
-			a {display: block;padding: 10px 15px;color: $black;border-bottom: $code-border;position: relative;}
+			a {color: $black;}
 			a.has-child:after {position: absolute;right: 10px;top:50%;margin-top:-6px;color:$dark-gray}
 			a.back {padding-left: 30px;color:$primary-color;}
-			a.back:before {position: absolute;top:50%;margin-top: -7px;left:10px;}
+			a.back:before {left:10px;}
 			&.top-list {background:$light-gray;}
 			&.blocked-li {padding: 10px 15px;border-bottom: $code-border;}
 		}
 	}
 }
+.bordered-list {
+	li {
+		a {display: block;padding: 10px 15px;color: $black;border-bottom: $code-border;position: relative;}
+	}
+}
+.breadcrumbs-nav {
+	padding: 10px 0;
+	background:$lighter-gray;
+}
+a.back {padding-left: 20px;position: relative;}
+a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
 
 // 3. FOOTER
 // ---------
 
-footer {}
+footer {
+	margin-top: 40px;
+}
 .footer-top {
 	padding: 20px 0;
 	background:$light-gray;
@@ -186,3 +221,37 @@ footer {}
 	border-bottom: $code-border;
 	a {color:$primary-color;}
 }
+
+.off-canvas-filter-cat-content {
+	padding-top: 60px;
+	position: relative;
+	// .select-styling:first-child {margin-top: 20px;}
+	.submit-group {
+		margin-top:10px;	
+		button, a {margin-bottom:10px;}
+	}
+	.disabled {opacity: .5;}
+}
+
+// Push Filter
+.push-filter {
+	a, span {font-size: $font-size-small;}
+	.back {font-size: 1rem;}
+	.label-area {width: 35%;font-size: $font-size-small;}
+	.button-area {width: 65%;text-align: right;color: $dark-gray;}
+	.fblock {float: left;width: 100%;padding: 10px 0;border-bottom: $code-border;}
+	.filter-action {
+		position: relative;
+		.filter-header {position: absolute;top:-45px;left: 0;}
+		.push-opt {
+			.ic-checkmark {display: none;}
+			&.selected {
+				.ic-checkmark {display: inline;}
+				a {color:$blue;}
+			}
+		}
+	}
+}
+.close-button {z-index: 10;}
+.with-right-arrow {position: relative;padding-right: 20px;}
+.with-right-arrow:after {font-size: 0.9rem;vertical-align: middle;position: absolute;right: 0px;top: 50%;margin-top: -6px;}

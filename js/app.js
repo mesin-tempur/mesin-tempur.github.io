@@ -1,6 +1,7 @@
 
 $(document).foundation();
 
+// SEARCH REVEAL MODAL
 function searchInputReveal() {
 	$(document).on(
 	    'open.zf.reveal', function () {
@@ -15,6 +16,7 @@ function searchInputReveal() {
 }
 searchInputReveal();
 
+// CATEGORY PUSH MENU
 function categoriMultilevel() {
 	var wrap 		= $('.cat-list'),
 		parent 		= wrap.find('.first-level-cat'),
@@ -42,5 +44,43 @@ function categoriMultilevel() {
 		$($(this).attr('data-target')).removeClass('hidden');
 	});
 }
-categoriMultilevel();
 
+// FILTER OFF CANVAS 
+function filterCanvas() {
+	var offCanvas 		= $('#off-canvas-filter-cat'),
+		canvasContent	= offCanvas.find('.off-canvas-filter-cat-content'),
+		canvasBtn		= $('.canvas-filter-trigger');
+
+	canvasBtn.on('click tap', function() {
+		$($(this).attr('data-target')).removeClass('hidden');
+	});
+	offCanvas.on(
+		'closed.zf.offcanvas', function() {
+			canvasContent.addClass('hidden');
+		}
+	);
+}
+
+// FILTER PUSH NAV
+function filterPush() {
+	var pushWrap	= $('.off-canvas-filter-cat-content'),
+		filterMenu	= pushWrap.find('.filter-menu'),
+		trigger 	= pushWrap.find('.button-area'),
+		backFilter	= pushWrap.find('.back-to-filter-menu'),
+		filterAct 	= pushWrap.find('.filter-action'),
+		optList		= filterAct.find('.push-opt'),
+		closeBtn	= $('#off-canvas-filter-cat .close-button');
+
+	trigger.on('click tap', function() {
+		$($(this).attr('data-target')).removeClass('hidden');
+		filterMenu.add(closeBtn).addClass('hidden');
+	});
+	backFilter.on('click tap', function() {
+		filterMenu.add(closeBtn).removeClass('hidden');
+		filterAct.addClass('hidden');
+	});
+	optList.on('click tap', function() {
+		$(this).siblings().removeClass('selected');
+		$(this).addClass('selected');
+	});
+}
