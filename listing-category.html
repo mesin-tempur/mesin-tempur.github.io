@@ -182,14 +182,14 @@
                   <div class="label-input-area">Harga Minimal</div>
                   <div class="input-area">
                     <span>Rp</span>
-                    <input type="text">
+                    <input type="text" class="price-mask">
                   </div>
                 </div>
                 <div class="fblock">
                   <div class="label-input-area">Harga Maksimal</div>
                   <div class="input-area">
                     <span>Rp</span>
-                    <input type="text">
+                    <input type="text" class="price-mask">
                   </div>
                 </div>
               </div>
@@ -381,11 +381,13 @@
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/min/slick.min.js"></script>
+    <script src="js/min/jquery.mask.min.js"></script>
     <script src="js/min/app-min.js"></script>
     <script>
       $('.main-banners').slick();
       filterCanvas();
       filterPush();
+      $('.price-mask').mask('000.000.000.000.000', {reverse: true});
     </script>
   </div>
   </body>
