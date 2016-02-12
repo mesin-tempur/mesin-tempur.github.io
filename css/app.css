@@ -4475,6 +4475,22 @@ a.back:before {
     font-size: 12px;
     margin-top: -8px; }
 
+.pagination {
+  padding: 10px 0;
+  margin-top: 20px; }
+  .pagination a {
+    background: #e6e6e6;
+    border: 1px solid #cacaca;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center; }
+    .pagination a span {
+      line-height: 36px; }
+  .pagination div {
+    line-height: 40px;
+    color: #8a8a8a; }
+
 footer {
   margin-top: 40px; }
 

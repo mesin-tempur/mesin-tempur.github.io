@@ -144,6 +144,7 @@
         <div id="off-canvas-filter" class="off-canvas-filter-cat-content push-filter hidden">
           <div class="row">
             <div class="small-12 column">
+              <!-- FILTER MENU -->
               <div class="filter-menu clr">
                 <div class="fblock merek">
                   <div class="label-area">Brand</div>
@@ -156,10 +157,20 @@
                 <div class="fblock harga">
                   <div class="label-area">Harga</div>
                   <div class="button-area with-right-arrow elipsis" data-target="#filter-harga">
-                    <span>Rentang Harga</span>
+                    <span>1.000.000 - 2.000.000</span>
                   </div>
                 </div>
               </div>
+              <div class="filter-menu">
+                <div class="fblock kondisi">
+                  <div class="label-area">Kondisi</div>
+                  <div class="button-area with-right-arrow elipsis" data-target="#filter-kondisi">
+                    <span>Semua Kondisi</span>
+                  </div>
+                </div>
+              </div>
+              <!-- End FILTER MENU -->
+              <!-- FILTER INPUT -->
               <div id="filter-merek" class="filter-action hidden">
                 <div class="filter-header">
                   <a href="#" class="back back-to-filter-menu">Selesai</a>
@@ -193,6 +204,17 @@
                   </div>
                 </div>
               </div>
+              <div id="filter-kondisi" class="filter-action hidden">
+                <div class="filter-header">
+                  <a href="#" class="back back-to-filter-menu">Selesai</a>
+                </div>
+                <ul class="bordered-list">
+                  <li class="push-opt selected"><a href="#">Semua Kondisi<span class="fr blue icon ic-checkmark"></span></a></li>
+                  <li class="push-opt"><a href="#">Baru<span class="fr blue icon ic-checkmark"></span></a></li>
+                  <li class="push-opt"><a href="#">Bekas<span class="fr blue icon ic-checkmark"></span></a></li>
+                </ul>
+              </div>
+              <!-- End FILTER INPUT -->
             </div>
           </div>
         </div>
@@ -298,6 +320,11 @@
                       </div>
                     </a>
                   </div>
+                </div>
+                <div class="pagination clr">
+                  <a href="#" class="prev-page disabled fl"><span class="icon ic-chevron-left"></span></a>
+                  <a href="#" class="next-page fr"><span class="icon ic-chevron-right"></span></a>
+                  <div class="tac">Halaman 1 / 120</div>
                 </div>
               </div>
             </div>

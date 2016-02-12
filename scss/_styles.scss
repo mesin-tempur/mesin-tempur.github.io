@@ -159,6 +159,16 @@ a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
 	text-align: center;
 	.icon {color:white;display: inline-block;vertical-align: middle;font-size: 12px;margin-top: -8px;}
 }
+.pagination {
+	padding: 10px 0;
+	margin-top: 20px;
+	a {
+		background:$light-gray;border:$code-border;width: 40px;height: 40px;display: block;
+		text-align: center;
+		span{line-height: 36px;}
+	}
+	div {line-height: 40px;color: $dark-gray;}
+}
 
 // 3. FOOTER
 // ---------
