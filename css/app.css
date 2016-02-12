@@ -1572,17 +1572,17 @@ h6 {
 
 @media screen and (min-width: 40em) {
   h1 {
-    font-size: 3rem; }
+    font-size: 1.875rem; }
   h2 {
-    font-size: 2.5rem; }
+    font-size: 1.5rem; }
   h3 {
-    font-size: 1.9375rem; }
+    font-size: 1.4375rem; }
   h4 {
-    font-size: 1.5625rem; }
+    font-size: 1.375rem; }
   h5 {
-    font-size: 1.25rem; }
+    font-size: 1.3125rem; }
   h6 {
-    font-size: 1rem; } }
+    font-size: 1.25rem; } }
 
 a {
   color: #009688;
@@ -4306,17 +4306,39 @@ header {
   background-size: 100px 19px;
   margin: 7px auto 0; }
 
-.main-banners {
+.slide-with-arrow {
   position: relative; }
-  .main-banners .slick-arrow {
+  .slide-with-arrow .slick-arrow {
     position: absolute;
     height: 100%;
     width: 40px;
-    z-index: 1; }
-  .main-banners .slick-prev {
+    z-index: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
+  .slide-with-arrow .slick-prev {
     left: 0; }
-  .main-banners .slick-next {
+  .slide-with-arrow .slick-next {
     right: 0; }
+
+.slide-with-dotts {
+  margin-bottom: 50px; }
+
+.slick-dots {
+  position: absolute;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%; }
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 2px; }
+    .slick-dots li button {
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      display: block;
+      background-color: #8a8a8a;
+      text-indent: -9999em; }
+    .slick-dots li.slick-active button {
+      background-color: #009688; }
 
 .search-modal {
   padding-top: 40px; }
@@ -4360,16 +4382,21 @@ header {
   font-size: 0.9rem;
   color: #414143; }
 
-.product-listing .product-price span {
+.product-listing span {
   color: #009688; }
 
-.product-listing .product-price span.striked {
-  font-size: 0.8rem;
-  color: #8a8a8a;
-  text-decoration: line-through; }
+.product-listing span.striked {
+  font-size: 0.8rem; }
 
 .product-listing .item {
   margin: 0 2px; }
+
+.product-price span.striked {
+  color: #8a8a8a;
+  text-decoration: line-through; }
+
+.product-price span.discount {
+  color: #c81414; }
 
 .product-listing-grid .product-title {
   padding-right: 10px;
@@ -4384,6 +4411,9 @@ header {
   display: inline-block;
   width: 48%;
   margin-bottom: 10px; }
+
+.section-block {
+  padding: 20px 0; }
 
 .top-filter-sort {
   background: #f1f1f1;
@@ -4410,6 +4440,39 @@ header {
     top: -1px;
     right: -1px;
     z-index: 10; }
+
+.pdp-content .product-price {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cacaca; }
+  .pdp-content .product-price span:first-child {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px; }
+  .pdp-content .product-price .striked, .pdp-content .product-price .discount {
+    font-size: .9rem; }
+  .pdp-content .product-price .discount {
+    margin-left: 5px; }
+
+.pdp-content .pdp-variant .label-area {
+  width: 40%;
+  display: inline-block;
+  text-align: left; }
+
+.pdp-content .pdp-variant .input-area {
+  width: 54%;
+  display: inline-block;
+  text-align: right; }
+
+.pdp-content .pdp-variant select {
+  margin-bottom: 0; }
+
+.pdp-action {
+  background-color: #f1f1f1; }
+  .pdp-action .button {
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+    .pdp-action .button:last-child {
+      margin-bottom: 0; }
 
 .cat-list-home ul li a {
   display: block;
