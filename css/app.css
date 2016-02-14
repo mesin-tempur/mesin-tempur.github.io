@@ -4598,6 +4598,59 @@ header {
     border-bottom: none;
     font-size: 1rem; }
 
+.store-desc {
+  margin-top: -35px; }
+  .store-desc .ava {
+    width: 100%;
+    text-align: center; }
+    .store-desc .ava img {
+      width: 70px;
+      height: 70px;
+      border-radius: 70px; }
+  .store-desc .store-name {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px; }
+  .store-desc .store-info {
+    text-align: center;
+    margin: 10px 0; }
+    .store-desc .store-info div {
+      display: inline-block;
+      margin: 0 10px;
+      color: #8a8a8a; }
+  .store-desc .store-stat {
+    margin: 20px 0 0;
+    padding: 10px 0;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca; }
+    .store-desc .store-stat div {
+      text-align: center; }
+    .store-desc .store-stat .number {
+      font-weight: bold; }
+    .store-desc .store-stat .legend {
+      font-size: 0.8rem;
+      color: #8a8a8a; }
+  .store-desc .store-cta {
+    border-bottom: 1px solid #cacaca;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px; }
+    .store-desc .store-cta .button {
+      margin-bottom: 0; }
+    .store-desc .store-cta .half {
+      padding: 0 10px; }
+    .store-desc .store-cta a {
+      background-color: white;
+      color: #009688; }
+
+.store-contact {
+  padding: 20px 0;
+  margin-bottom: 20px; }
+  .store-contact .link-group {
+    padding: 10px 0;
+    background: #f1f1f1; }
+
 .cat-list-home ul li a {
   display: block;
   padding: 10px 15px;

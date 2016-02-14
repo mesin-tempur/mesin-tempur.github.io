@@ -252,6 +252,54 @@ header {
 	}
 }
 
+// Store Page
+
+.store-desc {
+	margin-top: -35px;
+	.ava {
+		width: 100%;
+		text-align: center;
+		img {width: 70px;height: 70px;border-radius: 70px;}
+	}
+	.store-name {
+		font-size: $font-size-big;
+		text-align: center;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+	.store-info {
+		text-align: center;
+		margin: 10px 0;
+		div {display: inline-block;margin: 0 10px;color:$dark-gray}
+	}
+	.store-stat {
+		margin: 20px 0 0;
+		padding: 10px 0;
+		border-top: $code-border;
+		border-bottom: $code-border;
+		div {text-align: center;}
+		.number {font-weight: bold;}
+		.legend {font-size: $font-size-smaller;color:$dark-gray}
+	}
+	.store-cta {
+		border-bottom: $code-border;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-bottom: 20px;
+		.button {margin-bottom: 0;}
+		.half {padding: 0 10px;}
+		a {background-color: white;color: $primary-color}
+	}
+}
+.store-contact {
+	padding: 20px 0;
+	margin-bottom: 20px;
+	.link-group {
+		padding: 10px 0;
+		background:$lighter-gray;
+	}
+}
+
 // Push Category
 .cat-list-home {
 	ul {
