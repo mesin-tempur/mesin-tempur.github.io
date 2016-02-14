@@ -210,9 +210,15 @@ header {
 	border-bottom: 1px solid $light-gray;
 	.link-group {
 		text-align: center;
-		a {display: inline-block;width: 40px;height: 40px;text-align: center;line-height: 40px;margin:5px;color:white;background-color: $primary-color;}
+		a {display: inline-block;width: 40px;height: 40px;text-align: center;line-height: 40px;margin:5px;color:white;}
 	}
 }
+.facebook-style {background-color: #3b5998;}
+.twitter-style 	{background-color: #00aced;}
+.gplus-style 	{background-color: #dd4b39;}
+.line-style 	{background-color: #21CE26;}
+.wa-style 		{background-color: #189D0E;}
+
 .pdp-seller {
 	margin-bottom: 20px;
 	background:$lighter-gray;
@@ -246,7 +252,7 @@ header {
 		width: 100%;
 		max-width: 40rem;
 		margin-left: -16px;
-		padding: 10px 10px 0 10px;
+		padding: 10px;
 		border-top: $code-border;
 		input {padding: 10px;border-bottom: none;font-size: 1rem;}
 	}
@@ -279,7 +285,8 @@ header {
 		border-bottom: $code-border;
 		div {text-align: center;}
 		.number {font-weight: bold;}
-		.legend {font-size: $font-size-smaller;color:$dark-gray}
+		.legend {font-size: $font-size-smaller;color:$dark-gray;text-transform: uppercase;}
+		// a {color: $black;}
 	}
 	.store-cta {
 		border-bottom: $code-border;
@@ -293,11 +300,49 @@ header {
 }
 .store-contact {
 	padding: 20px 0;
-	margin-bottom: 20px;
 	.link-group {
 		padding: 10px 0;
 		background:$lighter-gray;
 	}
+}
+
+// ACCOUNT PAGE
+.acc-desc {
+	margin: 0;
+	.acc-header {
+		background:$primary-color url('../images/acc-bg.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+		padding: 20px 0;
+	}
+	.store-name {
+		color: white;
+		text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+	}
+	.store-stat {
+		border-top: none;
+		padding-top: 0;
+	}
+}
+.block-header {
+	background:$light-gray;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+}
+.with-button {
+	input {
+		padding-right: 90px;
+	}
+}
+.inside-input-btn {
+	position: absolute;
+	top:50%;
+	margin-top: -17px;
+	right:5px;
+	background:white;
+	padding: 5px;
 }
 
 // Push Category
@@ -323,6 +368,7 @@ header {
 .bordered-list {
 	li {
 		a {display: block;padding: 10px 15px;color: $black;border-bottom: $code-border;position: relative;}
+		a.with-right-arrow:after {position: absolute;right: 10px;top:50%;margin-top:-6px;color:$dark-gray}
 	}
 }
 .breadcrumbs-nav {
@@ -436,11 +482,11 @@ footer {
 .off-canvas-filter-cat-content {
 	padding-top: 20px;
 	position: relative;
-	.submit-group {
-		margin-top:10px;	
-		button, a {margin-bottom:10px;}
-	}
 	.disabled {opacity: .5;}
+}
+.submit-group {
+	margin-top:20px;	
+	button, a {margin-bottom:10px;}
 }
 
 // Push Filter
@@ -457,7 +503,7 @@ footer {
 		input {display: inline-block;width: 80%;margin-bottom: 0;}
 		span {margin-right: 5px;}
 	}
-	.fblock {float: left;width: 100%;padding: 10px 0;border-bottom: $code-border;}
+	.fblock {float: left;width: 100%;padding: 10px 0;border-bottom: $code-border;margin-bottom: 0;}
 	.filter-action {
 		position: relative;
 		.filter-header {position: absolute;top:-60px;left: 0;}

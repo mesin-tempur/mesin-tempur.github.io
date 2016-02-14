@@ -14,11 +14,12 @@
 .third {width:33.3%;float: left;&:nth-child(2){width: 33.4%}}
 .clr:after {clear: both;content: ".";display: block;height: 0;overflow: hidden;visibility: hidden;}
 .cbt {clear: both;}
+.posr {position: relative;}
+.fblock {margin-bottom: 10px;}
 
 ul, ul ul, ol ul, ul ol, ol ol {margin-left: 0;}
 ul li {list-style: none;}
 ul.dotted {li {list-style-type:disc;list-style-position: inside;}}
-textarea {resize: none;}
 small {font-size: $font-size-small;}
 
 :focus {outline: none;}
@@ -44,7 +45,9 @@ small {font-size: $font-size-small;}
 }
 
 select, input {border-radius: 4px;}
-
+textarea {resize: none;}
+select,[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+margin-bottom: 0;}
 // MARGIN
 .mb10 {margin-bottom: 10px;}
 .mb15 {margin-bottom: 15px;}

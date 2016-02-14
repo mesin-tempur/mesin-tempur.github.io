@@ -111,3 +111,35 @@ function descToggle() {
 		}
 	});
 }
+// SHOW HIDE PASSWORD
+function passwordVisibility() {
+
+	var passToggle = $('.password-toggle'),
+	 	tgBtn 		= passToggle.find('.pass-btn'),
+	 	inputPass	= passToggle.find('#password'),
+		inputRePass	= passToggle.find('#repassword'),
+		inputNuPass	= passToggle.find('#newpassword');
+		// allInput	= passToggle.find('input'),
+		// chk			= passToggle.find('.ic-checkmark');
+	 	
+	
+	tgBtn.click(function(){
+		var	hideBtn	= passToggle.find('.button-hide');
+		tgBtn.toggle();
+		if (hideBtn.is(':visible')) {
+            inputPass.add(inputRePass).add(inputNuPass).attr('type', 'text');
+        } else {
+            inputPass.add(inputRePass).add(inputNuPass).attr('type', 'password');
+        }
+	});
+	// allInput.change(function(){
+	// 	if(inputNuPass.val() === inputRePass.val())
+	// 	{
+	// 		chk.css('display','block');
+	// 	}
+	// 	else {
+	// 		chk.css('display','none');
+	// 	}
+	// });
+
+}
