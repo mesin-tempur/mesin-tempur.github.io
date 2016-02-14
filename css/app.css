@@ -4720,7 +4720,7 @@ header {
 
 .block-alamat {
   font-size: 0.9rem;
-  margin-bottom: 20px; }
+  margin: 20px 0; }
   .block-alamat p {
     margin: 0; }
 
