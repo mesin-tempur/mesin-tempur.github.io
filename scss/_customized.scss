@@ -29,10 +29,14 @@ small {font-size: $font-size-small;}
 .red {color:$red;}
 .blue {color:$blue;}
 .fwb{font-weight: bold;}
+.supersmall {font-size: .8rem;}
+.superbig {font-size: 1.9rem;}
 .upcase {text-transform: uppercase;}
 .tac {text-align: center;}
 .tal {text-align:left;}
 .tar {text-align:right;}
+table.small-text {font-size: $font-size-small;}
+
 .bb10 {border-bottom: $code-border;padding-bottom: 10px;margin-bottom: 10px;}
 .shown {display: block !important;}
 .hidden {display: none !important;}

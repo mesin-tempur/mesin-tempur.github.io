@@ -4067,6 +4067,12 @@ small {
 .fwb {
   font-weight: bold; }
 
+.supersmall {
+  font-size: .8rem; }
+
+.superbig {
+  font-size: 1.9rem; }
+
 .upcase {
   text-transform: uppercase; }
 
@@ -4078,6 +4084,9 @@ small {
 
 .tar {
   text-align: right; }
+
+table.small-text {
+  font-size: 0.9rem; }
 
 .bb10 {
   border-bottom: 1px solid #cacaca;
@@ -4705,6 +4714,15 @@ header {
   right: 5px;
   background: white;
   padding: 5px; }
+
+.saldo-sum {
+  padding: 20px 0; }
+
+.block-alamat {
+  font-size: 0.9rem;
+  margin-bottom: 20px; }
+  .block-alamat p {
+    margin: 0; }
 
 .cat-list-home ul li a {
   display: block;
