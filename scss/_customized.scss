@@ -180,7 +180,9 @@ a.back:before {
 }
 
 .reveal.full {
-   @include reveal-modal-fullscreen;
+    left: 0 !important;
+    width: 100% !important;
+    right: 0 !important;
     top: 0 !important;
     margin-top: 0 !important;
 }

@@ -47,6 +47,8 @@ header {
 .search-modal {
 	padding-top: 40px;
 	input {
+		-webkit-appearance:none;
+		-moz-appearance:none;
 		border: none;
 		box-shadow: none;
 		border-bottom: $code-border;
@@ -240,9 +242,10 @@ header {
 	.fblock {
 		position: fixed;
 		bottom: 0;
-		left: 0;
 		background:$light-gray;
 		width: 100%;
+		max-width: 40rem;
+		margin-left: -16px;
 		padding: 10px 10px 0 10px;
 		border-top: $code-border;
 		input {padding: 10px;border-bottom: none;font-size: 1rem;}
