@@ -179,8 +179,8 @@ a.back:before {
 	content: "\62";
 }
 
-.reveal.search-modal {
-    left: 0 !important;
-    width: 100% !important;
-    right: 0 !important;
+.reveal.full {
+   @include reveal-modal-fullscreen;
+    top: 0 !important;
+    margin-top: 0 !important;
 }

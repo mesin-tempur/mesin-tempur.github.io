@@ -26,7 +26,7 @@ header {
 }
 .slide-with-arrow {
 	position: relative;
-	.slick-arrow {position: absolute;height: 100%;width: 40px;z-index: 1;text-shadow: 1px 1px 2px rgba(0,0,0,.3)}
+	.slick-arrow {position: absolute;height: 100%;width: 40px;z-index: 1;text-shadow: 1px 1px 2px rgba(0,0,0,.8)}
 	.slick-prev {left: 0;}
 	.slick-next {right: 0;}
 }
@@ -141,6 +141,7 @@ header {
 
 // DETAIL PRODUCT
 .pdp-content {
+	h6 {font-weight: bold;}
 	.product-price {
 		padding-bottom: 20px;
 		border-bottom: $code-border;
@@ -149,6 +150,8 @@ header {
 		.discount {margin-left: 5px;}
 	}
 	.pdp-variant {
+		.fblock {margin-bottom: 10px;}
+		.fblock:last-child {margin-bottom: 0px;}
 		.label-area {width: 40%;display: inline-block;text-align: left;}
 		.input-area {width: 54%;display: inline-block;text-align: right;}
 		select {margin-bottom: 0;}
@@ -163,8 +166,88 @@ header {
 	}
 }
 .pdp-spec {
+	ul {
+		li {
+			width: 100%;display: inline-block;
+			.fl {width: 35%;color:$dark-gray}
+			.fr {width: 60%;text-align: right;}
+		}
+	}
+	.product-description {
+		position: relative;
+		padding-bottom: 40px;
+		&.teaser {
+			height: 240px;
+			overflow: hidden;
+			.display-toggle {
+				height: 100px;
+				background-image: url(../images/grd-bg.png);
+				background-repeat: repeat-x;
+				a {
+					margin-top: 60px;
+				}
+			}
+		}
+	}
+	.display-toggle {
+		background-image:none;
+		position: absolute;
+		bottom: 0;
+		height: 40px;
+		width: 100%;
+		a {
+			height: 20px;
+			margin-top: 10px;
+			display: block;
+		}
+	}
 }
-
+.pdp-share {
+	// background:$lighter-gray;
+	border-top: 1px solid $light-gray;
+	border-bottom: 1px solid $light-gray;
+	.link-group {
+		text-align: center;
+		a {display: inline-block;width: 40px;height: 40px;text-align: center;line-height: 40px;margin:5px;color:white;background-color: $primary-color;}
+	}
+}
+.pdp-seller {
+	margin-bottom: 20px;
+	background:$lighter-gray;
+	border-bottom: 1px solid $light-gray;
+	.info {display: inline-block;vertical-align: middle;}
+	.store-name {font-weight: bold;}
+	.store-loc {color:$dark-gray}
+	.store-contact {
+		margin-top: 20px;
+		padding: 10px;
+		border-radius: 10px;
+		border: $code-border
+	}
+}
+.pdp-comment {
+	table {}
+	tbody {border:none;}
+	tr, tr:nth-child(even) {background-color:transparent;border-bottom: $code-border;}
+	tr:last-child {border-bottom: none;}
+	td {padding: 10px 5px 10px 0;font-size: $font-size-small;vertical-align: top;}
+	.ava {display: block;float: left;width: 50px;}
+	.comment-name {font-weight: bold;}
+	p {margin-top: 5px;margin-bottom:5px;}
+	.time-post {font-size: $font-size-smaller;float: right;}
+}
+.komentar-modal {
+	.fblock {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		background:$light-gray;
+		width: 100%;
+		padding: 10px 10px 0 10px;
+		border-top: $code-border;
+		input {padding: 10px;border-bottom: none;font-size: 1rem;}
+	}
+}
 
 // Push Category
 .cat-list-home {
@@ -266,10 +349,6 @@ footer {
 		span {float: left;}
 		padding: 10px;
 	}
-	.ava {
-		margin-right: 10px;
-		img {width: 50px;height: 50px;border-radius: 50px;}
-	}
 	.side-menu-list {
 		padding-top: 10px;
 		border-top: $code-border;
@@ -298,7 +377,11 @@ footer {
 	border-bottom: $code-border;
 	a {color:$primary-color;}
 }
-
+.ava {
+	display: inline-block;
+	margin-right: 10px;
+	img {width: 50px;height: 50px;border-radius: 50px;}
+}
 .off-canvas-filter-cat-content {
 	padding-top: 20px;
 	position: relative;

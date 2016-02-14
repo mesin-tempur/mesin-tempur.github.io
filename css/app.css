@@ -4254,10 +4254,18 @@ a.back:before {
 .slick-next:before {
   content: "\62"; }
 
-.reveal.search-modal {
-  left: 0 !important;
-  width: 100% !important;
-  right: 0 !important; }
+.reveal.full {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  max-width: none;
+  margin-left: 0;
+  border: 0;
+  top: 0 !important;
+  margin-top: 0 !important; }
 
 body {
   background: #e6e6e6; }
@@ -4313,7 +4321,7 @@ header {
     height: 100%;
     width: 40px;
     z-index: 1;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); }
   .slide-with-arrow .slick-prev {
     left: 0; }
   .slide-with-arrow .slick-next {
@@ -4441,6 +4449,9 @@ header {
     right: -1px;
     z-index: 10; }
 
+.pdp-content h6 {
+  font-weight: bold; }
+
 .pdp-content .product-price {
   padding-bottom: 20px;
   border-bottom: 1px solid #cacaca; }
@@ -4452,6 +4463,12 @@ header {
     font-size: .9rem; }
   .pdp-content .product-price .discount {
     margin-left: 5px; }
+
+.pdp-content .pdp-variant .fblock {
+  margin-bottom: 10px; }
+
+.pdp-content .pdp-variant .fblock:last-child {
+  margin-bottom: 0px; }
 
 .pdp-content .pdp-variant .label-area {
   width: 40%;
@@ -4473,6 +4490,116 @@ header {
     text-transform: uppercase; }
     .pdp-action .button:last-child {
       margin-bottom: 0; }
+
+.pdp-spec ul li {
+  width: 100%;
+  display: inline-block; }
+  .pdp-spec ul li .fl {
+    width: 35%;
+    color: #8a8a8a; }
+  .pdp-spec ul li .fr {
+    width: 60%;
+    text-align: right; }
+
+.pdp-spec .product-description {
+  position: relative;
+  padding-bottom: 40px; }
+  .pdp-spec .product-description.teaser {
+    height: 240px;
+    overflow: hidden; }
+    .pdp-spec .product-description.teaser .display-toggle {
+      height: 100px;
+      background-image: url(../images/grd-bg.png);
+      background-repeat: repeat-x; }
+      .pdp-spec .product-description.teaser .display-toggle a {
+        margin-top: 60px; }
+
+.pdp-spec .display-toggle {
+  background-image: none;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%; }
+  .pdp-spec .display-toggle a {
+    height: 20px;
+    margin-top: 10px;
+    display: block; }
+
+.pdp-share {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6; }
+  .pdp-share .link-group {
+    text-align: center; }
+    .pdp-share .link-group a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      margin: 5px;
+      color: white;
+      background-color: #009688; }
+
+.pdp-seller {
+  margin-bottom: 20px;
+  background: #f1f1f1;
+  border-bottom: 1px solid #e6e6e6; }
+  .pdp-seller .info {
+    display: inline-block;
+    vertical-align: middle; }
+  .pdp-seller .store-name {
+    font-weight: bold; }
+  .pdp-seller .store-loc {
+    color: #8a8a8a; }
+  .pdp-seller .store-contact {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #cacaca; }
+
+.pdp-comment tbody {
+  border: none; }
+
+.pdp-comment tr, .pdp-comment tr:nth-child(even) {
+  background-color: transparent;
+  border-bottom: 1px solid #cacaca; }
+
+.pdp-comment tr:last-child {
+  border-bottom: none; }
+
+.pdp-comment td {
+  padding: 10px 5px 10px 0;
+  font-size: 0.9rem;
+  vertical-align: top; }
+
+.pdp-comment .ava {
+  display: block;
+  float: left;
+  width: 50px; }
+
+.pdp-comment .comment-name {
+  font-weight: bold; }
+
+.pdp-comment p {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.pdp-comment .time-post {
+  font-size: 0.8rem;
+  float: right; }
+
+.komentar-modal .fblock {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #e6e6e6;
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  border-top: 1px solid #cacaca; }
+  .komentar-modal .fblock input {
+    padding: 10px;
+    border-bottom: none;
+    font-size: 1rem; }
 
 .cat-list-home ul li a {
   display: block;
@@ -4600,13 +4727,6 @@ footer {
   .side-canvas-menu .top-user span {
     float: left; }
 
-.side-canvas-menu .ava {
-  margin-right: 10px; }
-  .side-canvas-menu .ava img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px; }
-
 .side-canvas-menu .side-menu-list {
   padding-top: 10px;
   border-top: 1px solid #cacaca;
@@ -4640,6 +4760,14 @@ footer {
   border-bottom: 1px solid #cacaca; }
   .side-link-main a {
     color: #009688; }
+
+.ava {
+  display: inline-block;
+  margin-right: 10px; }
+  .ava img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px; }
 
 .off-canvas-filter-cat-content {
   padding-top: 20px;

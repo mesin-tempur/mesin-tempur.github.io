@@ -134,17 +134,21 @@
             <div class="pdp-variant section-block row">
                 <div class="small-12 column">
                   <div class="fblock">
+                    <div class="label-area">Stock</div>
+                    <div class="input-area">> 20 buah</div>
+                  </div>
+                  <div class="fblock">
                     <div class="label-area">Ukuran</div>
                     <div class="input-area">
                       <select name="" id="">
                         <option value="0">Pilih Ukuran</option>
-                        <option value="1">42</option>
-                        <option value="1">42,5</option>
-                        <option value="2">43</option>
+                        <option value="1">42 (stok: 6)</option>
+                        <option value="1">42,5 (stok: 3)</option>
+                        <option value="2">43 (stok: 3)</option>
                         <option value="2" disabled="">43,5 Stok kosong</option>
-                        <option value="2">44</option>
-                        <option value="2">44,5</option>
-                        <option value="2">45</option>
+                        <option value="2">44 (stok: 1)</option>
+                        <option value="2">44,5 (stok: 4)</option>
+                        <option value="2">45 (stok: 2)</option>
                       </select>
                     </div>
                   </div>
@@ -159,12 +163,116 @@
             </div>
             <div class="pdp-spec section-block row">
               <div class="small-12 column">
-                Spesifikasi disini
+                <!-- <div>
+                  <h6>Spesifikasi</h6>
+                  <ul>
+                    <li>
+                      <span class="fl">SKU</span>
+                      <span class="fr">BQ123456</span>
+                    </li>
+                    <li>
+                      <span class="fl">Kondisi</span>
+                      <span class="fr">Baru</span>
+                    </li>
+                    <li>
+                      <span class="fl">Bahan</span>
+                      <span class="fr">Nylon/leather</span>
+                    </li>
+                    <li>
+                      <span class="fl">Buatan</span>
+                      <span class="fr">Thailand</span>
+                    </li>
+                  </ul>
+                </div> -->
+                <div>
+                  <h6>Deskripsi Produk</h6>
+                  <div class="product-description">
+                    <div class="height-wrap">
+                      <p>Sepatu dari New Balance. Made in collaboration with Haerfest. Nylon body with top zip closure. Leather bottom. Outer compartment with zip closure and leather trims. Adjustable shoulder straps in leather. Metal hardware. Lined with cotton. Inner compartments. Outer logo branding.</p>
+                      <ul>
+                        <li>
+                          <span class="fl">SKU</span>
+                          <span class="fr">BQ123456</span>
+                        </li>
+                        <li>
+                          <span class="fl">Kondisi</span>
+                          <span class="fr">Baru</span>
+                        </li>
+                        <li>
+                          <span class="fl">Bahan</span>
+                          <span class="fr">Nylon/leather</span>
+                        </li>
+                        <li>
+                          <span class="fl">Buatan</span>
+                          <span class="fr">Thailand</span>
+                        </li>
+                      </ul>
+                      <div class="display-toggle" style="display: none">
+                        <a class="tac"></a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pdp-share section-block row">
+              <div class="small-12 column">
+                <h6 class="tac">Bagikan</h6>
+                <div class="link-group">
+                  <a href="#" class="facebook-style"></a>
+                  <a href="#" class="twitter-style"></a>
+                  <a href="#" class="gplus-style"></a>
+                  <a href="#" class="line-style"></a>
+                  <a href="#" class="wa-style"></a>
+                </div>
               </div>
             </div>
             <div class="pdp-seller section-block row">
               <div class="small-12 column">
-                Info Toko disini
+                <div class="ava"><img src="./dummy/ava.jpg" alt=""></div>
+                <div class="info">
+                  <div class="store-name">Toko Sepatu Jaya</div>
+                  <div class="store-loc"><span class="ic ic-store"></span>Bandung</div>
+                </div>
+                <div class="store-contact">
+                  <div class="link-group clr">
+                    <a href="#" class="third tac"><span class="icon ic-phone"></span>Telepon</a>
+                    <a href="#" class="third tac"><span class="icon ic-chat"></span>SMS</a>
+                    <a href="#" class="third tac"><span class="icon ic-chat"></span>Chat</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pdp-comment row">
+              <div class="small-12 column">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="ava"><img src="./dummy/ava.jpg" alt=""></div>
+                    </td>
+                    <td>
+                      <span class="comment-name">Kang Kasep</span>
+                      <span class="time-post">4 hari lalu</span>
+                      <p>Kok size 43,5 kosong? kapan restock</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="ava"><img src="./dummy/ava.jpg" alt=""></div>
+                    </td>
+                    <td>
+                      <span class="comment-name">Kang Kasep</span>
+                      <span class="time-post">4 hari lalu</span>
+                      <p>Kok size 43,5 kosong? kapan restock</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" align="center">
+                      <a href="#" class="tac" data-open="komentarModal" aria-controls="komentarModal" aria-haspopup="true">Tampilkan 5 Komentar</a>
+                    </td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
@@ -270,6 +378,80 @@
           </div>
         </div>
         <!-- END SEARCH REVEAL MODAL -->
+        <!-- KOMENTAR REVEAL MODAL -->
+        <div class="reveal full search-modal komentar-modal" id="komentarModal" data-reveal escClose="true">
+          <button class="close-button" aria-label="Close alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="pdp-comment">
+            <table>
+              <tr>
+                <td>
+                  <div class="ava"><img src="./dummy/ava.jpg" alt=""></div>
+                </td>
+                <td>
+                  <span class="comment-name">Kang Kasep</span>
+                  <span class="time-post">4 hari lalu</span>
+                  <p>Kok size 43,5 kosong? kapan restock</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ava"><img src="./dummy/ava.jpg" alt=""></div>
+                </td>
+                <td>
+                  <span class="comment-name">Kang Kasep</span>
+                  <span class="time-post">4 hari lalu</span>
+                  <p>Kok size 43,5 kosong? kapan restock</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ava"><img src="./dummy/ava.jpg" alt=""></div>
+                </td>
+                <td>
+                  <span class="comment-name">Kang Kasep</span>
+                  <span class="time-post">4 hari lalu</span>
+                  <p>Kok size 43,5 kosong? kapan restock</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ava"><img src="./dummy/ava.jpg" alt=""></div>
+                </td>
+                <td>
+                  <span class="comment-name">Kang Kasep</span>
+                  <span class="time-post">4 hari lalu</span>
+                  <p>Kok size 43,5 kosong? kapan restock</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ava"><img src="./dummy/ava.jpg" alt=""></div>
+                </td>
+                <td>
+                  <span class="comment-name">Kang Kasep</span>
+                  <span class="time-post">4 hari lalu</span>
+                  <p>Kok size 43,5 kosong? kapan restock</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ava"><img src="./dummy/ava.jpg" alt=""></div>
+                </td>
+                <td>
+                  <span class="comment-name">Kang Kasep</span>
+                  <span class="time-post">4 hari lalu</span>
+                  <p>Kok size 43,5 kosong? kapan restock</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="fblock">
+            <input type="text" placeholder="komentar Anda">
+          </div>
+        </div>
+        <!-- end KOMENTAR REVEAL MODAL -->
       </div>
     </div>
 
@@ -278,7 +460,7 @@
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/min/slick.min.js"></script>
     <script src="js/min/app-min.js"></script>
-    <script>$('.main-product-images').slick();$('.cm-slide').slick();</script>
+    <script>$('.main-product-images').slick();$('.cm-slide').slick();descToggle()</script>
   </div>
   </body>
 </html>

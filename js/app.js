@@ -84,3 +84,30 @@ function filterPush() {
 		$(this).addClass('selected');
 	});
 }
+
+// PDP DESCRIPTION SLIDE TOGGLE
+
+function descToggle() {
+	var desc 		= $('.product-description'),
+		toggleBox	= desc.find('.display-toggle'),
+		descHeight 	= desc.find('.height-wrap'),
+		trigger 	= toggleBox.find('a');
+
+	if(descHeight.height() > 200) {
+		desc.addClass('teaser');
+		toggleBox.css('display', 'block');
+	}
+	else {desc.css('padding-bottom', '10px');}
+	trigger.html('lihat lebih banyak <span class="icon ic-arrow-down"></span>');
+	trigger.on('click tap', function(){
+		if(desc.hasClass('teaser'))
+		{
+			desc.removeClass('teaser');
+			trigger.html('lihat lebih sedikit <span class="icon ic-arrow-up"></span>');
+		}
+		else {
+			desc.addClass('teaser');
+			trigger.html('lihat lebih banyak <span class="icon ic-arrow-down"></span>');
+		}
+	});
+}
