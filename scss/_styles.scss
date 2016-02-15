@@ -419,6 +419,20 @@ a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
 .location-block {
 	select {margin-bottom:10px;}
 }
+.role-toko {
+	ul {margin-top: 20px;margin-bottom: 40px;}
+	li {
+		max-width: 60px;
+		margin-right: 10px;
+		text-align: center;
+		display: inline-block;
+		vertical-align: top;
+		.ava, img {margin: 0;}
+		p {line-height: 1;margin: 0}
+		&.add-more {
+		}
+	}
+}
 
 // 3. FOOTER
 // ---------

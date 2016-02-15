@@ -4823,6 +4823,22 @@ a.back:before {
 .location-block select {
   margin-bottom: 10px; }
 
+.role-toko ul {
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
+.role-toko li {
+  max-width: 60px;
+  margin-right: 10px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top; }
+  .role-toko li .ava, .role-toko li img {
+    margin: 0; }
+  .role-toko li p {
+    line-height: 1;
+    margin: 0; }
+
 footer {
   margin-top: 40px; }
 
