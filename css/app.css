@@ -4811,6 +4811,18 @@ a.back:before {
     line-height: 40px;
     color: #8a8a8a; }
 
+.url-block .url-prev {
+  margin: 0 0 10px 0;
+  color: #8a8a8a; }
+  .url-block .url-prev .toko-name-url {
+    color: #414143;
+    font-weight: bold; }
+  .url-block .url-prev .icon {
+    color: #414143; }
+
+.location-block select {
+  margin-bottom: 10px; }
+
 footer {
   margin-top: 40px; }
 

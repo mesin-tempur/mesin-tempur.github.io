@@ -141,5 +141,17 @@ function passwordVisibility() {
 	// 		chk.css('display','none');
 	// 	}
 	// });
-
 }
+// STORE URL
+function urlStore() {
+	var urlBlock	= $('.url-block'),
+		urlInput	= urlBlock.find('.url-input'),
+		urlPrev		= urlBlock.find('.toko-name-url');
+	
+	urlInput.keyup(function(){
+		var value = urlInput.val();
+			value = value.replace(/\s+/g, '-').toLowerCase();
+		urlPrev.text(value);
+	});
+}
+urlStore();

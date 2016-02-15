@@ -408,6 +408,18 @@ a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
 	div {line-height: 40px;color: $dark-gray;}
 }
 
+// KELOLA TOKO
+.url-block {
+	.url-prev {
+		margin: 0 0 10px 0;color: $dark-gray;
+		.toko-name-url {color: $black;font-weight: bold;}
+		.icon{color: $black;}
+	}
+}
+.location-block {
+	select {margin-bottom:10px;}
+}
+
 // 3. FOOTER
 // ---------
 
