@@ -4055,7 +4055,7 @@ small {
 .gap-main {
   margin: 20px 0; }
 
-.db {
+.db, .dblock {
   display: block; }
 
 .red {
@@ -4192,6 +4192,10 @@ select, [type='text'], [type='password'], [type='date'], [type='datetime'], [typ
     color: #414143;
     border: 1px solid #cacaca;
     background: #f1f1f1; }
+    .button.bordered-btn.white-btn {
+      background-color: white;
+      border-color: #009688;
+      color: #009688; }
 
 .js-off-canvas-exit {
   z-index: 10; }
@@ -4434,6 +4438,35 @@ header {
   width: 48%;
   margin-bottom: 10px; }
 
+.product-listing-list .item {
+  width: 100%;
+  clear: both;
+  float: left;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #cacaca;
+  padding: 10px 0; }
+
+.product-listing-list .img-box {
+  width: 80px;
+  float: left; }
+
+.product-listing-list .desc-box {
+  float: left;
+  margin-left: 10px; }
+
+.prod-cta {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 0 0;
+  margin-top: 10px;
+  border-top: 1px solid #cacaca; }
+  .prod-cta a {
+    display: inline-block;
+    padding: 10px 5px;
+    margin-right: 5px;
+    font-size: 0.9rem; }
+
 .section-block {
   padding: 20px 0; }
 
@@ -4616,19 +4649,48 @@ header {
   font-size: 0.8rem;
   float: right; }
 
-.komentar-modal .fblock {
+.komentar-modal .fblock input {
+  padding: 10px 80px 10px 10px;
+  border-bottom: none;
+  font-size: 1rem; }
+
+.fixed-bottom {
   position: fixed;
   bottom: 0;
-  background: #e6e6e6;
   width: 100%;
   max-width: 40rem;
   margin-left: -16px;
+  border-top: 1px solid #cacaca;
   padding: 10px;
-  border-top: 1px solid #cacaca; }
-  .komentar-modal .fblock input {
-    padding: 10px;
-    border-bottom: none;
-    font-size: 1rem; }
+  background: #e6e6e6; }
+
+.covering-top {
+  position: relative;
+  padding: 0;
+  background: white; }
+  .covering-top .half:first-child {
+    border-right: 1px solid #cacaca; }
+  .covering-top .half.forcefull {
+    position: absolute;
+    width: 100%;
+    padding-right: 80px; }
+  .covering-top .fullcancel {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -18px;
+    padding: 0;
+    border: 0;
+    display: inline;
+    color: #009688; }
+  .covering-top input, .covering-top select {
+    border: none;
+    height: 50px; }
+    .covering-top input:focus, .covering-top select:focus {
+      border: none;
+      box-shadow: none; }
+  .covering-top select {
+    padding-right: 20px; }
 
 .store-desc {
   margin-top: -35px; }
@@ -4691,7 +4753,11 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 20px 0; }
+    padding: 20px 0;
+    text-align: center; }
+    .acc-desc .acc-header .ava {
+      margin: 0;
+      width: auto; }
   .acc-desc .store-name {
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); }
@@ -4839,6 +4905,34 @@ a.back:before {
     line-height: 1;
     margin: 0; }
 
+.role-search .nama, .role-search .ava, .role-search .select-role {
+  display: inline-block;
+  vertical-align: middle; }
+
+.role-search .select-role {
+  float: right;
+  width: 50px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 12px; }
+
+.role-search .nama {
+  max-width: 130px; }
+
+.change-image {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: url(../images/camera.png) no-repeat center;
+  background-size: 20px auto;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  border: 1px solid #F58A20;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.4); }
+
 footer {
   margin-top: 40px; }
 
@@ -4920,6 +5014,7 @@ footer {
     color: #009688; }
 
 .ava {
+  position: relative;
   display: inline-block;
   margin-right: 10px; }
   .ava img {

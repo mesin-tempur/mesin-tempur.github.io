@@ -122,6 +122,31 @@ header {
 		margin-bottom: 10px;
 	}
 }
+.product-listing-list {
+	// &:after {clear: both;content: ".";display: block;height: 0;overflow: hidden;visibility: hidden;}
+	.item {
+		width: 100%;clear: both;float: left;margin-bottom: 10px;
+		border-bottom:$code-border;
+		padding: 10px 0;
+	}
+	.img-box {
+		width: 80px;
+		float: left;
+	}
+	.desc-box {
+		float: left;
+		margin-left: 10px;
+	}
+}
+.prod-cta {
+	float: left;
+	width: 100%;
+	text-align:center;
+	padding: 10px 0 0 0;
+	margin-top: 10px;
+	border-top: $code-border;
+	a {display: inline-block;padding: 10px 5px;margin-right: 5px;font-size: $font-size-small;}
+}
 // listing
 .section-block {
 	padding: 20px 0;
@@ -246,16 +271,52 @@ header {
 }
 .komentar-modal {
 	.fblock {
-		position: fixed;
-		bottom: 0;
-		background:$light-gray;
-		width: 100%;
-		max-width: 40rem;
-		margin-left: -16px;
-		padding: 10px;
-		border-top: $code-border;
-		input {padding: 10px;border-bottom: none;font-size: 1rem;}
+		input {padding: 10px 80px 10px 10px;border-bottom: none;font-size: 1rem;}
 	}
+}
+.fixed-bottom {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 40rem;
+	margin-left: -16px;
+	border-top: $code-border;
+	padding: 10px;
+	background:$light-gray;
+}
+
+// ProdukQu
+.covering-top {
+	position: relative;
+	padding: 0;
+	background:white;
+	.half:first-child {border-right: $code-border;}
+	.half {
+		&.forcefull {
+			position: absolute;
+			width: 100%;
+			padding-right:80px;
+		}
+	}
+	.fullcancel {
+		position: absolute;
+		right: 10px;
+		top:50%;
+		margin-top: -18px;
+		padding: 0;
+		border:0;
+		display: inline;
+		color:$primary-color;
+	}
+	input, select {
+		border:none;
+		height: 50px;
+		&:focus {
+			border:none;
+			box-shadow: none;
+		}
+	}
+	select {padding-right: 20px;}
 }
 
 // Store Page
@@ -316,6 +377,8 @@ header {
 	  	-o-background-size: cover;
 	  	background-size: cover;
 		padding: 20px 0;
+		text-align: center;
+		.ava {margin: 0;width: auto}
 	}
 	.store-name {
 		color: white;
@@ -433,6 +496,24 @@ a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
 		}
 	}
 }
+.role-search {
+	.nama, .ava, .select-role {display: inline-block;vertical-align:middle;}
+	.select-role {float: right;width: 50px;text-align: center;margin-bottom: 0;margin-top: 12px;}
+	.nama {max-width: 130px;}
+}
+.change-image {
+	position: absolute;
+	top: -5px;right: -10px;
+	background:url(../images/camera.png) no-repeat center;
+	background-size: 20px auto;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 20px;
+	border:1px solid $orange;
+	border-radius: 40px;
+	background-color:rgba(255,255,255,.4);
+}
 
 // 3. FOOTER
 // ---------
@@ -513,6 +594,7 @@ footer {
 	a {color:$primary-color;}
 }
 .ava {
+	position: relative;
 	display: inline-block;
 	margin-right: 10px;
 	img {width: 50px;height: 50px;border-radius: 50px;}

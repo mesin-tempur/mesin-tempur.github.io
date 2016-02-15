@@ -5,12 +5,12 @@ $(document).foundation();
 function searchInputReveal() {
 	$(document).on(
 	    'open.zf.reveal', function () {
-	        $("#searchInput").first().focus();
+	        $("#searchInput").add('#searchRoleInput').focus();
 	    }
 	);
 	$(document).on(
 	    'closed.zf.reveal', function () {
-	        $("#searchInput").val('');
+	        $("#searchInput").add('#searchRoleInput').val('');
 	    }
 	);
 }
@@ -155,3 +155,15 @@ function urlStore() {
 	});
 }
 urlStore();
+
+// SEARCH TOKOQU PRODUCT INPUT FOCUS
+function fullonfocus() {
+	$(".fullonfocus").focus(function(){
+	    $(this).parent().addClass('forcefull');
+	    $('.fullcancel').css('display','');
+	}).blur(function(){
+	    $(this).parent().removeClass('forcefull');
+	    $('.fullcancel').css('display','none');
+	    $(".fullonfocus").val('');
+	});
+}
