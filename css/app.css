@@ -4000,6 +4000,25 @@ table.hover tr:nth-of-type(even):hover {
   max-width: 40rem;
   margin: 0 auto; }
 
+body.is-reveal-open .reveal.full {
+  position: fixed;
+  overflow: auto; }
+
+@media screen and (min-width: 40em) {
+  body.is-reveal-open .page-container {
+    width: 40rem;
+    margin: 0 auto;
+    position: relative; }
+  body.is-reveal-open .off-canvas-content {
+    width: 40rem;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  body.is-reveal-open .reveal.full {
+    left: 50% !important;
+    margin-left: -20rem !important;
+    max-width: 40rem; } }
+
 .fl {
   float: left; }
 
@@ -4649,10 +4668,12 @@ header {
   font-size: 0.8rem;
   float: right; }
 
-.komentar-modal .fblock input {
-  padding: 10px 80px 10px 10px;
-  border-bottom: none;
-  font-size: 1rem; }
+.komentar-modal {
+  padding-bottom: 60px; }
+  .komentar-modal .fblock input {
+    padding: 10px 80px 10px 10px;
+    border-bottom: none;
+    font-size: 1rem; }
 
 .fixed-bottom {
   position: fixed;
