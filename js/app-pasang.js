@@ -12,7 +12,7 @@ function imgUploadPrev() {
 		e.preventDefault();
 	});
 	function hideUpload() {
-		console.log(box.find('.img-block').length);
+		// console.log(box.find('.img-block').length);
 		if(box.find('.img-block').length > 5) {
 			add.css('display','none');
 		}else {
@@ -32,7 +32,7 @@ function imgUploadPrev() {
                     var reader = new FileReader();
                     reader.onload = function (e) {
                     	var idx=count+1;
-                    	if(idx==1){
+                    	if(idx===1){
                         	active = 'is-active';
                         } else {
                         	active = '';
@@ -50,13 +50,13 @@ function imgUploadPrev() {
                     };
                     reader.readAsDataURL(file[0]);
                 } else {
-                    alert(file[0].name + " is not a valid image file.");
+                    window.alert(file[0].name + " is not a valid image file.");
                     return false;
                 }
                 img_count++;
             });
 		} else {
-            alert("This browser does not support HTML5 FileReader.");
+            window.alert("This browser does not support HTML5 FileReader.");
         }
 	});
 	$(w).on('click', '.close-button', function () {
@@ -82,13 +82,7 @@ function productVariant() {
 		hrg 	= w.find('#harga'),
 		hrgDsc 	= w.find('#harga-diskon'),
 		stk 	= w.find('#stockInput'),
-		// vhrg 	= w.find('.varharga'),
-		// vhrgDsc = w.find('.varhargadisk'),
-		// vstk 	= w.find('.varstockInput'),
 		vw 		= w.find('.variant-wrapper'),
-		hrgX 	= hrg.val(),
-		hrgDscX	= hrgDsc.val(),
-		stkX	= stk.val(),
 		count	= vw.children().length;
 	
 	count	= count+1;
@@ -98,9 +92,17 @@ function productVariant() {
 			hrg.add(hrgDsc).add(stk).attr('readonly', true);
 		}else {hrg.add(hrgDsc).add(stk).attr('readonly', false);}
 	}
-	addBtn.on('click tap', function(e){
-		var vField	= 	
-			'<div class="variant-box">' +
+	addBtn.on('click tap', function(e){		
+		var hrgX 	= hrg.val(),
+			hrgDscX	= hrgDsc.val(),
+			stkX	= stk.val(),
+			// vb 		= vw.find('.variant-box'),
+			// vbL		= vb.last(),
+			// hrgV 	= vbL.find('.varharga'),
+			// hrgDscV = vbL.find('.varhargadisk'),
+			// stkV 	= vbL.find('.varstockInput'),
+		 	vField	= 	
+			'<div class="variant-box variant'+count+'">' +
                 '<div class="row">' +
                   '<div class="small-12 column">' +
                     '<div class="var-title"><strong>Varian <span class="idx">'+count+'</span></strong><a class="fr del-var">Hapus</a></div>' +
@@ -129,7 +131,16 @@ function productVariant() {
                 '</div>' +
               '</div>';
         count++;
-		vw.append(vField);
+        vw.append(vField);
+        // if (count > 0) {
+        // 	// hrgV = hrgV.val();
+        // 	// hrgX = hrgV;
+        // 	// console.log(hrgX);
+        // 	vw.append(vField);
+        // }else {
+        // 	vw.append(vField);
+        // }
+		
 		
 		readOnly();
 		e.preventDefault();
