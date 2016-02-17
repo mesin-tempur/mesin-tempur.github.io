@@ -7,42 +7,6 @@
 	margin: 0 auto;
 }
 
-body.is-reveal-open {
-    .reveal.full {position: fixed;overflow:auto;}
-    @include breakpoint(40rem) {
-        .page-container {
-            width: 40rem;
-            margin: 0 auto;
-            position: relative;
-        }
-        .off-canvas-content {
-            width: 40rem;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .reveal.full {
-            left: 50% !important;
-            margin-left: -20rem !important;
-            max-width: 40rem;
-        }
-    }
-}
-
-// @include breakpoint(40rem) {
-//     .page-container {
-//         width: 40rem;
-//         margin: 0 auto;
-//         position: relative;
-//     }
-//     .off-canvas-content {
-//         width: 40rem;
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//     }
-// }
-
 .fl {float: left;}
 .fr {float: right;}
 .fwd {width: 100%;}
@@ -223,8 +187,32 @@ a.back:before {
 	content: "\62";
 }
 body.is-reveal-open {
-    // position: fixed;
+    position: fixed;
+    .reveal.full {position: fixed;overflow:auto;}
+    @include breakpoint(40rem) {
+        left: 50% !important;
+        margin-left: -20rem !important;
+        max-width: 40rem;
+        .page-container {
+            width: 40rem;
+            margin: 0 auto;
+            position: relative;
+        }
+        .off-canvas-content {
+            width: 40rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .reveal.full {
+            left: 50% !important;
+            margin-left: -20rem !important;
+            max-width: 40rem;
+        }
+    }
 }
+
+// REVEAL FIX
 .reveal.full {
     left: 0 !important;
     width: 100% !important;

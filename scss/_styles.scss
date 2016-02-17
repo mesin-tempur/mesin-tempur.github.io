@@ -515,6 +515,93 @@ a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
 	border-radius: 40px;
 	background-color:rgba(255,255,255,.4);
 }
+.align-middle {
+	img {    
+	vertical-align: middle;
+    max-width: 90%;
+    max-height: 100%;
+	}
+	.img-helper {display: inline-block;height: 100%;vertical-align: middle;}
+}
+
+// PASANG IKLAN
+.add-product {
+	.block-header {
+		margin: 20px 0;
+		&:first-child {margin-top: 0;}
+	}
+	.submit-group {margin-top: 60px;}
+	.stock-input {margin-bottom: 20px;}
+}
+.product-img-upload {
+	padding: 0 0 10px 0;
+	.img-block {
+		position: relative;
+		border:1px solid $primary-color;
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		text-align: center;
+		vertical-align: middle;
+		margin: 10px 5px 5px 0;
+		button {
+			top: -10px;
+			right: -5px;
+			background:white;
+			border: 1px solid $primary-color;
+			border-radius: 28px;
+			span {width:26px;height: 26px;display: block;line-height: 26px;}
+		}
+	}
+	.add-one {
+		display: inline-block;
+		border:1px solid $orange;
+		margin: 10px 5px 5px 0;
+		.upload-trigger {
+			width: 78px;
+			height: 78px;
+			padding: 5px;
+			display: block;
+			text-align: center;
+		}
+		img {
+			width: 40px;
+			height: auto;
+		}
+	}
+}
+.input-group {
+	margin-bottom: 0;
+	.input-group-label {background-color: white;}
+}
+.harga-block {
+	.checkbox-styling {
+		margin: 10px 0 0 0;text-align: right;
+		input {margin-bottom: 0;}
+	}
+}
+.variant-wrapper {
+	.variant-box {
+		padding: 10px 0;
+		background-color: $lighter-gray;
+		border-bottom:$code-border;
+		&:first-child {border-top: $code-border;}
+		.var-title {margin: 10px 0 20px;}
+	}
+}
+.reveal.kat-modal {
+    padding: 0;
+    .close-button {font-size: 1rem;color: $primary-color;top: 1rem}
+    span.list {
+        display: block;
+        padding: 10px 15px;
+        border-bottom: 1px solid #cacaca;
+        position: relative;
+    }
+}
+span.selected-cat-parent {
+    color: $dark-gray;  
+}
 
 // 3. FOOTER
 // ---------
