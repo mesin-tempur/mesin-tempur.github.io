@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order List | BelanjaQu</title>
+    <title>Cart | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -115,116 +115,80 @@
             </div>
           </div>
         </header>
-        <div class="section main-content order-page">
-          <!-- <div class="block-header">Order</div> -->
-          <div class="breadcrumbs-nav">
-            <div class="row">
-              <div class="small-12 column">
-                <a href="order.html" class="back">Lihat Seluruh Order</a>
+        <div class="section main-content cart-page">
+          <div class="block-header white-block tac">Transaksi dari 2 Toko</div>
+          <div class="cart-list order-list">
+            <div class="item-group">
+              <div class="block-header">
+                <a href="#">Toko Sepatu Jaya</a>
+                <a href="#" class="fr"><span class="icon ic-chat"></span></a>
               </div>
-            </div>
-          </div>
-          <div class="order-list order-detail">
-            <div class="row">
-              <div class="small-12 column">
-                <div class="order-box">
-                  <div class="list-header clr">
-                    <span class="half">ID: 1000001</span>
-                    <span class="half tar">1/Jan/2016, 21:10</span>
+              <div class="list-body">
+                <div class="item clr">
+                  <div class="img-box fl">
+                    <img src="./dummy/prod-thumb-1.png" alt="">
                   </div>
-                  <div class="list-body">
-                    <div class="item clr">
-                      <div class="img-box fl">
-                        <img src="./dummy/prod-thumb-1.png" alt="">
-                      </div>
-                      <div class="qtt-box fr">
-                        <div class="tac">QTY<br>1</div>
-                      </div>
-                      <div class="desc-box">
-                        <p>
-                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                          Rp 850.000 <br>
-                          Size: 43
-                        </p>
-                      </div>
-                    </div>
-                    <div class="item clr">
-                      <div class="img-box fl">
-                        <img src="./dummy/prod-thumb-1.png" alt="">
-                      </div>
-                      <div class="qtt-box fr">
-                        <div class="tac">QTY<br>1</div>
-                      </div>
-                      <div class="desc-box">
-                        <p>
-                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                          Rp 850.000 <br>
-                          Size: 43
-                        </p>
-                      </div>
-                    </div>
+                  <div class="qtt-box fr with-inc">
+                    <input type="text" class="numbers" value="1"> 
                   </div>
-                  <div class="list-footer">
-                    <div class="table-price clr">
-                      <table width="100%">
-                        <tr>
-                          <td class="gray" align="right">Total Quantity</td>
-                          <td width="120" align="right">2</td>
-                        </tr>
-                        <tr>
-                          <td class="gray" align="right">Total Pembelanjaan (Rp)</td>
-                          <td align="right">1.600.000</td>
-                        </tr>
-                        <tr>
-                          <td class="gray" align="right">JNE Reguler (Rp)</td>
-                          <td align="right">20.000</td>
-                        </tr>
-                        <tr>
-                          <td class="gray" align="right">Voucher</td>
-                          <td align="right">0</td>
-                        </tr>
-                        <tr>
-                          <td align="right"><strong>TOTAL (Rp)</strong></td>
-                          <td align="right"><strong>1.620.000</strong></td>
-                        </tr>
-                      </table>
-                    </div>
-                    <div class="ship-to">
-                      <p class="gray title-top"><small>ALAMAT PENGIRIMAN</small></p>
-                      <p><strong>Rama Ibrahim</strong></p>
-                      <p>Jl. Buah Batu Dalam III No. 22</p>
-                      <p>Kelurahan Cijagra</p>
-                      <p>Kecamatan Lengkong</p>
-                      <p>Kota Bandung 40265</p>
-                      <p>JAWA BARAT</p>
-                      <p>HP: 087724772227</p>
-                    </div>
+                  <div class="desc-box">
+                    <p>
+                      <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                      Rp 850.000 <br>
+                      Size: 43
+                    </p>
+                    <a href="#" class="dblock"><small>Hapus Produk</small></a>
                   </div>
                 </div>
-                <!-- JIKA STATUS NEW ORDER -->
-                <div class="action-box">
-                  <div class="link-group clr">
-                    <div class="half">
-                      <a href="#" class="button expanded bordered-btn white-btn">Tolak</a>
-                    </div>
-                    <div class="half">
-                      <a href="#" class="button expanded">TERIMA</a>
-                    </div>
+                <div class="item clr">
+                  <div class="img-box fl">
+                    <img src="./dummy/prod-thumb-1.png" alt="">
                   </div>
-                </div>
-                <!-- JIKA STATUS PENDING SHIPMENT -->
-                <div class="action-box">
-                  <div class="fblock">
-                    <label for="noresi">Nomor Resi / AWB JNE</label>
-                    <input type="text" id="noresi">
+                  <div class="qtt-box fr with-inc">
+                    <input type="text" class="numbers" value="1"> 
                   </div>
-                  <div class="link-group clr">
-                    <a href="#" class="button expanded">KIRIM NO RESI</a>
+                  <div class="desc-box">
+                    <p>
+                      <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                      Rp 850.000 <br>
+                      Size: 43
+                    </p>
+                    <a href="#" class="dblock"><small>Hapus Produk</small></a>
                   </div>
                 </div>
               </div>
+              <div class="list-footer clr">
+                <a href="checkout-1.html" class="button expanded">Bayar Transaksi Ini</a>
+              </div>
             </div>
-          </div>
+            <div class="item-group">
+              <div class="block-header">
+                <a href="#">Toko Sepatu Jaya</a>
+                <a href="#" class="fr"><span class="icon ic-chat"></span></a>
+              </div>
+              <div class="list-body">
+                <div class="item clr">
+                  <div class="img-box fl">
+                    <img src="./dummy/prod-thumb-1.png" alt="">
+                  </div>
+                  <div class="qtt-box fr with-inc">
+                    <input type="text" class="numbers" value="1"> 
+                  </div>
+                  <div class="desc-box">
+                    <p>
+                      <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                      Rp 850.000 <br>
+                      Size: 43
+                    </p>
+                    <a href="#" class="dblock"><small>Hapus Produk</small></a>
+                  </div>
+                </div>
+              </div>
+              <div class="list-footer clr">
+                <a href="checkout-1.html" class="button expanded">Bayar Transaksi Ini</a>
+              </div>
+            </div>
+          </div> 
         </div>
         <footer>
           <div class="section footer-top">

@@ -402,6 +402,9 @@ header {
 	background:$lighter-gray;
 	padding: 10px 15px;
 	margin-bottom: 10px;
+	&.white-block {
+		background-color:white;
+	}
 }
 .with-button {
 	input {
@@ -632,6 +635,7 @@ span.selected-cat-parent {
 			background-color: $orange;
 		}
 	}
+	.tabs-title>a:focus, .tabs-title>a[aria-selected='true'] {background-color:$primary-color;}
 }
 .order-page {
 	.tabs-panel {
@@ -697,6 +701,46 @@ span.selected-cat-parent {
 	.link-group {
 		margin-top: 20px;
 		.half {padding: 0 5px;}
+	}
+}
+
+// CART PAGE
+.cart-page {
+	.white-block {
+		margin-bottom: 0;
+		padding: 15px;
+		color: $dark-gray;
+	}
+}
+.cart-list{
+	font-size:1rem;
+	.img-box {
+		margin-right: 10px;
+		width: 80px;
+	}
+	.qtt-box{
+		width: 80px;
+		margin-left: 10px;
+		text-align: center;
+		input{
+			width: 40px;margin: 0 auto;
+			text-align: center;
+			height: 35px;
+		}
+		.increment-btn {
+			display: inline-block;
+			width: 40px;
+			height: 25px;
+			text-align: center;
+			line-height: 20px;
+			margin: 0 5px 2px;
+			background-color:$light-gray;
+			bottom: $code-border;
+		}
+	}
+	.desc-box {
+		p {font-size:$font-size-small;}
+
 	}
 }
 

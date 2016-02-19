@@ -167,3 +167,34 @@ function fullonfocus() {
 	    $(".fullonfocus").val('');
 	});
 }
+
+//INCREMENT INPUT BUTTON
+$('.with-inc').prepend('<div class="increment-btn up-num">+</div>');
+$('.with-inc').append('<div class="increment-btn down-num">-</div>');
+
+function updownVal() {
+	var w 		= $('.with-inc'),
+		input 	= w.find('input'),
+		btn 	= w.find('.increment-btn'),
+		up		= w.find('.up-num'),
+		down	= w.find('.down-num');
+
+		btn.on("click tap", function() {
+		 	var elem = $(this);
+		  	var newVal;
+		  	var oldValue = elem.siblings(input).val();
+
+		  	if (elem.text() === "+") {
+			  newVal = parseFloat(oldValue) + 1;
+			} else {
+		   // Don't allow decrementing below zero
+		    if (oldValue > 0) {
+		      newVal = parseFloat(oldValue) - 1;
+		    } else {
+		      newVal = 0;
+		    }
+		  }
+		  elem.siblings("input").val(newVal);
+		});
+}
+updownVal();
