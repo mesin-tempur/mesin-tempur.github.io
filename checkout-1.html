@@ -115,90 +115,72 @@
             </div>
           </div>
         </header>
-        <div class="section main-content cart-page">
-          <div class="block-header white-block tac">Transaksi dari 2 Toko</div>
-          <div class="cart-list order-list">
+        <div class="section main-content checkout-page">
+          <div class="block-header white-block tac">STEP 1</div>
+          <div class="alamat-pengiriman">
             <div class="item-group">
-              <div class="block-header">
-                <a href="#">Toko Sepatu Jaya</a>
-                <a href="#" class="fr"><span class="icon ic-chat"></span></a>
-              </div>
-              <div class="list-body">
-                <div class="item clr">
-                  <div class="img-box fl">
-                    <img src="./dummy/prod-thumb-1.png" alt="">
+              <div class="block-header">Alamat Pengiriman</div>
+              <div class="row">
+                <div class="small-12 column address-choose">
+                  <div class="fblock input-radio address-block">
+                    <input type="radio" name="address" value="1" id="address1" >
+                    <label for="address1">
+                      <p><strong>Rama Ibrahim</strong>
+                      <br>Jl. Buah Batu Dalam III No. 22
+                      <br>Kelurahan Cijagra, Kecamatan Lengkong
+                      <br>Kota Bandung 40265, JAWA BARAT
+                      <br>HP: 087724772227</p>
+                    </label>
                   </div>
-                  <div class="qtt-box fr with-inc">
-                    <input type="number" class="numbers" value="1"> 
+                  <div class="fblock input-radio address-block">
+                    <input type="radio" name="address" value="2" id="address2" >
+                    <label for="address2">
+                      <p><strong>Rama Ibrahim</strong>
+                      <br>Jl. Buah Batu Dalam III No. 22
+                      <br>Kelurahan Cijagra, Kecamatan Lengkong
+                      <br>Kota Bandung 40265, JAWA BARAT
+                      <br>HP: 087724772227</p>
+                    </label>
                   </div>
-                  <div class="desc-box">
-                    <p>
-                      <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                      Rp 850.000 <br>
-                      Size: 43
-                    </p>
-                    <a href="#" class="dblock"><small>Hapus Produk</small></a>
-                  </div>
+                  <div class="fblock"><a href="akun-alamat-edit.html"><small>TAMBAH ALAMAT BARU</small></a></div>
                 </div>
-                <div class="item clr">
-                  <div class="img-box fl">
-                    <img src="./dummy/prod-thumb-1.png" alt="">
-                  </div>
-                  <div class="qtt-box fr with-inc">
-                    <input type="number" class="numbers" value="1"> 
-                  </div>
-                  <div class="desc-box">
-                    <p>
-                      <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                      Rp 850.000 <br>
-                      Size: 41
-                    </p>
-                    <a href="#" class="dblock"><small>Hapus Produk</small></a>
-                  </div>
-                </div>
-              </div>
-              <div class="list-footer clr">
-                <div class="total-sum">
-                  <strong>TOTAL</strong>
-                  <span class="gray"><small>sebelum ongkir</small></span>
-                  <span class="fr"><small>Rp</small> <strong>1.700.000</strong></span>
-                </div>
-                <a href="checkout-1.html" class="button expanded">Bayar Transaksi Ini</a>
-              </div>
-            </div>
-            <div class="item-group">
-              <div class="block-header">
-                <a href="#">Toko Subur</a>
-                <a href="#" class="fr"><span class="icon ic-chat"></span></a>
-              </div>
-              <div class="list-body">
-                <div class="item clr">
-                  <div class="img-box fl">
-                    <img src="./dummy/prod-thumb-1.png" alt="">
-                  </div>
-                  <div class="qtt-box fr with-inc">
-                    <input type="number" class="numbers" value="1"> 
-                  </div>
-                  <div class="desc-box">
-                    <p>
-                      <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                      Rp 850.000 <br>
-                      Size: 43
-                    </p>
-                    <a href="#" class="dblock"><small>Hapus Produk</small></a>
-                  </div>
-                </div>
-              </div>
-              <div class="list-footer clr">
-                <div class="total-sum">
-                  <strong>TOTAL</strong>
-                  <span class="gray"><small>sebelum ongkir</small></span>
-                  <span class="fr"><small>Rp</small> <strong>850.000</strong></span>
-                </div>
-                <a href="checkout-1.html" class="button expanded">Bayar Transaksi Ini</a>
               </div>
             </div>
           </div> 
+          <div class="jasa-pengiriman">
+            <div class="item-group">
+              <div class="block-header">Jasa Pengiriman</div>
+              <div class="row">
+                <div class="small-12 column address-choose">
+                  <div class="fblock input-radio address-block">
+                    <input type="radio" name="kurir" value="JNEReg" id="kurirJNEReg" >
+                    <label for="kurirJNEReg">
+                      <span><strong>JNE Reguler</strong></span>
+                      <span class="gray smaller-text">3-5 HARI KERJA</span>
+                      <span class="fr"><strong>Rp 12.000</strong></span>
+                    </label>
+                  </div>
+                  <div class="fblock input-radio address-block">
+                    <input type="radio" name="kurir" value="JNEYes" id="kurirJNEYes" >
+                    <label for="kurirJNEYes">
+                      <span><strong>JNE YES</strong></span>
+                      <span class="gray smaller-text">1 HARI KERJA</span>
+                      <span class="fr"><strong>Rp 18.000</strong></span>
+                    </label>
+                  </div>
+                  <div class="fblock fr">
+                    <input type="checkbox" id="kurir-asuransi">
+                    <label for="kurir-asuransi">Gunakan Asuransi</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 column">
+              <a href="checkout-2.html" class="button expanded">LANJUTKAN</a>
+            </div>
+          </div>
         </div>
         <footer>
           <div class="section footer-top">

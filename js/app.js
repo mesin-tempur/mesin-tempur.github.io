@@ -168,33 +168,60 @@ function fullonfocus() {
 	});
 }
 
-//INCREMENT INPUT BUTTON
-$('.with-inc').prepend('<div class="increment-btn up-num">+</div>');
-$('.with-inc').append('<div class="increment-btn down-num">-</div>');
+$(function() {
 
-function updownVal() {
-	var w 		= $('.with-inc'),
-		input 	= w.find('input'),
-		btn 	= w.find('.increment-btn'),
-		up		= w.find('.up-num'),
-		down	= w.find('.down-num');
+  	$('.with-inc').prepend('<div class="increment-btn up-num">+</div>');
+	$('.with-inc').append('<div class="increment-btn down-num">-</div>');
 
-		btn.on("click tap", function() {
-		 	var elem = $(this);
-		  	var newVal;
-		  	var oldValue = elem.siblings(input).val();
+  	$(".increment-btn").on("click", function() {
 
-		  	if (elem.text() === "+") {
-			  newVal = parseFloat(oldValue) + 1;
-			} else {
-		   // Don't allow decrementing below zero
-		    if (oldValue > 0) {
-		      newVal = parseFloat(oldValue) - 1;
-		    } else {
-		      newVal = 0;
-		    }
-		  }
-		  elem.siblings("input").val(newVal);
-		});
-}
-updownVal();
+    var $button = $(this);
+    var oldValue = $button.parent().find("input").val();
+
+    if ($button.text() == "+") {
+  	  var newVal = parseFloat(oldValue) + 1;
+  	} else {
+	   // Don't allow decrementing below zero
+      if (oldValue > 0) {
+        var newVal = parseFloat(oldValue) - 1;
+	    } else {
+        newVal = 0;
+      }
+	}
+
+    $button.parent().find("input").val(newVal);
+
+  });
+
+});
+
+// $(function() {
+// //INCREMENT INPUT BUTTON
+// 	$('.with-inc').prepend('<div class="increment-btn up-num">+</div>');
+// 	$('.with-inc').append('<div class="increment-btn down-num">-</div>');
+
+// 	var w 		= $('.with-inc'),
+// 		input 	= w.find('input'),
+// 		btn 	= w.find('.increment-btn'),
+// 		up		= w.find('.up-num'),
+// 		down	= w.find('.down-num');
+
+// 		btn.on("click tap", function() {
+// 		 	var elem = $(this);
+// 		  	// var newVal;
+// 		  	var oldValue = elem.siblings(input).val();
+
+// 		  	if (elem.text() === "+") {
+// 			  var newVal = parseFloat(oldValue) + 1;
+// 			} else {
+// 		   		// Don't allow decrementing below zero
+// 		    	if (oldValue > 0) {
+// 			      var newVal = parseFloat(oldValue) - 1;
+// 			    } else {
+// 			      newVal = 0;
+// 			    }
+// 			  }
+// 		  elem.siblings("input").val(newVal);
+// 		});
+// });
+

@@ -54,6 +54,11 @@ select, input {border-radius: 4px;}
 textarea {resize: none;}
 select,[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
 margin-bottom: 0;}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 // MARGIN
 .mb10 {margin-bottom: 10px;}
 .mb15 {margin-bottom: 15px;}

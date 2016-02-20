@@ -742,7 +742,20 @@ span.selected-cat-parent {
 		p {font-size:$font-size-small;}
 
 	}
+	.list-footer {
+		.total-sum {padding: 10px 0;margin-bottom: 10px;border-bottom: $code-border;}
+	}
 }
+
+// CHECKOUT PAGE
+
+.input-radio {
+	position: relative;
+	input {position: absolute;top: 50%;margin-top: -10px;}
+	label {padding: 0 10px 0 20px;width: 100%;}
+	.input-wrap {position: relative;display: inline-block;}
+}
+.smaller-text {font-size:$font-size-smaller;}
 
 // 3. FOOTER
 // ---------
