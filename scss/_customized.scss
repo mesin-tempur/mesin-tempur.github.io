@@ -218,6 +218,13 @@ body.is-reveal-open {
         }
     }
 }
+.off-canvas.position-left {
+    max-height: none;
+    overflow-y: visible;
+}
+.off-canvas-content, .off-canvas-content {
+    min-height: 100vh;
+}
 
 // REVEAL FIX
 .reveal.full {
