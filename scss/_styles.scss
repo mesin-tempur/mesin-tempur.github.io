@@ -927,6 +927,11 @@ footer {
 				vertical-align: top;
 				margin-top: 9px;
 			}
+			&.l-paytren {
+				background-image: url(../images/paytren.png);
+				background-size: 40px 40px;
+				background-repeat: no-repeat;
+			}
 		}
 		.under {color:$dark-gray;font-size: 0.8rem;}
 		.with-info {}
