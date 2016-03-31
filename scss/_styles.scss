@@ -11,7 +11,6 @@ header {
 	background:$primary-color;
 	padding: 10px 0;
 	a {color:white;}
-	.ic-cart {margin-right: 15px;}
 	.ic-hamburger,  .ic-cart {font-size: 1.5rem;}
 	.ic-search {font-size: 1.3rem;}
 	.hamburger {
@@ -995,3 +994,39 @@ footer {
 .close-button {z-index: 10;}
 .with-right-arrow {position: relative;padding-right: 20px;}
 .with-right-arrow:after {font-size: 0.9rem;vertical-align: middle;position: absolute;right: 0px;top: 50%;margin-top: -6px;}
+
+// NOTIFICATION
+
+.counter-notif {
+	width:20px;
+	height:20px;
+	line-height: 20px;
+	border-radius: 22px;
+	color:white;
+	background-color:$orange;
+	position: absolute;right: -10px;top:-5px;
+	text-align: center;
+	font-size: .75rem;
+}
+.notif-list {
+	li {
+		position: relative;
+		a {color: $dark-gray;}
+		&.unread {
+			a {color: $black;}
+		}
+	}
+	.text-notif {
+		font-size: $font-size-small;
+		padding-right: 50px;
+		.notif-title {font-weight: bold;}
+		p {margin-bottom: 5px;}
+	}
+	.time-notif {
+		font-size: $font-size-small;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+		text-align: right;
+	}
+}
