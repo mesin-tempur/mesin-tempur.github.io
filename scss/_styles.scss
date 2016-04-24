@@ -818,6 +818,17 @@ span.selected-cat-parent {
 .smaller-text {font-size:$font-size-smaller;}
 .invoice-sum {padding:10px 5px;margin-top: 20px;margin-bottom: 20px;}
 
+.bordered-row {
+	margin:0;
+	padding: 0;
+	.row-item {
+		display: block;padding: 5px 15px;color: $black;border-bottom: $code-border;position: relative;
+	}
+}
+.pay-condition {
+	font-size: $font-size-small;
+	p {margin-bottom: 5px;}
+}
 .order-modal {
 	padding-top: 50px;
 }
@@ -833,6 +844,13 @@ span.selected-cat-parent {
 	padding: 10px 0;
 	.button{margin-bottom: 0;}
 }
+.item-group {margin-bottom: 20px;}
+.message-box {
+	padding: 20px 0;
+	background:$lighter-gray;
+	p {margin-bottom: 5px;font-size: $font-size-small;}
+}
+.bank-detail {font-size: $font-size-small;}
 
 // 3. FOOTER
 // ---------

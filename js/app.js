@@ -195,6 +195,12 @@ $(function() {
 
 });
 
+// SHOW VOUCHER CODE
+
+$('#kodeVoucher').change(function(){
+	$('#voucherInput').slideToggle();
+});
+
 // $(function() {
 // //INCREMENT INPUT BUTTON
 // 	$('.with-inc').prepend('<div class="increment-btn up-num">+</div>');
