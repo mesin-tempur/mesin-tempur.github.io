@@ -99,7 +99,8 @@ header {
 	}
 	span {color: $primary-color;}
 	span.striked {font-size: $font-size-smaller;}
-	.item {margin: 0 2px;}
+	span.discount {font-size: $font-size-smaller;}
+	.item {margin: 0 2px;position: relative;}
 }
 .product-price {
 	span.striked {color: $dark-gray;text-decoration:line-through;}
@@ -114,6 +115,8 @@ header {
 	}
 	.product-price {
 		span {display: block;}
+		span.striked {display: inline;}
+		span.discount {display: inline;}
 	}
 	.item {
 		display: inline-block;
@@ -1091,5 +1094,27 @@ footer {
 		right: 15px;
 		top: 10px;
 		text-align: right;
+	}
+}
+
+.stickers {
+	$sticker-rad:40px;
+	width: $sticker-rad;
+	height: $sticker-rad;
+	@include border-radius($sticker-rad);
+	display: block;
+	position: absolute;
+	line-height: $sticker-rad;
+	text-align: center;
+	top: -5px;
+	right: -5px;
+	font-size: $font-size-smaller;
+	&.s-hot {background-color:#C71D02;color:white}
+	&.s-disc {background-color:#C71D02;color:white}
+}
+.slick-slide {
+	.stickers {
+		top: 5px;
+		right: 5px;
 	}
 }
