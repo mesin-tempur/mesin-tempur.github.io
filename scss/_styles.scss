@@ -77,19 +77,55 @@ header {
 // 2. Main Content
 // ---------
 
+.main-banners {
+	margin-bottom: 20px;
+}
 .main-content {
 	
 }
 .content-marketing {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 .cm-title {
 	padding: 10px 15px;
 	margin-bottom: 10px;
-	border-top: $code-border;
-	border-bottom: $code-border;
 	font-weight: bold;
-	a {font-weight: normal;}
+	height: 44px;
+	overflow: hidden;
+	border-bottom:1px solid $primary-color;
+	position: relative;
+	span {
+		background:$primary-color;
+		color:white;
+		display: inline-block;
+		height: 44px;
+		line-height: 44px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding-left: 20px;
+		padding-right: 20px;
+		&:after {
+			content: "";
+			height: 44px;
+			width: 40px;
+			display:inline-block;
+			position: absolute;
+			right: -40px;
+		    border-left: 30px solid $primary-color;
+		    border-top: 45px solid transparent;
+		}
+	}
+	a {
+		color:$primary-color;
+		height: 44px;
+		line-height: 44px;
+		padding: 0 15px;
+		position: absolute;
+		right: 0;
+		top:0;
+		text-decoration: underline;
+	}
 }
 .product-listing{
 	.product-title {
@@ -149,6 +185,39 @@ header {
 	border-top: $code-border;
 	a {display: inline-block;padding: 10px 5px;margin-right: 5px;font-size: $font-size-small;}
 }
+
+.blocked-content {
+	.cm-title {
+		border-top: 1px solid #CAD6D5;
+		border-bottom: 1px solid #CAD6D5;
+		background-color: #D1E2E1;
+	}
+}
+
+.ngabuburit {
+	.cm-title {
+		$ngabuburit-theme-col:#f05a80;
+		background:white;
+		border-bottom: 1px solid $ngabuburit-theme-col;
+		span {
+			background:$ngabuburit-theme-col;
+			&:after {
+				content: "";
+				height: 44px;
+				width: 40px;
+				display:inline-block;
+				position: absolute;
+				right: -40px;
+			    border-left: 30px solid $ngabuburit-theme-col;
+			    border-top: 45px solid transparent;
+			}
+		}
+		a {
+			color:$ngabuburit-theme-col;
+		}
+	}
+}
+
 // listing
 .section-block {
 	padding: 20px 0;
@@ -300,12 +369,22 @@ header {
 	border-bottom: 1px solid $light-gray;
 	.info {display: inline-block;vertical-align: middle;}
 	.store-name {font-weight: bold;}
-	.store-loc {color:$dark-gray}
+	.store-loc {
+		color:$dark-gray;
+		&:before {
+			color: $primary-color
+		}
+	}
 	.store-contact {
 		margin-top: 20px;
 		padding: 10px;
 		border-radius: 10px;
-		border: $code-border
+		border: $code-border;
+		span {
+			display: block;
+			height: 28px;
+			&:before {font-size: 26px;}
+		}
 	}
 }
 .pdp-comment {
@@ -495,9 +574,15 @@ header {
 
 // Push Category
 .cat-list-home {
+	.cm-title {
+		a {color:#A75300;text-decoration: underline;}
+	}
 	ul {
 		li {
-			a {display: block;padding: 10px 15px;color: $black;font-size:$font-size-small;}
+			a {
+				display: block;padding: 10px 15px;color: $black;font-size:$font-size-small;
+				border-bottom: $code-border;
+			}
 		}
 	}
 }
@@ -961,7 +1046,12 @@ footer {
 	text-align: center;
 	padding: 10px 0;
 	border-top: $code-border;
-	border-bottom: $code-border;
+	// border-bottom: $code-border;
+	.icon:before {
+		font-size: 24px;margin-bottom: -10px;
+		margin: 5px 5px 0 0;
+		display: inline-block;
+	}
 	a {color:$primary-color;}
 }
 .ava {
@@ -1062,6 +1152,15 @@ footer {
 //     background:white;
 // }
 // NOTIFICATION
+
+// JPANEL MENU
+.jPanelMenu-menu, .jPanelMenu-menu2 {
+	top: 0;
+	min-height: 100vh;
+}
+.jPanelMenu-panel {
+	
+}
 
 .counter-notif {
 	width:20px;
