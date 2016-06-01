@@ -371,8 +371,16 @@ header {
 	.store-name {font-weight: bold;}
 	.store-loc {
 		color:$dark-gray;
-		&:before {
-			color: $primary-color
+		span {
+			margin-top: 5px;
+			&:before {
+				color: $primary-color;
+				font-size: 17px;
+				display: inline-block;
+				margin-top: -5px;
+    			vertical-align: middle;
+    			margin-right: 5px;
+			}
 		}
 	}
 	.store-contact {
@@ -758,6 +766,13 @@ a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
 }
 span.selected-cat-parent {
     color: $dark-gray;  
+}
+
+// SUCCESS PAGE
+.success-message {
+	text-align: center;
+	padding: 20px 0px;
+	h3 {margin-top: 20px;font-weight: bold;}
 }
 
 // ORDER LIST
@@ -1216,4 +1231,15 @@ footer {
 		top: 5px;
 		right: 5px;
 	}
+}
+
+.underm {
+	padding: 20px;
+	background:transparent url('../images/bg-underm.png') center bottom no-repeat;
+	min-height: 600px;
+	.img-logo {
+		width: 100%;
+		text-align: center;
+	}
+	h3 {text-align: center;margin-top: 10px;font-weight: bold;}
 }
