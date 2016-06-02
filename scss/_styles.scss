@@ -197,23 +197,76 @@ header {
 .ngabuburit {
 	.cm-title {
 		$ngabuburit-theme-col:#f05a80;
-		background:white;
 		border-bottom: 1px solid $ngabuburit-theme-col;
 		span {
 			background:$ngabuburit-theme-col;
 			&:after {
-				content: "";
-				height: 44px;
-				width: 40px;
-				display:inline-block;
-				position: absolute;
-				right: -40px;
 			    border-left: 30px solid $ngabuburit-theme-col;
-			    border-top: 45px solid transparent;
 			}
 		}
 		a {
 			color:$ngabuburit-theme-col;
+		}
+	}
+}
+
+.cm-hotlist {
+	.cm-title {
+		$hot-theme-col:#AD2B16;
+		border-bottom: 1px solid $hot-theme-col;
+		span {
+			background:$hot-theme-col;
+			&:after {
+			    border-left: 30px solid $hot-theme-col;
+			}
+		}
+		a {
+			color:$hot-theme-col;
+		}
+	}
+}
+.cm-terbaru {
+	.cm-title {
+		$terbaru-theme-col:$primary-color;
+		border-bottom: 1px solid $terbaru-theme-col;
+		span {
+			background:$terbaru-theme-col;
+			&:after {
+			    border-left: 30px solid $terbaru-theme-col;
+			}
+		}
+		a {
+			color:$terbaru-theme-col;
+		}
+	}
+}
+.cm-promo {
+	.cm-title {
+		$promo-theme-col:#fc8e7c;
+		border-bottom: 1px solid $promo-theme-col;
+		span {
+			background:$promo-theme-col;
+			&:after {
+			    border-left: 30px solid $promo-theme-col;
+			}
+		}
+		a {
+			color:$promo-theme-col;
+		}
+	}
+}
+.cm-cashback {
+	.cm-title {
+		$cashback-theme-col:#7a3563;
+		border-bottom: 1px solid $cashback-theme-col;
+		span {
+			background:$cashback-theme-col;
+			&:after {
+			    border-left: 30px solid $cashback-theme-col;
+			}
+		}
+		a {
+			color:$cashback-theme-col;
 		}
 	}
 }
@@ -1225,7 +1278,13 @@ footer {
 	font-size: $font-size-smaller;
 	&.s-hot {background-color:#C71D02;color:white}
 	&.s-disc {background-color:#C71D02;color:white}
+	&.s-ngabuburit {
+		background:transparent url('../images/ic-ngabuburit.png') left top no-repeat;
+		background-size: 40px 40px;
+	}
+
 }
+
 .slick-slide {
 	.stickers {
 		top: 5px;
