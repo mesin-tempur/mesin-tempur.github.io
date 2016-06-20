@@ -1008,6 +1008,13 @@ span.selected-cat-parent {
 }
 .bank-detail {font-size: $font-size-small;}
 
+// STATIC PAGE
+.static-page {
+	ul {
+		li {list-style-type: disc;margin-left: 20px;}
+	}
+}
+
 // 3. FOOTER
 // ---------
 
