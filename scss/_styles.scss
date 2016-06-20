@@ -94,6 +94,7 @@ header {
 	overflow: hidden;
 	border-bottom:1px solid $primary-color;
 	position: relative;
+	width: 100%;
 	span {
 		background:$primary-color;
 		color:white;
@@ -195,18 +196,37 @@ header {
 }
 
 .ngabuburit {
-	.cm-title {
-		$ngabuburit-theme-col:#f05a80;
-		border-bottom: 1px solid $ngabuburit-theme-col;
-		span {
-			background:$ngabuburit-theme-col;
-			&:after {
-			    border-left: 30px solid $ngabuburit-theme-col;
-			}
+	$ngabuburit-theme-col:#139179;
+	.cm-header {
+		position: relative;
+		height: 100px;
+		background:$ngabuburit-theme-col;
+		margin-bottom: 10px;
+		.cm-section-title {
+			position: absolute;
+			left: 20px;
+			bottom:20px;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
 		}
-		a {
-			color:$ngabuburit-theme-col;
+		.mosq-bg {
+			height: 112px;
+			width: 120px;
+			background:url(../images/bg-ngabuburit.png) no-repeat;
+			position: absolute;
+			bottom: 0;
+			right: 10px;
 		}
+	}
+	.cm-footer {
+		height: 80px;
+		margin-top: 10px;
+		background:$ngabuburit-theme-col;
+		text-align:center;
+		position: relative;
+		a {color: white;padding: 5px 15px;display: inline-block;margin-top: 10px;text-decoration: underline;}
+		svg {position: absolute;bottom: 0px;left: 0;}
 	}
 }
 
