@@ -78,10 +78,50 @@ header {
 // ---------
 
 .main-banners {
-	margin-bottom: 20px;
+	// margin-bottom: 20px;
 }
 .main-content {
-	
+	background:transparent url('image.png') left top no-repeat;
+}
+.bq-infographic {
+	background:#f5f5f5;
+	text-align: center;
+	padding: 20px 0;
+	.mobile-infographic {
+		padding: 15px 10px;
+		background:white;
+		@include box-shadow (0,1px,8px,rgba(0,0,0,.1));
+	}
+	.items {
+		display: inline-block;
+		vertical-align: top;
+		width: 32%;
+		font-size: 13px;
+		padding: 0 1%;
+		// margin: 0 1%;
+		border-right: 1px solid #f8f8f8;
+		&:last-child{border: none;}
+		.sprites {
+			width: 50px;
+			height: 50px;
+			display: block;
+			margin: 0 auto;
+		}
+		p {color: #676767;margin: 10px 0 0;line-height: 1.5;height: 38px;}
+	}
+}
+.mobile-top-banner, .mobile-inside-banner {
+	background:#f5f5f5;
+}
+.full-banner {
+	padding: 5px;
+}
+.halfsplit-banner {
+	a {display: block;width: 50%;float: left;padding: 5px;}
+}
+.mobile-inside-banner {
+	padding: 20px 5px;
+	margin: 10px 0 0 0;
 }
 .content-marketing {
 	margin-bottom: 20px;
@@ -127,6 +167,55 @@ header {
 		top:0;
 		text-decoration: underline;
 	}
+}
+.fancy-title {
+	padding: 10px 15px;
+	margin: 0 0 10px 0;
+	font-size: 28px;
+	color:#5f5f5f;
+	letter-spacing: -2px;
+	text-align: center;
+	margin-left: -40px;
+	background:whitesmoke;
+	.word-wrapper {display: inline-block;position: relative;}
+	.ft-1 {
+		width: 114px;
+		height: 36px;
+		background:whitesmoke;
+		.text {position: absolute;z-index: 101;top: -10px;}
+		&:after {
+			content: "";
+			position: absolute;
+			top: -7px;
+			right: -41px;
+			border-left: 42px solid whitesmoke;
+			border-bottom: 50px solid transparent;
+			z-index: 100;
+		}
+	}
+	.ft-2 {
+		font-weight: bold;
+		margin-left: 6px;
+		color:$primary-color;
+		top: 2px;
+	}
+	.line {
+		position: absolute;width: 1px;background:#c7c7c7;height: 60px;right: -17px;top: 50%;margin-top: -25px;
+		-ms-transform: rotate(40deg); /* IE 9 */
+    	-webkit-transform: rotate(40deg); /* Safari */
+    	transform: rotate(40deg);
+	}
+}
+.under-title {
+	padding: 10px 15px;
+	background-color: whitesmoke;
+	text-align: center;
+	span {
+		letter-spacing: -1px;
+		font-size: 24px;
+		&:first-child {}
+		&:last-child {font-weight: bold;margin-left: -2px;}
+	}	
 }
 .product-listing{
 	.product-title {
@@ -641,6 +730,31 @@ header {
 	padding: 5px;
 }
 
+// LOGIN PAGE
+.login-separator {
+	padding: 10px 20px 20px 20px;
+	text-align: center;
+	position: relative;
+	span {display: inline-block;background:white;position: relative;z-index: 100;padding: 0 20px;}
+	&:after {
+		content:"";
+		width: 100%;
+		height: 1px;
+		display: block;background:#ededed;
+		position: absolute;
+		top: 50%;
+		margin-top: -5px;
+	}
+}
+.other-login-method {
+	a {margin: 0 0 10px;}
+	[class^="ic-"] {font-size: 24px;position: absolute;left: 0;top: 50%;margin-top:-12px;}
+	.text {display: inline-block;position: relative;padding-left: 30px;}
+	.btn-fb {background-color:rgb(78, 101, 169);}
+	.btn-daftar {background-color:$yellow;color: $black}
+	.btn-paytren {background-color:$orange;}
+}
+
 // DOmpetqu
 .saldo-sum {
 	padding: 20px 0;
@@ -658,11 +772,26 @@ header {
 	.cm-title {
 		a {color:#A75300;text-decoration: underline;}
 	}
+	.under-title {padding-top: 20px;}
+	.see-all {padding: 5px 20px;display: block;text-align: center;}
 	ul {
+		margin-top: 25px;
+		padding: 10px 15px 0 ;
 		li {
+			float:left;
+			width: 33%;
+			text-align: center;
+			border-right: 1px solid whitesmoke;
+			&:nth-child(3n+3) {border-right: none;}
+			&:nth-child(-n+3) {border-bottom: 1px solid whitesmoke;}
 			a {
-				display: block;padding: 10px 15px;color: $black;font-size:$font-size-small;
-				border-bottom: $code-border;
+				padding: 10px 5px 5px 5px;
+				display: block;
+				.icon {
+					width: 50px;height: 50px;display: block;margin: 0 auto;margin-bottom: 10px;
+					i {font-size: 42px;color: $primary-color;}
+				}
+				p {margin: 10px 0 5px;line-height: 1.5;color: $black;height: 48px;}
 			}
 		}
 	}
@@ -1044,6 +1173,18 @@ footer {
 .footer-top {
 	padding: 20px 0;
 	background:$light-gray;
+	text-align: center;
+	a {padding: 20px;}
+	span {display: inline-block;margin-right: 2px;margin-bottom: -2px;vertical-align: middle;}
+	span.ic-mail {
+		font-size: 20px;
+		line-height: 32px;
+		margin-bottom: -6px;
+		border:1px solid $primary-color;
+		width: 32px;
+		height: 32px;
+		@include border-radius(32px);
+	}
 }
 .footer-bottom {
 	padding: 20px 0;
