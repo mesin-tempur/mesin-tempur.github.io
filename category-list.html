@@ -4,251 +4,1099 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semua Kategori | BelanjaQu</title>
-    <link rel="stylesheet" href="css/app.css">
+    <meta http-equiv="Content-Language" content="id" />
+    
+    <!--<meta name="author" content="Deden Ari Januar">-->
+    <meta name="keywords" content="Belanjaqu, Belanja, belanja online, belanja murah,">
+    <meta name="robots" content="all">
+    
+      <meta property="og:title" content="Belanjaqu.co.id" />
+      <meta property="og:description" content="Belanjaqu, Belanja, belanja online" />
+      <meta name="description" content="Belanjaqu, Belanja, belanja online, belanja murah,">
+	    <meta property="og:image" content="http://belanjaqu.co.id/assets/belanjaqu.png" />
+      <link rel="image_src" href="http://belanjaqu.co.id/assets/belanjaqu.png"/>
+      <title>BelanjaQu</title>
+    
+    <meta name="google-site-verification" content="3V8IjS94kkN6uJHUPXubIDvhy9GNLlJdO5oDDBrEnZs" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-e12c0b981a294511e46986198680ff35821c7eb5495c14f9a6bfc78ee8a33db5.ico" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="XeYG6DvZcVWsATIduFMpOPEr20Sp7l3HPuDwH+HE8lkWIy+dWm+FHlTQxrK8kw+wBYBQMwn9QJ1AKxV5EvTVPw==" />
+    <meta name="action-cable-url" content="/cable" />
+    <link rel="stylesheet" media="all" href="/assets/application-6ed1f78302fc5a36824417d12a98ba90997d783ebb5fa2d46cda76ede64374d8.css" />
+    <link rel="stylesheet" media="all" href="./css/app.css" />
+    <style>
+      .flash-message {
+    background: gainsboro;
+    padding: 10px;
+    opacity: 0.82;
+}
+
+.logo-box {
+    float: right;
+    position: relative;
+    top: 40px;
+}
+
+    </style>
   </head>
   <body>
   <div class="off-canvas-wrapper">
     <div class="page-container off-canvas-wrapper-inner" data-off-canvas-wrapper>
       <!-- SIDE MENU -->
       <div class="off-canvas position-left side-canvas-menu" id="off-canvas-menu" data-off-canvas="qlsouv-off-canvas">
-        <div class="top-user">
-          <a href="akun.html" class="clr">
-            <div class="ava"><img src="./dummy/ava.jpg" alt=""></div>
-            <div class="menu-list-title"><span>Halo<strong> Neng Geulis</strong></span></div>
-          </a>
-        </div>
-        <div class="row">
-          <div class="small-12 column">
-            <ul class="side-menu-list">
-              <li class="with-info">
-                <a href="produkqu.html">
-                  <div class="icon ic-product"></div>
-                  <div class="menu-list-title">
-                    <span class="menu-item">ProdukQu</span>
-                    <span class="under">0 Produk</span>
-                  </div>
-                </a>
-              </li>
-              <li class="with-info">
-                <a href="order.html">
-                  <div class="icon ic-order"></div>
-                  <div class="menu-list-title">
-                    <span class="menu-item">Order</span>
-                    <span class="under">0 Order baru</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="kelola-toko.html">
-                  <div class="icon ic-store"></div>
-                  <div class="menu-list-title">
-                    <span class="menu-item">Kelola Toko</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="dompetqu.html">
-                  <div class="icon ic-wallet"></div>
-                  <div class="menu-list-title">
-                    <span class="menu-item">DompetQu</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-            <ul class="side-menu-list side-menu-second">
-              <li>
-                <a href="cart.html">
-                  <div class="icon ic-cart"></div>
-                  <div class="menu-list-title">
-                    <span class="menu-item">Keranjang Belanja</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="category-list.html">
-                  <div class="icon ic-category"></div>
-                  <div class="menu-list-title">
-                    <span class="menu-item">Semua Kategori</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="shopping-history.html">
-                  <div class="icon ic-list"></div>
-                  <div class="menu-list-title">
-                    <span class="menu-item">Riwayat Belanja</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="akun.html">
-                  <div class="icon ic-account"></div>
-                  <div class="menu-list-title">
-                    <span class="menu-item">Akun</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="side-link-main">
-          <a href="buka-toko.html">
-            <div class="icon ic-store"></div>
+  <div class="row">
+    <div class="small-12 column">
+      <ul class="side-menu-list">
+        <li>
+          <a href="/home/semua-kategori">
+            <div class="icon ic-category"></div>
             <div class="menu-list-title">
-              <span>BUKA TOKO</span>
+              <span class="menu-item">Semua Kategori</span>
             </div>
           </a>
-        </div>
-      </div>
+        </li>
+        <li>
+        <li class="with-info">
+          <a href="/home/login">
+            <div class="icon ic-account"></div>
+            <div class="menu-list-title">
+              <span class="menu-item">Login</span>
+            </div>
+          </a>
+        </li>
+        <li class="with-info">
+          <a href="/home/daftar">
+            <div class="icon ic-sign"></div>
+            <div class="menu-list-title">
+              <span class="menu-item">Daftar</span>
+            </div>
+          </a>
+        </li>
+        <li class="with-info">
+          <a href="/auth/facebook">
+            <div class="icon ic-fb"></div>
+            <div class="menu-list-title">
+              <span class="menu-item">Login via Facebook</span>
+            </div>
+          </a>
+        </li>
+        <li class="with-info">
+          <a href="/home/login_with_paytren">
+            <div class="icon l-paytren"></div>
+            <div class="menu-list-title">
+              <span class="menu-item">Login via Paytren</span>
+            </div>
+          </a>
+        </li>
+        <!--
+        <li class="with-info">
+          <a href="/home/lupa-katasandi">
+            <div class="icon ic-account"></div>
+            <div class="menu-list-title">
+              <span class="menu-item">Lupa Kata Sandi</span>
+            </div>
+          </a>
+        </li>
+        -->
+      </ul>
+    </div>
+  </div>
+</div>
+
       <!-- END SIDE MENU -->
       <div class="off-canvas-content" data-off-canvas-content>
         <header>
-          <div class="row">
-            <div class="xsmall-12 small-8 columns">
-            <a href="#" class="menu-button fl mr10" data-toggle="off-canvas-menu" aria-expanded="false" aria-controls="off-canvas-menu"><span class="icon ic-hamburger"></span></a>
-            <a href="index.html" class="logo fl"></a>
-            </div>
-            <div class="xsmall-12 small-4 columns">
-              <a href="#" class="fr" data-open="searchModal"><span class="icon ic-search"></span></a>
-              <a href="cart.html" class="fr"><span class="icon ic-cart"></span></a>
-            </div>
-          </div>
-        </header>
+  <div class="row">
+    <div class="xsmall-12 small-8 columns">
+    <a href="#" class="menu-button fl mr10" data-toggle="off-canvas-menu" aria-expanded="false" aria-controls="off-canvas-menu"><span class="icon ic-hamburger"></span></a>
+    <a href="/home/index" class="logo fl"></a>
+    </div>
+<!--             <div class="small-6 columns">
+      
+    </div> -->
+    <div class="xsmall-12 small-4 columns">
+      <a href="#" class="fr" data-open="searchModal"><span class="icon ic-search"></span></a>
+      <a href="/cart/list" class="fr posr mr15"><span class="icon ic-cart"></span><span class="counter-notif">0</span></a>
+    </div>
+  </div>
+</header>
+
         <div class="section main-content">
-          <div class="bordered-list cat-list">
-            <ul>
-              <li class="top-list blocked-li first-level-cat"><strong>Semua Kategori</strong></li>
+  <div class="bordered-list cat-list">
+    <ul>
+      <li class="top-list blocked-li first-level-cat"><strong>Semua Kategori</strong></li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#fashion"><span class="icon ic-cat-fashion"></span>Fashion</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="fashion">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/fashion"><span class="icon ic-cat"></span>Semua produk Fashion</a></li>
               <li>
-                <a href="#" class="has-child first-level-cat" data-target="#handphone-tablet">
-                  <span class="icon ic-cat"></span>
-                  Handphone &amp; Tablet
-                </a>
-                <!-- 2nd LEVEL -->
-                <ul class="second-level-cat hidden" id="handphone-tablet">
-                  <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
-                  <li><a href="listing-category.html"><span class="icon ic-cat"></span>Semua produk Handphone &amp; Tablet</a></li>
-                  <li><a href="listing-subcategory.html">Handphone</a></li>
-                  <li><a href="listing-subcategory.html">Aksesoris Handphone</a></li>
-                  <li><a href="listing-subcategory.html">Tablet</a></li>
-                  <li><a href="listing-subcategory.html">Aksesoris Tablet</a></li>
-                </ul>
-                <!-- End 2nd LEVEL -->
+                <a href="#" class="has-child second-level-cat-link" data-target="#fashion-wanita">Fashion Wanita</a>
               </li>
               <li>
-                <a href="#" class="has-child first-level-cat" data-target="#fashion">
-                  <span class="icon ic-cat"></span>
-                  Fashion
-                </a>
-                <!-- 2nd LEVEL -->
-                <ul class="second-level-cat hidden" id="fashion">
-                  <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
-                  <li><a href="listing-category.html"><span class="icon ic-cat"></span>Semua produk Fashion</a></li>
-                  <li><a href="listing-subcategory.html">Fashion Pria</a></li>
-                  <li><a href="listing-subcategory.html">Fashion Wanita</a></li>
-                  <li><a href="listing-subcategory.html">Anak Laki-laki</a></li>
-                  <li><a href="listing-subcategory.html">Anak Perempuan</a></li>
-                  <li><a href="listing-subcategory.html">Busana Muslim</a></li>
-                </ul>
-                <!-- End 2nd LEVEL -->
+                <a href="#" class="has-child second-level-cat-link" data-target="#fashion-pria">Fashion Pria</a>
               </li>
               <li>
-                <a href="#" class="has-child first-level-cat" data-target="#elektronik">
-                  <span class="icon ic-cat"></span>
-                  Elektronik
-                </a>
-                <!-- 2nd LEVEL -->
-                <ul class="second-level-cat hidden" id="elektronik">
-                  <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
-                  <li><a href="listing-category.html"><span class="icon ic-cat"></span>Semua produk Elektronik</a></li>
-                  <li><a href="listing-subcategory.html">Televisi</a></li>
-                  <li><a href="listing-subcategory.html">Speaker</a></li>
-                  <li><a href="listing-subcategory.html">Headphone</a></li>
-                  <li><a href="listing-subcategory.html">Proyektor</a></li>
-                  <li><a href="listing-subcategory.html">Home Theater</a></li>
-                </ul>
-                <!-- End 2nd LEVEL -->
+                <a href="#" class="has-child second-level-cat-link" data-target="#fashion-anak">Fashion Anak</a>
               </li>
-              <li>
-                <a href="#" class="has-child first-level-cat" data-target="#rumahtangga">
-                  <span class="icon ic-cat"></span>
-                  Rumah Tangga
-                </a>
-                <!-- 2nd LEVEL -->
-                <ul class="second-level-cat hidden" id="rumahtangga">
-                  <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
-                  <li><a href="listing-category.html"><span class="icon ic-cat"></span>Semua produk Rumah Tangga</a></li>
-                  <li><a href="#" class="has-child second-level-cat-link" data-target="#elektronik-rt">Elektronik Rumah Tangga</a></li>
-                  <li><a href="listing-subcategory.html">Dapur</a></li>
-                  <li><a href="listing-subcategory.html">Kamar Tidur</a></li>
-                  <li><a href="listing-subcategory.html">Kamar Mandi</a></li>
-                  <li><a href="listing-subcategory.html">Ruang Makan</a></li>
-                  <li><a href="listing-subcategory.html">Perkakas</a></li>
-                </ul>
-                <!-- End 2nd LEVEL -->
-                <!-- 3rd LEVEL -->
-                <ul class="third-level-cat hidden" id="elektronik-rt">
-                  <li class="top-list"><a href="#" class="back back-to-second" data-target="#rumahtangga">Kembali ke Rumah Tangga</a></li>
-                  <li><a href="listing-subcategory.html"><span class="icon ic-cat"></span>Semua produk Elektronik Rumah Tangga</a></li>
-                  <li><a href="listing-subcategory.html">Kulkas</a></li>
-                  <li><a href="listing-subcategory.html">AC</a></li>
-                  <li><a href="listing-subcategory.html">Mesin Cuci</a></li>
-                  <li><a href="listing-subcategory.html">Dispenser</a></li>
-                  <li><a href="listing-subcategory.html">Vacuum Cleaner</a></li>
-                </ul>
-                <!-- End 3rd LEVEL -->
-              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="fashion-wanita">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#fashion">Kembali ke Fashion Wanita</a></li>
+              <li><a href="/categories/fashion?sc=fashion-wanita"><span class="icon ic-cat"></span>Semua produk Fashion Wanita</a></li>
+                <li><a href="/categories/fashion?sc=fashion-wanita&amp;tc=pakaian">Pakaian</a></li>
+                <li><a href="/categories/fashion?sc=fashion-wanita&amp;tc=celana">Celana</a></li>
+                <li><a href="/categories/fashion?sc=fashion-wanita&amp;tc=jaket-sweater">Jaket &amp; Sweater</a></li>
+                <li><a href="/categories/fashion?sc=fashion-wanita&amp;tc=aksesoris">Aksesoris</a></li>
+                <li><a href="/categories/fashion?sc=fashion-wanita&amp;tc=sepatu-sandal">Sepatu &amp; Sandal</a></li>
+                <li><a href="/categories/fashion?sc=fashion-wanita&amp;tc=kacamata">Kacamata</a></li>
+                <li><a href="/categories/fashion?sc=fashion-wanita&amp;tc=jam-tangan">Jam Tangan</a></li>
+                <li><a href="/categories/fashion?sc=fashion-wanita&amp;tc=perhiasan">Perhiasan</a></li>
+                <li><a href="/categories/fashion?sc=fashion-wanita&amp;tc=tas-koper-dompet">Tas,Koper &amp; Dompet</a></li>
             </ul>
-          </div>
-        </div>
+            <ul class="third-level-cat hidden" id="fashion-pria">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#fashion">Kembali ke Fashion Pria</a></li>
+              <li><a href="/categories/fashion?sc=fashion-pria"><span class="icon ic-cat"></span>Semua produk Fashion Pria</a></li>
+                <li><a href="/categories/fashion?sc=fashion-pria&amp;tc=pakaian13">Pakaian</a></li>
+                <li><a href="/categories/fashion?sc=fashion-pria&amp;tc=celana14">Celana</a></li>
+                <li><a href="/categories/fashion?sc=fashion-pria&amp;tc=jaket-sweater15">Jaket &amp; Sweater</a></li>
+                <li><a href="/categories/fashion?sc=fashion-pria&amp;tc=aksesoris16">Aksesoris</a></li>
+                <li><a href="/categories/fashion?sc=fashion-pria&amp;tc=sepatu-sandal17">Sepatu &amp; Sandal</a></li>
+                <li><a href="/categories/fashion?sc=fashion-pria&amp;tc=kacamata18">Kacamata</a></li>
+                <li><a href="/categories/fashion?sc=fashion-pria&amp;tc=jam-tangan19">Jam Tangan</a></li>
+                <li><a href="/categories/fashion?sc=fashion-pria&amp;tc=tas-koper-dompet20">Tas,Koper &amp; Dompet</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="fashion-anak">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#fashion">Kembali ke Fashion Anak</a></li>
+              <li><a href="/categories/fashion?sc=fashion-anak"><span class="icon ic-cat"></span>Semua produk Fashion Anak</a></li>
+                <li><a href="/categories/fashion?sc=fashion-anak&amp;tc=pakaian22">Pakaian</a></li>
+                <li><a href="/categories/fashion?sc=fashion-anak&amp;tc=celana23">Celana</a></li>
+                <li><a href="/categories/fashion?sc=fashion-anak&amp;tc=jaket-sweater24">Jaket &amp; Sweater</a></li>
+                <li><a href="/categories/fashion?sc=fashion-anak&amp;tc=aksesoris25">Aksesoris</a></li>
+                <li><a href="/categories/fashion?sc=fashion-anak&amp;tc=sepatu-sandal26">Sepatu &amp; Sandal</a></li>
+                <li><a href="/categories/fashion?sc=fashion-anak&amp;tc=jam-tangan27">Jam Tangan</a></li>
+                <li><a href="/categories/fashion?sc=fashion-anak&amp;tc=tas-koper-dompet28">Tas,Koper &amp; Dompet</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#handphone-tablet"><span class="icon ic-cat-hp"></span>Handphone &amp; Tablet</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="handphone-tablet">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/handphone-tablet"><span class="icon ic-cat"></span>Semua produk Handphone &amp; Tablet</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#handphone">Handphone</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#tablet">Tablet</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#aksesoris36">Aksesoris</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#baterai-charger-baterai">Baterai &amp; Charger Baterai</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#modem">Modem</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#telepon">Telepon</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="handphone">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#handphone-tablet">Kembali ke Handphone</a></li>
+              <li><a href="/categories/handphone-tablet?sc=handphone"><span class="icon ic-cat"></span>Semua produk Handphone</a></li>
+                <li><a href="/categories/handphone-tablet?sc=handphone&amp;tc=smartphone">Smartphone</a></li>
+                <li><a href="/categories/handphone-tablet?sc=handphone&amp;tc=handphone-basic">Handphone Basic</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="tablet">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#handphone-tablet">Kembali ke Tablet</a></li>
+              <li><a href="/categories/handphone-tablet?sc=tablet"><span class="icon ic-cat"></span>Semua produk Tablet</a></li>
+                <li><a href="/categories/handphone-tablet?sc=tablet&amp;tc=tablet-dengan-telepon">Tablet Dengan Telepon</a></li>
+                <li><a href="/categories/handphone-tablet?sc=tablet&amp;tc=tablet-tanpa-telepon">Tablet Tanpa Telepon</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="aksesoris36">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#handphone-tablet">Kembali ke Aksesoris</a></li>
+              <li><a href="/categories/handphone-tablet?sc=aksesoris36"><span class="icon ic-cat"></span>Semua produk Aksesoris</a></li>
+                <li><a href="/categories/handphone-tablet?sc=aksesoris36&amp;tc=kabel">Kabel</a></li>
+                <li><a href="/categories/handphone-tablet?sc=aksesoris36&amp;tc=casing-cover">Casing &amp; Cover</a></li>
+                <li><a href="/categories/handphone-tablet?sc=aksesoris36&amp;tc=pelindung-layar">Pelindung Layar</a></li>
+                <li><a href="/categories/handphone-tablet?sc=aksesoris36&amp;tc=gantungan-handphone">Gantungan Handphone</a></li>
+                <li><a href="/categories/handphone-tablet?sc=aksesoris36&amp;tc=spare-part">Spare Part</a></li>
+                <li><a href="/categories/handphone-tablet?sc=aksesoris36&amp;tc=mount-handphone">Mount Handphone</a></li>
+                <li><a href="/categories/handphone-tablet?sc=aksesoris36&amp;tc=docking-handphone">Docking Handphone</a></li>
+                <li><a href="/categories/handphone-tablet?sc=aksesoris36&amp;tc=aksesoris-handphone-lainnya">Aksesoris Handphone Lainnya</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="baterai-charger-baterai">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#handphone-tablet">Kembali ke Baterai &amp; Charger Baterai</a></li>
+              <li><a href="/categories/handphone-tablet?sc=baterai-charger-baterai"><span class="icon ic-cat"></span>Semua produk Baterai &amp; Charger Baterai</a></li>
+                <li><a href="/categories/handphone-tablet?sc=baterai-charger-baterai&amp;tc=charger">Charger</a></li>
+                <li><a href="/categories/handphone-tablet?sc=baterai-charger-baterai&amp;tc=charger-mobil">Charger Mobil</a></li>
+                <li><a href="/categories/handphone-tablet?sc=baterai-charger-baterai&amp;tc=power-bank">Power Bank</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="modem">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#handphone-tablet">Kembali ke Modem</a></li>
+              <li><a href="/categories/handphone-tablet?sc=modem"><span class="icon ic-cat"></span>Semua produk Modem</a></li>
+                <li><a href="/categories/handphone-tablet?sc=modem&amp;tc=modem-usb">Modem Usb</a></li>
+                <li><a href="/categories/handphone-tablet?sc=modem&amp;tc=modem-wi-fi">Modem Wi Fi</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="telepon">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#handphone-tablet">Kembali ke Telepon</a></li>
+              <li><a href="/categories/handphone-tablet?sc=telepon"><span class="icon ic-cat"></span>Semua produk Telepon</a></li>
+                <li><a href="/categories/handphone-tablet?sc=telepon&amp;tc=telepon-rumah-kantor">Telepon Rumah &amp; Kantor</a></li>
+                <li><a href="/categories/handphone-tablet?sc=telepon&amp;tc=telepon-kabel">Telepon Kabel</a></li>
+                <li><a href="/categories/handphone-tablet?sc=telepon&amp;tc=telepon-nirkabel">Telepon Nirkabel</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#komputer-laptop"><span class="icon ic-cat-komp"></span>Komputer &amp; Laptop</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="komputer-laptop">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/komputer-laptop"><span class="icon ic-cat"></span>Semua produk Komputer &amp; Laptop</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#komputer-dekstop">Komputer Dekstop</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#laptop">Laptop</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#printer-tinta-printer">Printer &amp; Tinta	Printer</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#proyektor-scanner-scanner">Proyektor &amp; Scanner	Scanner</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#penyimpanan-data">Penyimpanan Data</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#software">Software</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#aksesoris-komputer-laptop">Aksesoris Komputer &amp; Laptop</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#networking">Networking</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="komputer-dekstop">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#komputer-laptop">Kembali ke Komputer Dekstop</a></li>
+              <li><a href="/categories/komputer-laptop?sc=komputer-dekstop"><span class="icon ic-cat"></span>Semua produk Komputer Dekstop</a></li>
+                <li><a href="/categories/komputer-laptop?sc=komputer-dekstop&amp;tc=pc-all-in-one">Pc All In One</a></li>
+                <li><a href="/categories/komputer-laptop?sc=komputer-dekstop&amp;tc=pc-basic">Pc Basic</a></li>
+                <li><a href="/categories/komputer-laptop?sc=komputer-dekstop&amp;tc=pc-game">Pc Game</a></li>
+                <li><a href="/categories/komputer-laptop?sc=komputer-dekstop&amp;tc=pc-profesional">Pc Profesional</a></li>
+                <li><a href="/categories/komputer-laptop?sc=komputer-dekstop&amp;tc=komputer-rakitan">Komputer Rakitan</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="laptop">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#komputer-laptop">Kembali ke Laptop</a></li>
+              <li><a href="/categories/komputer-laptop?sc=laptop"><span class="icon ic-cat"></span>Semua produk Laptop</a></li>
+                <li><a href="/categories/komputer-laptop?sc=laptop&amp;tc=basic">Basic</a></li>
+                <li><a href="/categories/komputer-laptop?sc=laptop&amp;tc=laptop-2-in-1-layar-sentuh">Laptop 2 In 1 &amp; Layar Sentuh</a></li>
+                <li><a href="/categories/komputer-laptop?sc=laptop&amp;tc=macbook">Macbook</a></li>
+                <li><a href="/categories/komputer-laptop?sc=laptop&amp;tc=ultrabook">Ultrabook</a></li>
+                <li><a href="/categories/komputer-laptop?sc=laptop&amp;tc=netbook">Netbook</a></li>
+                <li><a href="/categories/komputer-laptop?sc=laptop&amp;tc=game">Game</a></li>
+                <li><a href="/categories/komputer-laptop?sc=laptop&amp;tc=profesional">Profesional</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="printer-tinta-printer">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#komputer-laptop">Kembali ke Printer &amp; Tinta	Printer</a></li>
+              <li><a href="/categories/komputer-laptop?sc=printer-tinta-printer"><span class="icon ic-cat"></span>Semua produk Printer &amp; Tinta	Printer</a></li>
+                <li><a href="/categories/komputer-laptop?sc=printer-tinta-printer&amp;tc=printer-multifungsi">Printer Multifungsi</a></li>
+                <li><a href="/categories/komputer-laptop?sc=printer-tinta-printer&amp;tc=printer-label">Printer Label</a></li>
+                <li><a href="/categories/komputer-laptop?sc=printer-tinta-printer&amp;tc=printer-stand">Printer Stand</a></li>
+                <li><a href="/categories/komputer-laptop?sc=printer-tinta-printer&amp;tc=mesin-fax">Mesin Fax</a></li>
+                <li><a href="/categories/komputer-laptop?sc=printer-tinta-printer&amp;tc=tinta-inkjet">Tinta Inkjet</a></li>
+                <li><a href="/categories/komputer-laptop?sc=printer-tinta-printer&amp;tc=toner-laser">Toner Laser</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="proyektor-scanner-scanner">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#komputer-laptop">Kembali ke Proyektor &amp; Scanner	Scanner</a></li>
+              <li><a href="/categories/komputer-laptop?sc=proyektor-scanner-scanner"><span class="icon ic-cat"></span>Semua produk Proyektor &amp; Scanner	Scanner</a></li>
+                <li><a href="/categories/komputer-laptop?sc=proyektor-scanner-scanner&amp;tc=proyektor">Proyektor</a></li>
+                <li><a href="/categories/komputer-laptop?sc=proyektor-scanner-scanner&amp;tc=proyektor-mini">Proyektor Mini</a></li>
+                <li><a href="/categories/komputer-laptop?sc=proyektor-scanner-scanner&amp;tc=layar-proyektor">Layar Proyektor</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="penyimpanan-data">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#komputer-laptop">Kembali ke Penyimpanan Data</a></li>
+              <li><a href="/categories/komputer-laptop?sc=penyimpanan-data"><span class="icon ic-cat"></span>Semua produk Penyimpanan Data</a></li>
+                <li><a href="/categories/komputer-laptop?sc=penyimpanan-data&amp;tc=hard-drive-internal">Hard Drive Internal</a></li>
+                <li><a href="/categories/komputer-laptop?sc=penyimpanan-data&amp;tc=hard-drive-external">Hard Drive External</a></li>
+                <li><a href="/categories/komputer-laptop?sc=penyimpanan-data&amp;tc=solid-state-drive">Solid State Drive</a></li>
+                <li><a href="/categories/komputer-laptop?sc=penyimpanan-data&amp;tc=usb-flash-drive">Usb Flash Drive</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="software">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#komputer-laptop">Kembali ke Software</a></li>
+              <li><a href="/categories/komputer-laptop?sc=software"><span class="icon ic-cat"></span>Semua produk Software</a></li>
+                <li><a href="/categories/komputer-laptop?sc=software&amp;tc=software-office">Software Office</a></li>
+                <li><a href="/categories/komputer-laptop?sc=software&amp;tc=software-keamanan">Software Keamanan</a></li>
+                <li><a href="/categories/komputer-laptop?sc=software&amp;tc=sistem-operasi">Sistem Operasi</a></li>
+                <li><a href="/categories/komputer-laptop?sc=software&amp;tc=media-pendidikan">Media Pendidikan</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="aksesoris-komputer-laptop">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#komputer-laptop">Kembali ke Aksesoris Komputer &amp; Laptop</a></li>
+              <li><a href="/categories/komputer-laptop?sc=aksesoris-komputer-laptop"><span class="icon ic-cat"></span>Semua produk Aksesoris Komputer &amp; Laptop</a></li>
+                <li><a href="/categories/komputer-laptop?sc=aksesoris-komputer-laptop&amp;tc=keyboard">Keyboard</a></li>
+                <li><a href="/categories/komputer-laptop?sc=aksesoris-komputer-laptop&amp;tc=mouse">Mouse</a></li>
+                <li><a href="/categories/komputer-laptop?sc=aksesoris-komputer-laptop&amp;tc=monitor">Monitor</a></li>
+                <li><a href="/categories/komputer-laptop?sc=aksesoris-komputer-laptop&amp;tc=webcam">Webcam</a></li>
+                <li><a href="/categories/komputer-laptop?sc=aksesoris-komputer-laptop&amp;tc=tv-tuner">Tv Tuner</a></li>
+                <li><a href="/categories/komputer-laptop?sc=aksesoris-komputer-laptop&amp;tc=alat-pendingin">Alat Pendingin</a></li>
+                <li><a href="/categories/komputer-laptop?sc=aksesoris-komputer-laptop&amp;tc=baterai">Baterai</a></li>
+                <li><a href="/categories/komputer-laptop?sc=aksesoris-komputer-laptop&amp;tc=adaptor-komputer">Adaptor Komputer</a></li>
+                <li><a href="/categories/komputer-laptop?sc=aksesoris-komputer-laptop&amp;tc=tas-pelindung-laptop">Tas &amp; Pelindung Laptop</a></li>
+                <li><a href="/categories/komputer-laptop?sc=aksesoris-komputer-laptop&amp;tc=aksesoris-lainnya">Aksesoris Lainnya</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="networking">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#komputer-laptop">Kembali ke Networking</a></li>
+              <li><a href="/categories/komputer-laptop?sc=networking"><span class="icon ic-cat"></span>Semua produk Networking</a></li>
+                <li><a href="/categories/komputer-laptop?sc=networking&amp;tc=router">Router</a></li>
+                <li><a href="/categories/komputer-laptop?sc=networking&amp;tc=kabel-konektor">Kabel &amp; Konektor</a></li>
+                <li><a href="/categories/komputer-laptop?sc=networking&amp;tc=access-point">Access Point</a></li>
+                <li><a href="/categories/komputer-laptop?sc=networking&amp;tc=adaptor-usb-nirkabel">Adaptor Usb Nirkabel</a></li>
+                <li><a href="/categories/komputer-laptop?sc=networking&amp;tc=networking-lainnya">Networking Lainnya</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#elektronik-rumah-tangga"><span class="icon ic-cat-ert"></span>Elektronik Rumah Tangga</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="elektronik-rumah-tangga">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/elektronik-rumah-tangga"><span class="icon ic-cat"></span>Semua produk Elektronik Rumah Tangga</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#dapur">Dapur</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#pembersih-rumah">Pembersih Rumah</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#pendingin-pemanas-ruangan">Pendingin &amp; Pemanas Ruangan</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#perawatan-pakaian">Perawatan Pakaian</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="dapur">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#elektronik-rumah-tangga">Kembali ke Dapur</a></li>
+              <li><a href="/categories/elektronik-rumah-tangga?sc=dapur"><span class="icon ic-cat"></span>Semua produk Dapur</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=microwave">Microwave</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=oven">Oven</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=kompor">Kompor</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=lemari-es">Lemari Es</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=dispenser-air">Dispenser Air</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=rice-cooker-steamer">Rice Cooker &amp; Steamer</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=peralatan-masak-elektrik">Peralatan Masak Elektrik</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=ketel-elektrik-thermopot">Ketel Elektrik &amp; Thermopot</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=blender-mixer-penggiling">Blender, Mixer &amp; Penggiling</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=mesin-kopi-aksesoris">Mesin Kopi &amp; Aksesoris</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=juicers-pengekstrak-buah">Juicers &amp; Pengekstrak Buah</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=pendingin">Pendingin</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=pencuci-piring">Pencuci Piring</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=dapur&amp;tc=peralatan-masak-khusus">Peralatan Masak Khusus</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="pembersih-rumah">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#elektronik-rumah-tangga">Kembali ke Pembersih Rumah</a></li>
+              <li><a href="/categories/elektronik-rumah-tangga?sc=pembersih-rumah"><span class="icon ic-cat"></span>Semua produk Pembersih Rumah</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=pembersih-rumah&amp;tc=perawatan-lantai">Perawatan Lantai</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=pembersih-rumah&amp;tc=penghisap-debu">Penghisap Debu</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=pembersih-rumah&amp;tc=pembasmi-serangga">Pembasmi Serangga</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=pembersih-rumah&amp;tc=lampu-isi-ulang">Lampu Isi Ulang</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="pendingin-pemanas-ruangan">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#elektronik-rumah-tangga">Kembali ke Pendingin &amp; Pemanas Ruangan</a></li>
+              <li><a href="/categories/elektronik-rumah-tangga?sc=pendingin-pemanas-ruangan"><span class="icon ic-cat"></span>Semua produk Pendingin &amp; Pemanas Ruangan</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=pendingin-pemanas-ruangan&amp;tc=ac">Ac</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=pendingin-pemanas-ruangan&amp;tc=kipas-angin">Kipas Angin</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=pendingin-pemanas-ruangan&amp;tc=penjernih-udara">Penjernih Udara</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=pendingin-pemanas-ruangan&amp;tc=pendingin-udara">Pendingin Udara</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=pendingin-pemanas-ruangan&amp;tc=ventilasi">Ventilasi</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=pendingin-pemanas-ruangan&amp;tc=pemanas-air">Pemanas Air</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=pendingin-pemanas-ruangan&amp;tc=air-curtain">Air Curtain</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="perawatan-pakaian">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#elektronik-rumah-tangga">Kembali ke Perawatan Pakaian</a></li>
+              <li><a href="/categories/elektronik-rumah-tangga?sc=perawatan-pakaian"><span class="icon ic-cat"></span>Semua produk Perawatan Pakaian</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=perawatan-pakaian&amp;tc=mesin-cuci-pengering-pakaian">Mesin Cuci &amp; Pengering Pakaian</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=perawatan-pakaian&amp;tc=mesin-jahit">Mesin Jahit</a></li>
+                <li><a href="/categories/elektronik-rumah-tangga?sc=perawatan-pakaian&amp;tc=setrika-steamer">Setrika &amp; Steamer</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#tv-audio-game"><span class="icon ic-cat-tv"></span>Tv, Audio &amp; Game</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="tv-audio-game">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/tv-audio-game"><span class="icon ic-cat"></span>Semua produk Tv, Audio &amp; Game</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#tv-video">Tv &amp; Video</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#audio">Audio</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#video-game">Video Game</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="tv-video">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#tv-audio-game">Kembali ke Tv &amp; Video</a></li>
+              <li><a href="/categories/tv-audio-game?sc=tv-video"><span class="icon ic-cat"></span>Semua produk Tv &amp; Video</a></li>
+                <li><a href="/categories/tv-audio-game?sc=tv-video&amp;tc=led-tv">Led Tv</a></li>
+                <li><a href="/categories/tv-audio-game?sc=tv-video&amp;tc=lcd-tv">Lcd Tv</a></li>
+                <li><a href="/categories/tv-audio-game?sc=tv-video&amp;tc=plasma-tv">Plasma Tv</a></li>
+                <li><a href="/categories/tv-audio-game?sc=tv-video&amp;tc=blu-ray-dvd-player">Blu Ray &amp; Dvd Player</a></li>
+                <li><a href="/categories/tv-audio-game?sc=tv-video&amp;tc=home-theater">Home Theater</a></li>
+                <li><a href="/categories/tv-audio-game?sc=tv-video&amp;tc=aksesoris-tv-video">Aksesoris Tv &amp; Video</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="audio">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#tv-audio-game">Kembali ke Audio</a></li>
+              <li><a href="/categories/tv-audio-game?sc=audio"><span class="icon ic-cat"></span>Semua produk Audio</a></li>
+                <li><a href="/categories/tv-audio-game?sc=audio&amp;tc=home-audio">Home Audio</a></li>
+                <li><a href="/categories/tv-audio-game?sc=audio&amp;tc=mp3-player-ipod">Mp3 Player &amp; Ipod</a></li>
+                <li><a href="/categories/tv-audio-game?sc=audio&amp;tc=earphone">Earphone</a></li>
+                <li><a href="/categories/tv-audio-game?sc=audio&amp;tc=speaker">Speaker</a></li>
+                <li><a href="/categories/tv-audio-game?sc=audio&amp;tc=headphone">Headphone</a></li>
+                <li><a href="/categories/tv-audio-game?sc=audio&amp;tc=headset">Headset</a></li>
+                <li><a href="/categories/tv-audio-game?sc=audio&amp;tc=audio-lainnya">Audio Lainnya</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="video-game">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#tv-audio-game">Kembali ke Video Game</a></li>
+              <li><a href="/categories/tv-audio-game?sc=video-game"><span class="icon ic-cat"></span>Semua produk Video Game</a></li>
+                <li><a href="/categories/tv-audio-game?sc=video-game&amp;tc=game159">Game</a></li>
+                <li><a href="/categories/tv-audio-game?sc=video-game&amp;tc=console-game">Console Game</a></li>
+                <li><a href="/categories/tv-audio-game?sc=video-game&amp;tc=aksesoris-game">Aksesoris Game</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#kamera-foto-video"><span class="icon ic-cat-foto"></span>Kamera, Foto &amp; Video</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="kamera-foto-video">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/kamera-foto-video"><span class="icon ic-cat"></span>Semua produk Kamera, Foto &amp; Video</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#kamera">Kamera</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#aksesoris-kamera">Aksesoris Kamera</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="kamera">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#kamera-foto-video">Kembali ke Kamera</a></li>
+              <li><a href="/categories/kamera-foto-video?sc=kamera"><span class="icon ic-cat"></span>Semua produk Kamera</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=kamera&amp;tc=kamera-dslr-dslm">Kamera Dslr Dslm</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=kamera&amp;tc=kamera-pocket-prosumer">Kamera Pocket Prosumer</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=kamera&amp;tc=kamera-instan">Kamera Instan</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=kamera&amp;tc=kamera-mini">Kamera Mini</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=kamera&amp;tc=camcorder-kamera-video">Camcorder &amp; Kamera Video</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=kamera&amp;tc=kamera-lainnya">Kamera Lainnya</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="aksesoris-kamera">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#kamera-foto-video">Kembali ke Aksesoris Kamera</a></li>
+              <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera"><span class="icon ic-cat"></span>Semua produk Aksesoris Kamera</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=lensa">Lensa</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=tripod">Tripod</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=monopod">Monopod</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=baterai174">Baterai</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=charger-baterai">Charger Baterai</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=kartu-memori">Kartu Memori</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=lighting-studio">Lighting &amp; Studio</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=filter">Filter</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=teropong">Teropong</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=tas-casing-camera">Tas &amp; Casing Camera</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=stabillizer">Stabillizer</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=remote-wireless">Remote Wireless</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=kabel-konektor183">Kabel Konektor</a></li>
+                <li><a href="/categories/kamera-foto-video?sc=aksesoris-kamera&amp;tc=aksesoris-kamera-lainnya">Aksesoris Kamera Lainnya</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#kecantikan-kesehatan"><span class="icon ic-cat-keskec"></span>Kecantikan &amp; Kesehatan</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="kecantikan-kesehatan">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/kecantikan-kesehatan"><span class="icon ic-cat"></span>Semua produk Kecantikan &amp; Kesehatan</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#kecantikan">Kecantikan</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#kesehatan">Kesehatan</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="kecantikan">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#kecantikan-kesehatan">Kembali ke Kecantikan</a></li>
+              <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan"><span class="icon ic-cat"></span>Semua produk Kecantikan</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan&amp;tc=makeup">Makeup</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan&amp;tc=parfum">Parfum</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan&amp;tc=perawatan-tubuh">Perawatan Tubuh</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan&amp;tc=perawatan-kulit">Perawatan Kulit</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan&amp;tc=perawatan-rambut">Perawatan Rambut</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan&amp;tc=perawatan-tangan-kaki-kuku">Perawatan Tangan,Kaki &amp; Kuku</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan&amp;tc=perawatan-wajah">Perawatan Wajah</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan&amp;tc=perawatan-mata">Perawatan Mata</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan&amp;tc=perawatan-pria">Perawatan Pria</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan&amp;tc=perlengkapan-mandi">Perlengkapan Mandi</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan&amp;tc=aksesoris-tubuh">Aksesoris Tubuh</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kecantikan&amp;tc=alat-kecantikan">Alat Kecantikan</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="kesehatan">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#kecantikan-kesehatan">Kembali ke Kesehatan</a></li>
+              <li><a href="/categories/kecantikan-kesehatan?sc=kesehatan"><span class="icon ic-cat"></span>Semua produk Kesehatan</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kesehatan&amp;tc=kesehatan-wanita">Kesehatan Wanita</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kesehatan&amp;tc=kesehatan-gigi-mulut">Kesehatan Gigi &amp; Mulut</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kesehatan&amp;tc=diet-vitamin">Diet &amp; Vitamin</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kesehatan&amp;tc=suplemen">Suplemen</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kesehatan&amp;tc=kesehatan-telinga">Kesehatan Telinga</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kesehatan&amp;tc=kontrasepsi">Kontrasepsi</a></li>
+                <li><a href="/categories/kecantikan-kesehatan?sc=kesehatan&amp;tc=alat-kesehatan">Alat Kesehatan</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#peralatan-rumah-tangga"><span class="icon ic-cat-rt"></span>Peralatan Rumah Tangga</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="peralatan-rumah-tangga">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/peralatan-rumah-tangga"><span class="icon ic-cat"></span>Semua produk Peralatan Rumah Tangga</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#furnitur">Furnitur</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#perlengkapan-dapur-ruang-makan">Perlengkapan Dapur &amp; Ruang Makan</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#perlengkapan-kamar-tidur">Perlengkapan Kamar Tidur</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#peralatan-mandi-handuk">Peralatan Mandi &amp; Handuk</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#dekorasi">Dekorasi</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#alat-pertukangan">Alat Pertukangan</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="furnitur">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#peralatan-rumah-tangga">Kembali ke Furnitur</a></li>
+              <li><a href="/categories/peralatan-rumah-tangga?sc=furnitur"><span class="icon ic-cat"></span>Semua produk Furnitur</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=furnitur&amp;tc=furnitur-ruang-tamu">Furnitur Ruang Tamu</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=furnitur&amp;tc=furnitur-ruang-depan">Furnitur Ruang Depan</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=furnitur&amp;tc=furnitur-ruang-bermain">Furnitur Ruang Bermain</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=furnitur&amp;tc=furnitur-ruang-kerja-rumah">Furnitur Ruang Kerja Rumah</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=furnitur&amp;tc=furnitur-kamar-tidur">Furnitur Kamar Tidur</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=furnitur&amp;tc=furnitur-dapur">Furnitur Dapur</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=furnitur&amp;tc=furnitur-ruang-makan">Furnitur Ruang Makan</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=furnitur&amp;tc=furnitur-anak-bayi">Furnitur Anak &amp; Bayi</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="perlengkapan-dapur-ruang-makan">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#peralatan-rumah-tangga">Kembali ke Perlengkapan Dapur &amp; Ruang Makan</a></li>
+              <li><a href="/categories/peralatan-rumah-tangga?sc=perlengkapan-dapur-ruang-makan"><span class="icon ic-cat"></span>Semua produk Perlengkapan Dapur &amp; Ruang Makan</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=perlengkapan-dapur-ruang-makan&amp;tc=peralatan-masak">Peralatan Masak</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=perlengkapan-dapur-ruang-makan&amp;tc=peralatan-memanggang">Peralatan Memanggang</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=perlengkapan-dapur-ruang-makan&amp;tc=pisau-dapur">Pisau Dapur</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=perlengkapan-dapur-ruang-makan&amp;tc=peralatan-penyimpanan">Peralatan Penyimpanan</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=perlengkapan-dapur-ruang-makan&amp;tc=peralatan-aksesoris-dapur">Peralatan &amp; Aksesoris Dapur</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="perlengkapan-kamar-tidur">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#peralatan-rumah-tangga">Kembali ke Perlengkapan Kamar Tidur</a></li>
+              <li><a href="/categories/peralatan-rumah-tangga?sc=perlengkapan-kamar-tidur"><span class="icon ic-cat"></span>Semua produk Perlengkapan Kamar Tidur</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=perlengkapan-kamar-tidur&amp;tc=sprei-selimut-bedcover">Sprei,Selimut &amp; Bedcover</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=perlengkapan-kamar-tidur&amp;tc=bantal-guling">Bantal &amp; Guling</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=perlengkapan-kamar-tidur&amp;tc=aksesoris-tempat-tidur">Aksesoris Tempat Tidur</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="peralatan-mandi-handuk">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#peralatan-rumah-tangga">Kembali ke Peralatan Mandi &amp; Handuk</a></li>
+              <li><a href="/categories/peralatan-rumah-tangga?sc=peralatan-mandi-handuk"><span class="icon ic-cat"></span>Semua produk Peralatan Mandi &amp; Handuk</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=peralatan-mandi-handuk&amp;tc=peralatan-mandi">Peralatan Mandi</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=peralatan-mandi-handuk&amp;tc=handuk-kimono-mandi">Handuk &amp; Kimono Mandi</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=peralatan-mandi-handuk&amp;tc=aksesoris-kamar-mandi">Aksesoris Kamar Mandi</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="dekorasi">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#peralatan-rumah-tangga">Kembali ke Dekorasi</a></li>
+              <li><a href="/categories/peralatan-rumah-tangga?sc=dekorasi"><span class="icon ic-cat"></span>Semua produk Dekorasi</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=dekorasi&amp;tc=jam-meja-dinding">Jam Meja &amp; Dinding</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=dekorasi&amp;tc=vas-bunga">Vas Bunga</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=dekorasi&amp;tc=lukisan-wallpaper">Lukisan &amp; Wallpaper</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=dekorasi&amp;tc=gorden">Gorden</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=dekorasi&amp;tc=karpet-tikar">Karpet &amp; Tikar</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=dekorasi&amp;tc=wall-stiker">Wall Stiker</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=dekorasi&amp;tc=keset">Keset</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=dekorasi&amp;tc=aksesoris-dekorasi-lainnya">Aksesoris Dekorasi Lainnya</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="alat-pertukangan">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#peralatan-rumah-tangga">Kembali ke Alat Pertukangan</a></li>
+              <li><a href="/categories/peralatan-rumah-tangga?sc=alat-pertukangan"><span class="icon ic-cat"></span>Semua produk Alat Pertukangan</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=alat-pertukangan&amp;tc=perkakas">Perkakas</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=alat-pertukangan&amp;tc=penerangan-komponen">Penerangan &amp; Komponen</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=alat-pertukangan&amp;tc=peralatan-listrik">Peralatan Listrik</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=alat-pertukangan&amp;tc=bahan-bangunan">Bahan Bangunan</a></li>
+                <li><a href="/categories/peralatan-rumah-tangga?sc=alat-pertukangan&amp;tc=alat-pertukangan-lainnya">Alat Pertukangan Lainnya</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#mainan-hobi"><span class="icon ic-cat-hobi"></span>Mainan &amp; Hobi</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="mainan-hobi">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/mainan-hobi"><span class="icon ic-cat"></span>Semua produk Mainan &amp; Hobi</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#mainan">Mainan</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#hobi">Hobi</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="mainan">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#mainan-hobi">Kembali ke Mainan</a></li>
+              <li><a href="/categories/mainan-hobi?sc=mainan"><span class="icon ic-cat"></span>Semua produk Mainan</a></li>
+                <li><a href="/categories/mainan-hobi?sc=mainan&amp;tc=boneka">Boneka</a></li>
+                <li><a href="/categories/mainan-hobi?sc=mainan&amp;tc=diecast">Diecast</a></li>
+                <li><a href="/categories/mainan-hobi?sc=mainan&amp;tc=figure">Figure</a></li>
+                <li><a href="/categories/mainan-hobi?sc=mainan&amp;tc=model-kit">Model Kit</a></li>
+                <li><a href="/categories/mainan-hobi?sc=mainan&amp;tc=mainan-remote-control">Mainan Remote Control</a></li>
+                <li><a href="/categories/mainan-hobi?sc=mainan&amp;tc=mainan-anak-lainnya">Mainan Anak Lainnya</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="hobi">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#mainan-hobi">Kembali ke Hobi</a></li>
+              <li><a href="/categories/mainan-hobi?sc=hobi"><span class="icon ic-cat"></span>Semua produk Hobi</a></li>
+                <li><a href="/categories/mainan-hobi?sc=hobi&amp;tc=alat-musik-aksesoris">Alat Musik &amp; Aksesoris</a></li>
+                <li><a href="/categories/mainan-hobi?sc=hobi&amp;tc=alat-memancing-aksesoris">Alat Memancing &amp; Aksesoris</a></li>
+                <li><a href="/categories/mainan-hobi?sc=hobi&amp;tc=aksesoris-peliharaan">Aksesoris Peliharaan</a></li>
+                <li><a href="/categories/mainan-hobi?sc=hobi&amp;tc=koleksi-barang-antik">Koleksi &amp; Barang Antik</a></li>
+                <li><a href="/categories/mainan-hobi?sc=hobi&amp;tc=alat-hiking-aksesoris">Alat Hiking &amp; Aksesoris</a></li>
+                <li><a href="/categories/mainan-hobi?sc=hobi&amp;tc=perlengkapan-traveling">Perlengkapan Traveling</a></li>
+                <li><a href="/categories/mainan-hobi?sc=hobi&amp;tc=peralatan-aksesoris-hobi-lainnya">Peralatan &amp; Aksesoris Hobi Lainnya</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#buku-souvenir"><span class="icon ic-cat-buku"></span>Buku &amp; Souvenir</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="buku-souvenir">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/buku-souvenir"><span class="icon ic-cat"></span>Semua produk Buku &amp; Souvenir</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#buku">Buku</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#souvenir">Souvenir</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="buku">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#buku-souvenir">Kembali ke Buku</a></li>
+              <li><a href="/categories/buku-souvenir?sc=buku"><span class="icon ic-cat"></span>Semua produk Buku</a></li>
+                <li><a href="/categories/buku-souvenir?sc=buku&amp;tc=novel-sastra">Novel &amp; Sastra</a></li>
+                <li><a href="/categories/buku-souvenir?sc=buku&amp;tc=komik-buku-anak">Komik &amp; Buku Anak</a></li>
+                <li><a href="/categories/buku-souvenir?sc=buku&amp;tc=arsitektur-desain">Arsitektur &amp; Desain</a></li>
+                <li><a href="/categories/buku-souvenir?sc=buku&amp;tc=agama-hukum-filsafat">Agama, Hukum &amp; Filsafat</a></li>
+                <li><a href="/categories/buku-souvenir?sc=buku&amp;tc=komputer-internet">Komputer &amp; Internet</a></li>
+                <li><a href="/categories/buku-souvenir?sc=buku&amp;tc=hobi-pengetahuan">Hobi &amp; Pengetahuan</a></li>
+                <li><a href="/categories/buku-souvenir?sc=buku&amp;tc=pengembangan-diri-karir">Pengembangan Diri &amp; Karir</a></li>
+                <li><a href="/categories/buku-souvenir?sc=buku&amp;tc=majalah">Majalah</a></li>
+                <li><a href="/categories/buku-souvenir?sc=buku&amp;tc=buku-sekolah-kampus">Buku Sekolah &amp; Kampus</a></li>
+                <li><a href="/categories/buku-souvenir?sc=buku&amp;tc=buku-import">Buku Import</a></li>
+                <li><a href="/categories/buku-souvenir?sc=buku&amp;tc=buku-lainnya">Buku Lainnya</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="souvenir">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#buku-souvenir">Kembali ke Souvenir</a></li>
+              <li><a href="/categories/buku-souvenir?sc=souvenir"><span class="icon ic-cat"></span>Semua produk Souvenir</a></li>
+                <li><a href="/categories/buku-souvenir?sc=souvenir&amp;tc=kerajinan-tangan">Kerajinan Tangan</a></li>
+                <li><a href="/categories/buku-souvenir?sc=souvenir&amp;tc=souvenir-pesta">Souvenir Pesta</a></li>
+                <li><a href="/categories/buku-souvenir?sc=souvenir&amp;tc=gantungan-kunci">Gantungan Kunci</a></li>
+                <li><a href="/categories/buku-souvenir?sc=souvenir&amp;tc=souvenir-lainnya">Souvenir Lainnya</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#makanan-minuman"><span class="icon ic-cat-makanan"></span>Makanan &amp; Minuman</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="makanan-minuman">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/makanan-minuman"><span class="icon ic-cat"></span>Semua produk Makanan &amp; Minuman</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#makanan">Makanan</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#minuman">Minuman</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="makanan">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#makanan-minuman">Kembali ke Makanan</a></li>
+              <li><a href="/categories/makanan-minuman?sc=makanan"><span class="icon ic-cat"></span>Semua produk Makanan</a></li>
+                <li><a href="/categories/makanan-minuman?sc=makanan&amp;tc=kue-keripik-biskuit">Kue,Keripik &amp; Biskuit</a></li>
+                <li><a href="/categories/makanan-minuman?sc=makanan&amp;tc=makanan-siap-saji">Makanan Siap Saji</a></li>
+                <li><a href="/categories/makanan-minuman?sc=makanan&amp;tc=cokelat-permen-selai">Cokelat,Permen &amp; Selai</a></li>
+                <li><a href="/categories/makanan-minuman?sc=makanan&amp;tc=buah-buahan">Buah Buahan</a></li>
+                <li><a href="/categories/makanan-minuman?sc=makanan&amp;tc=bumbu-bahan-dasar">Bumbu &amp; Bahan Dasar</a></li>
+                <li><a href="/categories/makanan-minuman?sc=makanan&amp;tc=makanan-lainnya">Makanan Lainnya</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="minuman">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#makanan-minuman">Kembali ke Minuman</a></li>
+              <li><a href="/categories/makanan-minuman?sc=minuman"><span class="icon ic-cat"></span>Semua produk Minuman</a></li>
+                <li><a href="/categories/makanan-minuman?sc=minuman&amp;tc=minuman-kaleng-cup">Minuman Kaleng/Cup</a></li>
+                <li><a href="/categories/makanan-minuman?sc=minuman&amp;tc=teh-kopi-susu">Teh,Kopi &amp; Susu</a></li>
+                <li><a href="/categories/makanan-minuman?sc=minuman&amp;tc=krimer-gula">Krimer &amp; Gula</a></li>
+                <li><a href="/categories/makanan-minuman?sc=minuman&amp;tc=minuman-lainnya">Minuman Lainnya</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#otomotif"><span class="icon ic-cat-oto"></span>Otomotif</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="otomotif">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/otomotif"><span class="icon ic-cat"></span>Semua produk Otomotif</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#mobil">Mobil</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#motor">Motor</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#gps">Gps</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#oli-perawatan">Oli &amp; Perawatan</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="mobil">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#otomotif">Kembali ke Mobil</a></li>
+              <li><a href="/categories/otomotif?sc=mobil"><span class="icon ic-cat"></span>Semua produk Mobil</a></li>
+                <li><a href="/categories/otomotif?sc=mobil&amp;tc=sparepart-mobil">Sparepart Mobil</a></li>
+                <li><a href="/categories/otomotif?sc=mobil&amp;tc=perawatan-mobil">Perawatan Mobil</a></li>
+                <li><a href="/categories/otomotif?sc=mobil&amp;tc=aksesoris-eksterior">Aksesoris Eksterior</a></li>
+                <li><a href="/categories/otomotif?sc=mobil&amp;tc=aksesoris-interior">Aksesoris Interior</a></li>
+                <li><a href="/categories/otomotif?sc=mobil&amp;tc=velg-ban">Velg &amp; Ban</a></li>
+                <li><a href="/categories/otomotif?sc=mobil&amp;tc=audio-mobil">Audio Mobil</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="motor">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#otomotif">Kembali ke Motor</a></li>
+              <li><a href="/categories/otomotif?sc=motor"><span class="icon ic-cat"></span>Semua produk Motor</a></li>
+                <li><a href="/categories/otomotif?sc=motor&amp;tc=sparepart-motor">Sparepart Motor</a></li>
+                <li><a href="/categories/otomotif?sc=motor&amp;tc=helm">Helm</a></li>
+                <li><a href="/categories/otomotif?sc=motor&amp;tc=jaket-motor">Jaket Motor</a></li>
+                <li><a href="/categories/otomotif?sc=motor&amp;tc=aksesoris-motor">Aksesoris Motor</a></li>
+                <li><a href="/categories/otomotif?sc=motor&amp;tc=velg-ban306">Velg &amp; Ban</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="gps">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#otomotif">Kembali ke Gps</a></li>
+              <li><a href="/categories/otomotif?sc=gps"><span class="icon ic-cat"></span>Semua produk Gps</a></li>
+                <li><a href="/categories/otomotif?sc=gps&amp;tc=gps-mobil-motor">Gps Mobil &amp; Motor</a></li>
+                <li><a href="/categories/otomotif?sc=gps&amp;tc=gps-golf">Gps Golf</a></li>
+                <li><a href="/categories/otomotif?sc=gps&amp;tc=gps-sepeda">Gps Sepeda</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="oli-perawatan">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#otomotif">Kembali ke Oli &amp; Perawatan</a></li>
+              <li><a href="/categories/otomotif?sc=oli-perawatan"><span class="icon ic-cat"></span>Semua produk Oli &amp; Perawatan</a></li>
+                <li><a href="/categories/otomotif?sc=oli-perawatan&amp;tc=oli-cairan-lainnya">Oli &amp; Cairan Lainnya</a></li>
+                <li><a href="/categories/otomotif?sc=oli-perawatan&amp;tc=perawatan-kendaraan">Perawatan Kendaraan</a></li>
+                <li><a href="/categories/otomotif?sc=oli-perawatan&amp;tc=penghemat-bbm">Penghemat Bbm</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#olahraga"><span class="icon ic-cat-hobi-1"></span>Olahraga</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="olahraga">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/olahraga"><span class="icon ic-cat"></span>Semua produk Olahraga</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#peralatan-olahraga">Peralatan Olahraga</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="peralatan-olahraga">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#olahraga">Kembali ke Peralatan Olahraga</a></li>
+              <li><a href="/categories/olahraga?sc=peralatan-olahraga"><span class="icon ic-cat"></span>Semua produk Peralatan Olahraga</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=badminton">Badminton</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=sepakbola-futsal">Sepakbola &amp; Futsal</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=sepeda">Sepeda</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=basket">Basket</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=tenis">Tenis</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=renang-diving">Renang &amp; Diving</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=lari">Lari</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=golf">Golf</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=fitnes">Fitnes</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=bola-voli">Bola Voli</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=bela-diri">Bela Diri</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=tinju">Tinju</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=air-softgun">Air Softgun</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=alat-tembak-panahan">Alat Tembak &amp; Panahan</a></li>
+                <li><a href="/categories/olahraga?sc=peralatan-olahraga&amp;tc=aksesoris-olahraga">Aksesoris Olahraga</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#perawatan-bayi"><span class="icon ic-cat-bayi"></span>Perawatan Bayi</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="perawatan-bayi">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/perawatan-bayi"><span class="icon ic-cat"></span>Semua produk Perawatan Bayi</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#keperluan-bayi">Keperluan Bayi</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="keperluan-bayi">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#perawatan-bayi">Kembali ke Keperluan Bayi</a></li>
+              <li><a href="/categories/perawatan-bayi?sc=keperluan-bayi"><span class="icon ic-cat"></span>Semua produk Keperluan Bayi</a></li>
+                <li><a href="/categories/perawatan-bayi?sc=keperluan-bayi&amp;tc=baju-sepatu-bayi">Baju &amp; Sepatu Bayi</a></li>
+                <li><a href="/categories/perawatan-bayi?sc=keperluan-bayi&amp;tc=perlengkapan-bayi">Perlengkapan Bayi</a></li>
+                <li><a href="/categories/perawatan-bayi?sc=keperluan-bayi&amp;tc=makanan-susu-bayi">Makanan &amp; Susu Bayi</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#keperluan-kantor"><span class="icon ic-cat-kantor"></span>Keperluan Kantor</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="keperluan-kantor">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/keperluan-kantor"><span class="icon ic-cat"></span>Semua produk Keperluan Kantor</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#peralatan-kantor">Peralatan Kantor</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#perlengkapan-kantor">Perlengkapan Kantor</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="peralatan-kantor">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#keperluan-kantor">Kembali ke Peralatan Kantor</a></li>
+              <li><a href="/categories/keperluan-kantor?sc=peralatan-kantor"><span class="icon ic-cat"></span>Semua produk Peralatan Kantor</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=peralatan-kantor&amp;tc=alat-tulis">Alat Tulis</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=peralatan-kantor&amp;tc=kertas">Kertas</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=peralatan-kantor&amp;tc=alat-menggambar">Alat Menggambar</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=peralatan-kantor&amp;tc=surat-menyurat">Surat Menyurat</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=peralatan-kantor&amp;tc=pengikat-perekat">Pengikat &amp; Perekat</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=peralatan-kantor&amp;tc=alat-pemotong-kertas">Alat Pemotong Kertas</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=peralatan-kantor&amp;tc=kalkulator">Kalkulator</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=peralatan-kantor&amp;tc=dokumen-organizer">Dokumen Organizer</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=peralatan-kantor&amp;tc=peralatan-kantor-lainnya">Peralatan Kantor Lainnya</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="perlengkapan-kantor">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#keperluan-kantor">Kembali ke Perlengkapan Kantor</a></li>
+              <li><a href="/categories/keperluan-kantor?sc=perlengkapan-kantor"><span class="icon ic-cat"></span>Semua produk Perlengkapan Kantor</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=perlengkapan-kantor&amp;tc=meja">Meja</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=perlengkapan-kantor&amp;tc=kursi">Kursi</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=perlengkapan-kantor&amp;tc=lemari-file">Lemari File</a></li>
+                <li><a href="/categories/keperluan-kantor?sc=perlengkapan-kantor&amp;tc=perlengkapan-lainnya">Perlengkapan Lainnya</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#voucher"><span class="icon ic-cat-voucher"></span>Voucher</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="voucher">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/voucher"><span class="icon ic-cat"></span>Semua produk Voucher</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#shopping-restaurants">Shopping &amp; Restaurants</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#entertainment">Entertainment</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#fun-park">Fun Park</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#pre-paid">Pre Paid</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#travel">Travel</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="shopping-restaurants">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#voucher">Kembali ke Shopping &amp; Restaurants</a></li>
+              <li><a href="/categories/voucher?sc=shopping-restaurants"><span class="icon ic-cat"></span>Semua produk Shopping &amp; Restaurants</a></li>
+                <li><a href="/categories/voucher?sc=shopping-restaurants&amp;tc=gift-voucher">Gift Voucher</a></li>
+                <li><a href="/categories/voucher?sc=shopping-restaurants&amp;tc=shopping-mall-stores">Shopping Mall &amp; Stores</a></li>
+                <li><a href="/categories/voucher?sc=shopping-restaurants&amp;tc=restaurants">Restaurants</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="entertainment">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#voucher">Kembali ke Entertainment</a></li>
+              <li><a href="/categories/voucher?sc=entertainment"><span class="icon ic-cat"></span>Semua produk Entertainment</a></li>
+                <li><a href="/categories/voucher?sc=entertainment&amp;tc=movies">Movies</a></li>
+                <li><a href="/categories/voucher?sc=entertainment&amp;tc=karoke">Karoke</a></li>
+                <li><a href="/categories/voucher?sc=entertainment&amp;tc=concert">Concert</a></li>
+                <li><a href="/categories/voucher?sc=entertainment&amp;tc=play">Play</a></li>
+                <li><a href="/categories/voucher?sc=entertainment&amp;tc=events">Events</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="fun-park">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#voucher">Kembali ke Fun Park</a></li>
+              <li><a href="/categories/voucher?sc=fun-park"><span class="icon ic-cat"></span>Semua produk Fun Park</a></li>
+                <li><a href="/categories/voucher?sc=fun-park&amp;tc=museum">Museum</a></li>
+                <li><a href="/categories/voucher?sc=fun-park&amp;tc=playground">Playground</a></li>
+                <li><a href="/categories/voucher?sc=fun-park&amp;tc=ammusement-park">Ammusement Park</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="pre-paid">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#voucher">Kembali ke Pre Paid</a></li>
+              <li><a href="/categories/voucher?sc=pre-paid"><span class="icon ic-cat"></span>Semua produk Pre Paid</a></li>
+                <li><a href="/categories/voucher?sc=pre-paid&amp;tc=big-tv">Big Tv</a></li>
+                <li><a href="/categories/voucher?sc=pre-paid&amp;tc=bolt">Bolt</a></li>
+                <li><a href="/categories/voucher?sc=pre-paid&amp;tc=first-media">First Media</a></li>
+                <li><a href="/categories/voucher?sc=pre-paid&amp;tc=pulsa">Pulsa</a></li>
+                <li><a href="/categories/voucher?sc=pre-paid&amp;tc=petrol">Petrol</a></li>
+                <li><a href="/categories/voucher?sc=pre-paid&amp;tc=electricity">Electricity</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="travel">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#voucher">Kembali ke Travel</a></li>
+              <li><a href="/categories/voucher?sc=travel"><span class="icon ic-cat"></span>Semua produk Travel</a></li>
+                <li><a href="/categories/voucher?sc=travel&amp;tc=car-taxi">Car &amp; Taxi</a></li>
+                <li><a href="/categories/voucher?sc=travel&amp;tc=rental">Rental</a></li>
+                <li><a href="/categories/voucher?sc=travel&amp;tc=train-ticket">Train Ticket</a></li>
+                <li><a href="/categories/voucher?sc=travel&amp;tc=bus-ticket">Bus Ticket</a></li>
+                <li><a href="/categories/voucher?sc=travel&amp;tc=tour-travel-package">Tour &amp; Travel Package</a></li>
+                <li><a href="/categories/voucher?sc=travel&amp;tc=flight-ticket">Flight Ticket</a></li>
+                <li><a href="/categories/voucher?sc=travel&amp;tc=hotel-voucher">Hotel Voucher</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+        <li>
+          <a href="#" class="has-child first-level-cat" data-target="#musik-film"><span class="icon ic-cat-film"></span>Musik &amp; Film</a>
+          <!-- 2nd LEVEL -->
+          <ul class="second-level-cat hidden" id="musik-film">
+            <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+            <li><a href="/categories/musik-film"><span class="icon ic-cat"></span>Semua produk Musik &amp; Film</a></li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#musik">Musik</a>
+              </li>
+              <li>
+                <a href="#" class="has-child second-level-cat-link" data-target="#film">Film</a>
+              </li>
+          </ul>
+          <!-- End 2nd LEVEL -->
+          <!-- 3rd LEVEL -->
+            <ul class="third-level-cat hidden" id="musik">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#musik-film">Kembali ke Musik</a></li>
+              <li><a href="/categories/musik-film?sc=musik"><span class="icon ic-cat"></span>Semua produk Musik</a></li>
+                <li><a href="/categories/musik-film?sc=musik&amp;tc=alat-musik">Alat Musik</a></li>
+                <li><a href="/categories/musik-film?sc=musik&amp;tc=cd-dvd-musik">Cd &amp; Dvd Musik</a></li>
+                <li><a href="/categories/musik-film?sc=musik&amp;tc=musik-lainnya">Musik Lainnya</a></li>
+            </ul>
+            <ul class="third-level-cat hidden" id="film">
+              <li class="top-list"><a href="#" class="back back-to-second" data-target="#musik-film">Kembali ke Film</a></li>
+              <li><a href="/categories/musik-film?sc=film"><span class="icon ic-cat"></span>Semua produk Film</a></li>
+                <li><a href="/categories/musik-film?sc=film&amp;tc=alat-pemutar-film">Alat Pemutar Film</a></li>
+                <li><a href="/categories/musik-film?sc=film&amp;tc=cd-dvd-film">Cd &amp; Dvd Film</a></li>
+                <li><a href="/categories/musik-film?sc=film&amp;tc=film-lainnya">Film Lainnya</a></li>
+            </ul>
+          <!-- End 3rd LEVEL -->
+        </li>
+    </ul>
+  </div>
+</div>
+
         <footer>
-          <div class="section footer-top">
-            <div class="row">
-              <div class="small-12 column">
-                <a href="tel:1500010"><div class="tac">CALL CENTER 1500010</div></a>
-              </div>
-            </div>
-          </div>
-          <div class="section footer-bottom">
-            <div class="link-group">
-              <a href="#">Penjual</a>
-              <a href="#">Pembeli</a>
-              <a href="#">Bantuan</a>
-            </div>
-            <div class="social-link link-group">
-              <a href="https://www.facebook.com/" target="_blank"><span class="icon ic-fb"></span>FB</a>
-              <a href="https://www.twitter.com/" target="_blank"><span class="icon ic-ftw"></span>TW</a>
-              <a href="https://www.instagram.com/" target="_blank"><span class="icon ic-ig"></span>IG</a>
-            </div>
-          </div>
-          <div class="section copyright">
-            <div class="tac"><small>© copyright belanjaqu.com 2016</small></div>
-          </div>
-        </footer>
-        <!-- SEARCH REVEAL MODAL -->
-        <div class="reveal full search-modal" id="searchModal" data-reveal escClose="true">
-          <button class="close-button" aria-label="Close alert" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="fblock">
-            <input id="searchInput" type="search" placeholder="Cari produk atau toko">
-          </div>
-          <div class="suggestion-box">
-            <ul>
-              <li><a href="search-result.html">Blackberry <small>di Handphone</small></a></li>
-              <li><a href="search-result.html">Blackberry <small>di Aksesoris Handphone </small></a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- End SEARCH REVEAL MODAL -->
+  <!--<div class="section footer-top">
+    <div class="row">
+      <div class="small-12 column">
+        <a href="tel:1500010"><div class="tac">CALL CENTER <br> TELP: 022-31191113 <br> WA: 08886001768</div></a>
       </div>
     </div>
+  </div>-->
+  <div class="section footer-bottom">
+    <!--<div class="link-group">
+      <a href="#">Penjual</a>
+      <a href="#">Pembeli</a>
+      <a href="#">Bantuan</a>
+      <!--<a href="#">What's News</a>
+    </div>-->
+    <div class="social-link link-group">
+      <a href="https://web.facebook.com/BelanjaQu" target="_blank"><span class="icon ic-fb"></span>FB</a>
+      <a href="https://twitter.com/belanjaqumobile" target="_blank"><span class="icon ic-ftw"></span>TW</a>
+      <a href="https://www.instagram.com/belanjaqu" target="_blank"><span class="icon ic-ig"></span>IG</a>
+    </div>
+  </div>
+  <div class="section copyright">
+    <div class="tac"><small>© copyright belanjaqu.co.id 2016</small></div>
+  </div>
+</footer>
+<!-- SEARCH REVEAL MODAL -->
+<div class="reveal full search-modal" id="searchModal" data-reveal escClose="true">
+  <button class="close-button" aria-label="Close alert" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="fblock">
+    <input id="searchInput" type="search" placeholder="Cari produk">
+  </div>
+  <div class="suggestion-box">
+    <ul class='product-searches-field'>
+    </ul>
+  </div>
+</div>
+<!-- END SEARCH REVEAL MODAL -->
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="js/min/app-min.js"></script>
-    <script>categoriMultilevel();</script>
+      </div>
+    </div>
+    <script src="/assets/application-ebac06eb196cc78a5be2d3dfa651e602ff866dc1c3a161ca77df85ca6fcfd441.js" data-turbolinks-track="false"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76477092-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <script>
+      $('.main-banners').slick();$('.cm-slide').slick();
+      
+      $('.button-confirm-order').click(function(){
+        swal({
+          title: "Konfirmasi Penerimaan",
+          text: "Yakin bahwa barang yang kamu terima sudah sesuai?",
+          type: "info",
+          showCancelButton: true,
+          confirmButtonText: "Ya, Telah Sesuai",
+          cancelButtonText: "Tidak",
+          closeOnConfirm: false,
+        },
+        function(isConfirm){
+          if (isConfirm) {
+            $('.button-confirm-order').parent().submit()
+            swal("Terima Kasih", "Telah berbelanja di belanjaqu", "success");
+          } 
+        });
+      })
+      
+      
+    </script>
   </div>
   </body>
 </html>

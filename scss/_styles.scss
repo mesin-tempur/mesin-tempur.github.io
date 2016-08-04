@@ -805,6 +805,7 @@ header {
 			a.back:before {left:10px;}
 			&.top-list {background:$light-gray;}
 			&.blocked-li {padding: 10px 15px;border-bottom: $code-border;}
+			.icon {color: $primary-color;font-size: 24px;display: block;float: left;margin-right: 10px;margin-top: -3px;}
 		}
 	}
 }
