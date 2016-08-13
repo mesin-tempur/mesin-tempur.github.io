@@ -12,10 +12,13 @@ header {
 	padding: 10px 0;
 	a, a:focus {color:white;}
 	.ic-hamburger,  .ic-cart {font-size: 1.5rem;}
-	.ic-search {font-size: 1.3rem;}
+	.ic-search-thin, .ic-account {font-size: 1.3rem;}
 	.hamburger {
 		@include hamburger(white, $light-gray, 18px, 16px, 2px, 3);
 		margin-right: 5px;
+	}
+	.header-login-link, .header-search-toggle {
+		margin-top: 3px;
 	}
 	.search-modal {
 		padding: 0;
@@ -118,7 +121,7 @@ header {
 	// margin-bottom: 20px;
 }
 .main-content {
-	background:transparent url('image.png') left top no-repeat;
+	// background:transparent url('image.png') left top no-repeat;
 }
 .bq-infographic {
 	background:#f5f5f5;
@@ -212,9 +215,8 @@ header {
 	color:#5f5f5f;
 	letter-spacing: -2px;
 	text-align: center;
-	margin-left: -40px;
 	background:whitesmoke;
-	.word-wrapper {display: inline-block;position: relative;}
+	.word-wrapper {display: inline-block;position: relative;margin-left: -40px;}
 	.ft-1 {
 		width: 114px;
 		height: 36px;
@@ -437,6 +439,15 @@ header {
 }
 
 // DETAIL PRODUCT
+.detail-product-page {
+	.slick-dots {
+		position: relative;
+		margin-bottom: 0px;
+	}
+	.slide-with-dotts {
+		margin-bottom:10px;
+	}
+}
 .pdp-content {
 	h6 {font-weight: bold;}
 	.product-price {
@@ -456,6 +467,7 @@ header {
 }
 .pdp-action {
 	background-color: $lighter-gray;
+	padding: 10px 0;
 	.button {
 		margin-bottom: 10px;
 		text-transform: uppercase;
@@ -463,6 +475,7 @@ header {
 	}
 }
 .pdp-spec {
+	border-bottom: $code-border;
 	ul {
 		li {
 			width: 100%;display: inline-block;
@@ -1553,19 +1566,28 @@ footer {
 	}
 }
 
-.pdp-fixed-action {
+.fixed-bottom-btn {
 	position: fixed;
 	bottom: 0px;
 	width: 100%;
-	z-index: 100;
+	z-index: 1000;
+	max-width: 640px;
+}
+
+.pdp-fixed-action {
+	padding: 10px;
+	background:#f1f1f1;
 	a {
 		display: block;
-		padding: 15px;
+		padding: 13px;
 		color:white;
 		background-color:$primary-color;
 		margin-bottom: 0;
-		@include border-radius(0);
-		font-size: $font-size-big;
-		font-weight: bold;
+		text-transform: uppercase;
 	}
+}
+.fixed-pasang {
+	padding: 10px 20px;
+	background:white; 
+	a {margin-bottom: 0;}
 }

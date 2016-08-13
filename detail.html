@@ -193,38 +193,8 @@
                 <span class="striked">Rp 1.200.000</span><span class="discount">25% Off</span>
               </div>
             </div>
-            <div class="pdp-variant section-block row">
-                <div class="small-12 column">
-                  <div class="fblock">
-                    <div class="label-area">Stock</div>
-                    <div class="input-area">> 20 buah</div>
-                  </div>
-                  <div class="fblock">
-                    <div class="label-area">Ukuran</div>
-                    <div class="input-area">
-                      <select name="" id="">
-                        <option value="0">Pilih Ukuran</option>
-                        <option value="1">42 (stok: 6)</option>
-                        <option value="1">42,5 (stok: 3)</option>
-                        <option value="2">43 (stok: 3)</option>
-                        <option value="2" disabled="">43,5 Stok kosong</option>
-                        <option value="2">44 (stok: 1)</option>
-                        <option value="2">44,5 (stok: 4)</option>
-                        <option value="2">45 (stok: 2)</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="pdp-action section-block row">
-              <div class="small-12 column product-title">
-               <!--  <a href="checkout-1.html" class="button expanded">Beli Sekarang</a>
-                <a href="#" class="button expanded">Masukan Keranjang</a> -->
-                <a href="#" class="button expanded bordered-btn">Tambahkan ke Wishlist</a>
-              </div>
-            </div>
-            <div class="pdp-fixed-action">
-              <a href="#" class="button expanded">BELI</a>
+            <div class="js-fxdBtm fixed-bottom-btn pdp-fixed-action">
+              <a href="#" class="button expanded">Beli Sekarang</a>
             </div>
             <div class="pdp-spec section-block row">
               <div class="small-12 column">
@@ -276,9 +246,39 @@
                         <a class="tac"></a>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="pdp-variant section-block row">
+              <div class="small-12 column">
+                <div class="fblock">
+                  <div class="label-area">Stock</div>
+                  <div class="input-area">> 20 buah</div>
+                </div>
+                <div class="fblock">
+                  <div class="label-area">Ukuran</div>
+                  <div class="input-area">
+                    <select name="" id="">
+                      <option value="0">Pilih Ukuran</option>
+                      <option value="1">42 (stok: 6)</option>
+                      <option value="1">42,5 (stok: 3)</option>
+                      <option value="2">43 (stok: 3)</option>
+                      <option value="2" disabled="">43,5 Stok kosong</option>
+                      <option value="2">44 (stok: 1)</option>
+                      <option value="2">44,5 (stok: 4)</option>
+                      <option value="2">45 (stok: 2)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pdp-action js-position-anchor section-block row">
+              <div class="small-12 column product-title">
+                <a href="checkout-1.html" class="button expanded">Beli Sekarang</a>
+                <!-- <a href="#" class="button expanded">Masukan Keranjang</a> -->
+                <a href="#" class="button expanded bordered-btn">Tambahkan ke Wishlist</a>
               </div>
             </div>
             <div class="pdp-share section-block row">
@@ -452,6 +452,7 @@
     <script src="js/min/slick.min.js"></script>
     <script src="js/min/app-min.js"></script>
     <script>$('.main-product-images').slick();$('.cm-slide').slick();descToggle()</script>
+    <script>fxdBottom();</script>
   </div>
   </body>
 </html>

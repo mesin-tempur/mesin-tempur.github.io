@@ -262,6 +262,26 @@ $(function() {
 	// setTimeout(closeSlide, 2000);
 });
 
+// FIXED BTN PDP CONTROL
+
+function fxdBottom() {
+	var elem			= $('.js-position-anchor'),
+		vHeight			= $( window ).height(),
+		eHeight			= elem.height();
+
+	$(window).on('scroll', function(){
+		var scrollTop     	= $(window).scrollTop(),
+			space			= elem.offset().top,
+			limit			= space - vHeight + 62;
+
+		if(scrollTop >= limit){
+            $('.js-fxdBtm').css('display', 'none');
+        }
+        else {$('.js-fxdBtm').css('display', '');}
+	});
+}
+
+
 // PANEL MENU
 
 	// var jPM = $.jPanelMenu({
