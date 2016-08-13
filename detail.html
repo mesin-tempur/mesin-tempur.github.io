@@ -103,6 +103,52 @@
         </div>
       </div>
       <!-- END SIDE MENU -->
+      <div class="js-search-main search-main-screen">
+        <header>
+          <div class="row">
+            <div class="small-12 column">
+              <form action="">
+                <div class="search-modal">
+                  <div class="js-searchbar input-search-box block-fill">
+                    <input type="search" placeholder="Cari produk">
+                  </div>
+                  <div class="submit-search block-add">
+                    <button type="submit" class="searchbar-submit js-searchbar-submit"> 
+                      <span class="icon ic-search"></span><span class="visuallyhidden">Search</span> 
+                    </button>
+                  </div>
+                  <div class="block-add cancel-search">
+                    <a href="#" class="js-dismiss-search">Batal</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </header>
+        <div class="suggestion-box">
+          <ul class="product-searches-field">
+            <ul>
+              <li>
+                <a href="/searches/alat-musik-aksesoris/products/iphone">iphone <small>di Semua Kategori</small></a>
+              </li>
+              <li>
+                <a href="/searches/power-bank/products/iphone">iphone <small>Handphone</small></a>
+              </li>
+            </ul>
+            <ul class="filled-suggestion">
+              <li>
+                <a href="#">iphone <span class="suggestion-fill">4</span></a>
+              </li>
+              <li>
+                <a href="#">iphone <span class="suggestion-fill">5s</span></a>
+              </li>
+              <li>
+                <a href="#">iphone <span class="suggestion-fill">case</span></a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
       <div class="off-canvas-content" data-off-canvas-content>
         <header>
           <div class="row">
@@ -111,8 +157,24 @@
             <a href="index.html" class="logo fl"></a>
             </div>
             <div class="xsmall-12 small-4 columns">
-              <a href="#" class="fr" data-open="searchModal"><span class="icon ic-search"></span></a>
-              <a href="cart.html" class="fr"><span class="icon ic-cart"></span></a>
+              <a href="cart.html" class="fr posr mr10"><span class="icon ic-cart"></span><span class="counter-notif">0</span></a>
+              <a href="#" class="fr mr15 js-toggle-searchbar"><span class="icon ic-search"></span></a>
+            </div>
+          </div>
+          <div class="row top-searchbar">
+            <div class="small-12 column">
+              <form action="">
+                <div class="search-modal">
+                  <div class="js-searchbar-overlay input-search-box block-fill">
+                    <input type="search" placeholder="Cari produk">
+                  </div>
+                  <div class="submit-search block-add">
+                    <button type="submit" class="searchbar-submit js-searchbar-submit-overlay"> 
+                      <span class="icon ic-search"></span><span class="visuallyhidden">Search</span> 
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </header>
@@ -156,10 +218,13 @@
             </div>
             <div class="pdp-action section-block row">
               <div class="small-12 column product-title">
-                <a href="checkout-1.html" class="button expanded">Beli Sekarang</a>
-                <a href="#" class="button expanded">Masukan Keranjang</a>
-                <a href="#" class="button expanded bordered-btn">Wishlist</a>
+               <!--  <a href="checkout-1.html" class="button expanded">Beli Sekarang</a>
+                <a href="#" class="button expanded">Masukan Keranjang</a> -->
+                <a href="#" class="button expanded bordered-btn">Tambahkan ke Wishlist</a>
               </div>
+            </div>
+            <div class="pdp-fixed-action">
+              <a href="#" class="button expanded">BELI</a>
             </div>
             <div class="pdp-spec section-block row">
               <div class="small-12 column">

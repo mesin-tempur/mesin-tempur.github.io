@@ -168,6 +168,33 @@ function fullonfocus() {
 	});
 }
 
+// NEW SEARCH
+$(function() {
+	var inputSrcOvr	= $('.js-searchbar-overlay').find('input'),
+		inputSrc 	= $('.js-searchbar').find('input');
+	inputSrcOvr.on('focus click tap', function(){
+		$('.off-canvas-content').css('display', 'none');
+		$('.js-search-main').css('display', 'block');
+		inputSrc.focus();
+	});
+	$(".js-dismiss-search").on('click tap', function(){
+		$('.off-canvas-content').add('.js-search-main').add('.top-searchbar').css('display', '');
+	});
+	$('.js-toggle-searchbar').on('click tap', function(){
+		if ($('.top-searchbar').is(':visible'))
+		{
+			$('.top-searchbar').css('display', 'none');
+		}
+		else {
+			$('.off-canvas-content').css('display', 'none');
+			$('.js-search-main').css('display', 'block');
+			inputSrc.focus();
+		}
+	});
+
+});
+
+
 $(function() {
 
   	$('.with-inc').prepend('<div class="increment-btn up-num">+</div>');
@@ -200,6 +227,62 @@ $(function() {
 $('#kodeVoucher').change(function(){
 	$('#voucherInput').slideToggle();
 });
+
+// CUSTOM SLIDE MENU
+$(function() {
+	var wrp 	= $('.page-container'),
+		btn 	= wrp.find('.menu-button'),
+		menu 	= wrp.find('.slide-menu'),
+		off 	= wrp.find('.js-slide-exit'),
+		cont 	= wrp.find('.off-canvas-content');
+
+	function toggleSlide() {
+		btn.on('click tap', function() {
+			off.addClass('is-visible');
+			cont.addClass('slide-open');
+			menu.addClass('is-open');
+			if(btn.hasClass('left-slide')){
+				cont.addClass('from-left');
+			}
+			if(btn.hasClass('right-slide')){
+				cont.addClass('from-right');
+			}
+		});
+		off.on('click tap', function() {
+			off.removeClass('is-visible');
+			cont.removeClass('slide-open from-left from-right');
+		});
+	}
+	toggleSlide();
+	// function closeSlide() {
+	// 	off.on('click tap', function() {
+	// 		menu.removeClass('is-open');
+	// 	});
+	// }
+	// setTimeout(closeSlide, 2000);
+});
+
+// PANEL MENU
+
+	// var jPM = $.jPanelMenu({
+	//     menu: '.menu-position-left',
+	//     trigger: '.left-menu-btn',
+	//     direction: 'left',
+	//     after: function(){
+	//     	$('.jPanelMenu-panel').toggleClass('left-menu-closed');
+	//     }
+	// });
+	// var jPM2 = $.jPanelMenu({
+	//     menu: '#right-main-menu',
+	//     trigger: '.right-menu-btn',
+	//     menuClass: 'jPanelMenu-menu2',
+	//     direction: 'right',
+	//     after: function(){
+
+	//     }
+	// });
+	// jPM.on();
+	// jPM2.on();
 
 // $(function() {
 // //INCREMENT INPUT BUTTON
