@@ -229,38 +229,38 @@ $('#kodeVoucher').change(function(){
 });
 
 // CUSTOM SLIDE MENU
-$(function() {
-	var wrp 	= $('.page-container'),
-		btn 	= wrp.find('.menu-button'),
-		menu 	= wrp.find('.slide-menu'),
-		off 	= wrp.find('.js-slide-exit'),
-		cont 	= wrp.find('.off-canvas-content');
+// $(function() {
+// 	var wrp 	= $('.page-container'),
+// 		btn 	= wrp.find('.menu-button'),
+// 		menu 	= wrp.find('.slide-menu'),
+// 		off 	= wrp.find('.js-slide-exit'),
+// 		cont 	= wrp.find('.off-canvas-content');
 
-	function toggleSlide() {
-		btn.on('click tap', function() {
-			off.addClass('is-visible');
-			cont.addClass('slide-open');
-			menu.addClass('is-open');
-			if(btn.hasClass('left-slide')){
-				cont.addClass('from-left');
-			}
-			if(btn.hasClass('right-slide')){
-				cont.addClass('from-right');
-			}
-		});
-		off.on('click tap', function() {
-			off.removeClass('is-visible');
-			cont.removeClass('slide-open from-left from-right');
-		});
-	}
-	toggleSlide();
+// 	function toggleSlide() {
+// 		btn.on('click tap', function() {
+// 			off.addClass('is-visible');
+// 			cont.addClass('slide-open');
+// 			menu.addClass('is-open');
+// 			if(btn.hasClass('left-slide')){
+// 				cont.addClass('from-left');
+// 			}
+// 			if(btn.hasClass('right-slide')){
+// 				cont.addClass('from-right');
+// 			}
+// 		});
+// 		off.on('click tap', function() {
+// 			off.removeClass('is-visible');
+// 			cont.removeClass('slide-open from-left from-right');
+// 		});
+// 	}
+// 	toggleSlide();
 	// function closeSlide() {
 	// 	off.on('click tap', function() {
 	// 		menu.removeClass('is-open');
 	// 	});
 	// }
 	// setTimeout(closeSlide, 2000);
-});
+// });
 
 // FIXED BTN PDP CONTROL
 
@@ -284,53 +284,53 @@ function fxdBottom() {
 
 // PANEL MENU
 
-	// var jPM = $.jPanelMenu({
-	//     menu: '.menu-position-left',
-	//     trigger: '.left-menu-btn',
-	//     direction: 'left',
-	//     after: function(){
-	//     	$('.jPanelMenu-panel').toggleClass('left-menu-closed');
-	//     }
-	// });
-	// var jPM2 = $.jPanelMenu({
-	//     menu: '#right-main-menu',
-	//     trigger: '.right-menu-btn',
-	//     menuClass: 'jPanelMenu-menu2',
-	//     direction: 'right',
-	//     after: function(){
+var jPM = $.jPanelMenu({
+    menu: '.menu-position-left',
+    trigger: '.left-menu-btn',
+    direction: 'left',
+    after: function(){
+    	$('.jPanelMenu-panel').toggleClass('left-menu-closed');
+    }
+});
+var jPM2 = $.jPanelMenu({
+    menu: '#right-main-menu',
+    trigger: '.right-menu-btn',
+    menuClass: 'jPanelMenu-menu2',
+    direction: 'right',
+    after: function(){
 
-	//     }
-	// });
-	// jPM.on();
-	// jPM2.on();
+    }
+});
+jPM.on();
+jPM2.on();
 
-// $(function() {
-// //INCREMENT INPUT BUTTON
-// 	$('.with-inc').prepend('<div class="increment-btn up-num">+</div>');
-// 	$('.with-inc').append('<div class="increment-btn down-num">-</div>');
+$(function() {
+//INCREMENT INPUT BUTTON
+	$('.with-inc').prepend('<div class="increment-btn up-num">+</div>');
+	$('.with-inc').append('<div class="increment-btn down-num">-</div>');
 
-// 	var w 		= $('.with-inc'),
-// 		input 	= w.find('input'),
-// 		btn 	= w.find('.increment-btn'),
-// 		up		= w.find('.up-num'),
-// 		down	= w.find('.down-num');
+	var w 		= $('.with-inc'),
+		input 	= w.find('input'),
+		btn 	= w.find('.increment-btn'),
+		up		= w.find('.up-num'),
+		down	= w.find('.down-num');
 
-// 		btn.on("click tap", function() {
-// 		 	var elem = $(this);
-// 		  	// var newVal;
-// 		  	var oldValue = elem.siblings(input).val();
+		btn.on("click tap", function() {
+		 	var elem = $(this);
+		  	// var newVal;
+		  	var oldValue = elem.siblings(input).val();
 
-// 		  	if (elem.text() === "+") {
-// 			  var newVal = parseFloat(oldValue) + 1;
-// 			} else {
-// 		   		// Don't allow decrementing below zero
-// 		    	if (oldValue > 0) {
-// 			      var newVal = parseFloat(oldValue) - 1;
-// 			    } else {
-// 			      newVal = 0;
-// 			    }
-// 			  }
-// 		  elem.siblings("input").val(newVal);
-// 		});
-// });
+		  	if (elem.text() === "+") {
+			  var newVal = parseFloat(oldValue) + 1;
+			} else {
+		   		// Don't allow decrementing below zero
+		    	if (oldValue > 0) {
+			      var newVal = parseFloat(oldValue) - 1;
+			    } else {
+			      newVal = 0;
+			    }
+			  }
+		  elem.siblings("input").val(newVal);
+		});
+});
 
