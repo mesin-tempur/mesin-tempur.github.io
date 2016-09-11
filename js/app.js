@@ -1,6 +1,72 @@
 
 $(document).foundation();
 
+$( document ).ready(function() {
+	// JPANEL FIX HEADER
+	$('.jPanelMenu-panel').addClass('trans-reset left-menu-closed');
+	
+	// PANEL MENU
+	var jPM = $.jPanelMenu({
+	    menu: '.menu-position-left',
+	    trigger: '.left-menu-btn',
+	    direction: 'left',
+	    clone: false,
+	    openPosition:'80%',
+	    after: function(){
+	    	$('.jPanelMenu-panel').toggleClass('trans-reset');
+	    },
+	    afterOpen: function(){
+	    	$('.menu-overlay').removeClass('hidden');
+	    	$('.jPanelMenu-panel').addClass('posfx');
+	    },
+	    afterClose: function(){
+	    	$('.menu-overlay').addClass('hidden');
+	    	$('.jPanelMenu-panel').removeClass('posfx');
+	    }
+	});
+	var jPM2 = $.jPanelMenu({
+	    menu: '.menu-position-right',
+	    trigger: '.right-menu-btn',
+	    menuClass: 'jPanelMenu-menu2',
+	    direction: 'right',
+	    clone: false,
+	    openPosition:'80%',
+	    after: function(){
+	    	$('.jPanelMenu-panel').toggleClass('trans-reset');
+	    },
+	    afterOpen: function(){
+	    	$('.menu-overlay').removeClass('hidden');
+	    	$('.jPanelMenu-panel').addClass('posfx');
+	    },
+	    afterClose: function(){
+	    	$('.menu-overlay').addClass('hidden');
+	    	$('.jPanelMenu-panel').removeClass('posfx');
+	    }
+	});
+	var jPM3 = $.jPanelMenu({
+	    menu: '.menu-position-right2',
+	    trigger: '.right-menu-btn2',
+	    menuClass: 'jPanelMenu-menu3',
+	    direction: 'right',
+	    clone: false,
+	    openPosition:'80%',
+	    after: function(){
+	    	$('.jPanelMenu-panel').toggleClass('trans-reset');
+	    },
+	    afterOpen: function(){
+	    	$('.menu-overlay').removeClass('hidden');
+	    	$('.jPanelMenu-panel').addClass('posfx');
+	    },
+	    afterClose: function(){
+	    	$('.menu-overlay').addClass('hidden');
+	    	$('.jPanelMenu-panel').removeClass('posfx');
+	    }
+	});
+	jPM.on();
+	jPM2.on();
+	jPM3.on();
+});
+
 // SEARCH REVEAL MODAL
 function searchInputReveal() {
 	$(document).on(
@@ -72,6 +138,7 @@ function filterPush() {
 		closeBtn	= $('#off-canvas-filter-cat .close-button');
 
 	trigger.on('click tap', function() {
+		console.log('YEAY');
 		$($(this).attr('data-target')).removeClass('hidden');
 		filterMenu.add(closeBtn).addClass('hidden');
 	});
@@ -280,29 +347,6 @@ function fxdBottom() {
         else {$('.js-fxdBtm').css('display', '');}
 	});
 }
-
-
-// PANEL MENU
-
-var jPM = $.jPanelMenu({
-    menu: '.menu-position-left',
-    trigger: '.left-menu-btn',
-    direction: 'left',
-    after: function(){
-    	$('.jPanelMenu-panel').toggleClass('left-menu-closed');
-    }
-});
-var jPM2 = $.jPanelMenu({
-    menu: '#right-main-menu',
-    trigger: '.right-menu-btn',
-    menuClass: 'jPanelMenu-menu2',
-    direction: 'right',
-    after: function(){
-
-    }
-});
-jPM.on();
-jPM2.on();
 
 $(function() {
 //INCREMENT INPUT BUTTON

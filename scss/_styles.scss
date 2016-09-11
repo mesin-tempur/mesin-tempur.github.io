@@ -1461,12 +1461,30 @@ footer {
 // NOTIFICATION
 
 // JPANEL MENU
-.jPanelMenu-menu, .jPanelMenu-menu2 {
+.jPanelMenu-menu, .jPanelMenu-menu2, .jPanelMenu-menu3 {
 	top: 0;
 	min-height: 100vh;
 }
+.trans-reset {
+	transform:none !important;
+}
+.menu-overlay {
+	background:rgba(0,0,0,.6);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	&.hidden {display: none;}
+}
+.menu-position-right,
+.menu-position-right2 {
+	right: 0;
+	top: 0;
+}
 .jPanelMenu-panel {
-	
+	&.posfx {position: fixed !important;}
 }
 
 .counter-notif {
