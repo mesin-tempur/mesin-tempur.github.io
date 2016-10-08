@@ -482,3 +482,20 @@ function megaMenu() {
 	});
 }
 megaMenu();
+
+function headerSticky() {
+	$(window).scroll(function() {
+	    if ($(this).scrollTop() > 80) { // this refers to window
+	        $('header').addClass('header-sticky');
+	        $('.category-wrapper').addClass('fxd-cat');
+	        // $('.top-header').addClass('fxd-top');
+
+	    }
+	    else {
+	    	$('header').removeClass('header-sticky');
+	    	$('.category-wrapper').removeClass('fxd-cat');
+	    	// $('.top-header').removeClass('fxd-top');
+	    }
+	});
+}
+headerSticky()

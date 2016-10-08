@@ -17,8 +17,9 @@ ul.inline-block {
 	height: 25px;
 	overflow: hidden;
 	transition: height .25s linear;
-	position: relative;
-	z-index: 11;
+	// position: fixed;
+	width: 100%;
+	z-index: 119;
 	a {color:$white;}
 	.top-right {
 		float: right;
@@ -32,6 +33,13 @@ ul.inline-block {
 			&:last-child {border-right: none;}
 		}
 	}
+	// &.fxd-top {
+	// 	z-index: 1;
+	//     height: 0;
+	//     position: relative;
+	//     transition: height .25s linear;
+	//     overflow: hidden;
+	// }
 }
 header {
 	background:$primary-color;
@@ -78,6 +86,10 @@ header {
 	@include breakpoint(large) {
 		padding: 0;
 		background:white;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 120;
 		a {color:$primary-color}
 		.logo-area {
 			margin-top: 25px;
@@ -194,6 +206,22 @@ header {
 				}
 			}
 		}
+		&.header-sticky {
+			@include box-shadow(0,4px,8px,rgba(0,0,0,.1));
+			.top-header {    
+				z-index: 1;
+			    height: 0;
+			    position: relative;
+			    transition: height .25s linear;
+			    overflow: hidden;
+			}
+			.logo-area {
+				height: 50px;
+				margin-top: 15px;
+			}
+			.main-search {margin-top: 15px;}
+			.header-links {margin-top: 10px;}
+		}
 	}
 	@include breakpoint(large only) {
 		.main-search {width:50%;}	
@@ -274,10 +302,11 @@ header {
 .main-content {
 	// background:transparent url('image.png') left top no-repeat;
 	@include breakpoint(large) {
+		padding-top: 118px;
 		.content-top {
 			background:#EAEAEA;
 			position: relative;
-			z-index: 11;
+			z-index: 111;
 			@include box-shadow(0,4px,8px,rgba(0,0,0,.1));
 			.marketing-list {
 				margin-bottom: 0;
@@ -384,7 +413,7 @@ header {
 			position: fixed;
 		    height: 100%;
 		    width: 100%;
-		    z-index: 10;
+		    z-index: 110;
 		    top: 0;
 		    left: 0;
 		    bottom: 0;
