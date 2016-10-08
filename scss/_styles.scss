@@ -1682,6 +1682,7 @@ footer {
 		height: 32px;
 		@include border-radius(32px);
 	}
+	@include breakpoint(large) {padding: 0;}
 }
 .footer-bottom {
 	padding: 20px 0;
@@ -1715,11 +1716,60 @@ footer {
 			}
 		}
 	}
+	@include breakpoint(large) {
+		padding: 40px 0 20px;
+    	background: #e6e6e6;
+		color:$black;
+	}
+}
+.footer-desktop {
+	background:$light-gray;
+	.block-title {margin-bottom: 10px;text-transform: uppercase;font-size: $font-size-small;}
+	a {color:$black;}
+	.footer-list {
+		li {font-size: $font-size-small;}
+	}
+	.newsletter {
+		margin-bottom: 20px;
+		input {width: 60%;float: left;margin-right: 10px;}
+		button {float: left;width: 20%;line-height: 38px;height: 38px;padding: 0 20px;background:$primary-color;color:$white}
+	}
+	.social-link {
+		margin: 0;
+		li {
+			display: inline-block;
+			margin-right: 3px;
+			a {
+			    color:$white;
+			    margin: 0;
+			    .icon {
+			    	width: 40px;
+				    height: 40px;
+				    // background-color: $dark-gray;
+				    display: inline-block;
+				    border-radius: 40px;
+				    text-align: center;
+				    &:before {
+				    	font-size: 1.6em;
+						margin-top: 8px;
+						display: inline-block;
+				    }
+			    }
+			}
+		}
+	}
 }
 .copyright {
 	padding: 10px;
 	background-color:darken($primary-color, 10%);
 	color:white;
+	@include breakpoint(large) {
+		background: #ededed;
+		color:$black;
+	    // font-size: .8rem;
+	    text-align: center;
+	    padding: 10px 0;
+	}
 }
 
 // 4. SIDE MENU
