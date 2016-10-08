@@ -378,3 +378,107 @@ $(function() {
 		});
 });
 
+$('.full-banner').slick({
+	  dots: false,
+	  infinite: true,
+	  speed: 400,
+	  autoplay: true,
+	  autoplaySpeed: 4000,
+	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1
+});
+$('.halfsplit-banner').slick({
+	 dots: false,
+	 infinite: true,
+	 speed: 400,
+	 autoplay: true,
+	 autoplaySpeed: 3500,
+	 slidesToShow: 2,
+	 slidesToScroll: 2,
+	 mobileFirst:true,
+	 responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+ });
+$('.cm-slide').slick({
+	dots: false,
+	infinite: true,
+	slidesToShow: 2,
+	slidesToScroll: 2,
+	speed: 400,
+	autoplay: true,
+	autoplaySpeed: 6000,
+	mobileFirst:true,
+	arrows:false,
+	responsive: [
+	{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        arrows:true
+      }
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows:true
+      }
+    }
+    ]
+});
+
+// DESKTOP
+
+$('#dropdown-cat-search').click(function(e) {
+	e.stopPropagation();
+	$(this).toggleClass('active');
+});
+$('html').click(function() {
+    $('#dropdown-cat-search').removeClass('active');
+});
+
+// MEGAMENU
+
+function megaMenu() {
+	var wrp		= $('#category-wrapper'),
+		menu 	= wrp.find('#js-megamenu'),
+		btn		= wrp.find('.js-megabutton'),
+		lvl1	= wrp.find('.cat-lvl-1'),
+		lvl2	= wrp.find('.subcat-wrapper');
+
+	btn.mouseover(function(){
+		menu.addClass('active');
+		$(this).addClass('active-btn');
+		$('#js-dark-overlay').css({
+			display: "block",
+			opacity:"1"
+		})
+	});
+	lvl1.mouseover(function(){
+		lvl1.removeClass('active-cat');
+		$(this).addClass('active-cat');
+		lvl2.removeClass('active');
+		$(this).children('.subcat-wrapper').addClass('active');
+	});
+	wrp.mouseleave(function(){
+		menu.removeClass('active');
+		lvl1.removeClass('active-cat');
+		lvl2.removeClass('active');
+		btn.removeClass('active-btn');
+		$('#js-dark-overlay').css({
+			display: "none",
+			opacity:"0"
+		})
+	});
+}
+megaMenu();

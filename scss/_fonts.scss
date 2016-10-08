@@ -1,6 +1,34 @@
 @charset "UTF-8";
 
 @font-face {
+  font-family: 'proximanova';
+  src: url("../fonts/proximanova-regular.eot");
+  src: url("../fonts/proximanova-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-regular.woff2") format("woff2"), url("../fonts/proximanova-regular.woff") format("woff"), url("../fonts/proximanova-regular.ttf") format("truetype"), url("../fonts/proximanova-regular.svg#proxima-nova-regular") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: 'proximanova';
+  src: url("../fonts/proximanova-semibold.eot");
+  src: url("../fonts/proximanova-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-semibold.woff") format("woff"), url("../fonts/proximanova-semibold.ttf") format("truetype"), url("../fonts/proximanova-semibold.svg#proxima_nova_rgbold") format("svg");
+  font-weight: bold;
+  font-style: normal; 
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: 'proximanova-light';
+  src: url("../fonts/proximanova-light.eot");
+  src: url("../fonts/proximanova-light.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-light.woff2") format("woff2"), url("../fonts/proximanova-light.woff") format("woff"), url("../fonts/proximanova-light.ttf") format("truetype"), url("../fonts/proximanova-light.svg#proxima_nova_rglight") format("svg");
+  font-weight: lighter;
+  font-style: normal; 
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
   font-family: "belanjaqu";
   src:url("../fonts/belanjaqu.eot");
   src:url("../fonts/belanjaqu.eot?#iefix") format("embedded-opentype"),
