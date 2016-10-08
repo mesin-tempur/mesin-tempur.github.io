@@ -554,8 +554,15 @@ header {
 		}
 	}
 	@include breakpoint(large) {
-		.product-listing-grid {
-			.item {width: 19.2%}
+		&.produk-rekomendasi {
+			.product-listing-grid {
+				.item {
+					width: 24%;
+					margin-right: 0.8%;
+					margin-left: 0;
+					&:nth-child(4n+4){margin-right: 0;}
+				}
+			}
 		}
 	}
 }
@@ -1308,11 +1315,22 @@ header {
 			a {
 				padding: 10px 5px 5px 5px;
 				display: block;
+				font-size: $font-size-small;
 				.icon {
 					width: 50px;height: 50px;display: block;margin: 0 auto;margin-bottom: 10px;
 					i {font-size: 42px;color: $primary-color;}
 				}
 				p {margin: 10px 0 5px;line-height: 1.5;color: $black;height: 48px;}
+			}
+		}
+	}
+	@include breakpoint(large) {
+		ul {
+			li {
+				width: 24.5%;
+				&:nth-child(4n+4) {border-right: none;}
+				&:nth-child(3n+3) {border-right: 1px solid whitesmoke;}
+				&:nth-child(-n+4) {border-bottom: 1px solid whitesmoke;}
 			}
 		}
 	}
