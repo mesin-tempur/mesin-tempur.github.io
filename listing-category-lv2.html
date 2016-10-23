@@ -12,8 +12,13 @@
   <div class="off-canvas-wrapper">
     <div class="page-container off-canvas-wrapper-inner" data-off-canvas-wrapper>
       <!-- SIDE MENU -->
-      <div class="menu-overlay hidden"></div>
-      <div class="off-canvas menu-position-left side-canvas-menu">
+      <div class="menu-overlay hidden js-slide-off"></div>
+      <div class="js-slide-menu bq-slide-menu bq-slide-menu-left side-canvas-menu">
+        <div class="side-menu-header">
+          MENU
+          <span class="js-slide-off ic-close"></span>
+        </div>
+        <div class="side-menu-artwork"></div>
         <div class="row">
           <div class="small-12 column">
             <ul class="side-menu-list">
@@ -100,130 +105,92 @@
           </ul>
         </div>
       </div>
-      <!-- FILTER & CATEGORY CANVAS RIGHT -->
-      <div class="off-canvas menu-position-right side-canvas-filter">
-        <div class="canvas-gray-header">
-          <button class="close-button" aria-label="Close alert" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div id="off-canvas-category" class="off-canvas-filter-cat-content">
-          <div class="row">
-            <div class="small-12 column">
-              <form action="listing-category.html">
-                <div class="fblock select-styling">
-                  <select name="cat-main-reveal" id="cat-main-reveal">
-                    <option value="1">Fashion</option>
-                    <option value="2">Handphone &amp; Tablet</option>
-                    <option value="3">Rumah Tangga</option>
-                  </select>
-                </div>
-                <div class="fblock select-styling">
-                  <select name="sub-cat-main-reveal" id="sub-cat-main-reveal">
-                    <option value="0" disabled selected>- Pilih Sub Kategori -</option>
-                    <option value="1">Fashion Pria</option>
-                    <option value="2">Fashion Wanita</option>
-                  </select>
-                </div>
-                <div class="fblock select-styling disabled">
-                  <select name="sub-sub-cat-main-reveal" id="sub-sub-cat-main-reveal">
-                    <option value="1"></option>
-                  </select>
-                </div>
-                <div class="fblock submit-group">
-                  <button type="submit" class="button expanded">SIMPAN</button>
-                  <a href="#" class="button expanded bordered-btn">RESET</a>
-                </div>
-              </form>
-            </div>
+      <!-- FILTER & CATEGORY CANVAS -->
+      <div class="new-filter-cat container-for-mobile hide-for-large">
+        <div class="filter-mobile-inner">
+          <div class="filter-header">
+            <div class="js-close-filter close-button"><span class="ic-close"></span></div>
           </div>
+          <form action="">
+            <div class="side-filter filter-accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+              <section class="cat-filter accordion-item is-active" data-accordion-item>
+                <a href="#" class="list-title accordion-title">Kategori</a>
+                <ul class="accordion-content" data-tab-content>
+                  <li><a href="listing-lvl3.html">Pakaian</a></li>
+                  <li><a href="listing-lvl3.html">Celana</a></li>
+                  <li><a href="listing-lvl3.html">Jaket &amp; Sweater</a></li>
+                  <li><a href="listing-lvl3.html">Aksesoris</a></li>
+                  <li><a href="listing-lvl3.html">Sepatu &amp; Sandal</a></li>
+                  <li><a href="listing-lvl3.html">Kacamata</a></li>
+                  <li><a href="listing-lvl3.html">Jam Tangan</a></li>
+                </ul>
+              </section>
+              <section class="store-filter accordion-item" data-accordion-item>
+                <a href="#" class="list-title accordion-title">Diskon</a>
+                <ul class="style-checkbox accordion-content" data-tab-content>
+                  <li>
+                    <input type="checkbox" value="prdk-1" id="prdk-1">
+                    <label for="prdk-1">
+                      <span class="ic-chk"></span>
+                      <span class="text">Produk Diskon</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" value="prdk-2" id="prdk-2">
+                    <label for="prdk-2">
+                      <span class="ic-chk"></span>
+                      <span class="text">Produk Cashback</span>
+                    </label>
+                  </li>
+                </ul>
+              </section>
+              <section class="store-filter accordion-item" data-accordion-item>
+                <a href="#" class="list-title accordion-title">Toko</a>
+                <ul class="style-checkbox accordion-content" data-tab-content>
+                  <li>
+                    <input type="checkbox" value="store-1" id="store-1">
+                    <label for="store-1">
+                      <span class="ic-chk"></span>
+                      <span class="text">Semua Toko</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" value="store-2" id="store-2">
+                    <label for="store-2">
+                      <span class="ic-chk"></span>
+                      <span class="text">Toko Premium</span>
+                    </label>
+                  </li>
+                </ul>
+              </section>
+              <section class="price-filter accordion-item" data-accordion-item>
+                <a href="#" class="list-title accordion-title">Harga</a>
+                <div class="accordion-content" data-tab-content>
+                  <div class="slider" data-slider="6lz6za-slider" data-initial-start="25" data-initial-end="75">
+                    <span class="slider-handle" aria-controls="price-min" data-slider-handle="" role="slider" tabindex="0" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" aria-orientation="horizontal" style="left: 22.51%;"></span>
+                    <span class="slider-fill" data-slider-fill="" style="width: 0px; min-width: 51.54%; left: 22.51%;"></span>
+                    <span class="slider-handle" aria-controls="price-max" data-slider-handle="" role="slider" tabindex="0" aria-valuenow="75" aria-valuemax="100" aria-valuemin="0" aria-orientation="horizontal" style="left: 67.54%;"></span>
+                  </div>
+                  <div class="slider-input clr">
+                    <input type="number" id="price-min" max="100" min="0" step="1">
+                    <span>-</span>
+                    <input type="number" id="price-max" max="100" min="0" step="1">
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="action-block">
+              <div class="half">
+                <a href="#" class="button bordered-btn">BATAL</a>
+              </div>
+              <div class="half">
+                <button class="button expanded" type="submit">CARI</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="off-canvas menu-position-right2 side-canvas-filter">
-        <div class="canvas-gray-header">
-          <button class="close-button" aria-label="Close alert" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div id="off-canvas-filter" class="off-canvas-filter-cat-content push-filter">
-          <div class="row">
-            <div class="small-12 column">
-              <!-- FILTER MENU -->
-              <div class="filter-menu clr">
-                <div class="fblock merek">
-                  <div class="label-area">Brand</div>
-                  <div class="button-area with-right-arrow elipsis" data-target="#filter-merek">
-                    <span>Pilih Brand</span>
-                  </div>
-                </div>
-              </div>
-              <div class="filter-menu">
-                <div class="fblock harga">
-                  <div class="label-area">Harga</div>
-                  <div class="button-area with-right-arrow elipsis" data-target="#filter-harga">
-                    <span>1.000.000 - 2.000.000</span>
-                  </div>
-                </div>
-              </div>
-              <div class="filter-menu">
-                <div class="fblock kondisi">
-                  <div class="label-area">Kondisi</div>
-                  <div class="button-area with-right-arrow elipsis" data-target="#filter-kondisi">
-                    <span>Semua Kondisi</span>
-                  </div>
-                </div>
-              </div>
-              <!-- End FILTER MENU -->
-              <!-- FILTER INPUT -->
-              <div id="filter-merek" class="filter-action hidden">
-                <div class="filter-header">
-                  <a href="#" class="back back-to-filter-menu">Selesai</a>
-                </div>
-                <ul class="bordered-list">
-                  <li class="push-opt selected"><a href="#">Semua<span class="fr blue icon ic-checkmark"></span></a></li>
-                  <li class="push-opt"><a href="#">Adidas<span class="fr blue icon ic-checkmark"></span></a></li>
-                  <li class="push-opt"><a href="#">DC<span class="fr blue icon ic-checkmark"></span></a></li>
-                  <li class="push-opt"><a href="#">Diadora<span class="fr blue icon ic-checkmark"></span></a></li>
-                  <li class="push-opt"><a href="#">Eagle<span class="fr blue icon ic-checkmark"></span></a></li>
-                  <li class="push-opt"><a href="#">New Balance<span class="fr blue icon ic-checkmark"></span></a></li>
-                  <li class="push-opt"><a href="#">Nike<span class="fr blue icon ic-checkmark"></span></a></li>
-                </ul>
-              </div>
-              <div id="filter-harga" class="filter-action hidden">
-                <div class="filter-header">
-                  <a href="#" class="back back-to-filter-menu">Selesai</a>
-                </div>
-                <div class="fblock">
-                  <div class="label-input-area">Harga Minimal</div>
-                  <div class="input-area">
-                    <span>Rp</span>
-                    <input type="text" class="price-mask">
-                  </div>
-                </div>
-                <div class="fblock">
-                  <div class="label-input-area">Harga Maksimal</div>
-                  <div class="input-area">
-                    <span>Rp</span>
-                    <input type="text" class="price-mask">
-                  </div>
-                </div>
-              </div>
-              <div id="filter-kondisi" class="filter-action hidden">
-                <div class="filter-header">
-                  <a href="#" class="back back-to-filter-menu">Selesai</a>
-                </div>
-                <ul class="bordered-list">
-                  <li class="push-opt selected"><a href="#">Semua Kondisi<span class="fr blue icon ic-checkmark"></span></a></li>
-                  <li class="push-opt"><a href="#">Baru<span class="fr blue icon ic-checkmark"></span></a></li>
-                  <li class="push-opt"><a href="#">Bekas<span class="fr blue icon ic-checkmark"></span></a></li>
-                </ul>
-              </div>
-              <!-- End FILTER INPUT -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END FILTER & CATEGORY CANVAS RIGHT -->
+      <!-- END FILTER & CATEGORY CANVAS -->
       <div class="off-canvas-content" data-off-canvas-content>
         <header>
           <div class="top-header show-for-large">
@@ -243,7 +210,7 @@
           <div class="row">
             <!-- MOBILE HEADER START -->
             <div class="xsmall-12 small-6 columns hide-for-large">
-              <a href="#" class="left-menu-btn fl mr10" ><span class="icon ic-hamburger"></span></a>
+              <a href="#" class="js-menu-button js-menu-left fl mr10" ><span class="icon ic-hamburger"></span></a>
               <a href="index.html" class="logo fl"></a>
             </div>
             <div class="xsmall-12 small-6 columns hide-for-large">
@@ -376,12 +343,10 @@
                     </ul>
                   </div>
                 </div>
-                <ul class="inline-block marketing-list">
-                  <li><a href="#">Double Cashback</a></li>
-                  <li><a href="#">Back to School</a></li>
-                  <li><a href="#">Hijab Festival</a></li>
-                  <li><a href="#">Parade Buku</a></li>
-                  <li><a href="#">MusikQu</a></li>
+                <ul class="inline-block breadcrumbs">
+                  <li><a href="#">home</a></li>
+                  <li><a href="#">fashion</a></li>
+                  <li class="current">fashion pria</li>
                 </ul>
               </div>
             </div>
@@ -400,64 +365,100 @@
           </div> -->
           <div class="listings">
             <div class="top-filter-sort clr hide-for-large">
-              <div class="third tac">
-                <div class="inner">
-                  <a href="#" class="elipsis canvas-filter-trigger right-menu-btn">Fashion</a>
-                  <div class="check-sticker"><span class="icon ic-checkmark"></span></div>
-                </div>
-              </div>
-              <div class="third tac">
+              <div class="half tac">
                 <div class="inner">
                   <a href="#" class="elipsis js-mobile-filter-btn canvas-filter-trigger right-menu-btn2">Filter</a>
                   <div class="check-sticker"><span class="icon ic-checkmark"></span></div>
                 </div>
               </div>
-              <div class="third tac">
+              <div class="half tac">
                 <div class="inner">
-                  <select name="sort-opt" id="sort-opt">
-                    <option value="1">Terbaru</option>
-                    <option value="2">Termurah</option>
-                    <option value="3">Termahal</option>
-                  </select>
+                  <a href="#" class="elipsis" data-toggle="sort-dropdown">Urutkan</a>
+                  <div class="dropdown-pane check-dropdown" id="sort-dropdown" data-dropdown data-hover="true" data-hover-pane="true">
+                      <ul>
+                        <li><a href="#" class="is-active">Produk Terbaru</a></li>
+                        <li><a href="#">Harga Terendah</a></li>
+                        <li><a href="#">Harga Tertinggi</a></li>
+                        <li><a href="#">Diskon Terendah</a></li>
+                        <li><a href="#">Diskon Tertinggi</a></li>
+                      </ul>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="small-12 large-3 columns" >
-                <div class="new-filter-cat separator separator-right">
-                  <div class="container-for-mobile">
-                    <div class="filter-header hide-for-large">
-                      <div class="js-close-filter close-button"><span>x</span></div>
-                    </div>
-                    <div class="side-cat">
-                      <section class="cat-filter">
-                        <div class="list-title">Kategori</div>
-                        <ul>
-                          <li><a href="listing-lvl3.html">Pakaian</a></li>
-                          <li><a href="listing-lvl3.html">Celana</a></li>
-                          <li><a href="listing-lvl3.html">Jaket &amp; Sweater</a></li>
-                          <li><a href="listing-lvl3.html">Aksesoris</a></li>
-                          <li><a href="listing-lvl3.html">Sepatu &amp; Sandal</a></li>
-                          <li><a href="listing-lvl3.html">Kacamata</a></li>
-                          <li><a href="listing-lvl3.html">Jam Tangan</a></li>
-                        </ul>
-                      </section>
-                    </div>
-                    <div class="side-filter">
-                      <section class="price-filter">
-                        <div class="list-title">Harga</div>
-                        <div class="slider" data-slider="6lz6za-slider" data-initial-start="25" data-initial-end="75">
-                          <span class="slider-handle" aria-controls="price-min" data-slider-handle="" role="slider" tabindex="0" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" aria-orientation="horizontal" style="left: 22.51%;"></span>
-                          <span class="slider-fill" data-slider-fill="" style="width: 0px; min-width: 51.54%; left: 22.51%;"></span>
-                          <span class="slider-handle" aria-controls="price-max" data-slider-handle="" role="slider" tabindex="0" aria-valuenow="75" aria-valuemax="100" aria-valuemin="0" aria-orientation="horizontal" style="left: 67.54%;"></span>
-                        </div>
-                        <div class="slider-input clr">
-                          <input type="number" id="price-min" max="100" min="0" step="1">
-                          <span>-</span>
-                          <input type="number" id="price-max" max="100" min="0" step="1">
-                        </div>
-                      </section>
-                    </div>
+              <div class="show-for-large large-3 columns" >
+                <div class="separator separator-right">
+                  <div class="new-filter-cat container-for-desktop">
+                    <form action="">  
+                      <div class="side-cat">
+                        <section class="cat-filter">
+                          <div class="list-title">Kategori</div>
+                          <ul>
+                            <li><a href="listing-lvl3.html">Pakaian</a></li>
+                            <li><a href="listing-lvl3.html">Celana</a></li>
+                            <li><a href="listing-lvl3.html">Jaket &amp; Sweater</a></li>
+                            <li><a href="listing-lvl3.html">Aksesoris</a></li>
+                            <li><a href="listing-lvl3.html">Sepatu &amp; Sandal</a></li>
+                            <li><a href="listing-lvl3.html">Kacamata</a></li>
+                            <li><a href="listing-lvl3.html">Jam Tangan</a></li>
+                          </ul>
+                        </section>
+                      </div>
+                      <div class="side-filter">
+                        <section class="store-filter">
+                          <div class="list-title">Diskon</div>
+                          <ul class="style-checkbox">
+                            <li>
+                              <input type="checkbox" value="prdk-1" id="prdk-1">
+                              <label for="prdk-1">
+                                <span class="ic-chk"></span>
+                                <span class="text">Produk Diskon</span>
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" value="prdk-2" id="prdk-2">
+                              <label for="prdk-2">
+                                <span class="ic-chk"></span>
+                                <span class="text">Produk Cashback</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </section>
+                        <section class="store-filter">
+                          <div class="list-title">Toko</div>
+                          <ul class="style-checkbox">
+                            <li>
+                              <input type="checkbox" value="store-1" id="store-1">
+                              <label for="store-1">
+                                <span class="ic-chk"></span>
+                                <span class="text">Semua Toko</span>
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" value="store-2" id="store-2">
+                              <label for="store-2">
+                                <span class="ic-chk"></span>
+                                <span class="text">Toko Premium</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </section>
+                        <section class="price-filter">
+                          <div class="list-title">Harga</div>
+                          <div class="slider" data-slider="6lz6za-slider" data-initial-start="25" data-initial-end="75">
+                            <span class="slider-handle" aria-controls="price-min-desktop" data-slider-handle="" role="slider" tabindex="0" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" aria-orientation="horizontal" style="left: 22.51%;"></span>
+                            <span class="slider-fill" data-slider-fill="" style="width: 0px; min-width: 51.54%; left: 22.51%;"></span>
+                            <span class="slider-handle" aria-controls="price-max-desktop" data-slider-handle="" role="slider" tabindex="0" aria-valuenow="75" aria-valuemax="100" aria-valuemin="0" aria-orientation="horizontal" style="left: 67.54%;"></span>
+                          </div>
+                          <div class="slider-input clr">
+                            <input type="number" id="price-min-desktop" max="100" min="0" step="1">
+                            <span>-</span>
+                            <input type="number" id="price-max-desktop" max="100" min="0" step="1">
+                          </div>
+                        </section>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -544,6 +545,84 @@
                         <div class="product-price">
                           <span>Rp 850.000</span>
                           <span class="striked">Rp 1.200.000</span>
+                        </div>
+                      </div>
+                      <div class="seller-box">
+                        <div class="ic ic-store"></div>
+                        <div class="seller-detail">
+                          <div class="seller-name"><a href="#">Thats Right</a></div>
+                          <div class="seller-loc">Bandung</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="detail.html">
+                      <div class="img-box"><img src="./dummy/prod-thumb-1.png" alt=""></div>
+                      <div class="desc-box">
+                        <div class="product-title">Sepatu New Balance</div>
+                        <div class="product-price">
+                          <span>Rp 850.000</span>
+                          <span class="striked">Rp 1.200.000</span>
+                        </div>
+                      </div>
+                      <div class="seller-box">
+                        <div class="ic ic-store"></div>
+                        <div class="seller-detail">
+                          <div class="seller-name"><a href="#">Thats Right</a></div>
+                          <div class="seller-loc">Bandung</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="detail.html">
+                      <div class="img-box"><img src="./dummy/prod-thumb-2.png" alt=""></div>
+                      <div class="desc-box">
+                        <div class="product-title">Sepatu Slip On</div>
+                        <div class="product-price">
+                          <span>Rp 850.000</span>
+                          <span class="striked">Rp 1.200.000</span>
+                        </div>
+                      </div>
+                      <div class="seller-box">
+                        <div class="ic ic-store"></div>
+                        <div class="seller-detail">
+                          <div class="seller-name"><a href="#">Thats Right</a></div>
+                          <div class="seller-loc">Bandung</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="detail.html">
+                      <div class="img-box"><img src="./dummy/prod-thumb-1.png" alt=""></div>
+                      <div class="desc-box">
+                        <div class="product-title">Sepatu New Balance</div>
+                        <div class="product-price">
+                          <span>Rp 850.000</span>
+                          <span class="striked">Rp 1.200.000</span>
+                          <span class="discount">25%</span>
+                        </div>
+                      </div>
+                      <div class="seller-box">
+                        <div class="ic ic-store"></div>
+                        <div class="seller-detail">
+                          <div class="seller-name"><a href="#">Thats Right</a></div>
+                          <div class="seller-loc">Bandung</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="detail.html">
+                      <div class="img-box"><img src="./dummy/prod-thumb-2.png" alt=""></div>
+                      <div class="desc-box">
+                        <div class="product-title">Sepatu Slip On</div>
+                        <div class="product-price">
+                          <span>Rp 850.000</span>
+                          <span class="striked">Rp 1.200.000</span>
+                          <span class="discount">25%</span>
                         </div>
                       </div>
                       <div class="seller-box">

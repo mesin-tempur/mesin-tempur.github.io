@@ -12,8 +12,13 @@
   <div class="off-canvas-wrapper">
     <div class="page-container off-canvas-wrapper-inner">
       <!-- SIDE MENU -->
-      <div class="menu-overlay hidden"></div>
-      <div class="off-canvas menu-position-left side-canvas-menu">
+      <div class="menu-overlay hidden js-slide-off"></div>
+      <div class="js-slide-menu bq-slide-menu bq-slide-menu-left side-canvas-menu">
+        <div class="side-menu-header">
+          MENU
+          <span class="js-slide-off ic-close"></span>
+        </div>
+        <div class="side-menu-artwork"></div>
         <div class="row">
           <div class="small-12 column">
             <ul class="side-menu-list">
@@ -119,7 +124,7 @@
           <div class="row">
             <!-- MOBILE HEADER START -->
             <div class="xsmall-12 small-6 columns hide-for-large">
-              <a href="#" class="left-menu-btn fl mr10" ><span class="icon ic-hamburger"></span></a>
+              <a href="#" class="js-menu-button js-menu-left fl mr10" ><span class="icon ic-hamburger"></span></a>
               <a href="index.html" class="logo fl"></a>
             </div>
             <div class="xsmall-12 small-6 columns hide-for-large">
@@ -888,7 +893,6 @@
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/min/slick.min.js"></script>
-    <script src="js/min/jpanel-min.js"></script>
     <script src="js/min/app-min.js"></script>
     <script>$('.main-banners').slick();$('.cm-slide').slick();</script>
   </div>

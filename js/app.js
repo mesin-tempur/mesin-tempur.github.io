@@ -1,70 +1,70 @@
 
 $(document).foundation();
 
-$( document ).ready(function() {
-	// JPANEL FIX HEADER
-	$('.jPanelMenu-panel').addClass('trans-reset left-menu-closed');
+// $( document ).ready(function() {
+// 	// JPANEL FIX HEADER
+// 	$('.jPanelMenu-panel').addClass('trans-reset left-menu-closed');
 	
-	// PANEL MENU
-	var jPM = $.jPanelMenu({
-	    menu: '.menu-position-left',
-	    trigger: '.left-menu-btn',
-	    direction: 'left',
-	    clone: false,
-	    openPosition:'80%',
-	    after: function(){
-	    	$('.jPanelMenu-panel').toggleClass('trans-reset');
-	    },
-	    afterOpen: function(){
-	    	$('.menu-overlay').removeClass('hidden');
-	    	$('.jPanelMenu-panel').addClass('posfx');
-	    },
-	    afterClose: function(){
-	    	$('.menu-overlay').addClass('hidden');
-	    	$('.jPanelMenu-panel').removeClass('posfx');
-	    }
-	});
-	// var jPM2 = $.jPanelMenu({
-	//     menu: '.menu-position-right',
-	//     trigger: '.right-menu-btn',
-	//     menuClass: 'jPanelMenu-menu2',
-	//     direction: 'right',
-	//     clone: false,
-	//     openPosition:'80%',
-	//     after: function(){
-	//     	$('.jPanelMenu-panel').toggleClass('trans-reset');
-	//     },
-	//     afterOpen: function(){
-	//     	$('.menu-overlay').removeClass('hidden');
-	//     	$('.jPanelMenu-panel').addClass('posfx');
-	//     },
-	//     afterClose: function(){
-	//     	$('.menu-overlay').addClass('hidden');
-	//     	$('.jPanelMenu-panel').removeClass('posfx');
-	//     }
-	// });
-	// var jPM3 = $.jPanelMenu({
-	//     menu: '.menu-position-right2',
-	//     trigger: '.right-menu-btn2',
-	//     menuClass: 'jPanelMenu-menu3',
-	//     direction: 'right',
-	//     clone: false,
-	//     openPosition:'80%',
-	//     after: function(){
-	//     	$('.jPanelMenu-panel').toggleClass('trans-reset');
-	//     },
-	//     afterOpen: function(){
-	//     	$('.menu-overlay').removeClass('hidden');
-	//     	$('.jPanelMenu-panel').addClass('posfx');
-	//     },
-	//     afterClose: function(){
-	//     	$('.menu-overlay').addClass('hidden');
-	//     	$('.jPanelMenu-panel').removeClass('posfx');
-	//     }
-	// });
-	jPM.on();
-	// jPM2.on();
-});
+// 	// PANEL MENU
+// 	var jPM = $.jPanelMenu({
+// 	    menu: '.menu-position-left',
+// 	    trigger: '.left-menu-btn',
+// 	    direction: 'left',
+// 	    clone: false,
+// 	    openPosition:'80%',
+// 	    after: function(){
+// 	    	$('.jPanelMenu-panel').toggleClass('trans-reset');
+// 	    },
+// 	    afterOpen: function(){
+// 	    	$('.menu-overlay').removeClass('hidden');
+// 	    	$('.jPanelMenu-panel').addClass('posfx');
+// 	    },
+// 	    afterClose: function(){
+// 	    	$('.menu-overlay').addClass('hidden');
+// 	    	$('.jPanelMenu-panel').removeClass('posfx');
+// 	    }
+// 	});
+// 	var jPM2 = $.jPanelMenu({
+// 	    menu: '.menu-position-right',
+// 	    trigger: '.right-menu-btn',
+// 	    menuClass: 'jPanelMenu-menu2',
+// 	    direction: 'right',
+// 	    clone: false,
+// 	    openPosition:'80%',
+// 	    after: function(){
+// 	    	$('.jPanelMenu-panel').toggleClass('trans-reset');
+// 	    },
+// 	    afterOpen: function(){
+// 	    	$('.menu-overlay').removeClass('hidden');
+// 	    	$('.jPanelMenu-panel').addClass('posfx');
+// 	    },
+// 	    afterClose: function(){
+// 	    	$('.menu-overlay').addClass('hidden');
+// 	    	$('.jPanelMenu-panel').removeClass('posfx');
+// 	    }
+// 	});
+// 	var jPM3 = $.jPanelMenu({
+// 	    menu: '.menu-position-right2',
+// 	    trigger: '.right-menu-btn2',
+// 	    menuClass: 'jPanelMenu-menu3',
+// 	    direction: 'right',
+// 	    clone: false,
+// 	    openPosition:'80%',
+// 	    after: function(){
+// 	    	$('.jPanelMenu-panel').toggleClass('trans-reset');
+// 	    },
+// 	    afterOpen: function(){
+// 	    	$('.menu-overlay').removeClass('hidden');
+// 	    	$('.jPanelMenu-panel').addClass('posfx');
+// 	    },
+// 	    afterClose: function(){
+// 	    	$('.menu-overlay').addClass('hidden');
+// 	    	$('.jPanelMenu-panel').removeClass('posfx');
+// 	    }
+// 	});
+// 	jPM.on();
+// 	jPM2.on();
+// });
 
 // SEARCH REVEAL MODAL
 function searchInputReveal() {
@@ -295,38 +295,39 @@ $('#kodeVoucher').change(function(){
 });
 
 // CUSTOM SLIDE MENU
-// $(function() {
-// 	var wrp 	= $('.page-container'),
-// 		btn 	= wrp.find('.menu-button'),
-// 		menu 	= wrp.find('.slide-menu'),
-// 		off 	= wrp.find('.js-slide-exit'),
-// 		cont 	= wrp.find('.off-canvas-content');
+$(function() {
+	var wrp 	= $('.page-container'),
+		btn 	= wrp.find('.js-menu-button'),
+		menu 	= wrp.find('.js-slide-menu'),
+		off 	= wrp.find('.js-slide-off'),
+		cont 	= $('body');
 
-// 	function toggleSlide() {
-// 		btn.on('click tap', function() {
-// 			off.addClass('is-visible');
-// 			cont.addClass('slide-open');
-// 			menu.addClass('is-open');
-// 			if(btn.hasClass('left-slide')){
-// 				cont.addClass('from-left');
-// 			}
-// 			if(btn.hasClass('right-slide')){
-// 				cont.addClass('from-right');
-// 			}
-// 		});
-// 		off.on('click tap', function() {
-// 			off.removeClass('is-visible');
-// 			cont.removeClass('slide-open from-left from-right');
-// 		});
-// 	}
-// 	toggleSlide();
-	// function closeSlide() {
-	// 	off.on('click tap', function() {
-	// 		menu.removeClass('is-open');
-	// 	});
-	// }
-	// setTimeout(closeSlide, 2000);
-// });
+	function toggleSlide() {
+		btn.on('click tap', function() {
+			off.removeClass('hidden');
+			cont.addClass('slide-open');
+			menu.addClass('is-open');
+			// if(btn.hasClass('js-menu-left')){
+			// 	cont.addClass('from-left');
+			// }
+			// if(btn.hasClass('js-menu-right')){
+			// 	cont.addClass('from-right');
+			// }
+		});
+		off.on('click tap', function() {
+			off.addClass('hidden');
+			menu.removeClass('is-open');
+			cont.removeClass('slide-open');
+		});
+	}
+	toggleSlide();
+	function closeSlide() {
+		off.on('click tap', function() {
+			menu.removeClass('is-open');
+		});
+	}
+	setTimeout(closeSlide, 2000);
+});
 
 // FIXED BTN PDP CONTROL
 
@@ -502,9 +503,11 @@ headerSticky()
 function mobileFilter() {
 	$('.js-mobile-filter-btn').on('click',function(){
 		$('.new-filter-cat').addClass('open').css('visibility','visible');
+		$('body').addClass('overlayOpen');
 	});
 	$('.js-close-filter').on('click',function(){
 		$('.new-filter-cat').removeClass('open').css('visibility','');
+		$('body').removeClass('overlayOpen');
 	});
 }
 mobileFilter()
