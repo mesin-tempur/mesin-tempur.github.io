@@ -6969,6 +6969,8 @@ span.selected-cat-parent {
 
 .cart-list {
   font-size: 1rem; }
+  .cart-list .item-group {
+    border: 1px solid #ededed; }
   .cart-list .img-box {
     margin-right: 10px;
     width: 80px; }

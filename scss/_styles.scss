@@ -1783,6 +1783,7 @@ span.selected-cat-parent {
 
 // CART PAGE
 .cart-page {
+
 	.white-block {
 		margin-bottom: 0;
 		padding: 15px;
@@ -1791,6 +1792,9 @@ span.selected-cat-parent {
 }
 .cart-list{
 	font-size:1rem;
+	.item-group {
+		border:1px solid #ededed;
+	}
 	.img-box {
 		margin-right: 10px;
 		width: 80px;

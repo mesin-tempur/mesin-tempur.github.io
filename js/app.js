@@ -348,35 +348,35 @@ function fxdBottom() {
 	});
 }
 
-$(function() {
-//INCREMENT INPUT BUTTON
-	$('.with-inc').prepend('<div class="increment-btn up-num">+</div>');
-	$('.with-inc').append('<div class="increment-btn down-num">-</div>');
+// $(function() {
+// //INCREMENT INPUT BUTTON
+// 	$('.with-inc').prepend('<div class="increment-btn up-num">+</div>');
+// 	$('.with-inc').append('<div class="increment-btn down-num">-</div>');
 
-	var w 		= $('.with-inc'),
-		input 	= w.find('input'),
-		btn 	= w.find('.increment-btn'),
-		up		= w.find('.up-num'),
-		down	= w.find('.down-num');
+// 	var w 		= $('.with-inc'),
+// 		input 	= w.find('input'),
+// 		btn 	= w.find('.increment-btn'),
+// 		up		= w.find('.up-num'),
+// 		down	= w.find('.down-num');
 
-		btn.on("click tap", function() {
-		 	var elem = $(this);
-		  	// var newVal;
-		  	var oldValue = elem.siblings(input).val();
+// 		btn.on("click tap", function() {
+// 		 	var elem = $(this);
+// 		  	// var newVal;
+// 		  	var oldValue = elem.siblings(input).val();
 
-		  	if (elem.text() === "+") {
-			  var newVal = parseFloat(oldValue) + 1;
-			} else {
-		   		// Don't allow decrementing below zero
-		    	if (oldValue > 0) {
-			      var newVal = parseFloat(oldValue) - 1;
-			    } else {
-			      newVal = 0;
-			    }
-			  }
-		  elem.siblings("input").val(newVal);
-		});
-});
+// 		  	if (elem.text() === "+") {
+// 			  var newVal = parseFloat(oldValue) + 1;
+// 			} else {
+// 		   		// Don't allow decrementing below zero
+// 		    	if (oldValue > 0) {
+// 			      var newVal = parseFloat(oldValue) - 1;
+// 			    } else {
+// 			      newVal = 0;
+// 			    }
+// 			  }
+// 		  elem.siblings("input").val(newVal);
+// 		});
+// });
 
 $('.full-banner').slick({
 	  dots: false,
