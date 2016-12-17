@@ -984,6 +984,9 @@ header {
 		.label-area {width: 40%;display: inline-block;text-align: left;}
 		.input-area {width: 54%;display: inline-block;text-align: right;}
 		select {margin-bottom: 0;}
+		@include breakpoint (large) {
+			.label-area {display: block;margin-bottom: 10px;}
+		}
 	}
 }
 .pdp-action {
@@ -993,6 +996,18 @@ header {
 		margin-bottom: 10px;
 		text-transform: uppercase;
 		&:last-child {margin-bottom: 0;}
+	}
+	@include breakpoint (large) {
+		background: none;
+		width: 285px;
+		padding-top: 0;
+	}
+}
+.desktop-cta {
+	@include breakpoint (large) {
+		padding: 15px;
+		border:$code-border;
+		a {margin-bottom: 10px;}
 	}
 }
 .pdp-spec {
@@ -1032,6 +1047,10 @@ header {
 			display: block;
 		}
 	}
+	@include breakpoint (large) {
+		border-bottom: none;
+		h6 {font-size: 16px;display: none;}
+	}
 }
 .pdp-share {
 	// background:$lighter-gray;
@@ -1061,6 +1080,24 @@ header {
 				font-size: 1.6em;
 				display: inline-block;
 				margin-top: 8px;
+			}
+		}
+	}
+	@include breakpoint (large) {
+		border-bottom: none;
+		border-top: none;
+		padding-top: 0px;
+		margin-bottom: 10px;
+		// margin-top: 20px;
+		h6 {font-size: 16px;}
+		.link-group {
+			// text-align: left;
+			a {
+				width: 32px;height: 32px;line-height: 32px;
+				margin: 0 5px 5px 0;
+				&:before {
+					margin: 4px 0 0 0;
+				}
 			}
 		}
 	}
@@ -1098,7 +1135,7 @@ header {
 
 .pdp-seller {
 	margin-bottom: 20px;
-	background:$lighter-gray;
+	// background:$lighter-gray;
 	border-bottom: 1px solid $light-gray;
 	.info {display: inline-block;vertical-align: middle;}
 	.store-name {font-weight: bold;}
@@ -1127,6 +1164,11 @@ header {
 			&:before {font-size: 26px;}
 		}
 	}
+	@include breakpoint (large) {
+		border:1px solid #ededed;
+		padding: 15px;
+		// margin-top: 10px;
+	}
 }
 .pdp-comment {
 	table {}
@@ -1134,12 +1176,50 @@ header {
 	tr, tr:nth-child(even) {background-color:transparent;border-bottom: $code-border;}
 	tr:last-child {border-bottom: none;}
 	td {padding: 10px 5px 10px 0;font-size: $font-size-small;vertical-align: top;}
-	.ava {display: block;float: left;width: 50px;}
+	.ava {display: block;float: left;width: 0px;}
 	.comment-name {font-weight: bold;}
 	p {margin-top: 5px;margin-bottom:5px;}
 	.time-post {font-size: $font-size-smaller;float: right;}
 	.main-title a {display: block;}
 }
+.new-comment {
+	form {
+		button {margin-top: 10px;}
+		border-bottom: $code-border;
+		margin-bottom: 20px;
+	}
+	li {
+		border-bottom: $code-border;
+		padding-bottom: 10px;margin-bottom: 10px;
+	}
+	.ava {
+		width: 40px;height: 40px;
+		img {width: 40px;height: auto;}
+	}
+	.time-post {display: block;float: none;}
+	.thread-wrapper {
+		.seller-status {
+			background:$orange;
+			color:white;
+			font-size: 11px;
+			padding: 2px;
+			border-radius: 2px;
+			margin-left: 5px;
+			margin-top: -10px;
+		}
+		.reply {border-top: 1px solid #ededed;padding-top: 10px;}
+		p {font-size: 14px;}
+	}
+	.comment-wrapper {
+		overflow: hidden;
+	}
+	.reply-input {
+		margin-top: 15px;
+		input {width: 70%;float: left;margin-right: 10px;}
+		button {overflow: hidden;}
+	}
+}
+
 .main-title {
 	text-align: center;
 	margin: 20px 0;
@@ -1172,6 +1252,40 @@ header {
 		width: 100%;
 		max-width: 40rem;
 		margin: 0 auto;
+	}
+}
+
+.pdp-tab {
+	margin-bottom: 20px;
+	.tabs-title {
+		a {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	.tabs-content {
+	}
+	@include breakpoint (large) {
+		margin-top: 40px;
+		.tabs-content {
+			padding: 20px;
+		}
+	}
+}
+.pdp-more-info {
+	li {
+		display: inline-block;
+		width: 100%;
+	}
+	@include breakpoint (large) {
+		width: 300px;
+		display: inline-block;
+		margin-right: 30px;
+		padding-right: 30px;
+		&:first-child {border-right:1px solid #ededed;}
+		li {
+			span:first-child {font-weight:bold;}
+		}
 	}
 }
 
@@ -1253,7 +1367,7 @@ header {
 	padding: 20px 0;
 	.link-group {
 		padding: 10px 0;
-		background:$lighter-gray;
+		// background:$lighter-gray;
 	}
 }
 
