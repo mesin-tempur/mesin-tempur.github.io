@@ -7071,6 +7071,17 @@ span.selected-cat-parent {
 .bank-detail {
   font-size: 0.9rem; }
 
+@media screen and (min-width: 64em) {
+  .address-choose .address-block {
+    display: inline-block;
+    border: 1px solid #ededed;
+    padding: 15px;
+    margin-right: 10px; }
+  .address-choose .insurance-block {
+    display: block;
+    float: none;
+    margin-top: 10px; } }
+
 .static-page ul li {
   list-style-type: disc;
   margin-left: 20px; }
