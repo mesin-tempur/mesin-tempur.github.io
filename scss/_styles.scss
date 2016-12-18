@@ -315,6 +315,7 @@ header {
 			background:#EAEAEA;
 			position: relative;
 			z-index: 111;
+			margin-bottom: 40px;
 			@include box-shadow(0,4px,8px,rgba(0,0,0,.1));
 			.marketing-list {
 				margin-bottom: 0;
@@ -934,7 +935,7 @@ header {
    	 	}
 	}
 	 @include breakpoint(large) {
-	 	padding-top: 40px;
+	 	// padding-top: 40px;
 	 }
 }
 .section-block {
@@ -2485,4 +2486,38 @@ footer {
 	padding: 10px 20px;
 	background:white; 
 	a {margin-bottom: 0;}
+}
+
+.dashboard-nav {
+	.nav-group {
+		padding: 10px 20px;
+		border:1px solid #ededed;
+		border-radius: 4px;
+		margin-bottom: 10px;
+		.list-header {
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #ededed;
+			font-weight: bold;
+			color:#868686;
+		}
+		ul {
+			margin-bottom: 0;
+			li {
+				margin-bottom: 5px;
+				a {display: block;position: relative;}
+				.counter {
+					width: 18px;height: 18px;border-radius: 10px;
+					position: absolute;right: 0;top: 50%;margin-top: -9px;
+					background:#999;text-align: center;
+					color:white;font-size: 12px;
+					line-height: 18px;
+				}
+			}
+		}
+	}
+	.top-user {
+		.ava {float: left;margin-right: 10px;}
+		.menu-list-title {overflow: hidden;padding-top: 12px;}
+	}
 }
