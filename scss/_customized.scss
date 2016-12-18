@@ -59,6 +59,22 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
+
+@include breakpoint (medium down) {
+    .row {
+        .no-padd {
+            // margin-left: -0.625rem !important;
+            // margin-right: -0.625rem !important;
+            padding-left: 0;
+            padding-right:0;
+        }
+    }
+    .no-padd-elem {
+        margin-left: -0.625rem !important;
+        margin-right: -0.625rem !important;
+    }
+}
+
 // MARGIN
 .mb10 {margin-bottom: 10px;}
 .mb15 {margin-bottom: 15px;}

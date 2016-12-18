@@ -4912,6 +4912,14 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
+@media screen and (max-width: 63.9375em) {
+  .row .no-padd {
+    padding-left: 0;
+    padding-right: 0; }
+  .no-padd-elem {
+    margin-left: -0.625rem !important;
+    margin-right: -0.625rem !important; } }
+
 .mb10 {
   margin-bottom: 10px; }
 
@@ -6942,6 +6950,9 @@ span.selected-cat-parent {
         margin: 5px 0; }
     .order-list.order-detail small {
       font-size: 0.8rem; }
+    @media screen and (min-width: 64em) {
+      .order-list.order-detail {
+        padding-top: 0; } }
   .order-list .table-price {
     margin-bottom: 10px;
     float: right; }

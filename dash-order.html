@@ -304,96 +304,326 @@
                 </div>
               </div>
             </div>
-            <div class="small-12 large-9 column">
-              <div class="store-desc acc-desc no-padd-elem">
-                <div class="acc-header">
-                  <div class="ava">
-                    <img src="./dummy/ava3.jpg" alt="">
-                    <a href="#" class="change-image"></a>
+            <div class="small-12 large-9 column order-page no-padd">
+              <ul class="tabs top-tabs" data-tabs id="order-tabs">
+                <li class="tabs-title is-active half tac"><a href="#order-panel1" aria-selected="true">Order Aktif</a></li>
+                <li class="tabs-title half tac"><a href="#order-panel2">Order Selesai</a></li>
+              </ul>
+              <div class="tabs-content" data-tabs-content="order-tabs">
+                <div class="tabs-panel is-active" id="order-panel1">
+                  <div class="order-filter">
+                    <select name="order-status-filter" id="order-status-filter">
+                      <option value="1" selected>Semua Status Order</option>
+                      <option value="2">Order Baru</option>
+                      <option value="3">Pending Shipment</option>
+                      <option value="4">Delivered</option>
+                    </select>
                   </div>
-                  <div class="store-name">
-                    Toko Sepatu Jaya
+                  <div id="order-new" class="order-status-group">
+                    <div class="block-header tac"><strong>Order Baru</strong></div>
+                    <ul class="order-list order-sum">
+                      <li>
+                        <div class="list-header clr">
+                          <span class="half">ID: 1000001</span>
+                          <span class="half tar">1/Jan/2016, 21:10</span>
+                        </div>
+                        <div class="list-body">
+                          <div class="item clr">
+                            <div class="img-box fl">
+                              <img src="./dummy/prod-thumb-1.png" alt="">
+                            </div>
+                            <div class="qtt-box fr">
+                              <div class="tac">QTY<br>1</div>
+                            </div>
+                            <div class="desc-box">
+                              <p>
+                                <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                                Rp 850.000 <br>
+                                Size: 43
+                              </p>
+                            </div>
+                          </div>
+                          <div class="item clr">
+                            <div class="img-box fl">
+                              <img src="./dummy/prod-thumb-1.png" alt="">
+                            </div>
+                            <div class="qtt-box fr">
+                              <div class="tac">QTY<br>1</div>
+                            </div>
+                            <div class="desc-box">
+                              <p>
+                                <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                                Rp 850.000 <br>
+                                Size: 43
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="list-footer clr">
+                          <span class="fl"><strong class="orange">ORDER BARU</strong></span>
+                          <a href="order-detail.html" class="fr">Lihat Detail Order</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-header clr">
+                          <span class="half">ID: 1000001</span>
+                          <span class="half tar">1/Jan/2016, 21:10</span>
+                        </div>
+                        <div class="list-body">
+                          <div class="item clr">
+                            <div class="img-box fl">
+                              <img src="./dummy/prod-thumb-1.png" alt="">
+                            </div>
+                            <div class="qtt-box fr">
+                              <div class="tac">QTY<br>1</div>
+                            </div>
+                            <div class="desc-box">
+                              <p>
+                                <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                                Rp 850.000 <br>
+                                Size: 43
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="list-footer clr">
+                          <span class="fl"><strong class="orange">ORDER BARU</strong></span>
+                          <a href="order-detail.html" class="fr">Lihat Detail Order</a>
+                        </div>
+                      </li>
+                    </ul> 
+                  </div>
+                  <div id="order-pending" class="order-status-group">
+                    <div class="block-header tac"><strong>Pending Shipment</strong></div>
+                    <ul class="order-list order-sum">
+                      <li>
+                        <div class="list-header clr">
+                          <span class="half">ID: 1000001</span>
+                          <span class="half tar">1/Jan/2016, 21:10</span>
+                        </div>
+                        <div class="list-body">
+                          <div class="item clr">
+                            <div class="img-box fl">
+                              <img src="./dummy/prod-thumb-1.png" alt="">
+                            </div>
+                            <div class="qtt-box fr">
+                              <div class="tac">QTY<br>1</div>
+                            </div>
+                            <div class="desc-box">
+                              <p>
+                                <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                                Rp 850.000 <br>
+                                Size: 43
+                              </p>
+                            </div>
+                          </div>
+                          <div class="item clr">
+                            <div class="img-box fl">
+                              <img src="./dummy/prod-thumb-1.png" alt="">
+                            </div>
+                            <div class="qtt-box fr">
+                              <div class="tac">QTY<br>1</div>
+                            </div>
+                            <div class="desc-box">
+                              <p>
+                                <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                                Rp 850.000 <br>
+                                Size: 43
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="list-footer clr">
+                          <span class="fl"><strong>Pending Shipment</strong></span>
+                          <a href="order-detail.html" class="fr">Lihat Detail Order</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-header clr">
+                          <span class="half">ID: 1000001</span>
+                          <span class="half tar">1/Jan/2016, 21:10</span>
+                        </div>
+                        <div class="list-body">
+                          <div class="item clr">
+                            <div class="img-box fl">
+                              <img src="./dummy/prod-thumb-1.png" alt="">
+                            </div>
+                            <div class="qtt-box fr">
+                              <div class="tac">QTY<br>1</div>
+                            </div>
+                            <div class="desc-box">
+                              <p>
+                                <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                                Rp 850.000 <br>
+                                Size: 43
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="list-footer clr">
+                          <span class="fl"><strong>Pending Shipment</strong></span>
+                          <a href="order-detail.html" class="fr">Lihat Detail Order</a>
+                        </div>
+                      </li>
+                    </ul> 
+                  </div>
+                  <div id="order-delivered" class="order-status-group">
+                    <div class="block-header tac"><strong>Delivered</strong></div>
+                    <ul class="order-list order-sum">
+                      <li>
+                        <div class="list-header clr">
+                          <span class="half">ID: 1000001</span>
+                          <span class="half tar">1/Jan/2016, 21:10</span>
+                        </div>
+                        <div class="list-body">
+                          <div class="item clr">
+                            <div class="img-box fl">
+                              <img src="./dummy/prod-thumb-1.png" alt="">
+                            </div>
+                            <div class="qtt-box fr">
+                              <div class="tac">QTY<br>1</div>
+                            </div>
+                            <div class="desc-box">
+                              <p>
+                                <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                                Rp 850.000 <br>
+                                Size: 43
+                              </p>
+                            </div>
+                          </div>
+                          <div class="item clr">
+                            <div class="img-box fl">
+                              <img src="./dummy/prod-thumb-1.png" alt="">
+                            </div>
+                            <div class="qtt-box fr">
+                              <div class="tac">QTY<br>1</div>
+                            </div>
+                            <div class="desc-box">
+                              <p>
+                                <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                                Rp 850.000 <br>
+                                Size: 43
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="list-footer clr">
+                          <span class="fl"><strong>Terkirim</strong></span>
+                          <a href="order-detail.html" class="fr">Lihat Detail Order</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-header clr">
+                          <span class="half">ID: 1000001</span>
+                          <span class="half tar">1/Jan/2016, 21:10</span>
+                        </div>
+                        <div class="list-body">
+                          <div class="item clr">
+                            <div class="img-box fl">
+                              <img src="./dummy/prod-thumb-1.png" alt="">
+                            </div>
+                            <div class="qtt-box fr">
+                              <div class="tac">QTY<br>1</div>
+                            </div>
+                            <div class="desc-box">
+                              <p>
+                                <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                                Rp 850.000 <br>
+                                Size: 43
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="list-footer clr">
+                          <span class="fl"><strong>Terkirim</strong></span>
+                          <a href="order-detail.html" class="fr">Lihat Detail Order</a>
+                        </div>
+                      </li>
+                    </ul> 
                   </div>
                 </div>
-              </div>
-              <div class="edit-akun">
-                <!-- <div class="block-header">Profile Pribadi</div> -->
-                <div class="row profile-toko mt20">
-                  <div class="small-12 column">
-                    <form action="toko.html">
-                      <div class="fblock">
-                        <label for="namatoko">Nama Toko</label>
-                        <input type="text" id="namatoko" value="Toko Sepatu Jaya">
-                      </div>
-                      <div class="fblock url-block">
-                        <label for="url">URL Toko</label>
-                        <div class="url-prev">http://belanjaqu.com/
-                          <span class="toko-name-url"></span>
-                          <span class="icon ic-checkmark fr"></span>
-                        </div>
-                        <div class="posr with-button">
-                          <input type="text" id="url" class="url-input" value="">
-                          <a href="#" class="verifikasi-btn inside-input-btn"><small>Cek Domain </small></a>
-                        </div>
-                      </div>
-                      <div class="fblock">
-                        <label for="telp">Telepon</label>
-                        <div class="posr with-button">
-                          <input type="text" id="telp" class="telepon" value="087724772227">
-                          <a href="#" class="verifikasi-btn inside-input-btn"><small>VERIFIKASI</small></a>
-                        </div>
-                      </div>
-                      <div class="fblock">
-                        <label for="email">Email</label>
-                        <div class="posr with-button">
-                          <input type="text" id="email" value="ibrahim.rama@gmail.com">
-                          <span class="icon ic-checkmark inside-input-btn"></span>
-                        </div>
-                      </div>
-                      <div class="fblock location-block">
-                        <label for="lokasitoko">Lokasi Toko</label>
-                        <select name="lokasitoko" id="lokasitoko">
-                          <option value="" selected disabled="">Pilih Provinsi</option>
-                          <option value="1">DKI Jakarta</option>
-                          <option value="2">DKI Jakarta</option>
-                        </select>
-                        <select name="lokasitoko" id="lokasitoko">
-                          <option value="" selected disabled="">Pilih Kota</option>
-                        </select>
-                      </div>
-                      <div class="fblock role-toko">
-                        <label for="pengelola">Pengelola Toko</label>
-                        <ul>
-                          <li>
-                            <div class="ava"><img src="./dummy/ava.jpg" alt=""></div>
-                            <p><small>Neng Geulis</small></p>
-                          </li>
-                          <li>
-                            <div class="ava"><img src="./dummy/ava2.jpg" alt=""></div>
-                            <p><small>Kang Kasep</small></p>
-                          </li>
-                          <li class="add-more">
-                            <a href="#" data-open="roleModal">
-                              <div class="ava"><img src="./images/add-more.jpg" alt=""></div>
-                              <p><small>Tambah <br>Pengelola</small></p>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="fblock submit-group">
-                        <button class="button expanded" type="submit">SIMPAN</button>
-                        <button class="button bordered-btn expanded">BATAL</button>
-                      </div>
-                    </form>
+                <div class="tabs-panel" id="order-panel2">
+                  <div class="order-filter">
+                    <select name="order-status-filter" id="order-status-filter">
+                      <option value="1" selected>Semua Order</option>
+                      <option value="2">1 Minggu terakhir</option>
+                      <option value="3">2 Minggu terakhir</option>
+                      <option value="4">1 Bulan terakhir</option>
+                    </select>
                   </div>
+                  <div class="block-header tac"><strong>Order Selesai</strong></div>
+                    <ul class="order-list order-sum">
+                      <li>
+                        <div class="list-header clr">
+                          <span class="half">ID: 1000001</span>
+                          <span class="half tar">1/Jan/2016, 21:10</span>
+                        </div>
+                        <div class="list-body">
+                          <div class="item clr">
+                            <div class="img-box fl">
+                              <img src="./dummy/prod-thumb-1.png" alt="">
+                            </div>
+                            <div class="qtt-box fr">
+                              <div class="tac">QTY<br>1</div>
+                            </div>
+                            <div class="desc-box">
+                              <p>
+                                <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                                Rp 850.000 <br>
+                                Size: 43
+                              </p>
+                            </div>
+                          </div>
+                          <div class="item clr">
+                            <div class="img-box fl">
+                              <img src="./dummy/prod-thumb-1.png" alt="">
+                            </div>
+                            <div class="qtt-box fr">
+                              <div class="tac">QTY<br>1</div>
+                            </div>
+                            <div class="desc-box">
+                              <p>
+                                <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                                Rp 850.000 <br>
+                                Size: 43
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="list-footer clr">
+                          <span class="fl"><strong>Order Selesai</strong></span>
+                          <a href="order-detail.html" class="fr">Lihat Detail Order</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-header clr">
+                          <span class="half">ID: 1000001</span>
+                          <span class="half tar">1/Jan/2016, 21:10</span>
+                        </div>
+                        <div class="list-body">
+                          <div class="item clr">
+                            <div class="img-box fl">
+                              <img src="./dummy/prod-thumb-1.png" alt="">
+                            </div>
+                            <div class="qtt-box fr">
+                              <div class="tac">QTY<br>1</div>
+                            </div>
+                            <div class="desc-box">
+                              <p>
+                                <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                                Rp 850.000 <br>
+                                Size: 43
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="list-footer clr">
+                          <span class="fl"><strong>Order Selesai</strong></span>
+                          <a href="order-detail.html" class="fr">Lihat Detail Order</a>
+                        </div>
+                      </li>
+                    </ul>
                 </div>
-                <!-- <div class="block-header">Personalisasi</div>
-                <div class="row personalisasi">
-                  <div class="small-12 column">
-                    <a href="#" class="button bordered-btn expanded">Kategori Favorit</a>
-                    <a href="#" class="button bordered-btn expanded">Akun Sosial Media</a>
-                  </div>
-                </div> -->
               </div>
             </div>
           </div>
