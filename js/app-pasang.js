@@ -104,7 +104,7 @@ function productVariant() {
 		 	vField	= 	
 			'<div class="variant-box variant'+count+'">' +
                 '<div class="row">' +
-                  '<div class="small-12 column">' +
+                  '<div class="small-12 large-8 large-offset-2 column">' +
                     '<div class="var-title"><strong>Varian <span class="idx">'+count+'</span></strong><a class="fr del-var">Hapus</a></div>' +
                     '<div class="fblock variant-kind">' +
                       '<input type="text" id="variantName" placeholder="Contoh: Merah atau Size S">' +

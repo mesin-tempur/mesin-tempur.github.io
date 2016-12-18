@@ -1616,6 +1616,15 @@ a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
 	}
 	.submit-group {margin-top: 60px;}
 	.stock-input {margin-bottom: 20px;}
+	@include breakpoint (large) {
+		.block-header {margin-bottom: 0;}
+		.img-box {padding-bottom: 0;}
+		.wrap-box {
+			border:1px solid #f1f1f1;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+	}
 }
 .product-img-upload {
 	padding: 0 0 10px 0;

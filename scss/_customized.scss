@@ -193,31 +193,31 @@ a.back:before {
 .slick-next:before {
 	content: "\62";
 }
-body.is-reveal-open {
-    position: fixed;
-    .reveal.full {position: fixed;overflow:auto;}
-    @include breakpoint(40rem) {
-        left: 50% !important;
-        margin-left: -20rem !important;
-        max-width: 40rem;
-        .page-container {
-            width: 40rem;
-            margin: 0 auto;
-            position: relative;
-        }
-        .off-canvas-content {
-            width: 40rem;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .reveal.full {
-            left: 50% !important;
-            margin-left: -20rem !important;
-            max-width: 40rem;
-        }
-    }
-}
+// body.is-reveal-open {
+//     position: fixed;
+//     .reveal.full {position: fixed;overflow:auto;}
+//     @include breakpoint(40rem) {
+//         left: 50% !important;
+//         margin-left: -20rem !important;
+//         max-width: 40rem;
+//         .page-container {
+//             width: 40rem;
+//             margin: 0 auto;
+//             position: relative;
+//         }
+//         .off-canvas-content {
+//             width: 40rem;
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//         }
+//         .reveal.full {
+//             left: 50% !important;
+//             margin-left: -20rem !important;
+//             max-width: 40rem;
+//         }
+//     }
+// }
 .off-canvas.position-left {
     max-height: none;
     overflow-y: visible;
