@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail | BelanjaQu</title>
+    <title>Cart | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -187,7 +187,8 @@
             </div>
           </div>
         </header>
-        <div class="section main-content cart-page">
+
+        <div class="section main-content checkout-page">
           <!-- DESKTOP CATEGORY OPTION -->
           <div id="js-dark-overlay" class="dark-overlay" style="display:none;opacity:0;"></div>
           <div class="content-top show-for-large">
@@ -265,99 +266,195 @@
             </div>
           </div>
           <!-- END DESKTOP CATEGORY OPTION -->
-          <div class="row">
-            <div class="small-12 large-8 large-offset-2 column">
-              <div class="block-header white-block tac">Transaksi dari 2 Toko</div>
-              <div class="cart-list order-list">
-                <div class="item-group">
-                  <div class="block-header">
-                    <a href="#">Toko Sepatu Jaya</a>
-                    <!-- <a href="#" class="fr"><span class="icon ic-chat"></span></a> -->
-                  </div>
+          <div class="order-list order-detail">
+            <div class="row">
+              <div class="small-12 large-8 large-offset-2 column">
+                <div class="block-header white-block tac">METODE PEMBAYARAN</div>
+                <div class="order-box">
                   <div class="list-body">
                     <div class="item clr">
                       <div class="img-box fl">
-                        <img src="./dummy/prod-thumb-1.png" alt="">
+                        <img src="http://belanjaqu.co.id/uploads/product_image/image/65603/thumb_DISTORI2.jpg" alt="">
                       </div>
-                      <div class="qtt-box fr with-inc">
-                        <input type="number" class="numbers" value="1"> 
+                      <div class="qtt-box fr">
+                        <div class="tac">QTY<br>1</div>
                       </div>
                       <div class="desc-box">
                         <p>
-                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                          Rp 850.000 <br>
-                          Size: 43
+                          <span class="elipsis dblock"><strong>Efek gitar distorsi SS1,harga cuci gudang no PHP</strong></span>
+                          Rp  152.000 <br>
+                          
+                            Varian: Semua Varian
                         </p>
-                        <a href="#" class="dblock"><small>Hapus Produk</small></a>
                       </div>
                     </div>
                     <div class="item clr">
                       <div class="img-box fl">
-                        <img src="./dummy/prod-thumb-1.png" alt="">
+                        <img src="http://belanjaqu.co.id/uploads/product_image/image/65615/thumb_SZS_DRUM1.jpg" alt="">
                       </div>
-                      <div class="qtt-box fr with-inc">
-                        <input type="number" class="numbers" value="1"> 
+                      <div class="qtt-box fr">
+                        <div class="tac">QTY<br>1</div>
                       </div>
                       <div class="desc-box">
                         <p>
-                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                          Rp 850.000 <br>
-                          Size: 41
+                          <span class="elipsis dblock"><strong>Szs drum pad economist</strong></span>
+                          Rp  104.000 <br>
+                          
+                            Varian: Semua Varian
                         </p>
-                        <a href="#" class="dblock"><small>Hapus Produk</small></a>
                       </div>
                     </div>
                   </div>
-                  <div class="list-footer clr">
-                    <div class="total-sum">
-                      <strong>TOTAL</strong>
-                      <span class="gray"><small>sebelum ongkir</small></span>
-                      <span class="fr"><small>Rp</small> <strong>1.700.000</strong></span>
+                  <div class="list-footer">
+                    <div class="table-price clr">
+                      <table width="100%">
+                        <tr>
+                          <td class="gray" align="right">Total Quantity</td>
+                          <td width="120" align="right">2</td>
+                        </tr>
+                          <tr>
+                            <td class="gray" align="right">Total Pembelanjaan (Rp)</td>
+                            <td align="right"> 256.000</td>
+                          </tr>
+                          <tr>
+                            <td class="gray" align="right">JNE CTCOKE (Rp)</td>
+                            <td align="right"> 12.000</td>
+                          </tr>
+                          <tr>
+                            <td align="right"><strong>TOTAL (Rp)</strong></td>
+                            <td align="right"><strong> 268.000</strong></td>
+                          </tr>
+                      </table>
                     </div>
-                    <a href="checkout-1.html" class="button expanded">Bayar Transaksi Ini</a>
+                    <div class="ship-to">
+                      <p class="gray title-top"><small>DETAIL TOKO</small></p>
+                      <p>kuche kuche<br/>parahiangan the suites Bandung Kota, Jawa Barat</p>
+                    </div>
+                    <div class="ship-to">
+                      <p class="gray title-top"><small>ALAMAT PENGIRIMAN</small></p>
+                      <p><strong>ibrahim.rama</strong> <br/> Jl. Buahbatu Dalam III No. 22 Bandung <br> Lengkong, Cijagra <br> Bandung Kota 40265, Jawa Barat <br> HP: 087724772227</p>
+                    </div>
                   </div>
                 </div>
-                <div class="item-group">
-                  <div class="block-header">
-                    <a href="#">Toko Subur</a>
-                    <!-- <a href="#" class="fr"><span class="icon ic-chat"></span></a> -->
+                <div class="action-box">
+                  <div class="link-group clr">
+                    <form class="submit-order-form" action="/cart/12414/process_payment" accept-charset="UTF-8" method="post">
+                      <input name="utf8" type="hidden" value="&#x2713;" />
+                      <input type="hidden" name="authenticity_token" value="5CrlPhXar4FB62OmTZ2bqEgkGlvSJhxflx1Hm7YI9ekgKfGDP2tXQk+gjiaM5HPkoU/cqesNeKbC0eWKEFKaPA==" />
+                      <br/><br/>
+                      <div class="clr"></div>
+                      <div class="add-paytren-pin">
+                        <input type="password" name="paytren_password" id="paytren_password" placeholder="Masukan Password PAYTREN" /><br/>
+                        <input type="password" name="paytren_pin" id="paytren_pin" placeholder="Masukan PIN PAYTREN" /><br/>
+                      </div>
+                      <div class="mb10">
+                        <select name="payment_method" id="payment_method" class="select-payment-method">
+                          <option value="">Pilih Metode bayar</option>
+                          <option value="bank_transfer">Bank Transfer</option>
+                        </select>
+                      <br/>
+                      </div>
+                      <div class="">
+                        <a href="checkout-success-transfer.html" class="button expanded" href="#">Bayar Transaksi ini</a>
+                      </div>
+                    </form>          
                   </div>
-                  <div class="list-body">
+                </div>
+              </div>
+            </div>
+    
+    <div class="reveal" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+    
+       <h1>Konfirmasi Data Order</h1><br/>
+        <div class="row">
+          <div class="small-12 column">
+            <div class="order-box">
+              <div class="list-body">
                     <div class="item clr">
                       <div class="img-box fl">
-                        <img src="./dummy/prod-thumb-1.png" alt="">
+                        <img src="http://belanjaqu.co.id/uploads/product_image/image/65603/thumb_DISTORI2.jpg" alt="">
                       </div>
-                      <div class="qtt-box fr with-inc">
-                        <input type="number" class="numbers" value="1"> 
+                      <div class="qtt-box fr">
+                        <div class="tac">QTY<br>1</div>
                       </div>
                       <div class="desc-box">
                         <p>
-                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                          Rp 850.000 <br>
-                          Size: 43
+                          <span class="elipsis dblock"><strong>Efek gitar distorsi SS1,harga cuci gudang no PHP</strong></span>
+                          Rp  152.000 <br>
+                          
+                            Varian: Semua Varian
                         </p>
-                        <a href="#" class="dblock"><small>Hapus Produk</small></a>
                       </div>
                     </div>
-                  </div>
-                  <div class="list-footer clr">
-                    <div class="total-sum">
-                      <strong>TOTAL</strong>
-                      <span class="gray"><small>sebelum ongkir</small></span>
-                      <span class="fr"><small>Rp</small> <strong>850.000</strong></span>
+                    <div class="item clr">
+                      <div class="img-box fl">
+                        <img src="http://belanjaqu.co.id/uploads/product_image/image/65615/thumb_SZS_DRUM1.jpg" alt="">
+                      </div>
+                      <div class="qtt-box fr">
+                        <div class="tac">QTY<br>1</div>
+                      </div>
+                      <div class="desc-box">
+                        <p>
+                          <span class="elipsis dblock"><strong>Szs drum pad economist</strong></span>
+                          Rp  104.000 <br>
+                          
+                            Varian: Semua Varian
+                        </p>
+                      </div>
                     </div>
-                    <a href="checkout-1.html" class="button expanded">Bayar Transaksi Ini</a>
+              </div>
+              <div class="list-footer">
+                <div class="table-price clr">
+                  <table width="100%">
+                    <tr>
+                      <td class="gray" align="right">Total Quantity</td>
+                      <td width="120" align="right">2</td>
+                    </tr>
+                      <tr>
+                        <td class="gray" align="right">Total Pembelanjaan (Rp)</td>
+                        <td align="right"> 256.000</td>
+                      </tr>
+                      <tr>
+                        <td class="gray" align="right">JNE CTCOKE (Rp)</td>
+                        <td align="right"> 12.000</td>
+                      </tr>
+                      <tr>
+                        <td align="right"><strong>TOTAL (Rp)</strong></td>
+                        <td align="right"><strong> 268.000</strong></td>
+                      </tr>
+                  </table>
+                </div>
+                <div class="ship-to">
+                  <p class="gray title-top"><small>DETAIL TOKO</small></p>
+                  <p>kuche kuche<br/>parahiangan the suites Bandung Kota, Jawa Barat</p>
+                </div>
+                <div class="ship-to">
+                  <p class="gray title-top"><small>ALAMAT PENGIRIMAN</small></p>
+                  <p><strong>ibrahim.rama</strong> <br/> Jl. Buahbatu Dalam III No. 22 Bandung <br> Lengkong, Cijagra <br> Bandung Kota 40265, Jawa Barat <br> HP: 087724772227</p>
+                </div>
+              </div>
+            </div>
+            <div class="action-box">
+              <div class="link-group clr">
+                  <div>
+                    <a class="button expanded" onclick="$(&#39;.submit-order-form&#39;).submit() " href="#">Bayar Transaksi ini</a>
                   </div>
-                </div>
-              </div> 
-              <div class="row cart-back">
-                <div class="small-12 column">
-                  <a href="#" class="button bordered-btn expanded">Kembali Belanja</a>
-                </div>
+                  <div>
+                    <a class="button expanded bordered-btn" href="#" data-close aria-label="Close reveal">Ingin Mengecek Kembali</a>
+                  </div>
               </div>
             </div>
           </div>
         </div>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        
+    </div>
+  </div>
+</div>
+
+
         <footer>
           <div class="section footer-top">
             <div class="row hide-for-large">
@@ -425,30 +522,108 @@
             <div class="tac"><small>© copyright belanjaqu.com 2016</small></div>
           </div>
         </footer>
-        <!-- SEARCH REVEAL MODAL -->
-        <div class="reveal full search-modal" id="searchModal" data-reveal escClose="true">
-          <button class="close-button" aria-label="Close alert" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="fblock">
-            <input id="searchInput" type="search" placeholder="Cari produk atau toko">
-          </div>
-          <div class="suggestion-box">
-            <ul>
-              <li><a href="search-result.html">Blackberry <small>di Handphone</small></a></li>
-              <li><a href="search-result.html">Blackberry <small>di Aksesoris Handphone </small></a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- END SEARCH REVEAL MODAL -->
+<!-- SEARCH REVEAL MODAL
+<div class="reveal full search-modal" id="searchModal" data-reveal escClose="true">
+  <button class="close-button" aria-label="Close alert" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="fblock">
+    <input id="searchInput" type="search" placeholder="Cari produk">
+  </div>
+  <div class="suggestion-box">
+    <ul class='product-searches-field'>
+    </ul>
+  </div>
+</div>
+<!-- END SEARCH REVEAL MODAL -->
+
       </div>
     </div>
-
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/min/slick.min.js"></script>
     <script src="js/min/app-min.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76477092-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '350644915267466');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=350644915267466&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<script>
+  $('.main-banners').slick();$('.cm-slide').slick();
+  
+  $('.button-confirm-order').click(function(){
+    swal({
+      title: "Konfirmasi Penerimaan",
+      text: "Yakin bahwa barang yang kamu terima sudah sesuai?",
+      type: "info",
+      showCancelButton: true,
+      confirmButtonText: "Ya, Telah Sesuai",
+      cancelButtonText: "Tidak",
+      closeOnConfirm: false,
+    },
+    function(isConfirm){
+      if (isConfirm) {
+        $('.button-confirm-order').parent().submit()
+        swal("Terima Kasih", "Telah berbelanja di belanjaqu", "success");
+      } 
+    });
+  })
+  
+  //ORDER
+      var loc_not_reload = location.href.split('/').pop(-1)
+      history.pushState(null, null, loc_not_reload);
+        window.addEventListener('popstate', function(event) {
+        history.pushState(null, null, loc_not_reload);
+      });
+  
+    $('#join-afiliasi-belanjaqu').click(function(){
+      swal({
+        title: "Afiliasi Belanjaqu",
+        text: "Kamu akan terdaftar di Afiliasi Program Belanjaqu",
+        type: "info",
+        showCancelButton: true,
+        confirmButtonText: "Ya, Daftar",
+        cancelButtonText: "Tidak",
+        closeOnConfirm: false,
+      },
+      function(isConfirm){
+        if (isConfirm) {
+          location.href = '/setting/join_affilate'
+          //swal("Terima Kasih", "Telah berbelanja di belanjaqu", "success");
+        } 
+      });
+    })
+</script>
+
+    
   </div>
+  <style>
+  .jPanelMenu, body {
+    overflow-x: visible !important;
+}
+</style>
   </body>
+  
 </html>

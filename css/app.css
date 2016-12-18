@@ -6685,6 +6685,10 @@ header {
 .breadcrumbs-nav {
   padding: 10px 0;
   background: #f1f1f1; }
+  @media screen and (min-width: 64em) {
+    .breadcrumbs-nav {
+      background: white;
+      margin-top: 20px; } }
 
 a.back {
   padding-left: 20px;
@@ -6956,7 +6960,12 @@ span.selected-cat-parent {
     .order-list.order-detail small {
       font-size: 0.8rem; }
   .order-list .table-price {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    float: right; }
+    @media screen and (min-width: 64em) {
+      .order-list .table-price table {
+        width: 360px;
+        float: right; } }
   .order-list .link-group {
     margin-top: 20px; }
     .order-list .link-group .half {
@@ -6966,6 +6975,9 @@ span.selected-cat-parent {
   margin-bottom: 0;
   padding: 15px;
   color: #8a8a8a; }
+  @media screen and (min-width: 64em) {
+    .cart-page .white-block {
+      margin-top: 20px; } }
 
 .cart-list {
   font-size: 1rem; }
@@ -7067,9 +7079,22 @@ span.selected-cat-parent {
   .message-box p {
     margin-bottom: 5px;
     font-size: 0.9rem; }
+  @media screen and (min-width: 64em) {
+    .message-box {
+      margin: 20px auto;
+      padding: 40px 100px;
+      text-align: center; } }
 
 .bank-detail {
   font-size: 0.9rem; }
+  @media screen and (min-width: 64em) {
+    .bank-detail .bordered-row {
+      border: 1px solid #ededed;
+      padding: 20px; }
+      .bank-detail .bordered-row .row-item {
+        padding: 10px 0; }
+        .bank-detail .bordered-row .row-item:last-child {
+          border-bottom: none; } }
 
 @media screen and (min-width: 64em) {
   .address-choose .address-block {

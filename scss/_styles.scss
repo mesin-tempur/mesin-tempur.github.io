@@ -1530,6 +1530,10 @@ header {
 .breadcrumbs-nav {
 	padding: 10px 0;
 	background:$lighter-gray;
+	@include breakpoint (large) {
+		background:white;
+		margin-top: 20px;
+	}
 }
 a.back {padding-left: 20px;position: relative;}
 a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
@@ -1774,6 +1778,13 @@ span.selected-cat-parent {
 	}
 	.table-price {
 		margin-bottom: 10px;
+		float: right;
+		@include breakpoint (large) {
+			table {
+				width: 360px;
+				float: right;
+			}
+		}
 	}
 	.link-group {
 		margin-top: 20px;
@@ -1783,11 +1794,13 @@ span.selected-cat-parent {
 
 // CART PAGE
 .cart-page {
-
 	.white-block {
 		margin-bottom: 0;
 		padding: 15px;
 		color: $dark-gray;
+		@include breakpoint (large) {
+			margin-top: 20px;
+		}
 	}
 }
 .cart-list{
@@ -1875,8 +1888,25 @@ span.selected-cat-parent {
 	padding: 20px 0;
 	background:$lighter-gray;
 	p {margin-bottom: 5px;font-size: $font-size-small;}
+	@include breakpoint (large) {
+		margin: 20px auto;
+		padding: 40px 100px;
+		text-align: center;
+	}
 }
-.bank-detail {font-size: $font-size-small;}
+.bank-detail {
+	font-size: $font-size-small;
+	@include breakpoint (large) {
+		.bordered-row {
+			border:1px solid #ededed;
+			padding: 20px;
+			.row-item {
+				padding: 10px 0;
+				&:last-child {border-bottom: none;}
+			}
+		}
+	}
+}
 
 .address-choose {
 	@include breakpoint (large) {

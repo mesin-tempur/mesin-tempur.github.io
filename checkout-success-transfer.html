@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail | BelanjaQu</title>
+    <title>Cart | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -187,7 +187,7 @@
             </div>
           </div>
         </header>
-        <div class="section main-content cart-page">
+        <div class="section main-content checkout-success-page">
           <!-- DESKTOP CATEGORY OPTION -->
           <div id="js-dark-overlay" class="dark-overlay" style="display:none;opacity:0;"></div>
           <div class="content-top show-for-large">
@@ -265,182 +265,69 @@
             </div>
           </div>
           <!-- END DESKTOP CATEGORY OPTION -->
+          <div class="item-group message-box">
+            <div class="row">
+              <div class="small-12 large-8 large-offset-2 column">
+                <p>Terimakasih telah berbelanja di BelanjaQu</p>
+                <p>Jumlah yang harus dibayarkan adalah <br><strong>Rp.  268.000</strong></p>
+                <p>Transaksi Kamu dengan invoice <strong></strong> akan diproses setelah kamu melakukan pembayaran ke salah satu nomor rekening berikut:</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-group bank-detail row">
+            <div class="small-12 large-8 large-offset-2 column">
+              <div class="bordered-row">
+                <div class="row-item">
+                  <strong>Bank Central Asia (BCA)</strong>
+                  <div class="acc-name">a/n PT. EMAUNYA</div>
+                  <div class="acc-number">No. 008 924 5666</div>
+                </div>
+                <div class="row-item">
+                  <strong>Bank Mandiri</strong>
+                  <div class="acc-name">a/n PT. EMAUNYA</div>
+                  <div class="acc-number">No. 130 009 717 1717</div>
+                </div>
+                <!-- 008 924 5666 / 130 009 717 1717
+                <div class="row-item">
+                  <strong>Bank Mandiri Syariah</strong>
+                  <div class="acc-name">a/n PT. BelanjaQU</div>
+                  <div class="acc-number">No. 707.407.4728</div>
+                </div>
+                -->
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="small-12 large-8 large-offset-2 column">
-              <div class="block-header white-block tac">Transaksi dari 2 Toko</div>
-              <div class="cart-list order-list">
-                <div class="item-group">
-                  <div class="block-header">
-                    <a href="#">Toko Sepatu Jaya</a>
-                    <!-- <a href="#" class="fr"><span class="icon ic-chat"></span></a> -->
-                  </div>
-                  <div class="list-body">
-                    <div class="item clr">
-                      <div class="img-box fl">
-                        <img src="./dummy/prod-thumb-1.png" alt="">
-                      </div>
-                      <div class="qtt-box fr with-inc">
-                        <input type="number" class="numbers" value="1"> 
-                      </div>
-                      <div class="desc-box">
-                        <p>
-                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                          Rp 850.000 <br>
-                          Size: 43
-                        </p>
-                        <a href="#" class="dblock"><small>Hapus Produk</small></a>
-                      </div>
-                    </div>
-                    <div class="item clr">
-                      <div class="img-box fl">
-                        <img src="./dummy/prod-thumb-1.png" alt="">
-                      </div>
-                      <div class="qtt-box fr with-inc">
-                        <input type="number" class="numbers" value="1"> 
-                      </div>
-                      <div class="desc-box">
-                        <p>
-                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                          Rp 850.000 <br>
-                          Size: 41
-                        </p>
-                        <a href="#" class="dblock"><small>Hapus Produk</small></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-footer clr">
-                    <div class="total-sum">
-                      <strong>TOTAL</strong>
-                      <span class="gray"><small>sebelum ongkir</small></span>
-                      <span class="fr"><small>Rp</small> <strong>1.700.000</strong></span>
-                    </div>
-                    <a href="checkout-1.html" class="button expanded">Bayar Transaksi Ini</a>
-                  </div>
-                </div>
-                <div class="item-group">
-                  <div class="block-header">
-                    <a href="#">Toko Subur</a>
-                    <!-- <a href="#" class="fr"><span class="icon ic-chat"></span></a> -->
-                  </div>
-                  <div class="list-body">
-                    <div class="item clr">
-                      <div class="img-box fl">
-                        <img src="./dummy/prod-thumb-1.png" alt="">
-                      </div>
-                      <div class="qtt-box fr with-inc">
-                        <input type="number" class="numbers" value="1"> 
-                      </div>
-                      <div class="desc-box">
-                        <p>
-                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                          Rp 850.000 <br>
-                          Size: 43
-                        </p>
-                        <a href="#" class="dblock"><small>Hapus Produk</small></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-footer clr">
-                    <div class="total-sum">
-                      <strong>TOTAL</strong>
-                      <span class="gray"><small>sebelum ongkir</small></span>
-                      <span class="fr"><small>Rp</small> <strong>850.000</strong></span>
-                    </div>
-                    <a href="checkout-1.html" class="button expanded">Bayar Transaksi Ini</a>
-                  </div>
-                </div>
-              </div> 
-              <div class="row cart-back">
-                <div class="small-12 column">
-                  <a href="#" class="button bordered-btn expanded">Kembali Belanja</a>
-                </div>
-              </div>
+              <span class="db fwb mb10 mt10">Silahkan konfirmasi disini</span>
+              <a class="button expanded" href="/payment/12414/payment_confirmation">Konfirmasi Pembayaran</a>
             </div>
           </div>
         </div>
         <footer>
           <div class="section footer-top">
-            <div class="row hide-for-large">
+            <div class="row">
               <div class="small-12 column">
-                <a href="#">
-                  <span class="ic-mail"></span>
-                  <span class="text">Hubungi Kami</span>
-                </a>
+                <a href="tel:1500010"><div class="tac">CALL CENTER 1500010</div></a>
               </div>
             </div>
           </div>
           <div class="section footer-bottom">
-            <div class="link-group hide-for-large">
+            <div class="link-group">
               <a href="#">Penjual</a>
               <a href="#">Pembeli</a>
               <a href="#">Bantuan</a>
             </div>
-            <div class="social-link link-group hide-for-large">
+            <div class="social-link link-group">
               <a href="https://www.facebook.com/" target="_blank"><span class="icon ic-fb"></span>FB</a>
               <a href="https://www.twitter.com/" target="_blank"><span class="icon ic-ftw"></span>TW</a>
               <a href="https://www.instagram.com/" target="_blank"><span class="icon ic-ig"></span>IG</a>
-            </div>
-            <div class="footer-desktop show-for-large">
-              <div class="row">
-                <div class="small-3 columns">
-                  <div class="block-title">Bantuan</div>
-                  <ul class="footer-list">
-                    <li><a href="#">Cara pembelian</a></li>
-                    <li><a href="#">Cara pembayaran</a></li>
-                    <li><a href="#">F.A.Q</a></li>
-                  </ul>
-                </div>
-                <div class="small-3 columns">
-                  <div class="block-title">Bantuan</div>
-                  <ul class="footer-list">
-                    <li><a href="#">Tentang kami</a></li>
-                    <li><a href="#">Syarat &amp; Ketentuan</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Menjadi penjual</a></li>
-                  </ul>
-                </div>
-                <div class="medium-6 columns">
-                  <div class="newsletter clr">
-                    <div class="block-title">DAPATKAN PENAWARAN ISTIMEWA</div>
-                    <form action="">
-                      <div class="fblock">
-                        <input type="email" placeholder="masukan email Anda disini">
-                        <button type="submit">KIRIM</button>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="social">
-                    <div class="block-title">IKUTI AKUN MEDIA SOSIAL</div>
-                    <ul class="social-link">
-                      <li><a href="#" target="_blank"><span class="icon ic-fb"></span></a></li>
-                      <li><a href="#" target="_blank"><span class="icon ic-ftw"></span></a></li>
-                      <li><a href="#" target="_blank"><span class="icon ic-ig"></span></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div class="section copyright">
             <div class="tac"><small>© copyright belanjaqu.com 2016</small></div>
           </div>
         </footer>
-        <!-- SEARCH REVEAL MODAL -->
-        <div class="reveal full search-modal" id="searchModal" data-reveal escClose="true">
-          <button class="close-button" aria-label="Close alert" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="fblock">
-            <input id="searchInput" type="search" placeholder="Cari produk atau toko">
-          </div>
-          <div class="suggestion-box">
-            <ul>
-              <li><a href="search-result.html">Blackberry <small>di Handphone</small></a></li>
-              <li><a href="search-result.html">Blackberry <small>di Aksesoris Handphone </small></a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- END SEARCH REVEAL MODAL -->
       </div>
     </div>
 
