@@ -6423,6 +6423,10 @@ header {
       display: inline-block;
       margin: 0 10px;
       color: #8a8a8a; }
+  .store-desc .store-short {
+    color: #8a8a8a;
+    text-align: center;
+    font-size: 0.9rem; }
   .store-desc .store-stat {
     margin: 20px 0 0;
     padding: 10px 0;
@@ -6445,9 +6449,46 @@ header {
       margin-bottom: 0; }
     .store-desc .store-cta .half {
       padding: 0 10px; }
-    .store-desc .store-cta a {
-      background-color: white;
-      color: #009688; }
+  .store-desc .like-btn {
+    margin-top: 20px; }
+  @media screen and (min-width: 64em) {
+    .store-desc {
+      margin-top: 0;
+      margin-bottom: 20px; }
+      .store-desc .ava {
+        float: left;
+        width: 100px;
+        padding: 10px 0; }
+      .store-desc .store-name, .store-desc .store-info {
+        text-align: left; }
+      .store-desc .store-info div {
+        margin: 0 10px 0 0; }
+        .store-desc .store-info div span {
+          margin-right: 5px;
+          color: #009688; }
+      .store-desc .store-short {
+        text-align: left; }
+      .store-desc .store-cta {
+        border-bottom: none; }
+        .store-desc .store-cta .like-btn {
+          overflow: hidden;
+          margin-top: 30px;
+          width: 100px; }
+          .store-desc .store-cta .like-btn a {
+            height: 32px;
+            line-height: 32px;
+            padding: 0 20px;
+            background: #009688;
+            color: white;
+            border: none; }
+        .store-desc .store-cta .soc-share {
+          float: left;
+          margin-left: 30px;
+          margin-right: 10px; }
+          .store-desc .store-cta .soc-share h6 {
+            text-align: left; }
+          .store-desc .store-cta .soc-share .link-group {
+            text-align: left; } }
 
 .store-contact {
   padding: 20px 0; }

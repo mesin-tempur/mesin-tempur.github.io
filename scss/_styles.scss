@@ -1344,6 +1344,12 @@ header {
 		margin: 10px 0;
 		div {display: inline-block;margin: 0 10px;color:$dark-gray}
 	}
+	.store-short {
+		color:$dark-gray;
+		text-align: center;
+		font-size: $font-size-small;
+		// border-top: 1px solid #ededed;
+	}
 	.store-stat {
 		margin: 20px 0 0;
 		padding: 10px 0;
@@ -1361,7 +1367,43 @@ header {
 		margin-bottom: 20px;
 		.button {margin-bottom: 0;}
 		.half {padding: 0 10px;}
-		a {background-color: white;color: $primary-color}
+		// a {background-color: white;color: $primary-color}
+	}
+	.like-btn {margin-top: 20px;}
+	@include breakpoint (large) {
+		margin-top: 0;
+		margin-bottom: 20px;	
+		.ava {
+			float: left;
+			width: 100px;
+			padding: 10px 0;
+		}
+		.store-name, .store-info {
+			text-align: left;
+		}
+		.store-info {
+			div {
+				margin: 0 10px 0 0;
+				span {margin-right: 5px;color:$primary-color}
+			}
+		}
+		.store-short {text-align: left;}
+		.store-cta {
+			.like-btn {
+				overflow: hidden;
+				margin-top: 30px;
+				width: 100px;
+				a {height: 32px;line-height: 32px;padding: 0 20px;background:$primary-color;color:white;border:none;}
+			}
+			.soc-share {
+				float: left;
+				margin-left: 30px;
+				margin-right: 10px;
+				h6 {text-align: left;}
+				.link-group {text-align: left;}
+			}
+			border-bottom: none;
+		}
 	}
 }
 .store-contact {
