@@ -5140,6 +5140,15 @@ body {
 ul.inline-block li {
   display: inline-block; }
 
+@media screen and (max-width: 63.9375em) {
+  .column.small-nopad, .small-nopad.columns,
+  .columns.small-nopad {
+    padding-left: 0;
+    padding-right: 0; } }
+
+.column:last-child:not(:first-child), .columns:last-child:not(:first-child), .columns:last-child:not(:first-child) {
+  float: left; }
+
 .top-header {
   background: #009688;
   color: #fefefe;
@@ -5161,6 +5170,8 @@ ul.inline-block li {
       font-size: 0.9rem; }
       .top-header .top-right li:last-child {
         border-right: none; }
+  .top-header .column:last-child:not(:first-child), .top-header .columns:last-child:not(:first-child), .top-header .columns:last-child:not(:first-child), .top-header .columns:last-child:not(:first-child) {
+    float: right; }
 
 header {
   background: #009688;
@@ -6595,6 +6606,19 @@ header {
   .registration-link .btn-daftar {
     background-color: #ffc10e;
     color: #414143; }
+
+@media screen and (min-width: 64em) {
+  .profile-pribadi .inner-profile {
+    padding: 40px;
+    border: 1px solid #e6e6e6;
+    min-height: 340px; } }
+
+.desktop-block-header {
+  background-color: transparent;
+  padding-left: 0;
+  padding-top: 0;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 30px; }
 
 .saldo-sum {
   padding: 20px 0; }

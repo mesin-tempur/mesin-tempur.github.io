@@ -15,6 +15,14 @@ body {
 ul.inline-block {
 	li {display: inline-block;}
 }
+.column.small-nopad,
+.columns.small-nopad{
+	@include breakpoint (medium down) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.column:last-child:not(:first-child), .columns:last-child:not(:first-child) {float: left;}
 
 // 1. Header
 // ---------
@@ -41,6 +49,8 @@ ul.inline-block {
 			&:last-child {border-right: none;}
 		}
 	}
+	.column:last-child:not(:first-child), .columns:last-child:not(:first-child), .columns:last-child:not(:first-child)
+	{float: right;}
 	// &.fxd-top {
 	// 	z-index: 1;
 	//     height: 0;
@@ -1497,6 +1507,22 @@ header {
 	padding-top: 20px;
 	border-top: $code-border;
 	.btn-daftar {background-color:$yellow;color: $black}
+}
+.profile-pribadi {
+	@include breakpoint (large) {
+		.inner-profile {
+			padding: 40px;
+			border:$code-border-light;
+			min-height:340px;
+		}
+	}
+}
+.desktop-block-header {
+	background-color: transparent;
+	padding-left: 0;
+	padding-top: 0;
+	border-bottom: $code-border-light;
+	margin-bottom: 30px;
 }
 
 // DOmpetqu
