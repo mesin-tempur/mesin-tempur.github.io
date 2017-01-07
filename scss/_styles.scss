@@ -120,10 +120,11 @@ header {
 			position: relative;
 			margin-top: 25px;
 			width: 460px;
-			form {border: $code-border;}
+			form {}
 			.search-left {
 				float: left;
 				width: 100%;
+				border: $code-border;
 				input {
 					border:none;
 					padding:10px 20px 10px 20px;
@@ -243,6 +244,37 @@ header {
 	}
 	@include breakpoint(large only) {
 		.main-search {width:50%;}	
+	}
+}
+.desktop-main-search {
+	position: relative;
+	&.rec-on {
+		.search-left {
+			border-color: $primary-color;
+			border-bottom: none;
+		}
+		
+	}
+	.desktop-search-rec {
+		position: absolute;
+		border: 1px solid $primary-color;
+		border-top: none;
+		left: 0;
+		width: 100%;
+		padding: 15px;
+		background:white;
+		display: none;
+		.suggestion-box {
+			border-top: $code-border-light;
+			padding-top: 10px;
+			margin-top: 0;
+			max-height: 500px;
+			overflow-y: auto;
+			ul {
+				li {padding: 0;border-bottom: 0;}
+			}
+
+		}
 	}
 }
 

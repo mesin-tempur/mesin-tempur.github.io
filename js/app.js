@@ -511,3 +511,15 @@ function mobileFilter() {
 	});
 }
 mobileFilter()
+
+$(function () {
+	$('.js-desktop-search-input').keyup(function(){
+		$('.desktop-main-search').addClass('rec-on');
+		$('.desktop-search-rec').css('display','block');
+	});
+	$('.js-desktop-search-input').on('blur',function(){
+		$('.desktop-main-search').removeClass('rec-on');
+		$('.desktop-search-rec').css('display','');
+	})
+		
+});

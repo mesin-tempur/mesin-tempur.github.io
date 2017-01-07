@@ -5256,11 +5256,10 @@ header {
         position: relative;
         margin-top: 25px;
         width: 460px; }
-        header .main-search form {
-          border: 1px solid #cacaca; }
         header .main-search .search-left {
           float: left;
-          width: 100%; }
+          width: 100%;
+          border: 1px solid #cacaca; }
           header .main-search .search-left input {
             border: none;
             padding: 10px 20px 10px 20px;
@@ -5376,6 +5375,30 @@ header {
   @media screen and (min-width: 64em) and (max-width: 74.9375em) {
     header .main-search {
       width: 50%; } }
+
+.desktop-main-search {
+  position: relative; }
+  .desktop-main-search.rec-on .search-left {
+    border-color: #009688;
+    border-bottom: none; }
+  .desktop-main-search .desktop-search-rec {
+    position: absolute;
+    border: 1px solid #009688;
+    border-top: none;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: white;
+    display: none; }
+    .desktop-main-search .desktop-search-rec .suggestion-box {
+      border-top: 1px solid #e6e6e6;
+      padding-top: 10px;
+      margin-top: 0;
+      max-height: 500px;
+      overflow-y: auto; }
+      .desktop-main-search .desktop-search-rec .suggestion-box ul li {
+        padding: 0;
+        border-bottom: 0; }
 
 .block-add, .block-fill {
   display: table-cell;
