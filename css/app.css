@@ -2079,8 +2079,8 @@ kbd {
       border: 1px solid #777;
       color: #777; }
       .button.hollow.secondary:hover, .button.hollow.secondary:focus {
-        border-color: #3c3c3c;
-        color: #3c3c3c; }
+        border-color: #3c3b3b;
+        color: #3c3b3b; }
     .button.hollow.success {
       border: 1px solid #3adb76;
       color: #3adb76; }
@@ -3870,32 +3870,24 @@ table {
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 0; }
-  table thead,
-  table tbody,
-  table tfoot {
+  thead, tbody, tfoot {
     border: 1px solid #f1f1f1;
     background-color: #fefefe; }
-  table caption {
+  caption {
     font-weight: bold;
     padding: 0.5rem 0.625rem 0.625rem; }
-  table thead,
-  table tfoot {
+  thead, tfoot {
     background: #f8f8f8;
     color: #414143; }
-    table thead tr,
-    table tfoot tr {
+    thead tr, tfoot tr {
       background: transparent; }
-    table thead th,
-    table thead td,
-    table tfoot th,
-    table tfoot td {
+    thead th, thead td, tfoot th, tfoot td {
       padding: 0.5rem 0.625rem 0.625rem;
       font-weight: bold;
       text-align: left; }
-  table tbody tr:nth-child(even) {
+  tbody tr:nth-child(even) {
     background-color: #f1f1f1; }
-  table tbody th,
-  table tbody td {
+  tbody th, tbody td {
     padding: 0.5rem 0.625rem 0.625rem; }
 
 @media screen and (max-width: 63.9375em) {
@@ -6074,8 +6066,18 @@ header {
     font-size: 1.2rem; }
   .pdp-content .product-price .striked, .pdp-content .product-price .discount {
     font-size: .9rem; }
-  .pdp-content .product-price .discount {
-    margin-left: 5px; }
+  .pdp-content .product-price span.discount {
+    margin-left: 5px;
+    position: relative;
+    background: #F58A20;
+    padding: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 0.9rem; }
+    .pdp-content .product-price span.discount:before {
+      display: none; }
 
 .pdp-content .pdp-variant .fblock {
   margin-bottom: 10px; }
@@ -6524,6 +6526,9 @@ header {
           .store-desc .store-cta .soc-share .link-group {
             text-align: left; } }
 
+.store-page .acc-bg {
+  text-align: center; }
+
 .store-contact {
   padding: 20px 0; }
   .store-contact .link-group {
@@ -6548,6 +6553,17 @@ header {
   .acc-desc .store-stat {
     border-top: none;
     padding-top: 0; }
+  @media screen and (min-width: 64em) {
+    .acc-desc .acc-header {
+      text-align: center; }
+    .acc-desc .ava {
+      display: inline-block;
+      vertical-align: middle;
+      float: none; }
+    .acc-desc .store-name {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px; } }
 
 .block-header {
   background: #f1f1f1;

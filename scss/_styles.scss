@@ -1019,7 +1019,17 @@ header {
 		span:first-child {display: block;margin-bottom:5px;}
 		span {font-size: 1.2rem;}
 		.striked, .discount {font-size: .9rem;}
-		.discount {margin-left: 5px;}
+		span.discount {
+			margin-left: 5px;
+			position: relative;
+			background:$orange;
+			padding: 5px;
+			@include border-radius(4px);
+			font-size: $font-size-small;
+			&:before {
+				display: none;
+			}
+		}
 	}
 	.pdp-variant {
 		.fblock {margin-bottom: 10px;}
@@ -1448,6 +1458,9 @@ header {
 		}
 	}
 }
+.store-page {
+	.acc-bg {text-align: center;}
+}
 .store-contact {
 	padding: 20px 0;
 	.link-group {
@@ -1476,6 +1489,11 @@ header {
 	.store-stat {
 		border-top: none;
 		padding-top: 0;
+	}
+	@include breakpoint(large) {
+		.acc-header {text-align: center;}
+		.ava {display: inline-block;vertical-align: middle;float: none;}
+		.store-name {display: inline-block;vertical-align: middle;margin-left: 10px;}
 	}
 }
 .block-header {
