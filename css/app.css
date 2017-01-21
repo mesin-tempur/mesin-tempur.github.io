@@ -5363,7 +5363,11 @@ header {
         header.header-sticky .main-search {
           margin-top: 15px; }
         header.header-sticky .header-links {
-          margin-top: 10px; } }
+          margin-top: 10px; }
+        header.header-sticky .top-notif {
+          height: 0;
+          overflow: hidden;
+          padding: 0; } }
   @media screen and (min-width: 64em) and (max-width: 74.9375em) {
     header .main-search {
       width: 50%; } }
@@ -5656,6 +5660,11 @@ header {
   @media screen and (min-width: 50em) {
     .mobile-top-banner, .mobile-inside-banner {
       padding-top: 20px; } }
+
+@media screen and (min-width: 64em) {
+  .mobile-top-banner {
+    margin-top: -40px;
+    padding-top: 30px; } }
 
 .full-banner {
   margin-bottom: 10px; }
@@ -7854,3 +7863,23 @@ footer {
 .dashboard-nav .top-user .menu-list-title {
   overflow: hidden;
   padding-top: 12px; }
+
+.top-notif {
+  background: #ffffe5;
+  position: relative;
+  padding: 5px 10px; }
+  .top-notif .inner {
+    position: relative;
+    padding-right: 20px; }
+  .top-notif span.icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -10px; }
+
+.top-notif-desktop {
+  line-height: 25px;
+  font-size: 0.9rem; }
+  .top-notif-desktop a {
+    color: white;
+    text-decoration: underline; }

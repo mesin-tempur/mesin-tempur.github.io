@@ -240,6 +240,7 @@ header {
 			}
 			.main-search {margin-top: 15px;}
 			.header-links {margin-top: 10px;}
+			.top-notif {height: 0;overflow: hidden;padding: 0;}
 		}
 	}
 	@include breakpoint(large only) {
@@ -535,6 +536,12 @@ header {
 	padding:10px 0;
 	@include breakpoint(800px) {
 		padding-top: 20px;
+	}
+}
+.mobile-top-banner {
+	@include breakpoint(large) {
+		margin-top: -40px;
+		padding-top: 30px;
 	}
 }
 .full-banner {
@@ -2641,4 +2648,25 @@ footer {
 		.ava {float: left;margin-right: 10px;}
 		.menu-list-title {overflow: hidden;padding-top: 12px;}
 	}
+}
+.top-notif {
+	background:#ffffe5;
+	position: relative;
+	padding: 5px 10px;
+	.inner {position: relative;padding-right: 20px;}
+	span.icon {position: absolute;right: 10px;top:50%;margin-top: -10px;}
+	// @include breakpoint(large) {
+	// 	padding: 0;
+	// 	height: 30px;
+	// 	line-height: 30px;
+	// 	transition: height .25s linear;
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	span.icon {right: 0;}
+	// }
+}
+.top-notif-desktop {
+	line-height: 25px;
+	font-size: $font-size-small;
+	a {color:white;text-decoration: underline;}
 }
