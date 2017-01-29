@@ -1224,6 +1224,13 @@ header {
 			&:before {font-size: 26px;}
 		}
 	}
+	.seller-rating {
+		text-align: center;
+		margin-top: 10px;padding-top: 10px;
+		border-top: $code-border-light;
+		span {margin-bottom: 5px;display: inline-block;width: 100%;font-size: $font-size-small;color:$dark-gray;}
+		.rated-wrapper {display: inline-block;}
+	}
 	@include breakpoint (large) {
 		border:1px solid #ededed;
 		padding: 15px;
@@ -1249,8 +1256,10 @@ header {
 		margin-bottom: 20px;
 	}
 	li {
-		border-bottom: $code-border;
-		padding-bottom: 10px;margin-bottom: 10px;
+		border: $code-border;
+		padding: 10px;
+		margin-bottom: 10px;
+		@include border-radius(6px);
 	}
 	.ava {
 		width: 40px;height: 40px;
@@ -1275,6 +1284,8 @@ header {
 	}
 	.reply-input {
 		margin-top: 15px;
+		padding-top: 10px;
+		border-top: $code-border-light;
 		input {width: 70%;float: left;margin-right: 10px;}
 		button {overflow: hidden;}
 	}
@@ -1321,12 +1332,18 @@ header {
 		a {
 			padding-left: 10px;
 			padding-right: 10px;
+			color: $black;
+			font-size: $font-size-small;
 		}
 	}
 	.tabs-content {
 	}
+	ul.tabs {border: none;border-bottom: $code-border-light;}
 	@include breakpoint (large) {
 		margin-top: 40px;
+		.tabs-title {
+			a {padding-left: 15px;padding-right: 15px;}
+		}
 		.tabs-content {
 			padding: 20px;
 		}
@@ -1346,6 +1363,14 @@ header {
 		li {
 			span:first-child {font-weight:bold;}
 		}
+	}
+}
+.pdp-deskripsi {
+	.deskripsi-header {
+		font-weight: bold;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom: $code-border-light;
 	}
 }
 
@@ -2669,4 +2694,146 @@ footer {
 	line-height: 25px;
 	font-size: $font-size-small;
 	a {color:white;text-decoration: underline;}
+}
+
+.ulasan-list {
+	padding: 10px;
+	@include breakpoint(large) {
+		// font-size: $font-size;
+		.form-block {
+			width: 60%;
+		}
+	}
+	.list-seller {
+		border-bottom: $code-border-light;
+		padding: 10px;
+		.seller-info {}
+		@include breakpoint(large) {
+			padding: 10px 20px;
+			.seller-info {
+				font-size: $font-size;
+				display: inline-block;
+				width: 40%;
+			}
+		}
+	}
+	.desc-box {overflow: hidden;padding-left: 10px;}
+	.list-body {
+		.product-rating {}
+		.img-box {width: 80px;}
+		@include breakpoint(large) {
+			padding: 15px;
+			.img-box {width: 140px;}
+			.desc-box {
+				p {display: inline-block;vertical-align: middle;width: 40%;}
+				.rating {border-left: none;float: right;margin-top: 0;padding-top: 0;vertical-align: middle;}
+			}
+			.form-block {
+				overflow: hidden;
+				padding-left: 10px;
+			}
+			button {margin-bottom: 0;}
+		}
+	}
+	.accordion-content {color:$black;}
+}
+.rating {
+	margin: 10px 0;
+	padding-top: 10px;
+	border-top: $code-border-light;
+	position: relative;
+	span {display: block;margin-bottom: 5px;}
+	.rating-btn {
+		position: absolute;
+		right: 0;
+		top:50%;
+		padding: 7px 15px;
+	}
+	@include breakpoint(large) {
+		display: inline-block;
+		border-top: none;
+		border-left: $code-border-light;
+		width: 55%;
+		padding-left: 40px;
+		span {display: inline-block;vertical-align: middle;margin-right: 20px;margin-bottom: 0;}
+		.seller-rating, .seller-rated {display: inline-block;vertical-align: middle;}
+		.rating-btn {position: relative;display: inline-block;vertical-align: middle;margin-bottom: 0;margin-left: 10px;}
+	}
+}
+.rated-wrapper {
+	position: relative;
+	width: 134px;
+	.ratings-group {
+		position: relative;
+	    line-height: 0;
+	    z-index: 10;
+	    white-space: nowrap;
+
+	}
+	.ratings-rated-group {
+		z-index: 11;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    overflow: hidden;
+	}
+}
+.buyer-status {
+	background:$blue;
+	color:white;
+	font-size: 11px;
+	padding: 2px;
+	border-radius: 2px;
+	margin-left: 5px;
+	margin-top: -10px;
+}
+.seller-status {
+	background:$orange;
+	color:white;
+	font-size: 11px;
+	padding: 2px;
+	border-radius: 2px;
+	margin-left: 5px;
+	margin-top: -10px;
+}
+.review-box {
+	padding: 10px 20px;
+	overflow: hidden;
+	.review-header {border-top: $code-border-light;padding-top: 10px;}
+	.ava {}
+	.ulasan-text {margin-top: 10px;}
+	.author-name {max-width:80px;display: inline-block;vertical-align: middle;}
+	.date {font-size: $font-size-smaller;color:$dark-gray;margin-left: 5px;}
+	@include breakpoint(large) {
+		.author-name {max-width:200px;}
+	}
+}
+.seller-reply {
+	background:$lighter-gray;
+	.review-header {border-top: none;padding-top: 0px;}
+}
+.pdp-ulasan {
+	padding: 0;
+	ul {
+		padding: 10px;
+		li {
+			border: $code-border-light;
+			margin-bottom: 20px;
+		}
+	}
+	.review-box {
+		.review-header {border-top: none;padding-top: 0px;}
+	}
+	.rating {
+		span {font-size: $font-size-smaller;display: inline-block;margin-right: 10px;}
+		.rated-wrapper {display: inline-block;vertical-align: middle;}
+	}
+	@include breakpoint(large) {
+		.rating {
+			border-left: none;
+			border-top: $code-border-light;
+			padding-left: 0;
+			width: 100%;
+		}
+	}
 }

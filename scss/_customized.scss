@@ -6,6 +6,7 @@
 	// max-width: 40rem;
 	margin: 0 auto;
 }
+a:focus {}
 
 .fl {float: left;}
 .fr {float: right;}
@@ -43,7 +44,7 @@ table.small-text {font-size: $font-size-small;}
 .shown {display: block !important;}
 .hidden {display: none !important;}
 
-.elipsis {
+.elipsis,.ellipsis {
     white-space: nowrap;
     overflow: hidden;
     -o-text-overflow: ellipsis;

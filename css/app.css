@@ -4884,7 +4884,7 @@ table.small-text {
 .hidden {
   display: none !important; }
 
-.elipsis {
+.elipsis, .ellipsis {
   white-space: nowrap;
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -6270,6 +6270,19 @@ header {
       height: 28px; }
       .pdp-seller .store-contact span:before {
         font-size: 26px; }
+  .pdp-seller .seller-rating {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #e6e6e6; }
+    .pdp-seller .seller-rating span {
+      margin-bottom: 5px;
+      display: inline-block;
+      width: 100%;
+      font-size: 0.9rem;
+      color: #8a8a8a; }
+    .pdp-seller .seller-rating .rated-wrapper {
+      display: inline-block; }
   @media screen and (min-width: 64em) {
     .pdp-seller {
       border: 1px solid #ededed;
@@ -6316,9 +6329,13 @@ header {
     margin-top: 10px; }
 
 .new-comment li {
-  border-bottom: 1px solid #cacaca;
-  padding-bottom: 10px;
-  margin-bottom: 10px; }
+  border: 1px solid #cacaca;
+  padding: 10px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px; }
 
 .new-comment .ava {
   width: 40px;
@@ -6351,7 +6368,9 @@ header {
   overflow: hidden; }
 
 .new-comment .reply-input {
-  margin-top: 15px; }
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #e6e6e6; }
   .new-comment .reply-input input {
     width: 70%;
     float: left;
@@ -6397,10 +6416,18 @@ header {
   margin-bottom: 20px; }
   .pdp-tab .tabs-title a {
     padding-left: 10px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    color: #414143;
+    font-size: 0.9rem; }
+  .pdp-tab ul.tabs {
+    border: none;
+    border-bottom: 1px solid #e6e6e6; }
   @media screen and (min-width: 64em) {
     .pdp-tab {
       margin-top: 40px; }
+      .pdp-tab .tabs-title a {
+        padding-left: 15px;
+        padding-right: 15px; }
       .pdp-tab .tabs-content {
         padding: 20px; } }
 
@@ -6418,6 +6445,12 @@ header {
       border-right: 1px solid #ededed; }
     .pdp-more-info li span:first-child {
       font-weight: bold; } }
+
+.pdp-deskripsi .deskripsi-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6; }
 
 .covering-top {
   position: relative;
@@ -7883,3 +7916,164 @@ footer {
   .top-notif-desktop a {
     color: white;
     text-decoration: underline; }
+
+.ulasan-list {
+  padding: 10px; }
+  @media screen and (min-width: 64em) {
+    .ulasan-list .form-block {
+      width: 60%; } }
+  .ulasan-list .list-seller {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px; }
+    @media screen and (min-width: 64em) {
+      .ulasan-list .list-seller {
+        padding: 10px 20px; }
+        .ulasan-list .list-seller .seller-info {
+          font-size: 1rem;
+          display: inline-block;
+          width: 40%; } }
+  .ulasan-list .desc-box {
+    overflow: hidden;
+    padding-left: 10px; }
+  .ulasan-list .list-body .img-box {
+    width: 80px; }
+  @media screen and (min-width: 64em) {
+    .ulasan-list .list-body {
+      padding: 15px; }
+      .ulasan-list .list-body .img-box {
+        width: 140px; }
+      .ulasan-list .list-body .desc-box p {
+        display: inline-block;
+        vertical-align: middle;
+        width: 40%; }
+      .ulasan-list .list-body .desc-box .rating {
+        border-left: none;
+        float: right;
+        margin-top: 0;
+        padding-top: 0;
+        vertical-align: middle; }
+      .ulasan-list .list-body .form-block {
+        overflow: hidden;
+        padding-left: 10px; }
+      .ulasan-list .list-body button {
+        margin-bottom: 0; } }
+  .ulasan-list .accordion-content {
+    color: #414143; }
+
+.rating {
+  margin: 10px 0;
+  padding-top: 10px;
+  border-top: 1px solid #e6e6e6;
+  position: relative; }
+  .rating span {
+    display: block;
+    margin-bottom: 5px; }
+  .rating .rating-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    padding: 7px 15px; }
+  @media screen and (min-width: 64em) {
+    .rating {
+      display: inline-block;
+      border-top: none;
+      border-left: 1px solid #e6e6e6;
+      width: 55%;
+      padding-left: 40px; }
+      .rating span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+        margin-bottom: 0; }
+      .rating .seller-rating, .rating .seller-rated {
+        display: inline-block;
+        vertical-align: middle; }
+      .rating .rating-btn {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+        margin-left: 10px; } }
+
+.rated-wrapper {
+  position: relative;
+  width: 134px; }
+  .rated-wrapper .ratings-group {
+    position: relative;
+    line-height: 0;
+    z-index: 10;
+    white-space: nowrap; }
+  .rated-wrapper .ratings-rated-group {
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+
+.buyer-status {
+  background: #066F96;
+  color: white;
+  font-size: 11px;
+  padding: 2px;
+  border-radius: 2px;
+  margin-left: 5px;
+  margin-top: -10px; }
+
+.seller-status {
+  background: #F58A20;
+  color: white;
+  font-size: 11px;
+  padding: 2px;
+  border-radius: 2px;
+  margin-left: 5px;
+  margin-top: -10px; }
+
+.review-box {
+  padding: 10px 20px;
+  overflow: hidden; }
+  .review-box .review-header {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 10px; }
+  .review-box .ulasan-text {
+    margin-top: 10px; }
+  .review-box .author-name {
+    max-width: 80px;
+    display: inline-block;
+    vertical-align: middle; }
+  .review-box .date {
+    font-size: 0.8rem;
+    color: #8a8a8a;
+    margin-left: 5px; }
+  @media screen and (min-width: 64em) {
+    .review-box .author-name {
+      max-width: 200px; } }
+
+.seller-reply {
+  background: #f1f1f1; }
+  .seller-reply .review-header {
+    border-top: none;
+    padding-top: 0px; }
+
+.pdp-ulasan {
+  padding: 0; }
+  .pdp-ulasan ul {
+    padding: 10px; }
+    .pdp-ulasan ul li {
+      border: 1px solid #e6e6e6;
+      margin-bottom: 20px; }
+  .pdp-ulasan .review-box .review-header {
+    border-top: none;
+    padding-top: 0px; }
+  .pdp-ulasan .rating span {
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-right: 10px; }
+  .pdp-ulasan .rating .rated-wrapper {
+    display: inline-block;
+    vertical-align: middle; }
+  @media screen and (min-width: 64em) {
+    .pdp-ulasan .rating {
+      border-left: none;
+      border-top: 1px solid #e6e6e6;
+      padding-left: 0;
+      width: 100%; } }
