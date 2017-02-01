@@ -1061,6 +1061,20 @@ span.discount {
 				display: none;
 			}
 		}
+		.put-price {
+			color:$orange;
+			background:transparent;
+			font-size: $font-size;
+			top: 0;
+			margin: 0;
+			padding: 2px 10px;
+			border:1px solid $orange;
+		}
+		.free-ongkir {
+			margin:0;
+			bottom:5px;
+			img {max-height: 35px;}
+		}
 	}
 	.pdp-variant {
 		.fblock {margin-bottom: 10px;}
