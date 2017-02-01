@@ -5872,14 +5872,36 @@ header {
 .product-listing .slick-slide img {
   display: inline-block; }
 
-.product-price span {
-  color: #F58A20; }
+.product-price {
+  position: relative; }
+  .product-price span {
+    color: #F58A20; }
+  .product-price span.striked {
+    color: #8a8a8a;
+    text-decoration: line-through; }
+  .product-price .put-price {
+    background: #f58a20;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    margin-top: -10px;
+    margin-right: -.5rem;
+    padding: 3px;
+    font-size: .75rem;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  .product-price .free-ongkir {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    margin-left: -.2rem;
+    margin-bottom: -.2rem; }
+    .product-price .free-ongkir img {
+      max-height: 30px; }
 
-.product-price span.striked {
-  color: #8a8a8a;
-  text-decoration: line-through; }
-
-.product-price span.discount {
+span.discount {
   color: white;
   position: absolute;
   top: 0;
@@ -5887,7 +5909,7 @@ header {
   z-index: 10;
   padding-top: 3px;
   padding-right: 3px; }
-  .product-price span.discount:before {
+  span.discount:before {
     content: "";
     position: absolute;
     top: 0;
@@ -5911,6 +5933,7 @@ header {
   height: 45px;
   overflow: hidden;
   margin-top: 5px;
+  margin-bottom: 5px;
   color: #009688; }
 
 .product-listing-grid .product-price span {
