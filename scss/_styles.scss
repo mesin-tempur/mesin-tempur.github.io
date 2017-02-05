@@ -66,13 +66,16 @@ header {
 	padding: 10px 0;
 	a, a:focus {color:white;}
 	.ic-hamburger,  .ic-cart {font-size: 1.5rem;}
-	.ic-search-thin, .ic-account {font-size: 1.3rem;}
+	.ic-search-thin, .ic-account, .ic-notif {font-size: 1.3rem;}
 	.hamburger {
 		@include hamburger(white, $light-gray, 18px, 16px, 2px, 3);
 		margin-right: 5px;
 	}
 	.header-login-link, .header-search-toggle {
 		margin-top: 3px;
+	}
+	.header-notif {
+		span {display: inline-block;padding-top: 2px;}
 	}
 	.search-modal {
 		padding: 0;
@@ -100,6 +103,15 @@ header {
     			.icon {font-size: 16px; color: #999}
 			}
 		}
+	}
+	@include breakpoint (medium down) {
+		&.header-sticky {
+			position: fixed;
+			+ .main-content {padding-top: 88px;}
+		}
+		// &.header-sticky +  .main-content {
+		// 	display: none;
+		// }
 	}
 	@include breakpoint(large) {
 		padding: 0;
@@ -221,6 +233,46 @@ header {
 				.dropdown-pane {
 					.if-empty {
 						.text {text-align: center;padding-bottom: 20px;}
+					}
+				}
+
+			}
+			&.login-links-box {
+				&.logged-in {
+					img {width: 40px;height: 40px;}
+					.menu {
+						.is-dropdown-submenu-parent {
+							a {padding-top: 0;padding-bottom: 0;padding-left: 0;}
+						}
+						.is-dropdown-submenu {
+							right: 0;
+							left: auto;
+							margin-top: 10px;
+							padding: 10px;
+							a {
+								padding: 5px 0;margin-bottom: 5px;
+								border-bottom: $code-border-light;
+								position: relative;
+								color:$dark-gray;
+								
+								&:hover {color: $primary-color;}
+							}
+							li {&:last-child {a {border-bottom: none;}}}
+							span {
+								position: absolute;
+								right: 10px;
+								background:$dark-gray;
+								color:white;
+								text-align: center;
+								width: 14px;
+								height: 14px;
+								line-height: 14px;
+								@include border-radius(14px);
+								display: inline-block;
+								vertical-align: middle;
+								font-size: 12px;
+							}
+						}
 					}
 				}
 			}
