@@ -5233,7 +5233,9 @@ header {
           color: #999; }
   @media screen and (max-width: 63.9375em) {
     header.header-sticky {
-      position: fixed; }
+      position: fixed;
+      z-index: 200;
+      top: 0; }
       header.header-sticky + .main-content {
         padding-top: 88px; } }
   @media screen and (min-width: 64em) {
@@ -7472,14 +7474,15 @@ footer {
       padding: 10px 0; } }
 
 .bq-slide-menu {
-  position: absolute;
+  position: fixed;
   width: 290px;
   top: 0;
   bottom: 0;
   z-index: 1000;
   background: #fefefe;
   visibility: hidden;
-  opacity: 0; }
+  opacity: 0;
+  overflow-y: auto; }
   .bq-slide-menu.is-open {
     opacity: 1;
     visibility: visible; }

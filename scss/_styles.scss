@@ -107,6 +107,8 @@ header {
 	@include breakpoint (medium down) {
 		&.header-sticky {
 			position: fixed;
+			z-index: 200;
+			top: 0;
 			+ .main-content {padding-top: 88px;}
 		}
 		// &.header-sticky +  .main-content {
@@ -2314,7 +2316,7 @@ footer {
 // ---------
 
 .bq-slide-menu {
-	position: absolute;
+	position: fixed;
 	width: 290px;
 	top: 0;
 	bottom: 0;
@@ -2322,6 +2324,7 @@ footer {
 	background:$white;
 	visibility: hidden;
 	opacity: 0;
+	overflow-y: auto;
 	&.is-open {
 		opacity: 1;
 		visibility: visible;
