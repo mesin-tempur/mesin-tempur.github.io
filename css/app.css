@@ -7319,6 +7319,17 @@ span.selected-cat-parent {
         .bank-detail .bordered-row .row-item:last-child {
           border-bottom: none; } }
 
+.address-choose .accordion a.accordion-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding: 15px;
+  background-color: transparent;
+  color: #414143;
+  font-weight: bold; }
+
+.address-choose .accordion .accordion-content {
+  padding: 10px; }
+
 @media screen and (min-width: 64em) {
   .address-choose .address-block {
     display: inline-block;
@@ -7328,7 +7339,13 @@ span.selected-cat-parent {
   .address-choose .insurance-block {
     display: block;
     float: none;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .address-choose .accordion .input-radio {
+    width: 100%; }
+  .address-choose .accordion .info {
+    display: inline-block; }
+  .address-choose .accordion .shipping-cost {
+    float: right; } }
 
 .static-page ul li {
   list-style-type: disc;

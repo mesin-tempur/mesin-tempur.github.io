@@ -2163,6 +2163,17 @@ span.selected-cat-parent {
 }
 
 .address-choose {
+	.accordion {
+		a.accordion-title {
+			font-size: $font-size;
+			margin-bottom: 0;
+			padding: 15px;
+			background-color: transparent;
+			color: $black;
+			font-weight: bold;
+		}
+		.accordion-content {padding: 10px;}
+	}
 	@include breakpoint (large) {
 		.address-block {
 			display: inline-block;
@@ -2171,6 +2182,13 @@ span.selected-cat-parent {
 			margin-right: 10px;
 		}
 		.insurance-block {display: block;float: none;margin-top: 10px;}
+		.accordion {
+			.input-radio {
+				width: 100%;
+			}
+			.info {display: inline-block;}
+			.shipping-cost {float: right;}
+		}
 	}
 }
 
