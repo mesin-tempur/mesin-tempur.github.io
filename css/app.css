@@ -8180,3 +8180,52 @@ footer {
       border-top: 1px solid #e6e6e6;
       padding-left: 0;
       width: 100%; } }
+
+.wishlist .item .remove {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background: #c81414;
+  opacity: 0; }
+  .wishlist .item .remove span {
+    color: white;
+    display: inline-block;
+    line-height: 32px; }
+
+.wishlist .item:hover .remove {
+  opacity: 1; }
+
+.store-listing .img-store {
+  padding: 10px 0 0 0; }
+
+.store-listing .ava img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #e6e6e6; }
+
+.store-listing .store-desc {
+  margin-top: 0; }
+  .store-listing .store-desc .store-name {
+    margin-bottom: 10px;
+    padding: 0 20px;
+    text-align: center;
+    display: inline-block; }
+
+.store-listing .item {
+  text-align: center;
+  border: none; }
+
+.store-listing .store-loc span {
+  margin-right: 5px; }
+
+.store-listing .prod-cta {
+  border-top: none;
+  padding: 0 10px; }

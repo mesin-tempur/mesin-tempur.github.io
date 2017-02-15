@@ -2949,3 +2949,52 @@ footer {
 		}
 	}
 }
+.wishlist {
+	.item {
+		.remove {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			width: 24px;
+			height: 24px;
+			line-height: 24px;
+			@include border-radius(20px);
+			text-align: center;
+			background:$red;
+			opacity: 0;
+			span {color:white;display: inline-block;line-height: 32px;}
+		}
+		&:hover {
+			.remove {opacity: 1;}
+		}
+	}
+}
+.store-listing {
+	.img-store {
+		padding: 10px 0 0 0;
+	}
+	.ava {
+
+		img {width: 80px;height: 80px;border:2px solid $light-gray;}
+	}
+	.store-desc {
+		margin-top: 0;
+		.store-name {
+			margin-bottom: 10px;
+			padding: 0 20px;
+			text-align: center;
+			display: inline-block;
+		}
+	}
+	.item {
+		text-align: center;
+		border: none;
+	}
+	.store-loc {
+		span {margin-right: 5px;}
+	}
+	.prod-cta {
+		border-top: none;
+		padding: 0 10px;
+	}
+}
