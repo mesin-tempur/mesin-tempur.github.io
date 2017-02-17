@@ -5358,6 +5358,13 @@ header {
         header .header-links.cart-links-box .dropdown-pane .if-empty .text {
           text-align: center;
           padding-bottom: 20px; }
+        header .header-links.cart-links-box a {
+          position: relative;
+          display: block; }
+        header .header-links.cart-links-box .counter-notif {
+          left: 16px;
+          top: 0;
+          line-height: 20px; }
         header .header-links.login-links-box.logged-in img {
           width: 40px;
           height: 40px; }
@@ -5746,6 +5753,33 @@ header {
     .halfsplit-banner .slick-slide:last-child {
       padding-right: 0px;
       padding-left: 0px; } }
+
+.slick-slider .slick-arrow {
+  z-index: 10;
+  padding: 20px; }
+  .slick-slider .slick-arrow:before {
+    top: 50%;
+    margin-top: -10px;
+    display: inline-block;
+    position: absolute;
+    -webkit-transition-property: all .2s linear;
+    transition-property: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear; }
+
+.slick-slider .slick-prev:before {
+  left: 50%;
+  margin-left: -10px; }
+
+.slick-slider .slick-next {
+  right: 0; }
+  .slick-slider .slick-next:before {
+    right: 50%;
+    margin-right: -10px; }
+
+.slick-slider:hover .slick-arrow:before {
+  opacity: 1;
+  color: #F58A20; }
 
 .separator {
   position: relative; }
