@@ -4756,6 +4756,12 @@ table.hover tr:nth-of-type(even):hover {
 .ic-search-thin:before {
   content: "\4b"; }
 
+.ic-feather:before {
+  content: "\4c"; }
+
+.ic-pen:before {
+  content: "\33"; }
+
 .sprites-desktop {
   background-image: url("../images/sprites-desktop.png");
   background-repeat: no-repeat;
