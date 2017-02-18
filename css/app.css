@@ -8263,3 +8263,8 @@ footer {
 .store-listing .prod-cta {
   border-top: none;
   padding: 0 10px; }
+
+.modal-header {
+  padding: 10px 0;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px; }

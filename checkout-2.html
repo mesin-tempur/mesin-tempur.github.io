@@ -338,24 +338,26 @@
                 </div>
                 <div class="action-box">
                   <div class="link-group clr">
-                    <form class="submit-order-form" action="/cart/12414/process_payment" accept-charset="UTF-8" method="post">
+                    <form class="submit-order-form" action="" accept-charset="UTF-8" method="post">
                       <input name="utf8" type="hidden" value="&#x2713;" />
                       <input type="hidden" name="authenticity_token" value="5CrlPhXar4FB62OmTZ2bqEgkGlvSJhxflx1Hm7YI9ekgKfGDP2tXQk+gjiaM5HPkoU/cqesNeKbC0eWKEFKaPA==" />
                       <br/><br/>
                       <div class="clr"></div>
-                      <div class="add-paytren-pin">
+                      <!-- <div class="add-paytren-pin">
                         <input type="password" name="paytren_password" id="paytren_password" placeholder="Masukan Password PAYTREN" /><br/>
                         <input type="password" name="paytren_pin" id="paytren_pin" placeholder="Masukan PIN PAYTREN" /><br/>
-                      </div>
+                      </div> -->
                       <div class="mb10">
                         <select name="payment_method" id="payment_method" class="select-payment-method">
                           <option value="">Pilih Metode bayar</option>
                           <option value="bank_transfer">Bank Transfer</option>
+                          <option value="paytren_saldo">Saldo Paytren</option>
+                          <option value="paytren_put">PUT (Point Unit Treni)</option>
                         </select>
                       <br/>
                       </div>
                       <div class="">
-                        <a href="checkout-success-transfer.html" class="button expanded" href="#">Bayar Transaksi ini</a>
+                        <a href="#" class="button expanded" data-open="paytrenReveal">Bayar Transaksi ini</a>
                       </div>
                     </form>          
                   </div>
@@ -363,93 +365,22 @@
               </div>
             </div>
     
-    <div class="reveal" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
-    
-       <h1>Konfirmasi Data Order</h1><br/>
-        <div class="row">
-          <div class="small-12 column">
-            <div class="order-box">
-              <div class="list-body">
-                    <div class="item clr">
-                      <div class="img-box fl">
-                        <img src="http://belanjaqu.co.id/uploads/product_image/image/65603/thumb_DISTORI2.jpg" alt="">
-                      </div>
-                      <div class="qtt-box fr">
-                        <div class="tac">QTY<br>1</div>
-                      </div>
-                      <div class="desc-box">
-                        <p>
-                          <span class="elipsis dblock"><strong>Efek gitar distorsi SS1,harga cuci gudang no PHP</strong></span>
-                          Rp  152.000 <br>
-                          
-                            Varian: Semua Varian
-                        </p>
-                      </div>
-                    </div>
-                    <div class="item clr">
-                      <div class="img-box fl">
-                        <img src="http://belanjaqu.co.id/uploads/product_image/image/65615/thumb_SZS_DRUM1.jpg" alt="">
-                      </div>
-                      <div class="qtt-box fr">
-                        <div class="tac">QTY<br>1</div>
-                      </div>
-                      <div class="desc-box">
-                        <p>
-                          <span class="elipsis dblock"><strong>Szs drum pad economist</strong></span>
-                          Rp  104.000 <br>
-                          
-                            Varian: Semua Varian
-                        </p>
-                      </div>
-                    </div>
-              </div>
-              <div class="list-footer">
-                <div class="table-price clr">
-                  <table width="100%">
-                    <tr>
-                      <td class="gray" align="right">Total Quantity</td>
-                      <td width="120" align="right">2</td>
-                    </tr>
-                      <tr>
-                        <td class="gray" align="right">Total Pembelanjaan (Rp)</td>
-                        <td align="right"> 256.000</td>
-                      </tr>
-                      <tr>
-                        <td class="gray" align="right">JNE CTCOKE (Rp)</td>
-                        <td align="right"> 12.000</td>
-                      </tr>
-                      <tr>
-                        <td align="right"><strong>TOTAL (Rp)</strong></td>
-                        <td align="right"><strong> 268.000</strong></td>
-                      </tr>
-                  </table>
-                </div>
-                <div class="ship-to">
-                  <p class="gray title-top"><small>DETAIL TOKO</small></p>
-                  <p>kuche kuche<br/>parahiangan the suites Bandung Kota, Jawa Barat</p>
-                </div>
-                <div class="ship-to">
-                  <p class="gray title-top"><small>ALAMAT PENGIRIMAN</small></p>
-                  <p><strong>ibrahim.rama</strong> <br/> Jl. Buahbatu Dalam III No. 22 Bandung <br> Lengkong, Cijagra <br> Bandung Kota 40265, Jawa Barat <br> HP: 087724772227</p>
-                </div>
-              </div>
-            </div>
-            <div class="action-box">
-              <div class="link-group clr">
-                  <div>
-                    <a class="button expanded" onclick="$(&#39;.submit-order-form&#39;).submit() " href="#">Bayar Transaksi ini</a>
-                  </div>
-                  <div>
-                    <a class="button expanded bordered-btn" href="#" data-close aria-label="Close reveal">Ingin Mengecek Kembali</a>
-                  </div>
-              </div>
-            </div>
+    <div class="reveal" id="paytrenReveal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <form action="">
+        <div class="modal-header">
+          Password &amp; Pin Paytren
+        </div>
+        <div class="modal-body">
+          <div class="add-paytren-pin">
+            <input type="password" name="paytren_password" id="paytren_password" placeholder="Masukan Password PAYTREN" /><br/>
+            <input type="password" name="paytren_pin" id="paytren_pin" placeholder="Masukan PIN PAYTREN" /><br/>
+            <input type="submit" class="button expanded paytren-modal-submit" value="BAYAR">
           </div>
         </div>
-        <button class="close-button" data-close aria-label="Close reveal" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        
+      </form>
+      <button class="close-button paytren-modal-close" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
   </div>
 </div>
