@@ -1,0 +1,61 @@
+header {
+  background: #313b3d;
+  height: 72px;
+  color: white; }
+  header #logo img {
+    height: 64px !important;
+    max-height: 64px !important; }
+  header .powered {
+    margin-top: 25px; }
+
+section.top-section {
+  padding-top: 100px; }
+
+a {
+  color: #fa7252; }
+
+.button {
+  background-color: #fa7252; }
+  .button:hover, .button:focus {
+    background-color: #f83508; }
+
+.top-filter {
+  padding: 20px 0;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 40px; }
+  .top-filter label {
+    height: 34px;
+    line-height: 34px; }
+  .top-filter button {
+    margin-top: 34px; }
+
+.filter-date thead {
+  background-color: transparent;
+  border: none; }
+
+.filter-date td {
+  padding: 0 10px 0 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #414143; }
+
+.product-listing-grid .product-title {
+  color: #313b3d; }
+
+.detail-reveal .product-title {
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold; }
+
+.detail-reveal .img-box img {
+  max-height: 158px;
+  max-width: 158px; }
+
+.pagination a {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none; }
+
+.pagination li.current {
+  background-color: #fa7252; }

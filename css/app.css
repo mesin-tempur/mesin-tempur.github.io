@@ -5176,8 +5176,6 @@ header {
   z-index: 11;
   position: relative;
   padding: 10px 0; }
-  header a, header a:focus {
-    color: white; }
   header .ic-hamburger, header .ic-cart {
     font-size: 1.5rem; }
   header .ic-search-thin, header .ic-account, header .ic-notif {
