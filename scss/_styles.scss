@@ -64,7 +64,7 @@ header {
 	z-index: 11;
 	position: relative;
 	padding: 10px 0;
-	
+
 	.ic-hamburger,  .ic-cart {font-size: 1.5rem;}
 	.ic-search-thin, .ic-account, .ic-notif {font-size: 1.3rem;}
 	.hamburger {
@@ -80,7 +80,7 @@ header {
 	.search-modal {
 		padding: 0;
 		margin-bottom: 0;
-		
+
 		.input-search-box {
 			width: 100%;
 			input {
@@ -258,7 +258,7 @@ header {
 								border-bottom: $code-border-light;
 								position: relative;
 								color:$dark-gray;
-								
+
 								&:hover {color: $primary-color;}
 							}
 							li {&:last-child {a {border-bottom: none;}}}
@@ -283,7 +283,7 @@ header {
 		}
 		&.header-sticky {
 			@include box-shadow(0,4px,8px,rgba(0,0,0,.1));
-			.top-header {    
+			.top-header {
 				z-index: 1;
 			    height: 0;
 			    position: relative;
@@ -300,7 +300,7 @@ header {
 		}
 	}
 	@include breakpoint(large only) {
-		.main-search {width:50%;}	
+		.main-search {width:50%;}
 	}
 }
 .desktop-main-search {
@@ -310,7 +310,7 @@ header {
 			border-color: $primary-color;
 			border-bottom: none;
 		}
-		
+
 	}
 	.desktop-search-rec {
 		position: absolute;
@@ -421,7 +421,7 @@ header {
 				li {
 					margin-right: 10px;
 				}
-				a {	
+				a {
 					height: 40px;
 					line-height: 40px;
 					color:$black;
@@ -829,7 +829,7 @@ header {
 		font-size: 24px;
 		&:first-child {}
 		&:last-child {font-weight: bold;margin-left: -2px;}
-	}	
+	}
 }
 .product-listing{
 	.product-title {
@@ -887,8 +887,8 @@ span.discount {
 		position: absolute;
 		top: 0;
 		right: 0;
-		width: 0; 
-	  	height: 0; 
+		width: 0;
+	  	height: 0;
 	  	border-top: 34px solid transparent;
 			border-bottom: 34px solid transparent;
 			border-left: 34px solid $orange;
@@ -907,7 +907,7 @@ span.discount {
 		overflow: hidden;
 		margin-top: 5px;
 		margin-bottom: 5px;
-		color:$primary-color;	
+		color:$primary-color;
 	}
 	.product-price {
 		span {display: block;}
@@ -1589,7 +1589,7 @@ span.discount {
 	.like-btn {margin-top: 20px;}
 	@include breakpoint (large) {
 		margin-top: 0;
-		margin-bottom: 20px;	
+		margin-bottom: 20px;
 		.ava {
 			float: left;
 			width: 100px;
@@ -1884,7 +1884,7 @@ a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
 	background-color:rgba(255,255,255,.4);
 }
 .align-middle {
-	img {    
+	img {
 	vertical-align: middle;
     max-width: 90%;
     max-height: 100%;
@@ -1977,7 +1977,7 @@ a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
     }
 }
 span.selected-cat-parent {
-    color: $dark-gray;  
+    color: $dark-gray;
 }
 
 // SUCCESS PAGE
@@ -2481,7 +2481,7 @@ footer {
 	.disabled {opacity: .5;}
 }
 .submit-group {
-	margin-top:20px;	
+	margin-top:20px;
 	button, a {margin-bottom:10px;}
 }
 
@@ -2789,7 +2789,7 @@ footer {
 }
 .fixed-pasang {
 	padding: 10px 20px;
-	background:white; 
+	background:white;
 	a {margin-bottom: 0;}
 }
 
@@ -3051,9 +3051,9 @@ footer {
 		max-height: 400px;
 		.address-block {
 			width: 23%;
-		}		
+		}
 	}
-	
+
 	.agents-name {
 		width: 100%;
 		text-overflow:ellipsis;
@@ -3070,4 +3070,65 @@ footer {
 		}
 	}
 	p {margin-bottom: 0;}
+}
+
+.judul-form {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	background: #f1f1f1;
+	padding: 8px;
+	padding-left: 13px;
+	border-left: 4px solid #009688
+}
+
+.form-produk {
+	border: $code-border-light;
+	padding: 13px;border-radius: 4px
+}
+
+.data-checkout {
+	line-height:35px
+}
+
+.data-kanan {float: right}
+.harga {color: #F58A20}
+.grand-total {
+	font-weight: bold;
+	border-top: $code-border-light;
+	border-bottom: $code-border-light;
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+
+.collection .collection-item {
+	background-color: #fff;
+	line-height: 1.2rem;
+	padding: 15px;margin:0;
+	border-bottom: $code-border-light;
+}
+
+.collection .collection-item.avatar{min-height:84px;padding-left:95px;position:relative}
+
+.thumbnail {
+	max-width:65px;
+	max-height:65px;
+	position:absolute;
+	overflow:hidden;
+	left:15px;
+	display:inline-block;
+	vertical-align:middle;
+	border-radius:2px
+}
+
+.collection .collection-item.avatar p{margin:0}
+
+@media screen and (max-width:1023px) {
+	.form-produk {
+		padding: 15px;
+		padding-top: 10px;
+		border-top: $code-border-light;
+		margin-top: 1em
+	}
+
+	.login-dengan {margin-top:1em;margin-bottom:1em}
 }
