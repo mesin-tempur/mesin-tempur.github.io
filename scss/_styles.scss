@@ -3100,14 +3100,18 @@ footer {
 	padding-bottom: 10px
 }
 
-.collection .collection-item {
-	background-color: #fff;
-	line-height: 1.2rem;
-	padding: 15px;margin:0;
-	border-bottom: $code-border-light;
+.collection {
+	.collection-item {
+		background-color: #fff;
+		line-height: 1.2rem;
+		padding: 15px;margin:0;
+		border-bottom: $code-border-light;
+		&.avatar {
+			min-height:84px;padding-left:95px;position:relative;
+			p {margin:0}
+		}
+	}
 }
-
-.collection .collection-item.avatar{min-height:84px;padding-left:95px;position:relative}
 
 .thumbnail {
 	max-width:65px;
@@ -3120,15 +3124,12 @@ footer {
 	border-radius:2px
 }
 
-.collection .collection-item.avatar p{margin:0}
-
-@media screen and (max-width:1023px) {
+@include breakpoint(medium down) {
 	.form-produk {
 		padding: 15px;
 		padding-top: 10px;
 		border-top: $code-border-light;
-		margin-top: 1em
+		margin-top: 1em;
 	}
-
 	.login-dengan {margin-top:1em;margin-bottom:1em}
 }
