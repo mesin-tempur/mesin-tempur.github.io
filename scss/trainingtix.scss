@@ -1,25 +1,44 @@
 
+@import 'settings';
+@import 'foundation';
+
 $whbs-color:#fa7252;
 $whbs-darken:darken($whbs-color,15%);
 
 header {
 	background:#313b3d;
-	height: 72px;
 	color:white;
+	@include breakpoint(large) {
+		height: 72px;
+	}
 	#logo {
 		img {
 			height: 64px !important;
     		max-height: 64px !important;
 		}
+		@include breakpoint(medium down) {
+			a {display: inline-block;}
+			text-align: center;
+			img {
+				height: 80px !important;
+    			max-height: 80px !important;
+			}
+		}
 	}
 	.powered {
 		margin-top: 25px;
+		@include breakpoint(medium down) {
+			text-align: center;
+			margin-top: 10px;
+		}
 	}
 }
 section {
 	&.top-section {
 		padding-top: 100px;
-
+		@include breakpoint(medium down) {
+			padding-top: 0;
+		}
 	}
 }
 
@@ -51,6 +70,12 @@ a {color:$whbs-color}
 .product-listing-grid {
 	.product-title {
 		color:#313b3d;
+		margin-bottom: 0;
+	}
+	.product-date {
+		color:$blue;
+		// font-size:0.9rem;
+		margin-bottom: 10px;
 	}
 }
 .detail-reveal {

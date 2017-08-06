@@ -1,15 +1,38 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.2.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
 header {
   background: #313b3d;
-  height: 72px;
   color: white; }
+  @media screen and (min-width: 64em) {
+    header {
+      height: 72px; } }
   header #logo img {
     height: 64px !important;
     max-height: 64px !important; }
+  @media screen and (max-width: 63.9375em) {
+    header #logo {
+      text-align: center; }
+      header #logo a {
+        display: inline-block; }
+      header #logo img {
+        height: 80px !important;
+        max-height: 80px !important; } }
   header .powered {
     margin-top: 25px; }
+    @media screen and (max-width: 63.9375em) {
+      header .powered {
+        text-align: center;
+        margin-top: 10px; } }
 
 section.top-section {
   padding-top: 100px; }
+  @media screen and (max-width: 63.9375em) {
+    section.top-section {
+      padding-top: 0; } }
 
 a {
   color: #fa7252; }
@@ -40,7 +63,12 @@ a {
   color: #414143; }
 
 .product-listing-grid .product-title {
-  color: #313b3d; }
+  color: #313b3d;
+  margin-bottom: 0; }
+
+.product-listing-grid .product-date {
+  color: #066F96;
+  margin-bottom: 10px; }
 
 .detail-reveal .product-title {
   padding: 10px 0;
