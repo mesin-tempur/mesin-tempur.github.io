@@ -53,7 +53,12 @@ a {color:$whbs-color}
 	border-bottom: 1px solid #ededed;
 	margin-bottom: 40px;
 	label {height: 34px;line-height: 34px;}
-	button {margin-top: 34px;}
+	button {
+		margin-top: 34px;
+		@include breakpoint(medium down) {
+			margin-top: 0;
+		}
+	}
 }
 .filter-city {
 
