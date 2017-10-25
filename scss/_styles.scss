@@ -3156,3 +3156,27 @@ footer {
 		border: $code-border-light;
 	}
 }
+
+.bq-tabs {
+	.tabs {border: none;border-bottom: 1px solid $light-gray;margin-bottom:20px;}
+	.tabs-title {
+		border:none;
+		a {font-size:$font-size-small;color:$dark-gray;}
+		&.is-active {
+			border-bottom: 3px solid $primary-color;
+			a {background-color: transparent;color:$primary-color;font-weight: bold;}
+		}
+	}
+	.tabs-content {
+		border:none;
+		.tabs-panel {padding: 0;}
+	}
+}
+.label.info-label {
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	text-align: center;
+	display: inline-block;
+	background-color:$dark-gray;
+}
