@@ -3180,3 +3180,39 @@ footer {
 	display: inline-block;
 	background-color:$dark-gray;
 }
+.date-visit {
+	background:white;
+	padding: 20px;
+	border:$code-border-light;
+	@include border-radius(6px);
+	@include box-shadow(0,4px,4px,rgba(0,0,0,.2));
+	@include breakpoint(large) {
+		margin-top: 100px;
+	}
+}
+.datepicker-days {
+	i.fa {
+		display: inline-block;
+		text-align: center;
+		&:after {
+			content: "<<";
+			display: block;
+			width: 24px;
+			height: 24px;
+			padding-top: 3px;
+		}
+		&.fa-chevron-right {
+			&:after {
+				content: ">>";
+			}
+		}
+	}
+}
+.jungle-land-listing {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: $code-border-light;
+	@include breakpoint(large) {
+		// margin-top: 100px;
+	}
+}
