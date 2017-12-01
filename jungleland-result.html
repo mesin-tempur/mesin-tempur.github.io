@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/foundation-datepicker.css">
   </head>
-  <body>
+  <body class="jungle-land-content">
   <div class="off-canvas-wrapper">
     <div class="page-container off-canvas-wrapper-inner" data-off-canvas-wrapper>
       <!-- SIDE MENU -->
@@ -274,7 +274,7 @@
               </div>
             </div>
           </div> -->
-          <section class="pt20 pb20">
+          <section class="jungle-hero jungle-hero-result">
             <div class="row">
               <div class="small-12 large-5 large-offset-1 column">
                 <div class="banner tac">
@@ -283,7 +283,13 @@
               </div>
               <div class="small-12 large-5 column">
                 <div class="date-visit">
-                  <form action="">
+                  <div class="date-result">
+                    <div class="result-text tac">Hasil Pencarian Tiket Jungle Land <br>
+                      <span style="font-size: 20px;"><strong>23 November 2017</strong></span>
+                      <div class="mt10"><a href="#" class="js_changeDate">Ganti Tanggal</a></div>
+                    </div>
+                  </div>
+                  <form action="" class="date-search" style="display: none;">
                     <div class="block-title tac mb10"><strong>Tanggal Kunjungan</strong></div>
                     <div class="sub-text"></div>
                     <div class="fblock">
@@ -304,7 +310,7 @@
             <div class="row">
               <div class="large-12 column">
                 <div class="jungle-land-listing">
-                  <div class="result-text tac mb20">Hasil Pencarian Untuk Tiket Jungle Land <br><strong>23 November 2017</strong></div>
+                 <!--  <div class="result-text tac mb20">Hasil Pencarian Untuk Tiket Jungle Land <br><strong>23 November 2017</strong></div> -->
                   <div class="product-listing product-listing-grid">
                     <div class="item">
                       <a href="#">
@@ -508,6 +514,14 @@
           rightArrow: '<i class="material-icons">keyboard_arrow_right</i>',
           closeButton: false,
         });
+    </script>
+    <script>
+      $(function() {
+        $('.js_changeDate').on('click',function(){
+          $('.date-result').css('display','none');
+          $('form.date-search').css('display','block');
+        });
+      })
     </script>
   </div>
   </body>
