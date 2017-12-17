@@ -523,3 +523,27 @@ $(function () {
 	})
 		
 });
+
+// TOGGLE SIDE PANEL MENU ON MOBILE
+
+$(function () {
+	$('.menu-toggle').on('click', function(){
+		$('.toggle-view-panel').addClass('mobile-show');
+	});
+	$('.close-filter').on('click', function(){
+		$('.toggle-view-panel').removeClass('mobile-show');
+	});
+	
+	// Close on Large
+	var $window = $(window);
+    var $pane = $('#pane1');
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize > 1023) {
+            $('.toggle-view-panel').removeClass('mobile-show');
+        }
+    }
+    checkWidth();
+    $(window).resize(checkWidth);
+});
