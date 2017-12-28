@@ -291,8 +291,8 @@ header {
 			    overflow: hidden;
 			}
 			.logo-area {
-				height: 50px;
-				margin-top: 15px;
+				height: 55px;
+				margin-top: 10px;
 			}
 			.main-search {margin-top: 15px;}
 			.header-links {margin-top: 10px;}
@@ -435,7 +435,7 @@ header {
 		}
 		.category-wrapper {
 			.cat-dropdown {
-				background-color:#b2b2b2;
+				background-color: darken($medium-gray, 10%);
 				color:$white;
 				float: left;
 				padding: 0 20px;
@@ -446,7 +446,7 @@ header {
 				span {display: inline-block;vertical-align: middle;}
 				.text {margin-right: 10px;padding-right: 20px;}
 				.ic-arrow-down{font-size: 20px;margin-bottom: -6px;}
-				&.active-btn {background-color: $primary-color;}
+				// &.active-btn {background-color: darken($medium-gray, 17%);}
 			}
 			&.fxd-cat {
 				.megamenu {
@@ -477,7 +477,7 @@ header {
 				li {
 					margin: 0;padding: 0;
 					&.active-cat {
-						a.link-lvl-1{background:$primary-color;color:$white;}
+						a.link-lvl-1{background:$orange;color:$white;}
 					}
 					a {
 						display: block;height: 30px;padding: 0 10px;line-height: 30px;position: relative;
@@ -496,7 +496,7 @@ header {
 									line-height:24px;
 									margin: 0;
 									padding: 0;
-									&:hover {color:$primary-color;}
+									&:hover {color:$orange;}
 								}
 							}
 						}
