@@ -39,7 +39,7 @@
 //  34. Tooltip
 //  35. Top Bar
 
-@import 'util/util';
+@import '../bower_components/foundation-sites/scss/util/_util.scss';
 
 /// 1. Global
 // ---------
@@ -48,7 +48,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #009688,
+  primary: #1AB0B7,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
@@ -58,12 +58,12 @@ $lighter-gray: #f1f1f1;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #414143;
+$black: #565656;
 $white: #fefefe;
 $blue:#066F96;
 $yellow:#ffc10e;
-$red:#c81414;
-$orange:#F58A20;
+$red:#f23b51;
+$orange:#f2815a;
 $body-background: $white;
 $body-font-color: $black;
 // $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
