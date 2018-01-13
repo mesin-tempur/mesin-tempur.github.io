@@ -13,6 +13,7 @@ a:focus {}
 .fwd {width: 100%;}
 .half {width:50%;float: left;}
 .third {width:33.3%;float: left;&:nth-child(2){width: 33.4%}}
+.fourth {width: 25%;float: left;}
 .clr:after {clear: both;content: ".";display: block;height: 0;overflow: hidden;visibility: hidden;}
 .cbt {clear: both;}
 .posr {position: relative;}
