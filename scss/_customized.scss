@@ -13,10 +13,12 @@ a:focus {}
 .fwd {width: 100%;}
 .half {width:50%;float: left;}
 .third {width:33.3%;float: left;&:nth-child(2){width: 33.4%}}
+.fourth {width: 25%;float: left;}
 .clr:after {clear: both;content: ".";display: block;height: 0;overflow: hidden;visibility: hidden;}
 .cbt {clear: both;}
 .posr {position: relative;}
 .fblock {margin-bottom: 10px;}
+.overflow-x-scroll {overflow-x: scroll;}
 
 ul, ul ul, ol ul, ul ol, ol ol {margin-left: 0;}
 ul li {list-style: none;}
