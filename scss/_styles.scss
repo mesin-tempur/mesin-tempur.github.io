@@ -304,6 +304,24 @@ header {
 		.main-search {width:50%;}
 	}
 }
+.with-simple-header {
+	header {
+		position: relative;
+		background:white;
+		padding: 0;
+		.logo-area {
+			margin: 10px 0;
+			height: auto;
+			a {display: block;}
+		}
+	}
+	@include breakpoint(large) {
+		.main-content {
+			padding-top: 0;
+		}
+	}
+}
+
 .desktop-main-search {
 	position: relative;
 	&.rec-on {
@@ -2294,6 +2312,12 @@ span.selected-cat-parent {
 
 footer {
 	margin-top: 40px;
+		&.abs-footer {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom:0;
+	}
 }
 .footer-top {
 	padding: 20px 0;
@@ -3235,10 +3259,15 @@ footer {
 		background: -o-linear-gradient(#11e3ed 0%, #1ab0b7 100%);
 		background: linear-gradient(#11e3ed 0%, #1ab0b7 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11e3ed', endColorstr='#1ab0b7',GradientType=0 ); /* IE6-9 */
-		padding: 50px 0;
+		padding: 150px 0 0 0;
+		height: 100vh;
+		margin-top: -78px;
 		.fblock {margin-bottom: 0;}
 		.result-text {margin-bottom: 0;}
 		&.jungle-hero-result {
+			height: auto;
+			padding-bottom: 50px;
+			padding-top: 100px;
 			.fblock {
 				margin-bottom: 10px;
 			}
@@ -3265,7 +3294,7 @@ footer {
 	.jungle-land-listing {
 		margin-top: 20px;
 		padding-top: 20px;
-		padding-bottom: 40px;
+		padding-bottom: 80px;
 		@include breakpoint(medium down) {
 			padding-top: 80px;
 		}
