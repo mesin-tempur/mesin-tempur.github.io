@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail | BelanjaQu</title>
+    <title>Cart | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -286,9 +286,11 @@
                         <p>
                           <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
                           Rp 850.000 <br>
-                          Size: 43
+                          Warna hitam tapi agak ke ungu hijauan ya
                         </p>
-                        <a href="#" class="dblock"><small>Hapus Produk</small></a>
+                        <a href="javascript:;" data-open="editCatatan"><small>Edit Catatan</small></a>
+                        <span class="gray">&nbsp;-&nbsp;</span>
+                        <a href="" class="gray-link"><small>Hapus Produk</small></a>
                       </div>
                     </div>
                     <div class="item clr">
@@ -302,9 +304,11 @@
                         <p>
                           <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
                           Rp 850.000 <br>
-                          Size: 41
+                          Warna hitam tapi agak ke ungu hijauan ya
                         </p>
-                        <a href="#" class="dblock"><small>Hapus Produk</small></a>
+                        <a href="javascript:;" data-open="editCatatan"><small>Edit Catatan</small></a>
+                        <span class="gray">&nbsp;-&nbsp;</span>
+                        <a href="" class="gray-link"><small>Hapus Produk</small></a>
                       </div>
                     </div>
                   </div>
@@ -334,9 +338,11 @@
                         <p>
                           <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
                           Rp 850.000 <br>
-                          Size: 43
+                          Warna hitam tapi agak ke ungu hijauan ya
                         </p>
-                        <a href="#" class="dblock"><small>Hapus Produk</small></a>
+                        <a href="javascript:;" data-open="editCatatan"><small>Edit Catatan</small></a>
+                        <span class="gray">&nbsp;-&nbsp;</span>
+                        <a href="" class="gray-link"><small>Hapus Produk</small></a>
                       </div>
                     </div>
                   </div>
@@ -441,6 +447,36 @@
           </div>
         </div>
         <!-- END SEARCH REVEAL MODAL -->
+
+        <!-- PRODUCT NOTE REVEAL MODAL -->
+        <div class="reveal" id="editCatatan" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+          <form action="">
+            <div class="modal-body">
+              <div class="order-list mt15">
+                <div class="item clr">
+                  <div class="img-box fl">
+                    <img src="http://belanjaqu.co.id/uploads/product_image/image/65603/thumb_DISTORI2.jpg" alt="">
+                  </div>
+                  <div class="desc-box">
+                    <p class="normal-text">
+                      <span class="elipsis dblock"><strong>Efek gitar distorsi SS1,harga cuci gudang no PHP</strong></span>
+                      Rp 152.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt10">
+                <textarea name="product-note" rows="2" placeholder="Tulis keterangan untuk warna, ukuran, dan lainnya">Warna hitam tapi agak ke ungu hijauan ya</textarea>
+                <br>
+                <input type="submit" class="button expanded" value="SIMPAN">
+              </div>
+            </div>
+          </form>
+          <button class="close-button paytren-modal-close" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- END PRODUCT NOTE REVEAL MODAL -->
       </div>
     </div>
 
