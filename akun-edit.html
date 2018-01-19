@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
     <title>Edit Akun | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/foundation-datepicker.css">
   </head>
   <body>
   <div class="off-canvas-wrapper">
-    <div class="page-container off-canvas-wrapper-inner" data-off-canvas-wrapper>
+    <div class="page-container off-canvas-wrapper-inner">
       <!-- SIDE MENU -->
       <div class="menu-overlay hidden js-slide-off"></div>
       <div class="js-slide-menu bq-slide-menu bq-slide-menu-left side-canvas-menu">
@@ -139,9 +139,19 @@
                 <a href="index.html"><span class="sprites-desktop logo-desktop"></span></a>
               </div>
               <div class="main-search">
-                <form action="" class="clr">
+                <form action="" class="clr desktop-main-search">
                   <div class="search-left">
-                    <input type="search" placeholder="cari produk atau toko">
+                    <input type="search" class="js-desktop-search-input" placeholder="Cari produk atau toko">
+                    <div class="desktop-search-rec">
+                        <div class="suggestion-box">
+                          <ul class="product-searches-field">
+                            <div class="mb10">Pencarian Produk ditemukan: 10</div>
+                            <ul>
+                              <li><a href="/searches/perkakas/products/iphone">iphone <small>di Perkakas</small></a></li><li><a href="/searches/alat-musik-aksesoris/products/iphone">iphone <small>di Alat Musik &amp; Aksesoris</small></a></li><li><a href="/searches/power-bank/products/iphone">iphone <small>di Power Bank</small></a></li><li><a href="/searches/charger/products/iphone">iphone <small>di Charger</small></a></li><li><a href="/searches/jam-tangan19/products/iphone">iphone <small>di Jam Tangan</small></a></li><li><a href="/searches/kabel/products/iphone">iphone <small>di Kabel</small></a></li><li><a href="/searches/casing-cover/products/iphone">iphone <small>di Casing &amp; Cover</small></a></li><li><a href="/searches/smartphone/products/iphone">iphone <small>di Smartphone</small></a></li><li><a href="/searches/pelindung-layar/products/iphone">iphone <small>di Pelindung Layar</small></a></li><li><a href="/searches/aksesoris-handphone-lainnya/products/iphone">iphone <small>di Aksesoris Handphone Lainnya</small></a></li><hr>Pencarian Toko ditemukan: 0
+                            </ul>
+                          </ul>
+                        </div>
+                    </div>
                   </div>
                   <div class="search-right">
                     <button type="submit"><span class="ic-search"></span></button>
@@ -188,7 +198,7 @@
             </div>
           </div>
         </header>
-        <div class="section main-content acc-page">
+        <div class="section main-content">
           <!-- DESKTOP CATEGORY OPTION -->
           <div id="js-dark-overlay" class="dark-overlay" style="display:none;opacity:0;"></div>
           <div class="content-top show-for-large">
@@ -257,11 +267,6 @@
                     </ul>
                   </div>
                 </div>
-                <ul class="inline-block breadcrumbs">
-                  <li><a href="#">home</a></li>
-                  <li><a href="#">fashion</a></li>
-                  <li class="current">fashion pria</li>
-                </ul>
               </div>
             </div>
           </div>
@@ -441,8 +446,8 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="js/min/jquery.mask.min.js"></script>
     <script src="js/min/app-min.js"></script>
+    <script src="js/min/jquery.mask.min.js"></script>
     <script src="js/min/foundation-datepicker.js"></script>
     <script>
       $('.telepon').mask('00000000000000');
