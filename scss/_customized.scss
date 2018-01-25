@@ -33,7 +33,9 @@ small {font-size: $font-size-small;}
 .blue {color:$blue;}
 .orange {color:$orange;}
 .gray {color: $dark-gray;}
+.gray-link {color:$dark-gray;&:hover{color:$black;}}
 .fwb{font-weight: bold;}
+.normal-text {font-size: $font-size;}
 .supersmall {font-size: .8rem;}
 .superbig {font-size: 1.9rem;}
 .upcase {text-transform: uppercase;}
@@ -119,18 +121,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-// PRE ORDER
-.pre-order {
-    background: $white;
-    border: 1px solid darken($medium-gray, 7%);
-    color: darken($medium-gray, 7%);
-    margin-left: 6px;
-    padding: 3px 3px 1px 4px;
-    border-radius: 3px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    font-size: $font-size-smaller;
-}
 .preorder-callout {
     margin-bottom: 2rem;
     strong {

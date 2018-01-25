@@ -337,7 +337,7 @@
                   </div>
                   <div class="pdp-action js-position-anchor section-block row">
                     <div class="small-12 column product-title">
-                      <a href="checkout-1.html" class="button expanded">Beli Sekarang</a>
+                      <a href="javascript:;" class="button expanded" data-open="productNote">Beli Sekarang</a>
                       <!-- <a href="#" class="button expanded">Masukan Keranjang</a> -->
                       <a href="#" class="button expanded bordered-btn">Tambahkan ke Wishlist</a>
                     </div>
@@ -796,6 +796,37 @@
           </div>
         </div>
         <!-- END SEARCH REVEAL MODAL -->
+
+        <!-- PRODUCT NOTE REVEAL MODAL -->
+        <div class="reveal" id="productNote" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+          <form action="">
+            <div class="modal-body">
+              <div class="order-list mt15">
+                <div class="item clr">
+                  <div class="img-box fl">
+                    <img src="http://belanjaqu.co.id/uploads/product_image/image/65603/thumb_DISTORI2.jpg" alt="">
+                  </div>
+                  <div class="desc-box">
+                    <p class="normal-text">
+                      <span class="elipsis dblock"><strong>Efek gitar distorsi SS1,harga cuci gudang no PHP</strong></span>
+                      Rp 152.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt10">
+                <textarea name="product-note" rows="2" placeholder="Tulis keterangan untuk warna, ukuran, dan lainnya"></textarea>
+                <br>
+                <input type="submit" class="button expanded" value="BELI">
+              </div>
+            </div>
+          </form>
+          <button class="close-button paytren-modal-close" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- END PRODUCT NOTE REVEAL MODAL -->
+
       </div>
     </div>
 

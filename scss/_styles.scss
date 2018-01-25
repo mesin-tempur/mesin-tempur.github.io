@@ -919,6 +919,18 @@ span.discount {
 		z-index: -1;
 	}
 }
+.po-flag {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	background-color: hsla(0, 0%, 53.3%, .6);
+	border-radius: 2px;
+    color: $white;
+    padding: 3px 5px 1px 6px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    font-size: $font-size-smaller;
+}
 .product-listing-grid {
 	.product-title {
 		padding-right: 10px;
@@ -1771,7 +1783,7 @@ span.discount {
 	.text {display: inline-block;position: relative;padding-left: 30px;}
 	.btn-fb {background-color:rgb(78, 101, 169);height: 40px;}
 	.btn-paytren {
-		background-color:$orange;height: 40px;padding: 0;
+		background-color:#FF661B;height: 40px;padding: 0;
 		span {vertical-align: middle;}
 		.text {padding-left: 0;}
 	}
@@ -2248,12 +2260,12 @@ span.selected-cat-parent {
 .item-group {margin-bottom: 20px;}
 .message-box {
 	padding: 20px 0;
-	background:$lighter-gray;
+	background: $lighter-gray;
 	p {margin-bottom: 5px;font-size: $font-size-small;}
 	@include breakpoint (large) {
 		margin: 20px auto;
 		padding: 40px 100px;
-		text-align: center;
+		// text-align: center;
 	}
 }
 .bank-detail {
