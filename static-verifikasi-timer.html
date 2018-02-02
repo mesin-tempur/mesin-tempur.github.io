@@ -233,7 +233,7 @@
                     <div class="bottom-link" style="margin: 40px 0 40px;">
                       <div class="row">
                         <div class="large-12 column">
-                          <a href="#" class="">Tidak menerima email? kirim ulang</a> <span class="gray">(silakan tunggu 2:56)</span>
+                          <a href="#" class="">Tidak menerima email? kirim ulang</a> <span class="gray">(<span id="counter"></span>)</span>
                         </div>
                         <div class="large-12 column">
                           <a href="#" class="">ingin ganti email? klik disini</a>
@@ -345,6 +345,29 @@
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/min/slick.min.js"></script>
     <script src="js/min/app-min.js"></script>
+    <script>
+      function countdown(minutes) {
+        var seconds = 60;
+        var mins = minutes
+        function tick() {
+            //This script expects an element with an ID = "counter". You can change that to what ever you want. 
+            var counter = document.getElementById("counter");
+            var current_minutes = mins-1
+            seconds--;
+            counter.innerHTML = current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
+            if( seconds > 0 ) {
+                setTimeout(tick, 1000);
+            } else {
+                if(mins > 1){
+                    countdown(mins-1);           
+                }
+            }
+        }
+        tick();
+    }
+    //You can use this script with a call to onclick, onblur or any other attribute you would like to use. 
+    countdown(1);
+    </script>
   </div>
   </body>
 </html>
