@@ -20,8 +20,7 @@ body {
 
 a {
 	color: #f2815a;
-	text-decoration: none;
-	&:hover {text-decoration: underline;}
+	text-decoration: underline;
 }
 
 .tac {text-align: center;}
@@ -40,10 +39,7 @@ a {
 	cursor: pointer;
 	display: inline-block;
 	border-radius: 50px;
-	&:hover {
-		background-color: darken(#f2815a, 5%);
-		text-decoration: none;
-	}
+	text-decoration: none;
 }
 
 .btn-secondary {
@@ -160,6 +156,15 @@ ol {
 .product-list {
 	border-bottom: 1px solid #e6e6e6;
 	padding-bottom: 15px;
+	li {list-style-type: none;}
+}
+.product-item {
+	display: flex;
+	margin-bottom: 10px;
+	.image-product {
+		margin-right: 15px;
+		img {max-width: 80px;}
+	}
 }
 .detail-title {font-weight: bold;}
 .price-total {
@@ -183,6 +188,15 @@ ol {
 .logo {max-width: 185px; margin-bottom: 20px;}
 
 .detail-bank {float: left;}
+
+.footer-sc {
+	margin-top: -15px;
+	p {font-size: 14px; margin-bottom: 13px;}
+}
+.social-media li {
+	list-style-type: none;
+	display: inline-block;
+}
 
 @media screen and (max-width: 601px) {
 	table.body-wrap {padding: 20px 0;}
