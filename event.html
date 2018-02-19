@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/events.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/foundation-datepicker.css">
   </head>
   <body class="events-bq">
   <div class="off-canvas-wrapper">
@@ -28,14 +29,33 @@
         </div>
       </div>
     </header>
-    <!-- <section class="section-filter top-section">
+    
+    <section class="section-banner top-section">
       <div class="row">
         <div class="large-12 column">
-          <h5>Gunakan Filter Pencarian</h5>
+          <div class="full-banner">
+            <a href="#"><img src="https://assets.belanjaqu.co.id/uploads/banner/image/24/TITANIUM_CLUBq-01.png" alt=""></a>
+            <a href="#"><img src="https://assets.belanjaqu.co.id/uploads/banner/image/24/TITANIUM_CLUBq-01.png" alt=""></a>
+          </div>
+          <div class="halfsplit-banner">
+            <a href="#"><img src="https://assets.belanjaqu.co.id/uploads/banner/image/27/WORKSHOP_MAKASAR-02__1_.png" alt=""></a>
+            <a href="#"><img src="https://assets.belanjaqu.co.id/uploads/banner/image/27/WORKSHOP_MAKASAR-02__1_.png" alt=""></a>
+          </div>
         </div>
-        <div class="large-12 column">
+      </div>
+    </section>
+    <section class="section-filter top-section">
+      <div class="row">
+        <!-- <div class="large-12 column">
+          <h5>Gunakan Filter Pencarian</h5>
+        </div> -->
+        <div class="large-12 column filter-container">
           <form action="" class="top-filter">
             <div class="row">
+              <div class="medium-12 large-3 column">
+                <label for="">Cari Berdasarkan Nama Event</label>
+                <input type="text">
+              </div>
               <div class="medium-6 large-3 column">
                 <div class="fblock filter-city">
                   <label for="">Cari Berdasarkan Kota</label>
@@ -68,23 +88,11 @@
                   </table>
                 </div>
               </div>
-              <div class="medium-6 large-2 column">
+              <div class="medium-12 large-2 column">
                 <button class="button expanded">CARI</button>
               </div>
             </div>
           </form>
-        </div>
-      </div>
-    </section> -->
-    <section class="section-banner top-section">
-      <div class="row">
-        <div class="large-12 column">
-          <div class="full-banner">
-            <a href="#"><img src="https://assets.belanjaqu.co.id/uploads/banner/image/24/TITANIUM_CLUBq-01.png" alt=""></a>
-          </div>
-          <div class="halfsplit-banner">
-            <a href="#"><img src="https://assets.belanjaqu.co.id/uploads/banner/image/27/WORKSHOP_MAKASAR-02__1_.png" alt=""></a>
-          </div>
         </div>
       </div>
     </section>
@@ -244,6 +252,65 @@
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/min/app-min.js"></script>
     <script src="js/min/slick.min.js"></script>
+    <script src="js/min/foundation-datepicker.js"></script>
+    <script>
+      fullonfocus();
+      fxdBottom();
+      // implementation of disabled form fields
+      var nowTemp = new Date();
+      var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+      var checkin = $('#dpd1').fdatepicker({
+        onRender: function (date) {
+          return date.valueOf() < now.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function (ev) {
+        if (ev.date.valueOf() > checkout.date.valueOf()) {
+          var newDate = new Date(ev.date)
+          newDate.setDate(newDate.getDate() + 1);
+          checkout.update(newDate);
+        }
+        checkin.hide();
+        $('#dpd2')[0].focus();
+      }).data('datepicker');
+      var checkout = $('#dpd2').fdatepicker({
+        onRender: function (date) {
+          return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+        }
+      }).on('changeDate', function (ev) {
+        checkout.hide();
+      }).data('datepicker');
+    </script>
+    <script>
+      $('.full-banner').slick({
+    dots: false,
+    infinite: true,
+    speed: 400,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+});
+$('.halfsplit-banner').slick({
+   dots: false,
+   infinite: true,
+   speed: 400,
+   autoplay: true,
+   autoplaySpeed: 3500,
+   slidesToShow: 2,
+   slidesToScroll: 2,
+   mobileFirst:true,
+   responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+ });
+    </script>
   </div>
   </body>
 </html>
