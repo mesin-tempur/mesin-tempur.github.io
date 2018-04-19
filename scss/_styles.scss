@@ -761,16 +761,17 @@ header {
 	}
 }
 .cm-title {
+	position: relative;
+	background: whitesmoke;
+	width: 100%;
 	padding: 10px 15px;
 	margin-bottom: 10px;
 	font-weight: bold;
 	height: 44px;
 	overflow: hidden;
-	border-bottom:1px solid $primary-color;
-	position: relative;
-	width: 100%;
+	border-bottom: 1px solid $blue;
 	span {
-		background:$primary-color;
+		background: $blue;
 		color:white;
 		display: inline-block;
 		height: 44px;
@@ -778,8 +779,8 @@ header {
 		position: absolute;
 		top: 0;
 		left: 0;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 14px;
+		padding-right: 6px;
 		&:after {
 			content: "";
 			height: 44px;
@@ -787,19 +788,23 @@ header {
 			display:inline-block;
 			position: absolute;
 			right: -40px;
-		    border-left: 30px solid $primary-color;
+		    border-left: 30px solid $blue;
 		    border-top: 45px solid transparent;
 		}
+
 	}
 	a {
-		color:$primary-color;
+		color: $blue;
 		height: 44px;
 		line-height: 44px;
 		padding: 0 15px;
 		position: absolute;
 		right: 0;
-		top:0;
-		text-decoration: underline;
+		top: 0;
+		&:after {
+			content: "\27F6";
+			margin-left: 4px;
+		}
 	}
 }
 .fancy-title {
