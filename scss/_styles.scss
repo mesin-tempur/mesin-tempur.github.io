@@ -3243,6 +3243,9 @@ footer {
 		padding: 20px;
 		background:$lighter-gray;
 		margin-bottom: 0;
+		&.white-block {
+			background-color:white;
+		}
 	}
 	.wrap-box {
 		padding: 20px;
@@ -3420,4 +3423,7 @@ footer {
 			margin-top: 0px;
 		}
 	}
+}
+.form-tix {
+
 }
