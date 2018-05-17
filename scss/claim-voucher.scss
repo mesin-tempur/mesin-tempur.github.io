@@ -117,14 +117,30 @@ header {
 		&.product-box {
 			.description {
 				margin-bottom: 2rem;
+				padding: 0 10px;
+				strong {font-size: 18px;}
+			}
+			.border-box {
+				padding: 0 40px 40px 40px;
+				.row {border: 1px solid #ededed; padding: 20px;}
+				@include breakpoint(medium down) {
+					padding: 0 15px 10px 15px;
+				}
 			}
 			.img-box {
-				margin-right: 2rem;
+				@include breakpoint(medium down) {
+					text-align: center;
+				}
 				img {
-					width: 300px;
-					height: 300px;
+					width: 100%;
+					max-width: 300px;
+					height: auto;
 					border: 1px solid $light-gray;
-					@include breakpoint(medium down) {width: 100%;height: auto; margin-bottom: 20px;}
+					@include breakpoint(medium down) {
+						width: 100%;
+						height: auto; 
+						margin-bottom: 20px;
+					}
 				}
 			}
 			.desc-box {
@@ -181,6 +197,9 @@ header {
 			.title {
 				color: $dark-gray;
 				margin-bottom: 10px;
+			}
+			.item {
+				padding: 10px 0;
 			}
 			.total-price {
 				margin-top: .7rem;
@@ -271,6 +290,16 @@ header {
 		        	margin-top: 2.5rem;
 		        	margin-right: 0;
 		        }
+		        &.btn-place {
+		        	background: $lighter-gray;
+		        	border: $code-border;
+		        	color: $black;
+		        	margin-right: 15px;
+		        	@include breakpoint(medium down) {
+		        		margin-right: 0;
+		        		margin-top: 0;
+		        	}
+		        }
 			}
 			&.tac {
 				.button {
@@ -310,6 +339,88 @@ header {
 		}
 	}
 	@include breakpoint(medium down) {padding-top: 1.5rem;margin-bottom: 1.5rem;}
+}
+
+.buy-cozzy {
+	.product-box {
+		.description {
+			margin-top: .5rem;
+			margin-bottom: 2rem;
+			padding: 0 10px;
+			strong {font-size: 18px;}
+		}
+		.border-box {
+			padding: 0 10px 20px 10px;
+			.row {border: 1px solid #ededed; padding: 20px 6px;}
+		}
+		.img-box {
+			@include breakpoint(medium down) {
+				text-align: center;
+			}
+			img {
+				width: 100%;
+				max-width: 300px;
+				height: auto;
+				border: 1px solid $light-gray;
+				@include breakpoint(medium down) {
+					width: 100%;
+					height: auto;
+					margin-bottom: 20px;
+				}
+			}
+		}
+		.desc-box {
+			.striked {
+				text-decoration: line-through;
+				font-weight: bold;
+				font-size: $font-size-small;
+			}
+			.final-price {
+				color: #43A047;
+				font-size: 1.2rem;
+				font-weight: bold;
+			}
+		}
+		.qtt-box {
+			text-align: right;
+			.with-inc {display: inline-block;}
+			input{
+				width: 30px;
+				margin: 0 auto;
+				padding: 0;
+				text-align: center;
+				font-size: $font-size-small;
+				line-height: 1px;
+				height: 30px;
+				border-top: none;
+				border-bottom: none;
+				&:focus {
+					box-shadow: none;
+					border-left: $code-border;
+					border-right: $code-border;
+				}
+			}
+			.increment-btn {
+				width: 30px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				background-color:$light-gray;
+				border: $code-border;
+				cursor: pointer;
+			}
+		}	
+	}
+	.button {
+		background: $orange;
+		font-weight: bold;
+		text-transform: uppercase;
+		&.btn-link {
+			background-color: $light-gray;
+			border: $code-border;
+			color: $black;
+		}
+	}
 }
 
 .thanks-page {
