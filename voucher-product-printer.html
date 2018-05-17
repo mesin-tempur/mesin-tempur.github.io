@@ -30,58 +30,100 @@
       <div class="row">
         <div class="small-12 large-8 large-offset-2 columns">
           <div class="card product-box">
-            <div class="description">
-              SELAMAT! Anda mendapatkan potongan harga Rp. 1.000.000 , untuk pembelian produk resmi Printer Bluetooth PayTren. dan mendapatkan 1 Box produk Cozzy , GRATIS ONGKOS KIRIM ke seluruh Indonesia.
+            <div class="description tac pt10">
+              <h1>SELAMAT !</h1>
+              Kamu mendapatkan potongan harga <strong>Rp. 1.000.000,</strong>
+              <br>untuk pembelian produk resmi Printer Bluetooth PayTren.
             </div>
-            <div class="clr">
-              <div class="img-box fl">
-                <img src="https://4.bp.blogspot.com/-DMfEqQhVOUk/WTay_5gUN8I/AAAAAAAAFdk/j9WK9vslSZcUIVN6t8S6HKW-MpBCP_RNQCLcB/s1600/PrinterBluetoothEP5802AAndroidiOSsuportPAYTREN_1.jpg.jpg" alt="Product Thumbnail">
-              </div>
-              <div class="desc-box">
-                <div class="fblock">
-                  <strong class="title">Printer Bloetooth PayTren</strong>
+            <div class="border-box">
+              <div class="row">
+                <div class="img-box large-4 columns">
+                  <img src="./images/voucher-printer.png" alt="Product Thumbnail">
                 </div>
-                <div class="fblock">
-                  <small>Harga Normal</small>
-                  <div class="striked">Rp. 1.950.000</div>
+                <div class="desc-box large-8 columns">
+                  <div class="fblock">
+                    <strong class="title">Printer Bloetooth PayTren</strong>
+                  </div>
+                  <div class="fblock">
+                    <small>Harga Normal</small>
+                    <div class="striked">Rp. 1.950.000</div>
+                  </div>
+                  <div class="fblock">
+                    <div class="final-price">Rp. 950.000</div>
+                    <small>(Potongan Harga <strong>Rp. 1.000.000</strong>)</small>
+                  </div>
                 </div>
-                <div class="fblock">
-                  <div class="final-price">Rp. 950.000</div>
-                  <small>(Potongan Harga <strong>Rp. 1.000.000</strong>)</small>
-                </div>
-                  
-                <!-- <div class="table-price">
-                  <table>
-                    <tr>
-                      <td class="gray" align="right">Harga Normal Printer</td>
-                      <td width="120" align="right"> Rp. 1.950.000</td>
-                    </tr>
-                    <tr>
-                      <td class="gray" align="right">Potongan Voucher</td>
-                      <td align="right" class="red">Rp. 1.000.000</td>
-                    </tr>
-                    <tr>
-                      <td class="gray" align="right">Ongkos Kirim</td>
-                      <td align="right" class="red">Gratis</td>
-                    </tr>
-                    <tr>
-                      <td align="right"><strong>TOTAL HARGA PROMO</strong></td>
-                      <td align="right"><strong>Rp. 950.000</strong></td>
-                    </tr>
-                  </table>
-                </div> -->
               </div>
             </div>
             <div class="cta">
-              <a href="voucher-pengiriman.html" class="button fr">Lanjut Pembelian</a>
+              <a href="javascript:;" class="button fr" data-open="buyCozzy">Lanjut Pembelian Online</a>
+              <a href="voucher-ditempat-success.html" class="button btn-place fr">Ambil Ditempat</a>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- BUY COZZY MODAL -->
+      <div class="reveal buy-cozzy" id="buyCozzy" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+        <form action="voucher-pengiriman.html">
+          <div class="modal-body">
+            <div class="product-box">
+              <div class="description tac">
+                <h1>DAPATKAN JUGA !</h1>
+                 Potongan harga <strong>Rp. 100.000,</strong> dan <strong>GRATIS ONGKOS KIRIM</strong>
+                <br>untuk pembelian Cozzy Pembalut Herbal. Promo harga hanya berlaku bersamaan pada saat penukaran voucher printer ini.
+              </div>
+              <div class="border-box">
+                <div class="row">
+                  <div class="img-box small-12 large-4 columns">
+                    <img src="./images/voucher-cozzy.png" alt="Product Thumbnail">
+                  </div>
+                  <div class="desc-box small-10 large-6 columns">
+                    <div class="fblock">
+                      <strong class="title">Cozzy Pembalut Herbal</strong>
+                    </div>
+                    <div class="fblock">
+                      <small>Harga Normal</small>
+                      <div class="striked">Rp. 200.000</div>
+                    </div>
+                    <div class="fblock">
+                      <div class="final-price">Rp. 100.000</div>
+                      <small>(Potongan Harga <strong>Rp. 100.000</strong>)</small>
+                    </div>
+                  </div>
+                  <div class="small-2 large-2 columns">
+                    <div class="fblock qtt-box">
+                      <div class="with-inc">
+                        <input type="number" class="numbers" value="1" maxlength="5">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt10">
+              <div class="row">
+                <div class="small-12 large-6 columns">
+                  <a href="voucher-pengiriman.html" class="button btn-link expanded">Beli Printer Saja</a>
+                </div>
+                <div class="small-12 large-6 columns">
+                  <input type="submit" class="button expanded" value="Beli Cozzy Juga">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <button class="close-button paytren-modal-close" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     </section>
+
     
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/min/app-min.js"></script>
   </body>
 </html>
