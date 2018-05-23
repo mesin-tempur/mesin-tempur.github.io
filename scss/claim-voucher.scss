@@ -3,6 +3,7 @@
 @import 'customized';
 
 header {
+	position: relative;
 	background:white;
 	color:$black;
 	padding: 0;
@@ -116,10 +117,10 @@ header {
 }
 
 .product-voucher {
-	padding-top: 5rem;
+	padding-top: 4rem;
 	margin-bottom: 5rem;
 	.card {
-		margin-top: 3rem;
+		// margin-top: 3rem;
 		padding: 1rem;
 		background: white;
 		@include box-shadow(0, 2px, 1px, rgba(51,51,51,0.05), $inset: false);
@@ -211,9 +212,17 @@ header {
 				padding: 10px 0;
 			}
 			.total-price {
-				margin-top: .7rem;
+				margin-top: .5rem;
 				font-size: $font-size-small;
-				strong {color: #43A047;font-size: $font-size;}
+				.striked {
+					font-weight: bold;
+					text-decoration: line-through;
+				}
+				.price {
+					color: #43A047;
+					font-size: 18px;
+					font-weight: bold;
+				}
 			}
 			.address {
 				font-size: $font-size-small;
