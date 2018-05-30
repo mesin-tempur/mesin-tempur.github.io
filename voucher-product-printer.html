@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Voucher | BelanjaQu</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/claim-voucher.css">
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="small-6 columns">
+          <div class="paytren-logo">
+              <a href="voucher-claim.html">
+                <img src="./images/logo-paytren.png" alt="PayTren">
+              </a>
+          </div>
+        </div>
+        <div class="small-6 columns">
+          <div class="powered">
+            <span>Powered by</span>
+            <img src="./images/logogram.png" alt="Belanjaqu">
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="product-voucher">
+      <div class="row">
+        <div class="small-12 large-8 large-offset-2 columns">
+          <div class="card product-box">
+            <div class="description tac pt10">
+              <h1>SELAMAT !</h1>
+              Kamu mendapatkan potongan harga <strong>Rp. 1.000.000,</strong>
+              <br>untuk pembelian produk resmi Printer Bluetooth PayTren.
+            </div>
+            <div class="border-box">
+              <div class="row">
+                <div class="img-box large-4 columns">
+                  <img src="./images/voucher-printer.png" alt="Product Thumbnail">
+                </div>
+                <div class="desc-box large-8 columns">
+                  <div class="fblock">
+                    <strong class="title">Printer Bluetooth PayTren</strong>
+                  </div>
+                  <div class="fblock">
+                    <small>Harga Normal</small>
+                    <div class="striked">Rp. 1.950.000</div>
+                  </div>
+                  <div class="fblock">
+                    <div class="final-price">Rp. 950.000</div>
+                    <small>(Potongan Harga <strong>Rp. 1.000.000</strong>)</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cta">
+              <a href="javascript:;" class="button fr" data-open="buyCozzy">Lanjut Pembelian Online</a>
+              <a href="javascript:;" class="button btn-place fr" data-open="ambilDitempat">Ambil Ditempat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BUY COZZY MODAL -->
+      <div class="reveal buy-cozzy" id="buyCozzy" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+        <form action="voucher-pengiriman.html">
+          <div class="modal-body">
+            <div class="product-box">
+              <div class="description tac">
+                <h1>DAPATKAN JUGA !</h1>
+                 Potongan harga <strong>Rp. 100.000,</strong> dan <strong>GRATIS ONGKOS KIRIM</strong>
+                <br>untuk pembelian Cozzy Pembalut Herbal. Promo harga hanya berlaku bersamaan pada saat penukaran voucher printer ini.
+              </div>
+              <div class="border-box">
+                <div class="row">
+                  <div class="img-box small-12 large-4 columns">
+                    <img src="./images/voucher-cozzy.png" alt="Product Thumbnail">
+                  </div>
+                  <div class="desc-box small-10 large-6 columns">
+                    <div class="fblock">
+                      <strong class="title">Cozzy Pembalut Herbal</strong>
+                    </div>
+                    <div class="fblock">
+                      <small>Harga Normal</small>
+                      <div class="striked">Rp. 200.000</div>
+                    </div>
+                    <div class="fblock">
+                      <div class="final-price">Rp. 100.000</div>
+                      <small>(Potongan Harga <strong>Rp. 100.000</strong>)</small>
+                    </div>
+                  </div>
+                  <div class="small-2 large-2 columns">
+                    <div class="fblock qtt-box">
+                      <div class="with-inc">
+                        <input type="number" class="numbers" value="1" maxlength="5">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt10">
+              <div class="row">
+                <div class="small-12 large-6 columns">
+                  <a href="voucher-pengiriman.html" class="button btn-link expanded">Beli Printer Saja</a>
+                </div>
+                <div class="small-12 large-6 columns">
+                  <input type="submit" class="button expanded" value="Beli Cozzy Juga">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <button class="close-button paytren-modal-close" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- BUY COZZY MODAL -->
+      <div class="reveal buy-cozzy" id="ambilDitempat" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+        <form action="voucher-ditempat-success.html">
+          <div class="modal-body">
+            <div class="product-box">
+              <div class="description tac">
+                <!-- <strong class="dblock mb10">Pengambilan Ditempat</strong> -->
+                <div class="pt10">Kamu dapat melakukan pembayaran dan pengambilan produk Promo Ramadhan ini di kantor pusat PayTren.</div>
+              </div>
+            </div>
+            <div class="mt10 btn-popup">
+              <input type="submit" class="button fr" value="Ambil Sekarang">
+              <a href="javascript:;" class="button btn-link fr" data-close aria-label="Close reveal">Kembali</a>
+              <!-- <div class="row">
+                <div class="small-12 large-6 columns">
+                  <a href="javascript:;" class="button btn-link expanded" data-close aria-label="Close reveal">Kembali</a>
+                </div>
+                <div class="small-12 large-6 columns">
+                  <input type="submit" class="button expanded" value="Ambil Sekarang">
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </form>
+        <button class="close-button paytren-modal-close" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </section>
+
+    
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/min/app-min.js"></script>
+  </body>
+</html>
