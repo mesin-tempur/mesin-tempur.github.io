@@ -1,0 +1,110 @@
+@import 'settings';
+@import '../bower_components/foundation-sites/scss/foundation.scss';
+@import 'customized';
+
+body {
+	background: $lighter-gray;
+}
+.off-canvas-wrapper {
+	background: $lighter-gray;
+}
+header {
+	position: relative;
+	@include breakpoint(large) {
+		height: 75px;
+	}
+}
+
+.world-cup {
+	header {
+		background:white;
+		color:$black;
+		padding: 0;
+		border-bottom: 1px solid rgba(0, 0, 0, .0975);
+		.events-logo {
+			padding: 2px 0;
+			a {display: block;}
+			img {height: 60px;}
+			@include breakpoint(large) {
+				img {height: 68px;}
+			}
+		}
+		.powered {
+			text-align: right;
+			margin-top: 10px;
+			img {width: 120px;margin-top: 5px;margin-right: 5px;}
+			span {display: none;}
+			@include breakpoint(large) {
+				margin-top: 7px;
+				img {display: inline-block;vertical-align: middle;width: 140px;margin-top: 10px;}
+				span {
+					display: inline-block;
+					margin-top: 20px;
+					margin-right: 10px;
+					vertical-align: middle;
+					color:$dark-gray;
+					font-size: $font-size-small;
+				}
+			}
+		}
+	}
+}
+
+.content {
+	padding: 40px 0;
+	.img-banner {
+		img {
+			width: 100%;
+		}
+	}
+	.description {
+		position: relative;
+		background: white;
+		padding: 1rem;
+		border: 1px solid rgba(0, 0, 0, .0975);
+		border-bottom: none;
+		max-height: 345px;
+		overflow-y: scroll;
+		.title {
+			display: block;
+			margin-bottom: 10px;
+			font-size: $font-size-bigger;
+			line-height: 27px;
+		}
+		.price {
+			display: block;
+			margin-bottom: 10px;
+			font-size: $font-size-bigger;
+			color: $orange;
+		}
+		@include breakpoint (medium down) {
+			margin-top: 11px;
+			max-height: 100%;
+			overflow-y: auto;
+			border-bottom: 1px solid rgba(0, 0, 0, .0975);
+		}
+	}
+	.btn-bottom {
+		height: 63px;
+		padding: 10px;
+		background: white;
+		border: 1px solid rgba(0, 0, 0, .0975);
+		.button {
+			margin-bottom: 0;
+			background: $orange;
+			font-weight: bold;
+		}
+		@include breakpoint (medium down) {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 61px;
+			border: none;
+			border-top: 1px solid rgba(0, 0, 0, .0975);
+		}
+	}
+	@include breakpoint (medium down) {
+		padding: 10px 0 90px 0;
+	}
+}
