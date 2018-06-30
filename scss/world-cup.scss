@@ -91,7 +91,7 @@ header {
 		border: 1px solid rgba(0, 0, 0, .0975);
 		.button {
 			margin-bottom: 0;
-			background: $orange;
+			// background: $orange;
 			font-weight: bold;
 		}
 		@include breakpoint (medium down) {
