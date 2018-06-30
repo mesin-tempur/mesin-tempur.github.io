@@ -77,6 +77,9 @@ header {
 			font-size: $font-size-bigger;
 			color: $orange;
 		}
+		p {
+			text-align: justify;
+		}
 		@include breakpoint (medium down) {
 			margin-top: 11px;
 			max-height: 100%;
@@ -91,8 +94,8 @@ header {
 		border: 1px solid rgba(0, 0, 0, .0975);
 		.button {
 			margin-bottom: 0;
-			// background: $orange;
 			font-weight: bold;
+			text-decoration: none;
 		}
 		@include breakpoint (medium down) {
 			position: fixed;
@@ -107,4 +110,8 @@ header {
 	@include breakpoint (medium down) {
 		padding: 10px 0 90px 0;
 	}
+}
+
+a {
+	text-decoration: underline;
 }
