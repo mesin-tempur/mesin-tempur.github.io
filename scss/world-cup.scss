@@ -57,19 +57,19 @@ header {
 			width: 100%;
 		}
 	}
-	.description {
+	.description-right {
 		position: relative;
 		background: white;
-		padding: 1rem;
+		padding: 1.3rem;
 		border: 1px solid rgba(0, 0, 0, .0975);
 		border-bottom: none;
-		max-height: 345px;
-		overflow-y: scroll;
+		height: 345px;
+		// max-height: 345px;
+		// overflow-y: scroll;
 		.title {
 			display: block;
 			margin-bottom: 10px;
-			font-size: $font-size-bigger;
-			line-height: 27px;
+			font-size: 24px;
 		}
 		.price {
 			display: block;
@@ -82,7 +82,7 @@ header {
 		}
 		@include breakpoint (medium down) {
 			margin-top: 11px;
-			max-height: 100%;
+			height: auto;
 			overflow-y: auto;
 			border-bottom: 1px solid rgba(0, 0, 0, .0975);
 		}
@@ -105,6 +105,17 @@ header {
 			height: 61px;
 			border: none;
 			border-top: 1px solid rgba(0, 0, 0, .0975);
+		}
+	}
+	.description {
+		background: white;
+		padding: 4rem 7rem;
+		border: 1px solid rgba(0, 0, 0, .0975);
+		p {
+			text-align: justify;
+		}
+		@include breakpoint (medium down) {
+			padding: 1.3rem;
 		}
 	}
 	@include breakpoint (medium down) {
