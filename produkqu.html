@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nama Kategori | BelanjaQu</title>
+    <title>Kelola Produk | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/slick.css">
   </head>
@@ -311,7 +311,7 @@
                   <div class="small-12 column">
                     <div class="top-filter-sort covering-top clr">
                       <div class="half tac">
-                        <input type="search" class="fullonfocus" placeholder="Cari Produk">
+                        <input type="search" class="fullonfocus" placeholder="Cari Produk Saya">
                         <a href="#" class="fullcancel" style="display: none">BATAL</a>
                       </div>
                       <div class="half tac">
@@ -324,11 +324,14 @@
                     </div>
                   </div>
                 </div>
+                <div class="add-product inp10 upcase fwb js-position-anchor">
+                  <a href="produk-pasang.html" class="button expanded">Pasang Produk</a>
+                </div>
                 <div class="row bq-tabs">
                   <div class="small-12 column">
                     <ul class="tabs" data-tabs id="example-tabs">
                       <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Aktif</a></li>
-                      <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Draft</a></li>
+                      <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Stok Habis</a></li>
                       <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">Non Aktif</a></li>
                     </ul>
                   </div>
@@ -353,7 +356,7 @@
                               <small>Stock: 100</small>
                             </div>
                             <div class="prod-cta">
-                              <a href="#" class="button bordered-btn white-btn">Simpan ke Draft</a>
+                              <a href="#" class="button bordered-btn white-btn">Nonaktifkan</a>
                               <a href="#" class="button bordered-btn white-btn">Edit Produk</a>
                               <a href="#" class="button bordered-btn white-btn">Hapus</a>
                               <!-- <a href="#" class="button bordered-btn white-btn">Hapus</a> -->
@@ -374,7 +377,7 @@
                               <small>Stock: 100</small>
                             </div>
                             <div class="prod-cta">
-                              <a href="#" class="button bordered-btn white-btn">Simpan ke Draft</a>
+                              <a href="#" class="button bordered-btn white-btn">Nonaktifkan</a>
                               <a href="#" class="button bordered-btn white-btn">Edit Produk</a>
                               <a href="#" class="button bordered-btn white-btn">Hapus</a>
                             </div>
@@ -400,10 +403,9 @@
                               </div>
                             </a>
                             <div class="pt10 mt10 pl10" style="border-top:1px solid #ededed;">
-                              <small>Stock: 100</small>
+                              <small>Stock: 0</small>
                             </div>
                             <div class="prod-cta">
-                              <a href="#" class="button bordered-btn white-btn">Aktifkan</a>
                               <a href="#" class="button bordered-btn white-btn">Edit Produk</a>
                               <a href="#" class="button bordered-btn white-btn">Hapus</a>
                             </div>
@@ -420,10 +422,9 @@
                               </div>
                             </a>
                             <div class="pt10 mt10 pl10" style="border-top:1px solid #ededed;">
-                              <small>Stock: 100</small>
+                              <small>Stock: 0</small>
                             </div>
                             <div class="prod-cta">
-                              <a href="#" class="button bordered-btn white-btn">Aktifkan</a>
                               <a href="#" class="button bordered-btn white-btn">Edit Produk</a>
                               <a href="#" class="button bordered-btn white-btn">Hapus</a>
                             </div>
@@ -451,7 +452,7 @@
                             <div class="pt10 mt10 pl10" style="border-top:1px solid #ededed;">
                               <small>Stock: 100</small>
                               <div class="red" data-open="reasonModal">
-                                <small>Ditolak oleh Admin</small>
+                                <small>Produk Tidak Sesuai S&amp;K</small>
                                 <span class="label info-label" style="color:white">?</span>
                               </div>
                             </div>
@@ -473,7 +474,47 @@
                             </a>
                             <div class="pt10 mt10 pl10" style="border-top:1px solid #ededed;">
                               <small>Stock: 100</small>
-                              <div class="orange"><small>Dalam Moderasi</small></div> 
+                              <div class="yellow"><small>Produk Dalam Moderasi</small></div> 
+                            </div>
+                            <div class="prod-cta">
+                              <a href="#" class="button bordered-btn white-btn">Edit Produk</a>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <a href="detail.html" class="clr dblock">
+                              <div class="img-box"><img src="./dummy/prod-thumb-1.png" alt=""></div>
+                              <div class="desc-box">
+                                <div class="product-title">Sepatu New Balance</div>
+                                <div class="product-price">
+                                  <span>Rp 850.000</span>
+                                  <span class="striked">Rp 1.200.000</span>
+                                </div>
+                              </div>
+                            </a>
+                            <div class="pt10 mt10 pl10" style="border-top:1px solid #ededed;">
+                              <small>Stock: 100</small>
+                              <div class="gray"><small>Produk Dinon-aktifkan User</small></div> 
+                            </div>
+                            <div class="prod-cta">
+                              <a href="#" class="button bordered-btn white-btn">Aktifkan</a>
+                              <a href="#" class="button bordered-btn white-btn">Edit Produk</a>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <a href="detail.html" class="clr dblock">
+                              <div class="img-box"><img src="./dummy/prod-thumb-2.png" alt=""></div>
+                              <div class="desc-box">
+                                <div class="product-title">Sepatu Slip On</div>
+                                <div class="product-price">
+                                  <span>Rp 850.000</span>
+                                  <span class="striked">Rp 1.200.000</span>
+                                </div>
+                                
+                              </div>
+                            </a>
+                            <div class="pt10 mt10 pl10" style="border-top:1px solid #ededed;">
+                              <small>Stock: 100</small>
+                              <div class="green"><small>Produk Menunggu Antrian</small></div> 
                             </div>
                             <div class="prod-cta">
                               <a href="#" class="button bordered-btn white-btn">Edit Produk</a>
@@ -486,10 +527,6 @@
                           <div class="tac">Halaman 1 / 120</div>
                         </div>
                       </div>
-                    </div>
-                    
-                    <div class="add-product inp10 upcase fwb js-position-anchor">
-                      <a href="produk-pasang.html" class="button expanded">Pasang Produk</a>
                     </div>
                   </div>
                 </div>
