@@ -3524,6 +3524,20 @@ body.simple-header {
 			padding-right: 40px;
 		}
 	}
+	.shipping-tab-opt {
+		.tabs-title {
+			width: 50%;
+			text-align: center;
+		}
+	}
+	.no-shipping {
+		font-size: $font-size-small;
+		padding: 0 15px;
+	}
+	.callout {
+		font-size: $font-size-small;
+		background:#f8f8f8;
+	}
 }
 .simple-block-header {
 	font-weight: bold;

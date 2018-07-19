@@ -29,65 +29,102 @@
               <div class="simple-block-header">
                 1. Pilih Metode Kirim &amp; Alamat
               </div>
-              <div class="alamat-pengiriman">
-                <div class="item-group">
-                  <div class="row">
-                    <div class="small-12 large-8 large-offset-2 column address-choose">
-                      <div class="fblock input-radio address-block">
-                        <label for="address1">
-                          <div class="label-top">
-                            <input type="radio" name="address" value="1" id="address1" >
-                            <span class="label-address-type">Alamat Rumah Bubat</span>
+              <div class="bq-tabs shipping-tab-opt row">
+                <div class="small-12 large-8 large-offset-2 column">
+                  <ul class="tabs" data-tabs id="shipping-type-tabs">
+                    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Kirim ke Alamat</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Ambil di Kantor</a></li>
+                  </ul>
+                </div>
+                <div class="small-12 column">
+                  <div class="tabs-content" data-tabs-content="shipping-type-tabs">
+                    <div class="tabs-panel is-active" id="panel1">
+                      <div class="alamat-pengiriman">
+                        <div class="item-group">
+                          <div class="row">
+                            <div class="small-12 large-8 large-offset-2 column address-choose">
+                              <div class="fblock input-radio address-block">
+                                <label for="address1">
+                                  <div class="label-top">
+                                    <input type="radio" name="address" value="1" id="address1" >
+                                    <span class="label-address-type">Alamat Rumah Bubat</span>
+                                  </div>
+                                  <div class="label-body">
+                                    <p><strong>Rama Ibrahim</strong>
+                                    <br>Jl. Buah Batu Dalam III No. 22
+                                    <br>Kelurahan Cijagra, Kecamatan Lengkong
+                                    <br>Kota Bandung 40265, JAWA BARAT
+                                    <br>HP: 087724772227</p>
+                                  </div>
+                                </label>
+                                <div class="fblock">
+                                  <a href="#">Ubah Alamat</a>
+                                </div>
+                              </div>
+                              <div class="fblock input-radio address-block">
+                                <label for="address2">
+                                  <div class="label-top">
+                                    <input type="radio" name="address" value="2" id="address2" >
+                                    <span class="label-address-type">Alamat Rumah Citeureup</span>
+                                  </div>
+                                  <div class="label-body">
+                                    <p><strong>Rama Ibrahim</strong>
+                                    <br>Pesona Alam Residence Blok I/13 Jalan Permana Utara KM. 1,2
+                                    <br>Kelurahan Padaasih, Kecamatan Cisarua
+                                    <br>Kabupaten Bandung Barat 40551, JAWA BARAT
+                                    <br>HP: 087724772227</p>
+                                  </div>
+                                </label>
+                                <div class="fblock">
+                                  <a href="#">Ubah Alamat</a>
+                                </div>
+                              </div>
+                              <div class="fblock input-radio address-block">
+                                <label for="address3">
+                                  <div class="label-top">
+                                    <input type="radio" name="address" value="3" id="address3" >
+                                    <span class="label-address-type">Alamat Jakarta</span>
+                                  </div>
+                                  <div class="label-body">
+                                    <p><strong>Rama Ibrahim</strong>
+                                    <br>Plaza Kuningan - Menara Selatan Lantai 9, Jl. HR Rasuna Said KAV B-10
+                                    <br>Kelurahan Kuningan, Kecamatan Setiabudi
+                                    <br>Kota Jakarta Selatan 10221, DKI Jakarta 
+                                    <br>HP: 087724772227</p>
+                                  </div>
+                                </label>
+                                <div class="fblock">
+                                  <a href="#">Ubah Alamat</a>
+                                </div>
+                              </div>
+                              <div class="fblock tac"><a href="/setting/add_address"><small>+ Tambah Alamat</small></a></div>
+                            </div>
                           </div>
-                          <div class="label-body">
-                            <p><strong>Rama Ibrahim</strong>
-                            <br>Jl. Buah Batu Dalam III No. 22
-                            <br>Kelurahan Cijagra, Kecamatan Lengkong
-                            <br>Kota Bandung 40265, JAWA BARAT
-                            <br>HP: 087724772227</p>
-                          </div>
-                        </label>
-                        <div class="fblock">
-                          <a href="#">Ubah Alamat</a>
                         </div>
                       </div>
-                      <div class="fblock input-radio address-block">
-                        <label for="address2">
-                          <div class="label-top">
-                            <input type="radio" name="address" value="2" id="address2" >
-                            <span class="label-address-type">Alamat Rumah Citeureup</span>
+                    </div>
+                    <div class="tabs-panel" id="panel2">
+                      <div class="row">
+                        <div class="small-12 large-8 large-offset-2 column pb20 mb20 pt10">
+                          <p class="no-shipping tac">
+                            Order Anda dapat diambil di front office kantor pusat Paytren Bandung.
+                          </p>
+                          <div class="no-shipping">
+                            <div class="callout">
+                              <div class="mb10">
+                                <strong>PT. Veritra Sentosa Internasional</strong> <br>
+                                The Suites, Parahyangan Business Park,<br> Jl. Soekarno Hatta Blok E5-E7 No.693, Jatisari, Buahbatu, Kota Bandung, Jawa Barat 40286 <br>
+                              </div>
+                              <div>
+                                <strong>Jam Operasional:</strong> <br>Senin - Sabtu, 08:00 - 17:00 WIB
+                              </div>
+                            </div>
                           </div>
-                          <div class="label-body">
-                            <p><strong>Rama Ibrahim</strong>
-                            <br>Pesona Alam Residence Blok I/13 Jalan Permana Utara KM. 1,2
-                            <br>Kelurahan Padaasih, Kecamatan Cisarua
-                            <br>Kabupaten Bandung Barat 40551, JAWA BARAT
-                            <br>HP: 087724772227</p>
-                          </div>
-                        </label>
-                        <div class="fblock">
-                          <a href="#">Ubah Alamat</a>
+                          <p class="no-shipping tac">
+                            Agar memudahkan verifikasi, silakan bawa kartu tanda pengenal (KTP/SIM) pada saat pengambilan barang.
+                          </p>
                         </div>
                       </div>
-                      <div class="fblock input-radio address-block">
-                        <label for="address3">
-                          <div class="label-top">
-                            <input type="radio" name="address" value="3" id="address3" >
-                            <span class="label-address-type">Alamat Jakarta</span>
-                          </div>
-                          <div class="label-body">
-                            <p><strong>Rama Ibrahim</strong>
-                            <br>Plaza Kuningan - Menara Selatan Lantai 9, Jl. HR Rasuna Said KAV B-10
-                            <br>Kelurahan Kuningan, Kecamatan Setiabudi
-                            <br>Kota Jakarta Selatan 10221, DKI Jakarta 
-                            <br>HP: 087724772227</p>
-                          </div>
-                        </label>
-                        <div class="fblock">
-                          <a href="#">Ubah Alamat</a>
-                        </div>
-                      </div>
-                      <div class="fblock tac"><a href="/setting/add_address"><small>+ Tambah Alamat</small></a></div>
                     </div>
                   </div>
                 </div>
