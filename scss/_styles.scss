@@ -2346,6 +2346,14 @@ span.selected-cat-parent {
 		}
 		.accordion-content {padding: 10px;}
 	}
+	.address-block {
+		p {margin-bottom: 0;}
+		.fblock {
+			padding-left: 30px;
+			a {font-size: $font-size-small;}
+		}
+		border-bottom: $code-border-light;
+	}
 	@include breakpoint (large) {
 		.address-block {
 			display: inline-block;
@@ -3440,5 +3448,125 @@ footer {
 	}
 }
 .form-tix {
+	margin-top: 10px;
+}
 
+body.simple-header {
+	background:#f1f1f1;
+	.off-canvas-wrapper, .off-canvas-content {
+		background:transparent;
+	}
+	.page-title {
+		@include breakpoint(medium down) {
+			font-weight: bold;
+		}
+	}
+	.header-sticky {
+		width: 100%;
+	}
+	.header {
+		background:$primary-color;
+		padding: 15px 0;
+		border-bottom: $code-border-light;
+		margin-bottom: 10px;
+		color:$white;
+		.checkout-back {
+			font-size: $font-size-small;
+			text-align: left;
+			color:$white;
+		}
+	}
+}
+
+// NEW CHECKOUT PAGE
+
+.new-checkout-page {
+	@include breakpoint (large) {padding-top: 20px;}
+	.block-white {
+		background:$white;
+		@include breakpoint (large) {
+			padding: 20px 0;
+		}
+	}
+	.address-block {
+		border:$code-border-light;
+		border-radius:10px;
+		@include breakpoint (large) {
+			width: 100%;
+			padding: 0;
+		}
+		.label-top {
+			border-bottom: $code-border-light;
+			position: relative;
+			background:#f1f1f1;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
+			.label-address-type {
+				padding-left: 35px;
+			}
+		}
+		.label-top, .label-body {
+			padding: 10px 20px;
+			p {margin-left: 10px;}
+		}
+		label {
+			padding: 0;
+		}
+		input {
+			margin-bottom: 0;
+			margin-top: -8px;
+			left: 30px;
+		}
+	}
+	.order-box {
+		@include breakpoint (large) {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+	.shipping-tab-opt {
+		.tabs-title {
+			width: 50%;
+			text-align: center;
+		}
+	}
+	.no-shipping {
+		font-size: $font-size-small;
+		padding: 0 15px;
+	}
+	.callout {
+		font-size: $font-size-small;
+		background:#f8f8f8;
+	}
+}
+.simple-block-header {
+	font-weight: bold;
+	padding: 10px 0;
+	margin: 10px 0;
+	font-size: $font-size-small;
+	text-align: center;
+}
+.logistics-option, .payments-option {
+	padding: 15px;
+	border:$code-border-light;
+	border-radius: 10px;
+	.shipping-cost {
+		@include breakpoint(large) {float: right;}	
+	}
+	.info {
+		@include breakpoint(large) {display: inline-block;}
+	}
+}
+.payments-option {
+	padding: 10px;
+	background:#f8f8f8;
+}
+.payments {
+	label {
+		line-height: 1.5;
+	}
+	.striked {
+		color: $dark-gray;text-decoration:line-through;
+		font-size: $font-size-small;
+	}
 }
