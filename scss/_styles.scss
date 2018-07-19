@@ -3518,6 +3518,12 @@ body.simple-header {
 			left: 30px;
 		}
 	}
+	.order-box {
+		@include breakpoint (large) {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
 }
 .simple-block-header {
 	font-weight: bold;
