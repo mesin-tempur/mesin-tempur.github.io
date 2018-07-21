@@ -2288,6 +2288,11 @@ span.selected-cat-parent {
 	padding: 0;
 	.row-item {
 		display: block;padding: 5px 15px;color: $black;border-bottom: $code-border;position: relative;
+		a {
+			padding-left: 8px;
+			letter-spacing: 1px;
+			font-size: 14px;
+		}
 	}
 }
 .pay-condition {
@@ -2314,6 +2319,18 @@ span.selected-cat-parent {
 	padding: 20px 0;
 	background: $lighter-gray;
 	p {margin-bottom: 5px;font-size: $font-size-small;}
+	.final-price {
+		margin-top: -8px;
+		strong {
+			font-size: 27px;
+			color: $orange;
+		}
+		a {
+			padding-left: 6px;
+			letter-spacing: 1px;
+			font-size: 14px;
+		}
+	}
 	@include breakpoint (large) {
 		margin: 20px auto;
 		padding: 40px 100px;

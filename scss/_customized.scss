@@ -56,6 +56,9 @@ table.small-text {font-size: $font-size-small;}
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
+.line-through {
+    text-decoration:line-through;
+}
 
 select, input {border-radius: 4px;}
 textarea {resize: none;}
