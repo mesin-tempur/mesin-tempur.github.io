@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
-    <title>Kelola Toko | BelanjaQu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasang Produk | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -187,7 +187,7 @@
             </div>
           </div>
         </header>
-        <div class="section main-content store-edit">
+        <div class="section main-content add-product">
           <!-- DESKTOP CATEGORY OPTION -->
           <div id="js-dark-overlay" class="dark-overlay" style="display:none;opacity:0;"></div>
           <div class="content-top show-for-large">
@@ -264,243 +264,148 @@
               </div>
             </div>
           </div>
-
+          <!-- END DESKTOP CATEGORY OPTION -->
           <div class="row">
-            <div class="large-3 show-for-large column">
-              <div class="dashboard-nav">
-                <div class="nav-group">
-                  <div class="top-user">
-                    <a href="/setting/index" class="clr">
-                      <div class="ava"><img src="http://belanjaqu.co.id/assets/dummy/default-avatar.jpg" alt=""></div>
-                      <div class="menu-list-title"><span>Halo<strong> Rama Ibrahim</strong></span></div>
-                    </a>
-                  </div>
-                </div>
-                <div>
-                  <a href="#" class="button expanded">Buka Toko Baru</a>
-                </div>
-                <div class="nav-group">
-                  <div class="list-header">Pengelolaan Toko</div>
-                  <ul>
-                    <li><a href="#">ProdukQu</a></li>
-                    <li><a href="#">Order</a></li>
-                    <li><a href="#">Kelola Toko</a></li>
-                    <li><a href="#">Laci Toko</a></li>
-                  </ul>
-                </div>
-                <div class="nav-group">
-                  <div class="list-header">Kotak Masuk</div>
-                  <ul>
-                    <li><a href="#">Notifikasi</a></li>
-                    <li><a href="#">Diskusi Produk <span class="counter">12</span></a></li>
-                    
-                  </ul>
-                </div>
-                <div class="nav-group">
-                  <!-- <div class="list-header">Kotak Masuk</div> -->
-                  <ul>
-                    <li><a href="#">Logout</a></li>
-                  </ul>
-                </div>
+            <div class="small-12 large-8 large-offset-2 column">
+              <div data-closable="slide-out-right" class="success callout mt15">
+                <p>Pastikan produk yang Kamu pasang sesuai dengan <a href="/home/syarat-dan-ketentuan">syarat dan ketentuan</a> BelanjaQu</p>
               </div>
-            </div>
-            <div class="small-12 large-9 column">
-              <div class="row">
-                <div class="small-12 column">
-                  <div data-closable="slide-out-right" class="success callout mt15 mb20">
-                    <p>Pastikan produk yang Kamu pasang sesuai dengan <a href="">Syarat dan ketentuan</a> BelanjaQu.</p>
-                  </div>
-                </div>
-              </div>
-              <form action="produk-pasang-sukses.html" class="add-product" enctype="multipart/form-data">
-                <div class="wrap-box">
-                  <div class="block-header">Pilih Toko <span class="red">*</span></div>
-                  <div class="row product-form-block product-desc">
-                    <div class="small-12 column">
-                      <select name="store_id" id="store_id">
-                        <option value="">Toko1</option>
-                        <option value="">Toko2</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="wrap-box">
-                  <div class="block-header">Foto Produk <span class="red">*</span></div>
-                  <div class="row product-form-block product-img-upload">
-                    <div class="small-12 column img-box">
-                      <div class="align-middle">
-                      <input type="file" id="" name="images[]" class="" />
-                      <input type="file" id="" name="images[]" class="" />
-                      <input type="file" id="" name="images[]" class="" />
-                      <input type="file" id="" name="images[]" class="" />
-                      <input type="file" id="" name="images[]" class="" />
-                      <input type="file" id="" name="images[]" class="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="wrap-box">
-                  <div class="block-header">Deskripsi Produk</div>
-                  <div class="row product-form-block product-desc">
-                    <div class="small-12 column">
-                      <div class="fblock">
-                        <label for="nama">Nama Produk <span class="red">*</span></label>
-                        <input type="text" id="nama" name="title" value="" required>
-                      </div>
-                      <div class="fblock" id="category-field-opt">
-                        <label for="kategori">Kategori <span class="red">*</span></label>
-                        <a href="#" class="button expanded bordered-btn white-btn mt10" data-open="kategoriModal">Pilih Kategori</a>
-                      </div>
-                      <div class="fblock">
-                        <label for="kategori">Kategori</label>
-                        <a href="#" data-open="kategoriModal">
-                          <strong class="elipsis dblock selected-cat-parent">Kategori belum dipilih</strong>
-                          <input type="hidden" name="category_id" id="category_id" />
-                        </a>
-                      </div>
-                      <div class="fblock">
-                        <label for="berat">Deskripsi Produk <span class="red">*</span></label>
-                        <textarea id="deskripsiproduk" cols="30" rows="5" name="description" required></textarea>
-                      </div>
-                      <div class="fblock kondisi">
-                        <label>Kondisi <span class="red">*</span></label>
-                        <input type="radio" value="1" id="kondisiBaru" name="kondisi" checked>
-                        <label for="kondisiBaru">Baru</label>
-                        <input type="radio" value="0" id="kondisiBekas" name="kondisi">
-                        <label for="kondisiBekas">Bekas</label>
-                      </div>
-                      <div class="fblock stock-input">
-                        <label for="stockInput">Jumlah Stock <span class="red">*</span></label>
-                        <input type="text" id="stockInput" class="numbers" name="[variant][0]stock">
-                      </div>
-                      <div class="fblock">
-                        <label for="berat">Berat Per-unit Produk <span class="red">*</span></label>
-                        <div class="input-group">
-                          <input type="text" id="berat" class="numbers" name="weight" value="" required>
-                          <span class="input-group-label" style="border: none;">
-                            <select name="weight_option" style="width:120px; margin-right: -15px;">
-                              <option value="gram">Gram</option>
-                              <option value="kg">Kg</option>
-                            </select>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="wrap-box">
-                  <div class="block-header">Harga Produk</div>
-                  <div class="row">
-                    <div class="small-12 column">
-                      <div class="price-wrapper">
-                        <div class="fblock harga-block">
-                          <label for="harga">Harga Normal <span class="red">*</span></label>
-                          <div class="input-group">
-                            <span class="input-group-label">Rp</span>
-                            <input type="text" id="harga" class="harga" name="[variant][0]price">
-                          </div>
-                          <div class="checkbox-styling pb10">
-                            <input type="checkbox" id="add-disc">
-                            <label for="add-disc">Tambah harga diskon</label>
-                          </div>
-                        </div>
-                        <div class="fblock harga-diskon pb20" style="display: none">
-                          <label for="harga-diskon">Harga Diskon</label>
-                          <div class="input-group">
-                            <span class="input-group-label">%</span>
-                            <input type="text" id="harga-diskon" class="harga" name="[variant][0]discount" maxlength="2">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wrap-box child">
-                    <div class="block-header">Produk Free Ongkir</div>
-                    <div class="row product-form-block product-desc">
-                      <div class="small-12 column">
-                        <div class="fblock">
-                          <p>* Agar Produk kamu lebih banyak diminati oleh Pembeli, Ceklist di kolom Gratis Ongkos Kirim maka ongkos kirim kini ditanggung oleh kamu sebagai Penjual, Berlaku untuk pengiriman di seluruh Indonesia.</p>
-                          <input type="checkbox" id="free_ongkir" name="free_ongkir">
-                          <label for="free_ongkir"><strong>Gratis Ongkos Kirim</strong></label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wrap-box child">
-                    <div class="block-header">Produk Pre Order</div>
-                    <div class="row product-form-block product-desc">
-                      <div class="small-12 column">
-                        <div class="fblock">
-                          <p>* Tentukan waktu yang dibutuhkan untuk pengiriman.</p>
-                          <input type="checkbox" name="preorder" id="check-preorder" value="">
-                          <label for="check-preorder"><strong>PO (Pre Order)</strong></label>
-                        </div>
-                        <div class="fblock preorder-time pb20" style="display: none;">
-                          <label for="namatoko"><strong>Pilih waktu pengiriman <span class="red">*</span></strong></label>
-                          <select name="" id="">
-                            <option value="">7 hari</option>
-                            <option value="">14 hari</option>
-                            <option value="">30 hari</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="wrap-box child">
-                    <div class="block-header">Saldo PayTren Emoney</div>
-                    <div class="row product-form-block product-desc">
-                      <div class="small-12 column">
-                        <div class="fblock radio-saldo-paytren">
-                          <input type="checkbox" name="saldo-paytren" id="saldo-paytren" value="">
-                          <label for="saldo-paytren" class="saldo-paytren">
-                            Jadikan produk ini tersedia untuk metode bayar PayTren Emoney
-                          </label>
-                        </div>
-                        <div class="fblock pb10 desc-paytren" style="display: none;">
-                          Untuk menggunakan fitur ini, Kamu harus mengisi <strong>Fee Penjualan Produk</strong> minimal <strong>10%</strong>.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row product-form-block product-desc">
-                    <div class="small-12 column">
-                      <div class="fblock harga-block">
-                        <label for="harga"><strong>Fee Penjualan Produk <span class="red">*</span></strong></label>
-                        <div class="input-group">
-                          <span class="input-group-label">%</span>
-                          <input type="text" id="product_fee" name="product_fee" maxlength="5" class="">
-                        </div>
-                        <ul class="dotted pt20" style="padding-left: 20px;">
-                          <li style="list-style-position: outside;">
-                            Fee kamu akan dialokasikan menjadi <strong>Cashback &amp; Promo</strong> kepada pembeli, sehingga pembeli lebih tertarik dengan produk kamu
-                          </li>
-                          <li style="list-style-position: outside;">
-                            Hasil penjualan akan di potong dengan fee yang diberikan
-                          </li>
-                          <li style="list-style-position: outside;">
-                            Berikan fee yang terbaik untuk meningkatkan hasil penjualan yang maximal. contoh 10% atau lebih
-                          </li>
-                          <li style="list-style-position: outside;">
-                            Untuk desimal tidak bisa menggunakan koma, hanya bisa menggunakan titik
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="small-12 column">
-                    <div class="fblock submit-group">
-                      <button class="button expanded" type="submit">PASANG</button>
-                      <!-- <a class="button bordered-btn white-btn expanded" id="save-as-draft">SIMPAN DRAFT</a> -->
-                      <a class="button bordered-btn expanded" href="/produkqu/list">BATAL</a>
-                    </div>
-                  </div>
-                </div>
-              </form>
             </div>
           </div>
-
+          <form action="produk-pasang-sukses.html" class="add-product-form" enctype="multipart/form-data">
+            
+            <div class="row product-form-block product-img-upload">
+              <div class="small-12 large-8 large-offset-2 column img-box">
+                <div class="block-header">Foto Produk</div>
+                <div class="wrap-box">
+                  <div class="align-middle p10">
+                      <input type="file" id="" name="images[]" class="">
+                      <input type="file" id="" name="images[]" class="">
+                      <input type="file" id="" name="images[]" class="">
+                      <input type="file" id="" name="images[]" class="">
+                      <input type="file" id="" name="images[]" class="">
+                      <input type="file" id="" name="images[]" class="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row product-form-block product-desc">
+              <div class="small-12 large-8 large-offset-2 column">
+                <div class="block-header">Deskripsi Produk</div>
+                <div class="wrap-box">
+                  <div class="fblock">
+                    <label for="kategori">Kategori</label>
+                    <a href="#" class="button expanded bordered-btn white-btn mt10" data-open="kategoriModal">Pilih Kategori</a>
+                  </div>
+                  <div class="fblock">
+                    <label for="kategori">Kategori</label>
+                    <a href="#" data-open="kategoriModal">
+                      <span class="elipsis dblock selected-cat-parent">Rumah Tangga > Elektronik Rumah Tangga</span>
+                      <span class="selected-cat">Kulkas</span>
+                    </a>
+                  </div>
+                  <div class="fblock">
+                    <label for="nama">Nama Produk</label>
+                    <input type="text" id="nama">
+                  </div>
+                  <div class="fblock">
+                    <label for="berat">Deskripsi Produk</label>
+                    <textarea name="deskripsi-produk" id="deskripsiproduk" cols="30" rows="5"></textarea>
+                  </div>
+                  <div class="fblock kondisi">
+                    <label>Kondisi</label>
+                    <input type="radio" value="baru" id="kondisiBaru" name="kondisi" checked>
+                    <label for="kondisiBaru">Baru</label>
+                    <input type="radio" value="bekas" id="kondisiBekas" name="kondisi">
+                    <label for="kondisiBekas">Bekas</label>
+                  </div>
+                  <div class="fblock">
+                    <label for="berat">Berat Per-unit Produk</label>
+                    <div class="input-group">
+                      <input type="text" id="berat" class="numbers">
+                      <span class="input-group-label">gram</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="small-12 large-8 large-offset-2 column">
+                <div class="block-header">Harga Produk</div>
+                <div class="wrap-box">
+                  <div class="price-wrapper">
+                    <div class="fblock harga-block">
+                      <label for="harga">Harga Normal</label>
+                      <div class="input-group">
+                        <span class="input-group-label">Rp</span>
+                        <input type="text" id="harga" class="harga">
+                      </div>
+                      <div class="checkbox-styling">
+                        <input type="checkbox" id="add-disc">
+                        <label for="add-disc">Tambah harga diskon</label>
+                      </div>
+                    </div>
+                    <div class="fblock harga-diskon" style="display: none">
+                      <label for="harga-diskon">Harga Diskon</label>
+                      <div class="input-group">
+                        <span class="input-group-label">Rp</span>
+                        <input type="text" id="harga-diskon" class="harga">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fblock stock-input">
+                    <label for="stockInput">Stock</label>
+                    <input type="text" id="stockInput" class="numbers">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="variant-wrapper">
+              <!-- <div class="variant-box">
+                <div class="row">
+                  <div class="small-12 column">
+                    <div class="var-title"><strong>Varian 1</strong><a href="#" class="fr del-var">Hapus</a></div>
+                    <div class="fblock variant-kind">
+                      <input type="text" id="variantName" placeholder="Contoh: Merah atau Size S">
+                    </div>
+                    <div class="fblock harga-block">
+                      <label for="varharga">Harga Normal</label>
+                      <div class="input-group">
+                        <span class="input-group-label">Rp</span>
+                        <input type="text" id="varharga" class="harga varharga">
+                      </div>
+                    </div>
+                    <div class="fblock harga-diskon">
+                      <label for="harga-diskon">Harga Diskon</label>
+                      <div class="input-group">
+                        <span class="input-group-label">Rp</span>
+                        <input type="text" id="varharga-diskon" class="harga varhargadisk">
+                      </div>
+                    </div>
+                    <div class="fblock stock-input">
+                      <label for="varstockInput">Stock</label>
+                      <input type="text" id="varstockInput" class="numbers varstockInput">
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <div class="row">
+              <div class="small-12 large-8 large-offset-2 column">
+                <div class="fblock mt20 add-wrapper">
+                  <a href="#" class="button bordered-btn white-btn expanded add-variant">Tambah Varian Produk (ukuran, warna)</a>
+                </div>
+                <div class="fblock submit-group">
+                  <button class="button expanded" type="submit">PASANG</button>
+                  <a class="button bordered-btn white-btn expanded">SIMPAN DRAFT</a>
+                  <a class="button bordered-btn expanded">BATAL</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
         <footer>
           <div class="section footer-top">
             <div class="row hide-for-large">
@@ -565,10 +470,10 @@
             </div>
           </div>
           <div class="section copyright">
-            <div class="tac"><small>© copyright belanjaqu.co.id 2018</small></div>
+            <div class="tac"><small>© copyright belanjaqu.com 2016</small></div>
           </div>
         </footer>
-
+        <!-- KATEGORI REVEAL MODAL -->
         <div class="reveal kat-modal" id="kategoriModal" data-reveal escClose="true">
           <a class="close-button" aria-label="Close" type="button" data-close>
             <span aria-hidden="true">Batal</span>
@@ -641,8 +546,27 @@
             </ul>
           </div>
         </div>
+        <!-- END KATEGORI REVEAL MODAL -->
+
+        <!-- SEARCH REVEAL MODAL -->
+        <!-- <div class="reveal full search-modal" id="searchModal" data-reveal escClose="true">
+          <button class="close-button" aria-label="Close alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="fblock">
+            <input id="searchInput" type="search" placeholder="Cari produk atau toko">
+          </div>
+          <div class="suggestion-box">
+            <ul>
+              <li><a href="search-result.html">Blackberry <small>di Handphone</small></a></li>
+              <li><a href="search-result.html">Blackberry <small>di Aksesoris Handphone </small></a></li>
+            </ul>
+          </div>
+        </div> -->
+        <!-- END SEARCH REVEAL MODAL -->
       </div>
     </div>
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
@@ -651,22 +575,6 @@
     <script src="js/min/app-min.js"></script>
     <script src="js/min/app-pasang-min.js"></script>
     <script>
-      var check   = $('#check-preorder'),
-        preorder  = $('.preorder-time');
-      check.on('change', function() {
-        if(check.is(':checked')) {
-          preorder.css('display', 'block');
-        } else {preorder.css('display', 'none');}
-      });
-
-      var saldoPaytren   = $('#saldo-paytren'),
-        descPaytren  = $('.desc-paytren');
-      saldoPaytren.on('change', function() {
-        if(saldoPaytren.is(':checked')) {
-          descPaytren.css('display', 'block');
-        } else {descPaytren.css('display', 'none');}
-      });
-
       categoriMultilevel();
       $('.harga').mask('000.000.000.000.000', {reverse: true});
       $('.numbers').mask('000000')

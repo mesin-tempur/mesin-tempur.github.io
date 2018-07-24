@@ -765,15 +765,14 @@ header {
 	margin-top: 2rem;
 	padding: .6rem 0;
 	span {
-		font-size: 20px;
-		font-weight: 700;
+		font-size: $font-size-bigger;
+		font-weight: bold;
 	} 
 	a {
-		color: $blue;
-		&:after {
-			content: "\27F6";
-			margin-left: 4px;
-		}
+		color: $orange;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		padding: 3px 4px 0 0;
 	}
 }
 .cm-title {
@@ -939,18 +938,23 @@ span.discount {
 		z-index: -1;
 	}
 }
-.po-flag {
+.label-top {
 	position: absolute;
 	top: 8px;
 	left: 8px;
+}
+.po-flag, .paytren-emoney {
+	display: inline-block;
 	background-color: hsla(0, 0%, 53.3%, .6);
-	border-radius: 2px;
     color: $white;
     padding: 3px 5px 1px 6px;
     font-weight: bold;
     letter-spacing: .5px;
     font-size: $font-size-smaller;
+    margin-right: 2px;
+	border-radius: 2px;
 }
+
 .product-listing-grid {
 	.product-title {
 		padding-right: 10px;
@@ -1002,7 +1006,7 @@ span.discount {
 			}
 			.badge-verified {
 				position: absolute;
-				right: 8px;
+				right: 14px;
 				top: 14.5px;
 				background: lighten($blue, 30%);
 				border: 1px solid $blue;
@@ -2025,23 +2029,66 @@ a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
 // PASANG IKLAN
 .add-product {
 	.block-header {
-		margin: 20px 0;
+		background: white;
+		padding: 0 0 15px 0;
+		font-weight: bold;
+		font-size: $font-size-big;
 		&:first-child {margin-top: 0;}
+		@include breakpoint (medium down) {
+			padding: 0 0 5px 0;
+		}
 	}
-	.submit-group {margin-top: 60px;}
+	.submit-group {margin-top: 10px;}
 	.stock-input {margin-bottom: 20px;}
+	.wrap-box {
+		border: 1px solid $lighter-gray;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		padding: 20px 5px 5px 5px;
+		margin-bottom: 20px;
+		border-radius: 0;
+		.child {
+			background: $lighter-gray;
+			border: none;
+			margin-bottom: 15px;
+			padding: 20px 20px 0 20px;
+			.block-header {
+				background: $lighter-gray;
+			}
+			.radio-saldo-paytren {
+				display: flex;
+				flex-wrap: nowrap;
+				.saldo-paytren {
+					font-size: $font-size;
+					margin-top: -5px;
+				}
+			}
+		}
+	}
 	@include breakpoint (large) {
 		.block-header {margin-bottom: 0;}
 		.img-box {padding-bottom: 0;}
 		.wrap-box {
-			border:1px solid #f1f1f1;
+			border:1px solid #e6e6e6;
 			padding: 20px;
 			margin-bottom: 20px;
+			border-radius: 4px;
+			.child {
+				background: $lighter-gray;
+				border: none;
+				padding: 20px 20px 0 20px;
+			}
 		}
 	}
 }
 .product-img-upload {
-	padding: 0 0 10px 0;
+	// padding: 0 0 10px 0;
+	[type='file'] {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 	.img-block {
 		position: relative;
 		border:1px solid $primary-color;
@@ -3287,10 +3334,10 @@ footer {
 			background-color:white;
 		}
 	}
-	.wrap-box {
-		padding: 20px;
-		border: $code-border-light;
-	}
+	// .wrap-box {
+	// 	padding: 20px;
+	// 	border: $code-border-light;
+	// }
 }
 
 .bq-tabs {
