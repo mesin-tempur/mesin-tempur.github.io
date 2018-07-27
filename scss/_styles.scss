@@ -938,13 +938,11 @@ span.discount {
 		z-index: -1;
 	}
 }
-.label-top {
+
+.po-flag {
 	position: absolute;
-	top: 0;
-	left: 0;
-}
-.po-flag, .paytren-emoney {
-	display: inline-block;
+	top: 6px;
+	left: 6px;
 	background-color: hsla(0, 0%, 53.3%, .6);
     color: $white;
     padding: 3px 5px 1px 6px;
@@ -2233,6 +2231,9 @@ span.selected-cat-parent {
 		border-bottom: 1px solid #f1f1f1;
 		padding: 10px 0;
 		&:last-child {border-bottom: none;}
+		&.qty-empty {
+			border: 1px solid $red;
+		}
 	}
 	.qtt-box {width: 60px;}
 	img {width: 100%;height: auto;}
