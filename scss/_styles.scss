@@ -783,7 +783,7 @@ header {
 	font-weight: bold;
 	height: 44px;
 	overflow: hidden;
-	border-bottom: 1px solid $blue;
+	border-bottom: $code-border-light;
 	span {
 		background: $blue;
 		color:white;
@@ -2319,8 +2319,27 @@ span.selected-cat-parent {
 	padding-top: 20px;
 }
 
-// CHECKOUT PAGE
+// E-Ticket
+.dash-ticket {
+	margin-top: 1rem;
+	thead {
+		background: white;
+		border: none;
+		border-bottom: 1px solid $lighter-gray;
+	}
+	.button {
+		margin: 6px 0;
+		padding: 8px 16px;
+	}
+	img {
+		padding: 10px;
+		@include breakpoint (medium down) {
+			padding: 0;
+		}
+	}
+}
 
+// CHECKOUT PAGE
 .input-radio {
 	position: relative;
 	input {position: absolute;top: 50%;margin-top: -10px;}
