@@ -763,16 +763,26 @@ header {
 .title-section {
 	position: relative;
 	margin-top: 2rem;
+	margin-bottom: 10px;
 	padding: .6rem 0;
 	span {
-		font-size: $font-size-bigger;
+		font-size: $font-size-big;
+		color: $dark-gray;
+		letter-spacing: 1px;
 		font-weight: bold;
+		text-transform: uppercase;
+		@include breakpoint(medium down) {
+			font-size: $font-size;
+		}
 	} 
 	a {
-		color: $orange;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		padding: 3px 4px 0 0;
+		background: white;
+		border: 1px solid #cccccc;
+		font-size: $font-size-smaller;
+		font-weight: bold;
+		padding: 4px 11px;
+		border-radius: 2px;
+		margin-top: -3px;
 	}
 }
 .cm-title {
@@ -873,7 +883,6 @@ header {
 	.product-title {
 		font-weight: bold;
 		font-size:$font-size-small;
-		color: $black;
 	}
 	span {color: $primary-color;}
 	span.striked {font-size: $font-size-smaller;}
@@ -939,10 +948,13 @@ span.discount {
 	}
 }
 
-.po-flag {
+.flag-area {
 	position: absolute;
 	top: 6px;
 	left: 6px;
+}
+.po-flag, .ep-flag {
+	display: inline-block;
 	background-color: hsla(0, 0%, 53.3%, .6);
     color: $white;
     padding: 3px 5px 1px 6px;
@@ -952,6 +964,12 @@ span.discount {
     margin-right: 2px;
 	border-radius: 2px;
 }
+.ep-flag {
+	background: white;
+	border: 1px solid $orange;
+	color: $black;
+	border-radius: 3px;
+}
 
 .product-listing-grid {
 	.product-title {
@@ -960,7 +978,7 @@ span.discount {
 		overflow: hidden;
 		margin-top: 5px;
 		margin-bottom: 5px;
-		color:$primary-color;
+		// color:$primary-color;
 	}
 	.product-price {
 		span {display: block;}

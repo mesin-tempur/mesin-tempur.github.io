@@ -35,6 +35,7 @@ small {font-size: $font-size-small;}
 .gray {color: $dark-gray;}
 .green {color: $green;}
 .yellow {color: $yellow;}
+.orange-link {color:$orange;&:hover{color:$orange;}}
 .gray-link {color:$dark-gray;&:hover{color:$black;}}
 .red-link {color:$red;&:hover{color:$red;}}
 .fwb{font-weight: bold;}
@@ -129,6 +130,9 @@ input[type=number]::-webkit-outer-spin-button {
         border: $code-border;
         background:$lighter-gray;
         &.white-btn {background-color: white;border-color: $primary-color;color:$primary-color}
+    }
+    &.orange-btn {
+        background: $orange;
     }
 }
 
