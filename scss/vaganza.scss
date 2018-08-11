@@ -2,8 +2,11 @@
 @import '../bower_components/foundation-sites/scss/foundation.scss';
 @import 'customized';
 
+body {
+	background:#efefef;
+}
 .vaganza {
-	background: linear-gradient(0deg,rgba(0, 0, 0, .4)), url(../images/vaganza_bg.jpg) no-repeat center center fixed;
+	background: url(../images/vaganza_bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -71,11 +74,18 @@
 }
 
 .content-box {
+	padding-bottom: 60px;
+	@include breakpoint(large) {
+		padding-top: 20px;
+	}
 	.block-white {
 		background: white;
-		padding: 1rem .3rem;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 2px 2px 4px rgba(0,0,0,.05);
+		border:$code-border-light;
 		@include breakpoint(large) {
-			padding: 1rem;
+			padding: 3rem;
 		}
 		.title-block {
 			padding-bottom: 10px;
@@ -136,7 +146,34 @@
 	}
 }
 
-
+.left-panel {
+	.panel-header,.panel-info,.panel-nav {
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		border-bottom: $code-border-light;
+	}
+	.panel-header {
+		.subtext {
+			font-size: $font-size-small;
+			color:$dark-gray;
+		}
+	}
+	.panel-info {
+		.title-block {
+			@include breakpoint (large) {
+				// text-align: center;
+			}
+		}
+	}
+	.panel-nav {
+		border-bottom: none;
+		margin-bottom: 0;
+		ul {
+			margin-bottom: 0;
+			li {margin-bottom: 5px;}
+		}
+	}
+}
 
 
 
