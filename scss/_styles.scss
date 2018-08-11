@@ -763,17 +763,26 @@ header {
 .title-section {
 	position: relative;
 	margin-top: 2rem;
+	margin-bottom: 10px;
 	padding: .6rem 0;
 	span {
-		font-size: 20px;
-		font-weight: 700;
+		font-size: $font-size-big;
+		color: $dark-gray;
+		letter-spacing: 1px;
+		font-weight: bold;
+		text-transform: uppercase;
+		@include breakpoint(medium down) {
+			font-size: $font-size;
+		}
 	} 
 	a {
-		color: $blue;
-		&:after {
-			content: "\27F6";
-			margin-left: 4px;
-		}
+		background: white;
+		border: 1px solid #cccccc;
+		font-size: $font-size-smaller;
+		font-weight: bold;
+		padding: 4px 11px;
+		border-radius: 2px;
+		margin-top: -3px;
 	}
 }
 .cm-title {
@@ -784,7 +793,7 @@ header {
 	font-weight: bold;
 	height: 44px;
 	overflow: hidden;
-	border-bottom: 1px solid $blue;
+	border-bottom: $code-border-light;
 	span {
 		background: $blue;
 		color:white;
@@ -874,7 +883,6 @@ header {
 	.product-title {
 		font-weight: bold;
 		font-size:$font-size-small;
-		color: $black;
 	}
 	span {color: $primary-color;}
 	span.striked {font-size: $font-size-smaller;}
@@ -939,18 +947,30 @@ span.discount {
 		z-index: -1;
 	}
 }
-.po-flag {
+
+.flag-area {
 	position: absolute;
-	top: 8px;
-	left: 8px;
+	top: 6px;
+	left: 6px;
+}
+.po-flag, .ep-flag {
+	display: inline-block;
 	background-color: hsla(0, 0%, 53.3%, .6);
-	border-radius: 2px;
     color: $white;
     padding: 3px 5px 1px 6px;
     font-weight: bold;
     letter-spacing: .5px;
     font-size: $font-size-smaller;
+    margin-right: 2px;
+	border-radius: 2px;
 }
+.ep-flag {
+	background: white;
+	border: 1px solid $orange;
+	color: $black;
+	border-radius: 3px;
+}
+
 .product-listing-grid {
 	.product-title {
 		padding-right: 10px;
@@ -958,7 +978,7 @@ span.discount {
 		overflow: hidden;
 		margin-top: 5px;
 		margin-bottom: 5px;
-		color:$primary-color;
+		// color:$primary-color;
 	}
 	.product-price {
 		span {display: block;}
@@ -1002,7 +1022,7 @@ span.discount {
 			}
 			.badge-verified {
 				position: absolute;
-				right: 8px;
+				right: 14px;
 				top: 14.5px;
 				background: lighten($blue, 30%);
 				border: 1px solid $blue;
@@ -2025,23 +2045,66 @@ a.back:before {position: absolute;top:50%;margin-top: -7px;left:0px;}
 // PASANG IKLAN
 .add-product {
 	.block-header {
-		margin: 20px 0;
+		background: white;
+		padding: 0 0 15px 0;
+		font-weight: bold;
+		font-size: $font-size-big;
 		&:first-child {margin-top: 0;}
+		@include breakpoint (medium down) {
+			padding: 0 0 5px 0;
+		}
 	}
-	.submit-group {margin-top: 60px;}
+	.submit-group {margin-top: 10px;}
 	.stock-input {margin-bottom: 20px;}
+	.wrap-box {
+		border: 1px solid $lighter-gray;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		padding: 20px 5px 5px 5px;
+		margin-bottom: 20px;
+		border-radius: 0;
+		.child {
+			background: $lighter-gray;
+			border: none;
+			margin-bottom: 15px;
+			padding: 20px 20px 0 20px;
+			.block-header {
+				background: $lighter-gray;
+			}
+			.radio-saldo-paytren {
+				display: flex;
+				flex-wrap: nowrap;
+				.saldo-paytren {
+					font-size: $font-size;
+					margin-top: -5px;
+				}
+			}
+		}
+	}
 	@include breakpoint (large) {
 		.block-header {margin-bottom: 0;}
 		.img-box {padding-bottom: 0;}
 		.wrap-box {
-			border:1px solid #f1f1f1;
+			border:1px solid #e6e6e6;
 			padding: 20px;
 			margin-bottom: 20px;
+			border-radius: 4px;
+			.child {
+				background: $lighter-gray;
+				border: none;
+				padding: 20px 20px 0 20px;
+			}
 		}
 	}
 }
 .product-img-upload {
-	padding: 0 0 10px 0;
+	// padding: 0 0 10px 0;
+	[type='file'] {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 	.img-block {
 		position: relative;
 		border:1px solid $primary-color;
@@ -2186,6 +2249,9 @@ span.selected-cat-parent {
 		border-bottom: 1px solid #f1f1f1;
 		padding: 10px 0;
 		&:last-child {border-bottom: none;}
+		&.qty-empty {
+			border: 1px solid $red;
+		}
 	}
 	.qtt-box {width: 60px;}
 	img {width: 100%;height: auto;}
@@ -2271,8 +2337,27 @@ span.selected-cat-parent {
 	padding-top: 20px;
 }
 
-// CHECKOUT PAGE
+// E-Ticket
+.dash-ticket {
+	margin-top: 1rem;
+	thead {
+		background: white;
+		border: none;
+		border-bottom: 1px solid $lighter-gray;
+	}
+	.button {
+		margin: 6px 0;
+		padding: 8px 16px;
+	}
+	img {
+		padding: 10px;
+		@include breakpoint (medium down) {
+			padding: 0;
+		}
+	}
+}
 
+// CHECKOUT PAGE
 .input-radio {
 	position: relative;
 	input {position: absolute;top: 50%;margin-top: -10px;}
@@ -2288,6 +2373,11 @@ span.selected-cat-parent {
 	padding: 0;
 	.row-item {
 		display: block;padding: 5px 15px;color: $black;border-bottom: $code-border;position: relative;
+		a {
+			padding-left: 8px;
+			letter-spacing: 1px;
+			font-size: 14px;
+		}
 	}
 }
 .pay-condition {
@@ -2314,6 +2404,18 @@ span.selected-cat-parent {
 	padding: 20px 0;
 	background: $lighter-gray;
 	p {margin-bottom: 5px;font-size: $font-size-small;}
+	.final-price {
+		margin-top: -8px;
+		strong {
+			font-size: 27px;
+			color: $orange;
+		}
+		a {
+			padding-left: 6px;
+			letter-spacing: 1px;
+			font-size: 14px;
+		}
+	}
 	@include breakpoint (large) {
 		margin: 20px auto;
 		padding: 40px 100px;
@@ -3270,10 +3372,10 @@ footer {
 			background-color:white;
 		}
 	}
-	.wrap-box {
-		padding: 20px;
-		border: $code-border-light;
-	}
+	// .wrap-box {
+	// 	padding: 20px;
+	// 	border: $code-border-light;
+	// }
 }
 
 .bq-tabs {

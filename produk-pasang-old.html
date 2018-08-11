@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | BelanjaQu</title>
+    <title>Pasang Produk | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -187,7 +187,7 @@
             </div>
           </div>
         </header>
-        <div class="section main-content cart-page">
+        <div class="section main-content add-product">
           <!-- DESKTOP CATEGORY OPTION -->
           <div id="js-dark-overlay" class="dark-overlay" style="display:none;opacity:0;"></div>
           <div class="content-top show-for-large">
@@ -267,105 +267,149 @@
           <!-- END DESKTOP CATEGORY OPTION -->
           <div class="row">
             <div class="small-12 large-8 large-offset-2 column">
-              <div class="block-header white-block tac">Transaksi dari 2 Toko</div>
-              <div class="cart-list order-list">
-                <div class="item-group">
-                  <div class="block-header">
-                    <a href="#">Toko Sepatu Jaya</a>
-                    <!-- <a href="#" class="fr"><span class="icon ic-chat"></span></a> -->
-                  </div>
-                  <div class="list-body">
-                    <div class="item clr qty-empty">
-                      <div class="img-box fl">
-                        <img src="./dummy/prod-thumb-1.png" alt="">
-                      </div>
-                      <div class="qtt-box fr with-inc">
-                        <input type="number" class="numbers" value="1"> 
-                      </div>
-                      <div class="desc-box">
-                        <p>
-                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                          Rp 850.000 <span class="gray">( Stok kosong )</span>
-                          <span class="db gray">Tidak ada keterangan</span>
-                        </p>
-                        <a href="" class="red-link"><small>Hapus Produk</small></a>
-                      </div>
-                    </div>
-                    <div class="item clr">
-                      <div class="img-box fl">
-                        <img src="./dummy/prod-thumb-1.png" alt="">
-                      </div>
-                      <div class="qtt-box fr with-inc">
-                        <input type="number" class="numbers" value="1"> 
-                      </div>
-                      <div class="desc-box">
-                        <p>
-                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                          Rp 850.000
-                          <span class="db gray">Warna hitam tapi agak ke ungu hijauan ya</span>
-                        </p>
-                        <a href="javascript:;" data-open="editCatatan"><small>Edit Catatan</small></a>
-                        <span class="gray">&nbsp;-&nbsp;</span>
-                        <a href="" class="red-link"><small>Hapus Produk</small></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-footer clr">
-                    <div class="total-sum">
-                      <strong>TOTAL</strong>
-                      <span class="gray"><small>sebelum ongkir</small></span>
-                      <span class="fr"><small>Rp</small> <strong>1.700.000</strong></span>
-                    </div>
-                    <a href="checkout-1.html" class="button expanded">Bayar Transaksi Ini</a>
-                  </div>
-                </div>
-                <div class="item-group">
-                  <div class="block-header">
-                    <a href="#">Toko Subur</a>
-                    <!-- <a href="#" class="fr"><span class="icon ic-chat"></span></a> -->
-                  </div>
-                  <div class="list-body">
-                    <div class="item clr">
-                      <div class="img-box fl">
-                        <img src="./dummy/prod-thumb-1.png" alt="">
-                      </div>
-                      <div class="qtt-box fr with-inc">
-                        <input type="number" class="numbers" value="1"> 
-                      </div>
-                      <div class="desc-box">
-                        <p>
-                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                          Rp 850.000 <br>
-                          Warna hitam tapi agak ke ungu hijauan ya
-                        </p>
-                        <a href="javascript:;" data-open="editCatatan"><small>Edit Catatan</small></a>
-                        <span class="gray">&nbsp;-&nbsp;</span>
-                        <a href="" class="red-link"><small>Hapus Produk</small></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-footer clr">
-                    <div class="total-sum">
-                      <strong>TOTAL</strong>
-                      <span class="gray"><small>sebelum ongkir</small></span>
-                      <span class="fr"><small>Rp</small> <strong>850.000</strong></span>
-                    </div>
-                    <a href="checkout-1.html" class="button expanded">Bayar Transaksi Ini</a>
-                  </div>
-                </div>
-              </div> 
-              <div class="row cart-back">
-                <div class="small-12 column">
-                  <a href="#" class="button bordered-btn expanded">Kembali Belanja</a>
-                </div>
+              <div data-closable="slide-out-right" class="success callout mt15">
+                <p>Pastikan produk yang Kamu pasang sesuai dengan <a href="/home/syarat-dan-ketentuan">syarat dan ketentuan</a> BelanjaQu</p>
               </div>
             </div>
           </div>
+          <form action="produk-pasang-sukses.html" class="add-product-form" enctype="multipart/form-data">
+            
+            <div class="row product-form-block product-img-upload">
+              <div class="small-12 large-8 large-offset-2 column img-box">
+                <div class="block-header">Foto Produk</div>
+                <div class="wrap-box">
+                  <div class="align-middle p10">
+                      <input type="file" id="" name="images[]" class="">
+                      <input type="file" id="" name="images[]" class="">
+                      <input type="file" id="" name="images[]" class="">
+                      <input type="file" id="" name="images[]" class="">
+                      <input type="file" id="" name="images[]" class="">
+                      <input type="file" id="" name="images[]" class="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row product-form-block product-desc">
+              <div class="small-12 large-8 large-offset-2 column">
+                <div class="block-header">Deskripsi Produk</div>
+                <div class="wrap-box">
+                  <div class="fblock">
+                    <label for="kategori">Kategori</label>
+                    <a href="#" class="button expanded bordered-btn white-btn mt10" data-open="kategoriModal">Pilih Kategori</a>
+                  </div>
+                  <div class="fblock">
+                    <label for="kategori">Kategori</label>
+                    <a href="#" data-open="kategoriModal">
+                      <span class="elipsis dblock selected-cat-parent">Rumah Tangga > Elektronik Rumah Tangga</span>
+                      <span class="selected-cat">Kulkas</span>
+                    </a>
+                  </div>
+                  <div class="fblock">
+                    <label for="nama">Nama Produk</label>
+                    <input type="text" id="nama">
+                  </div>
+                  <div class="fblock">
+                    <label for="berat">Deskripsi Produk</label>
+                    <textarea name="deskripsi-produk" id="deskripsiproduk" cols="30" rows="5"></textarea>
+                  </div>
+                  <div class="fblock kondisi">
+                    <label>Kondisi</label>
+                    <input type="radio" value="baru" id="kondisiBaru" name="kondisi" checked>
+                    <label for="kondisiBaru">Baru</label>
+                    <input type="radio" value="bekas" id="kondisiBekas" name="kondisi">
+                    <label for="kondisiBekas">Bekas</label>
+                  </div>
+                  <div class="fblock">
+                    <label for="berat">Berat Per-unit Produk</label>
+                    <div class="input-group">
+                      <input type="text" id="berat" class="numbers">
+                      <span class="input-group-label">gram</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="small-12 large-8 large-offset-2 column">
+                <div class="block-header">Harga Produk</div>
+                <div class="wrap-box">
+                  <div class="price-wrapper">
+                    <div class="fblock harga-block">
+                      <label for="harga">Harga Normal</label>
+                      <div class="input-group">
+                        <span class="input-group-label">Rp</span>
+                        <input type="text" id="harga" class="harga">
+                      </div>
+                      <div class="checkbox-styling">
+                        <input type="checkbox" id="add-disc">
+                        <label for="add-disc">Tambah harga diskon</label>
+                      </div>
+                    </div>
+                    <div class="fblock harga-diskon" style="display: none">
+                      <label for="harga-diskon">Harga Diskon</label>
+                      <div class="input-group">
+                        <span class="input-group-label">Rp</span>
+                        <input type="text" id="harga-diskon" class="harga">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fblock stock-input">
+                    <label for="stockInput">Stock</label>
+                    <input type="text" id="stockInput" class="numbers">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="variant-wrapper">
+              <!-- <div class="variant-box">
+                <div class="row">
+                  <div class="small-12 column">
+                    <div class="var-title"><strong>Varian 1</strong><a href="#" class="fr del-var">Hapus</a></div>
+                    <div class="fblock variant-kind">
+                      <input type="text" id="variantName" placeholder="Contoh: Merah atau Size S">
+                    </div>
+                    <div class="fblock harga-block">
+                      <label for="varharga">Harga Normal</label>
+                      <div class="input-group">
+                        <span class="input-group-label">Rp</span>
+                        <input type="text" id="varharga" class="harga varharga">
+                      </div>
+                    </div>
+                    <div class="fblock harga-diskon">
+                      <label for="harga-diskon">Harga Diskon</label>
+                      <div class="input-group">
+                        <span class="input-group-label">Rp</span>
+                        <input type="text" id="varharga-diskon" class="harga varhargadisk">
+                      </div>
+                    </div>
+                    <div class="fblock stock-input">
+                      <label for="varstockInput">Stock</label>
+                      <input type="text" id="varstockInput" class="numbers varstockInput">
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <div class="row">
+              <div class="small-12 large-8 large-offset-2 column">
+                <div class="fblock mt20 add-wrapper">
+                  <a href="#" class="button bordered-btn white-btn expanded add-variant">Tambah Varian Produk (ukuran, warna)</a>
+                </div>
+                <div class="fblock submit-group">
+                  <button class="button expanded" type="submit">PASANG</button>
+                  <a class="button bordered-btn white-btn expanded">SIMPAN DRAFT</a>
+                  <a class="button bordered-btn expanded">BATAL</a>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
         <footer>
           <div class="section footer-top">
             <div class="row hide-for-large">
-              <div class="small-12 column">
+              <div class="small-12 large-8 large-offset-2 column">
                 <a href="#">
                   <span class="ic-mail"></span>
                   <span class="text">Hubungi Kami</span>
@@ -429,8 +473,83 @@
             <div class="tac"><small>© copyright belanjaqu.com 2016</small></div>
           </div>
         </footer>
+        <!-- KATEGORI REVEAL MODAL -->
+        <div class="reveal kat-modal" id="kategoriModal" data-reveal escClose="true">
+          <a class="close-button" aria-label="Close" type="button" data-close>
+            <span aria-hidden="true">Batal</span>
+          </a>
+          <div class="bordered-list cat-list">
+            <ul>
+              <li class="top-list blocked-li first-level-cat"><strong>Semua Kategori</strong></li>
+              <li>
+                <a href="#" class="has-child first-level-cat" data-target="#handphone-tablet">Handphone &amp; Tablet</a>
+                <!-- 2nd LEVEL -->
+                <ul class="second-level-cat hidden" id="handphone-tablet">
+                  <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+                  <li><span class="list">Handphone</span></li>
+                  <li><span class="list">Aksesoris Handphone</span></li>
+                  <li><span class="list">Tablet</span></li>
+                  <li><span class="list">Aksesoris Tablet</span></li>
+                </ul>
+                <!-- End 2nd LEVEL -->
+              </li>
+              <li>
+                <a href="#" class="has-child first-level-cat" data-target="#fashion">Fashion</a>
+                <!-- 2nd LEVEL -->
+                <ul class="second-level-cat hidden" id="fashion">
+                  <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+                  <li><span class="list">Fashion Pria</span></li>
+                  <li><span class="list">Fashion Wanita</span></li>
+                  <li><span class="list">Anak Laki-laki</span></li>
+                  <li><span class="list">Anak Perempuan</span></li>
+                  <li><span class="list">Busana Muslim</span></li>
+                </ul>
+                <!-- End 2nd LEVEL -->
+              </li>
+              <li>
+                <a href="#" class="has-child first-level-cat" data-target="#elektronik">Elektronik</a>
+                <!-- 2nd LEVEL -->
+                <ul class="second-level-cat hidden" id="elektronik">
+                  <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+                  <li><span class="list">Televisi</span></li>
+                  <li><span class="list">Speaker</span></li>
+                  <li><span class="list">Headphone</span></li>
+                  <li><span class="list">Proyektor</span></li>
+                  <li><span class="list">Home Theater</span></li>
+                </ul>
+                <!-- End 2nd LEVEL -->
+              </li>
+              <li>
+                <a href="#" class="has-child first-level-cat" data-target="#rumahtangga">Rumah Tangga</a>
+                <!-- 2nd LEVEL -->
+                <ul class="second-level-cat hidden" id="rumahtangga">
+                  <li class="top-list"><a href="#" class="back back-to-first">Kembali ke semua kategori</a></li>
+                  <li><a href="#" class="has-child second-level-cat-link" data-target="#elektronik-rt">Elektronik Rumah Tangga</a></li>
+                  <li><span class="list">Dapur</span></li>
+                  <li><span class="list">Kamar Tidur</span></li>
+                  <li><span class="list">Kamar Mandi</span></li>
+                  <li><span class="list">Ruang Makan</span></li>
+                  <li><span class="list">Perkakas</span></li>
+                </ul>
+                <!-- End 2nd LEVEL -->
+                <!-- 3rd LEVEL -->
+                <ul class="third-level-cat hidden" id="elektronik-rt">
+                  <li class="top-list"><a href="#" class="back back-to-second" data-target="#rumahtangga">Kembali ke Rumah Tangga</a></li>
+                  <li><span class="list">Kulkas</span></li>
+                  <li><span class="list">AC</span></li>
+                  <li><span class="list">Mesin Cuci</span></li>
+                  <li><span class="list">Dispenser</span></li>
+                  <li><span class="list">Vacuum Cleaner</span></li>
+                </ul>
+                <!-- End 3rd LEVEL -->
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- END KATEGORI REVEAL MODAL -->
+
         <!-- SEARCH REVEAL MODAL -->
-        <div class="reveal full search-modal" id="searchModal" data-reveal escClose="true">
+        <!-- <div class="reveal full search-modal" id="searchModal" data-reveal escClose="true">
           <button class="close-button" aria-label="Close alert" type="button" data-close>
             <span aria-hidden="true">&times;</span>
           </button>
@@ -443,46 +562,23 @@
               <li><a href="search-result.html">Blackberry <small>di Aksesoris Handphone </small></a></li>
             </ul>
           </div>
-        </div>
+        </div> -->
         <!-- END SEARCH REVEAL MODAL -->
-
-        <!-- PRODUCT NOTE REVEAL MODAL -->
-        <div class="reveal" id="editCatatan" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
-          <form action="">
-            <div class="modal-body">
-              <div class="order-list mt15">
-                <div class="item clr">
-                  <div class="img-box fl">
-                    <img src="http://belanjaqu.co.id/uploads/product_image/image/65603/thumb_DISTORI2.jpg" alt="">
-                  </div>
-                  <div class="desc-box">
-                    <p class="normal-text">
-                      <span class="elipsis dblock"><strong>Efek gitar distorsi SS1,harga cuci gudang no PHP</strong></span>
-                      Rp 152.000
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="mt10">
-                <textarea name="product-note" rows="2" placeholder="Tulis catatan untuk produk ini, contoh : warna / ukuran">Warna hitam tapi agak ke ungu hijauan ya</textarea>
-                <br>
-                <input type="submit" class="button expanded" value="SIMPAN">
-              </div>
-            </div>
-          </form>
-          <button class="close-button paytren-modal-close" data-close aria-label="Close reveal" type="button">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <!-- END PRODUCT NOTE REVEAL MODAL -->
       </div>
     </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/min/jquery.mask.min.js"></script>
     <script src="js/min/slick.min.js"></script>
     <script src="js/min/app-min.js"></script>
+    <script src="js/min/app-pasang-min.js"></script>
+    <script>
+      categoriMultilevel();
+      $('.harga').mask('000.000.000.000.000', {reverse: true});
+      $('.numbers').mask('000000')
+    </script>
   </div>
   </body>
 </html>

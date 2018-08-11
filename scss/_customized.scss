@@ -35,7 +35,9 @@ small {font-size: $font-size-small;}
 .gray {color: $dark-gray;}
 .green {color: $green;}
 .yellow {color: $yellow;}
+.orange-link {color:$orange;&:hover{color:$orange;}}
 .gray-link {color:$dark-gray;&:hover{color:$black;}}
+.red-link {color:$red;&:hover{color:$red;}}
 .fwb{font-weight: bold;}
 .normal-text {font-size: $font-size;}
 .supersmall {font-size: .8rem;}
@@ -56,8 +58,16 @@ table.small-text {font-size: $font-size-small;}
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
+.line-through {
+    text-decoration:line-through;
+}
 
-select, input {border-radius: 4px;}
+select, input {
+    border-radius: 4px;
+    &.highlight {
+        border-color: $red;
+    }
+}
 textarea {resize: none;}
 select,[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
 margin-bottom: 0;}
@@ -120,6 +130,9 @@ input[type=number]::-webkit-outer-spin-button {
         border: $code-border;
         background:$lighter-gray;
         &.white-btn {background-color: white;border-color: $primary-color;color:$primary-color}
+    }
+    &.orange-btn {
+        background: $orange;
     }
 }
 
