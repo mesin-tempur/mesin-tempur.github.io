@@ -3644,6 +3644,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/claim-voucher.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/claim-voucher-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/email-style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -3684,6 +3694,26 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/paytren-launching-2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/paytren-launching-2-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/paytren-launching.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/paytren-launching-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/slick.css": {
 		"aP": 1,
 		"bl": 0,
@@ -3713,6 +3743,40 @@
 		"oAP": "\/css\/um-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/css\/vaganza.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/vaganza-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/world-cup.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/world-cup-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/dash-eticket-detail.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dash-eticket-detail.html",
+		"oF": 0
+		},
+	"\/dash-eticket.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dash-eticket.html",
+		"oF": 0
 		},
 	"\/dash-kelola-toko.html": {
 		"cB": 0,
@@ -3975,6 +4039,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/dummy\/qr.png": {
+		"ft": 32768,
+		"iS": 21558,
+		"oA": 0,
+		"oAP": "\/dummy\/qr.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/dummy\/world-cup.png": {
+		"ft": 32768,
+		"iS": 237192,
+		"oA": 0,
+		"oAP": "\/dummy\/world-cup.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/email-newsletter.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -4036,6 +4122,34 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/email-order-tiket.html",
+		"oF": 0
+		},
+	"\/email-paytren-launching-master.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email-paytren-launching-master.html",
+		"oF": 0
+		},
+	"\/email-paytren-launching-new.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email-paytren-launching-new.html",
+		"oF": 0
+		},
+	"\/email-paytren-launching-old-bckup.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email-paytren-launching-old-bckup.html",
+		"oF": 0
+		},
+	"\/email-paytren-launching-old.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/email-paytren-launching-old.html",
 		"oF": 0
 		},
 	"\/email-qurban.html": {
@@ -4450,6 +4564,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/bca.png": {
+		"ft": 32768,
+		"iS": 19634,
+		"oA": 0,
+		"oAP": "\/images\/bca.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/bg-ngabuburit.png": {
 		"ft": 32768,
 		"iS": 3437,
@@ -4678,11 +4803,198 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/images\/mandiri.png": {
+		"ft": 32768,
+		"iS": 13626,
+		"oA": 0,
+		"oAP": "\/images\/mandiri.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/paper-plane.png": {
 		"ft": 32768,
 		"iS": 3169,
 		"oA": 0,
 		"oAP": "\/images\/paper-plane.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/android-right.png": {
+		"ft": 32768,
+		"iS": 110563,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/android-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/bi.png": {
+		"ft": 32768,
+		"iS": 9325,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/bi.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/email-launch-1.jpg": {
+		"ft": 16384,
+		"iS": 34425,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/email-launch-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/email-launch-2.jpg": {
+		"ft": 16384,
+		"iS": 32798,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/email-launch-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/email-launch-3.jpg": {
+		"ft": 16384,
+		"iS": 40054,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/email-launch-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/email-launch-3b.jpg": {
+		"ft": 16384,
+		"iS": 13124,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/email-launch-3b.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/email-launch-4.jpg": {
+		"ft": 16384,
+		"iS": 42669,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/email-launch-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/email-launch-dummy-qr.png": {
+		"ft": 32768,
+		"iS": 21558,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/email-launch-dummy-qr.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/header.png": {
+		"ft": 32768,
+		"iS": 3043,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/header.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/section-five.png": {
+		"ft": 32768,
+		"iS": 21570,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/section-five.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/section-four.png": {
+		"ft": 32768,
+		"iS": 32466,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/section-four.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/section-three.png": {
+		"ft": 32768,
+		"iS": 37661,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/section-three.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/section-two.png": {
+		"ft": 32768,
+		"iS": 26043,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/section-two.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/title.png": {
+		"ft": 32768,
+		"iS": 87013,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/title.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/uym-bg.png": {
+		"ft": 32768,
+		"iS": 46309,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/uym-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/paytren-launching\/uym.png": {
+		"ft": 32768,
+		"iS": 567748,
+		"oA": 0,
+		"oAP": "\/images\/paytren-launching\/uym.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -4770,6 +5082,50 @@
 		"iS": 26469,
 		"oA": 0,
 		"oAP": "\/images\/um-main.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/vaganza_bg.jpg": {
+		"ft": 16384,
+		"iS": 685021,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/vaganza_bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/vaganza_title.png": {
+		"ft": 32768,
+		"iS": 15987,
+		"oA": 0,
+		"oAP": "\/images\/vaganza_title.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/voucher-cozzy.png": {
+		"ft": 32768,
+		"iS": 240978,
+		"oA": 0,
+		"oAP": "\/images\/voucher-cozzy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/voucher-printer.png": {
+		"ft": 32768,
+		"iS": 194447,
+		"oA": 0,
+		"oAP": "\/images\/voucher-printer.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -4937,6 +5293,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lupa-katasandi.html",
+		"oF": 0
+		},
+	"\/more-product.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/more-product.html",
 		"oF": 0
 		},
 	"\/oldhtml\/akun-alamat-edit.html": {
@@ -5234,11 +5597,60 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/paytren_vaganza\/index-duta.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paytren_vaganza\/index-duta.html",
+		"oF": 0
+		},
+	"\/paytren_vaganza\/index-mitra.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paytren_vaganza\/index-mitra.html",
+		"oF": 0
+		},
+	"\/paytren_vaganza\/login.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paytren_vaganza\/login.html",
+		"oF": 0
+		},
+	"\/paytren_vaganza\/vaganza.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paytren_vaganza\/vaganza.html",
+		"oF": 0
+		},
 	"\/prepros-6.config": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/prepros-6.config",
+		"oF": 0
+		},
+	"\/produk-pasang(fee<10).html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/produk-pasang(fee<10).html",
+		"oF": 0
+		},
+	"\/produk-pasang(fee>10).html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/produk-pasang(fee>10).html",
+		"oF": 0
+		},
+	"\/produk-pasang-old.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/produk-pasang-old.html",
 		"oF": 0
 		},
 	"\/produk-pasang-po.html": {
@@ -5386,6 +5798,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/scss\/claim-voucher.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/scss\/claim-voucher.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/email-style.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -5412,6 +5837,42 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/paytren-launching-2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/scss\/paytren-launching-2-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/scss\/paytren-launching-2.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/paytren-launching-2.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/paytren-launching.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/scss\/paytren-launching.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/trainingtix.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -5434,6 +5895,32 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/scss\/um.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/vaganza.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/vaganza.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/world-cup.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/scss\/world-cup.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -5501,6 +5988,97 @@
 		"oAP": "\/undermaintenance-new.html",
 		"oF": 0
 		},
+	"\/voucher-bukti-transfer.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-bukti-transfer.html",
+		"oF": 0
+		},
+	"\/voucher-claim-comfirm.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-claim-comfirm.html",
+		"oF": 0
+		},
+	"\/voucher-claim.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-claim.html",
+		"oF": 0
+		},
+	"\/voucher-ditempat-success.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-ditempat-success.html",
+		"oF": 0
+		},
+	"\/voucher-email-success.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-email-success.html",
+		"oF": 0
+		},
+	"\/voucher-email.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-email.html",
+		"oF": 0
+		},
+	"\/voucher-noresi.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-noresi.html",
+		"oF": 0
+		},
+	"\/voucher-pembayaran-fo.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-pembayaran-fo.html",
+		"oF": 0
+		},
+	"\/voucher-pembayaran.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-pembayaran.html",
+		"oF": 0
+		},
+	"\/voucher-pengiriman.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-pengiriman.html",
+		"oF": 0
+		},
+	"\/voucher-product-cozzy.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-product-cozzy.html",
+		"oF": 0
+		},
+	"\/voucher-product-printer.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-product-printer.html",
+		"oF": 0
+		},
+	"\/voucher-success.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/voucher-success.html",
+		"oF": 0
+		},
 	"\/whbs.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -5513,6 +6091,20 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wishlist.html",
+		"oF": 0
+		},
+	"\/world-cup-email.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/world-cup-email.html",
+		"oF": 0
+		},
+	"\/world-cup.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/world-cup.html",
 		"oF": 0
 		}
 	},
