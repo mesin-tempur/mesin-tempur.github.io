@@ -86,6 +86,9 @@ body {
 		border:$code-border-light;
 		@include breakpoint(large) {
 			padding: 3rem;
+			&.left-panel {
+				padding: 3rem 2rem;
+			}
 		}
 		.title-block {
 			padding-bottom: 10px;
@@ -134,9 +137,12 @@ body {
 }
 
 .ticket-box {
-	background: $lighter-gray;
+	// background: $lighter-gray;
 	border: $code-border-light;
+	// border-top: $code-border-light;
+	// padding-top: 10px;
 	padding: 14px 10px 0 10px;
+	margin-top: 10px;
 	margin-bottom: 20px;
 	.del-tic {
 		color: $orange;
@@ -170,10 +176,61 @@ body {
 		margin-bottom: 0;
 		ul {
 			margin-bottom: 0;
-			li {margin-bottom: 5px;}
+			li {
+				margin-bottom: 5px;
+				// a {color:$black;}
+			}
+		}
+		.active {
+			a {color:$black;}
 		}
 	}
 }
-
-
-
+.numtext {
+	font-size: $font-size-bigger;
+	font-weight: bold;
+}
+.blq-pagination {
+	text-align: center;
+	li {
+		a {
+			width: auto;
+			height: auto;
+			background:transparent;
+			border: none;
+		}
+	}
+}
+.desc-text {
+	font-size: $font-size-small;
+	color:$dark-gray;
+}
+.blq-accordion {
+	.accordion-title {
+		border:none;
+		border-bottom: $code-border-light;
+		color:$black;
+		font-size: $font-size-small;
+		font-weight: bold;
+		background:transparent;
+	}
+	.accordion-content {
+		border:none;
+		color:$black;
+		font-size: $font-size-small;
+	}
+}
+.callout {
+	padding: 1rem 2rem;
+}
+.infotext {
+	font-size: $font-size-small;
+	font-style: italic;
+	color:$dark-gray;
+}
+.content-box .form-mitra {
+	label {
+		font-size: $font-size-small;
+		font-weight: bold;
+	}
+}
