@@ -41,8 +41,8 @@
             </div>
             <div class="panel-nav">
               <ul>
-                <li class="active"><a href="index-duta.html">Home</a></li>
-                <li><a href="history-serial.html">List History Serial</a></li>
+                <li><a href="index-duta.html">Home</a></li>
+                <li class="active"><a href="history-serial.html">List History Serial</a></li>
                 <li><a href="faq-duta.html">F.A.Q</a></li>
                 <li><a href="#">Logout</a></li>
               </ul>
@@ -52,82 +52,39 @@
         <div class="small-12 large-9 column">
           <div class="row">
             <div class="small-12 large-12 column">
-              <div class="block-white mb20">
-                <div class="row">
-                  <div class="large-10 large-offset-1 column">
-                    <div class="title-block mb10">
-                    Kirim Serial
-                    </div>
-                    <div class="desc-text mb20 pb10">
-                      Serial akan dikirimkan oleh system melalui SMS ke nomor handphone yang Kamu input. Pastikan nomor handphone benar dan <aktif class=""></aktif>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="large-10 large-offset-1 column">
-                    <form action="konfirmasi-serial.html" class="add-ticket-form">
-                      <div class="row">
-                        <div class="small-12 large-6 column mb20">
-                          <label for="email"><strong>ID PAYTREN</strong></label>
-                          <input type="text" id="email" name="">
-                        </div>
-                        <div class="small-12 large-6 column mb20">
-                          <label for="password"><strong>NO HANDPHONE</strong></label>
-                          <input type="text" id="password" name="">
-                        </div>
-                        <div class="small-12 column">
-                          <div class="ticket-wrapper"></div>
-                          <a href="#" class="add-more add-ticket">+ Tambah lagi tiket</a>
-                        </div>
-                        <div class="small-12 column pt20">
-                          <button class="button orange-btn expanded"><strong>SUBMIT</strong></button>
-                        </div>
-                      </div>
-                    </form> 
-                  </div>
-                </div>
-                
-              </div>
-              <div class="block-white mb20">
-                <div class="row">
-                  <div class="large-10 large-offset-1 column">
-                    <div class="title-block mb10">
-                    Kirim Sekaligus Banyak
-                    </div>
-                    <div class="desc-text mb20">
-                      Upload ID Paytren dan Handphone sekaligus dalam format excel. Silakan download format excel-nya terlebih dahulu, lalu isikan dengan data-data yang akan dikirimkan serial lalu upload.
-                    </div>
-                    <div class="row">
-                      <div class="small-12 large-4 column">
-                        <form action="konfirmasi-serial.html">
-                          <label for="file-upload" class="custom-file-upload mb10">
-                              <div class="button expanded">Custom Upload</div>
-                          </label>
-                          <input id="file-upload" type="file" class="hidden" />
-                          <!-- <button class="button mb10 expanded">Upload Excel</button> -->
-                        </form>
-                      </div>
-                      <div class="small-12 large-4 column">
-                        <button class="button bordered-btn white-btn mb10 expanded">Download Template</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="small-12 large-12 column">
+              <!-- <div class="page-title">
+                  History Serial
+              </div> -->
               <div class="block-white mb20">
                 <div class="title-block mb10">
-                  10 Serial Terakhir
+                    History Serial
+                </div>
+                <div class="filter-block mb20">
+                  <div class="row">
+                    <div class="large-4 column mb10">
+                      <input type="text" placeholder="nomor handphone / ID Paytren">
+                    </div>
+                    <div class="large-4 column mb10">
+                      <select name="" id="">
+                        <option value="">Semua Status</option>
+                        <option value="">Terkirim</option>
+                        <option value="">Redeemed</option>
+                      </select>
+                    </div>
+                    <div class="large-2 column mb10">
+                      <button type="submit" class="button expanded">CARI</button>
+                    </div>
+                    <div class="large-2 column mb10">
+                      <button type="submit" class="button white-btn bordered-btn expanded">Download</button>
+                    </div>
+                  </div>
                 </div>
                 <div class="table-responsive">
                   <table class="small-text stack bb10">
                     <thead>
                       <tr>
                         <td>Tanggal Kirim</td>
-                        <td>ID Paytren</td>
+                        <td>ID</td>
                         <td>No Handphone</td>
                         <td>Status</td>
                         <td align="right" style="text-align: right;">Action</td>
@@ -180,7 +137,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>11 Agustus 2018</td>
                         <td>TN0611289</td>
                         <td>082316821281</td>
                         <td>Terkirim</td>
@@ -189,7 +146,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>11 Agustus 2018</td>
                         <td>TN0611987</td>
                         <td>081234567891</td>
                         <td>Redeemed</td>
@@ -198,7 +155,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>10 Agustus 2018</td>
                         <td>TN0611654</td>
                         <td>087652345678</td>
                         <td>Redeemed</td>
@@ -207,7 +164,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>10 Agustus 2018</td>
                         <td>TN0611321</td>
                         <td>083456789143</td>
                         <td>Terkirim</td>
@@ -216,7 +173,97 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>10 Agustus 2018</td>
+                        <td>TN0611113</td>
+                        <td>081223432345</td>
+                        <td>Redeemed</td>
+                        <td align="right">
+                          &nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>9 Agustus 2018</td>
+                        <td>TN0611289</td>
+                        <td>082316821281</td>
+                        <td>Terkirim</td>
+                        <td align="right">
+                          <a href="" class="button bordered-btn">Batalkan</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>9 Agustus 2018</td>
+                        <td>TN0611987</td>
+                        <td>081234567891</td>
+                        <td>Redeemed</td>
+                        <td align="right">
+                          &nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>8 Agustus 2018</td>
+                        <td>TN0611654</td>
+                        <td>087652345678</td>
+                        <td>Redeemed</td>
+                        <td align="right">
+                          &nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>8 Agustus 2018</td>
+                        <td>TN0611321</td>
+                        <td>083456789143</td>
+                        <td>Terkirim</td>
+                        <td align="right">
+                          <a href="" class="button bordered-btn">Batalkan</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>8 Agustus 2018</td>
+                        <td>TN0611113</td>
+                        <td>081223432345</td>
+                        <td>Redeemed</td>
+                        <td align="right">
+                          &nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>8 Agustus 2018</td>
+                        <td>TN0611289</td>
+                        <td>082316821281</td>
+                        <td>Terkirim</td>
+                        <td align="right">
+                          <a href="" class="button bordered-btn">Batalkan</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>8 Agustus 2018</td>
+                        <td>TN0611987</td>
+                        <td>081234567891</td>
+                        <td>Redeemed</td>
+                        <td align="right">
+                          &nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>8 Agustus 2018</td>
+                        <td>TN0611654</td>
+                        <td>087652345678</td>
+                        <td>Redeemed</td>
+                        <td align="right">
+                          &nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>8 Agustus 2018</td>
+                        <td>TN0611321</td>
+                        <td>083456789143</td>
+                        <td>Terkirim</td>
+                        <td align="right">
+                          <a href="" class="button bordered-btn">Batalkan</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>8 Agustus 2018</td>
                         <td>TN0611113</td>
                         <td>081223432345</td>
                         <td>Redeemed</td>
@@ -226,9 +273,21 @@
                       </tr>
                     </tbody>
                   </table>
-                </div>
-                <div class="tac mt20">
-                  <a href="history-serial.html" class="button dib">Lihat Semua History Serial</a>
+                  <div>
+                    <nav aria-label="Pagination">
+                      <ul class="pagination blq-pagination">
+                        <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+                        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                        <li><a href="#" aria-label="Page 2">2</a></li>
+                        <li><a href="#" aria-label="Page 3">3</a></li>
+                        <li><a href="#" aria-label="Page 4">4</a></li>
+                        <li class="ellipsis" aria-hidden="true"></li>
+                        <li><a href="#" aria-label="Page 12">12</a></li>
+                        <li><a href="#" aria-label="Page 13">13</a></li>
+                        <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
               </div>
             </div>
@@ -256,7 +315,7 @@
                             '<div class="small-12 column"><a class="del-tic">HAPUS</a></div>' +
                             '<div class="small-12 large-6 column">' +
                                 '<div class="mb20">' +
-                                  '<label><strong>ID PAYTREN</strong></label>' +
+                                  '<label><strong>ID</strong></label>' +
                                   '<input type="text" id="ID">' +
                                 '</div>' +
                             '</div>' +

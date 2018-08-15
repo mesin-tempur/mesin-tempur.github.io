@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/vaganza.css">
   </head>
-  <body>
+  <body class="vaganza">
     <div class="header">
       <!-- PayTren -->
       <img src="../images/vaganza_title.png" alt="">
@@ -16,31 +16,39 @@
     </div>
     <div class="section content-box">
       <div class="row">
-        <div class="small-12 large-8 large-offset-2 column block-white mb20">
-          <div class="small-12 large-8 large-offset-2 column">
-            <div class="title-block pt10">
-              Masukan Nomor Serial
-            </div>
-            <div class="row">
-              <div class="small-12 column mb20">
-                <input type="text" id="email" name="">
+        <div class="small-12 large-8 large-offset-2 column">
+          <div class="row block-white mb20">
+            <div class="small-12 large-10 large-offset-1 column">
+              <div class="title-block pt10">
+                Redeem Serial
               </div>
-              <div class="small-12 column">
-                <button class="button orange-btn expanded" data-open="serialModal"><strong>SUBMIT</strong></button>
-              </div>
+              <div class="desc-text mb20 pb10">Isikan dengan data penerima tiket Vaganza.</div>
+              <form action="redeem-success.html" class="form-mitra mt20">
+                <div class="fblock">
+                  <label for="">ID Paytren (Optional)</label>
+                  <input type="text" id="email" name="">
+                  <span class="infotext">Kosongkan jika penerima tiket belum menjadi pebisnis</span>
+                </div>
+                <div class="fblock">
+                  <label for="">Nama Lengkap <span class="red">*</span></label>
+                  <input type="text" id="email" name="">
+                  <span class="infotext">Nama lengkap sesuai ID, untuk verifikasi di tempat acara </span>
+                </div>
+                <div class="fblock">
+                  <label for="">Handphone <span class="red">*</span></label>
+                  <input type="text" id="email" name="">
+                  <span class="infotext">Tiket dalam bentuk OTP akan termirim ke nomor ini</span>
+                </div>
+                <div class="fblock">
+                  <label for="">Email</label>
+                  <input type="text" id="email" name="">
+                  <span class="infotext">Tiket dalam bentuk QR akan termirim ke nomor ini</span>
+                </div>
+                <div class="fblock mt20">
+                  <button class="button orange-btn expanded"><strong>SUBMIT</strong></button>
+                </div>
+              </form>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="small-12 large-8 large-offset-2 column block-white mb20">
-          <div class="small-12 large-8 large-offset-2 column">
-            <div class="title-block pt10">
-              Riwayat Tiket
-            </div>
-            <p>
-              Kamu pernah redeem 1 serial sebelumnya, <a href="#" class="orange-link" data-open="lookQR">klik disini untuk melihat QR tiket</a>.
-            </p>
           </div>
         </div>
       </div>
