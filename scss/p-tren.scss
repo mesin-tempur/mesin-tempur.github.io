@@ -46,8 +46,9 @@ header {
 }
 
 .big-logo {
+	padding: 7px 0;
 	img {
-		max-height: 65px;
+		max-height: 40px;
 	}
 }
 
@@ -156,6 +157,9 @@ header {
 }
 
 .product-listing-grid {
+	@include breakpoint(large) {
+		text-align: center;
+	}
 	.item {
 		background: white;
 		.img-box {
@@ -181,4 +185,13 @@ header {
 			}
 		}
 	}
+}
+.ptren-price {
+	font-size: 24px;
+	font-weight: bold;
+}
+h2.page-title {
+	// font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 10px;
 }
