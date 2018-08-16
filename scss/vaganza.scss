@@ -124,6 +124,11 @@ body {
 					margin-bottom: 0;
 					padding: 7px 14px;
 					font-weight: bold;
+					@include breakpoint (medium down) {
+						width: 100%;
+						// margin-bottom: 20px;
+						display: block;
+					}
 				}
 			}
 		}	
@@ -232,5 +237,23 @@ body {
 	label {
 		font-size: $font-size-small;
 		font-weight: bold;
+	}
+}
+.table-responsive {
+	@include breakpoint(medium down) {
+		tr {
+			padding: 20px;
+			border:$code-border-light;
+			background:transparent !important;
+			margin-bottom: 10px;
+		}
+		td {
+			padding: 16px 13px 14px 13px;
+		    border-top: none !important;
+		    border-bottom: 1px solid #f1f1f1;
+		    &:last-child {
+		    	border-bottom:none !important;
+		    }
+		}
 	}
 }
