@@ -143,10 +143,9 @@ body {
 
 .ticket-box {
 	// background: $lighter-gray;
-	border: $code-border-light;
-	// border-top: $code-border-light;
+	border-top: $code-border-light;
 	// padding-top: 10px;
-	padding: 14px 10px 0 10px;
+	padding: 14px 0px 0 0px;
 	margin-top: 10px;
 	margin-bottom: 20px;
 	.del-tic {
@@ -170,6 +169,10 @@ body {
 		}
 	}
 	.panel-info {
+		border-bottom: none;
+		margin-bottom: 0;
+		color:$dark-gray;
+		font-size: $font-size;
 		.title-block {
 			@include breakpoint (large) {
 				// text-align: center;
@@ -177,8 +180,7 @@ body {
 		}
 	}
 	.panel-nav {
-		border-bottom: none;
-		margin-bottom: 0;
+		
 		ul {
 			margin-bottom: 0;
 			li {
@@ -192,7 +194,8 @@ body {
 	}
 }
 .numtext {
-	font-size: $font-size-bigger;
+	font-size: $font-size-big;
+	color:$black;
 	font-weight: bold;
 }
 .blq-pagination {
