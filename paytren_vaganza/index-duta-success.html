@@ -91,17 +91,30 @@
                   <div class="large-10 large-offset-1 column">
                     <form action="konfirmasi-serial.html" class="add-ticket-form">
                       <div class="row">
-                        <div class="small-12 large-6 column mb20">
+                        <div class="small-12 large-3 column mb20">
                           <label for="email"><strong>ID PAYTREN</strong></label>
                           <input type="text" id="email" name="">
                         </div>
-                        <div class="small-12 large-6 column mb20">
+                        <div class="small-12 large-4 column mb20">
                           <label for="password"><strong>NO HANDPHONE</strong></label>
                           <input type="text" id="password" name="">
                         </div>
+                        <div class="small-12 large-3 column mb20">
+                          <label for="password"><strong>KELAS</strong></label>
+                          <select name="" id="">
+                            <option value="">-- pilih --</option>
+                            <option value="">Reg</option>
+                            <option value="">VIP</option>
+                            <option value="">VVIP</option>
+                          </select>  
+                        </div>
+                        <div class="small-12 large-2 column mb20">
+                          <label for="password"><strong>JUMLAH</strong></label>
+                          <input type="text" id="text" name="">
+                        </div>
                         <div class="small-12 column">
                           <div class="ticket-wrapper"></div>
-                          <a href="#" class="add-more add-ticket">+ Tambah lagi tiket</a>
+                          <a href="#" class="add-more add-ticket">+ Tambah lagi kode booking</a>
                         </div>
                         <div class="small-12 column pt20">
                           <button class="button orange-btn expanded"><strong>SUBMIT</strong></button>
@@ -110,7 +123,6 @@
                     </form> 
                   </div>
                 </div>
-                
               </div>
               <div class="block-white mb20">
                 <div class="row">
@@ -125,7 +137,7 @@
                       <div class="small-12 large-4 column">
                         <form action="konfirmasi-serial.html">
                           <label for="file-upload" class="custom-file-upload mb10">
-                              <div class="button expanded">Custom Upload</div>
+                              <div class="button expanded">Upload Excel</div>
                           </label>
                           <input id="file-upload" type="file" class="hidden" />
                           <!-- <button class="button mb10 expanded">Upload Excel</button> -->
@@ -153,96 +165,118 @@
                         <td>Tanggal Kirim</td>
                         <td>ID Paytren</td>
                         <td>No Handphone</td>
+                        <td>Kelas</td>
+                        <td>Kode Booking</td>
                         <td>Status</td>
-                        <td align="right" style="text-align: right;">Action</td>
+                        <td style="text-align: center;">Action</td>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>12/08/2018</td>
                         <td>TN0611289</td>
                         <td>082316821281</td>
+                        <td>Reg</td>
+                        <td>*****MV</td>
                         <td>Terkirim</td>
                         <td align="right">
                           <a href="" class="button bordered-btn">Batalkan</a>
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>12/08/2018</td>
                         <td>TN0611987</td>
                         <td>081234567891</td>
+                        <td>VIP</td>
+                        <td>*****LG</td>
                         <td>Redeemed</td>
                         <td align="right">
                           &nbsp;
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>12/08/2018</td>
                         <td>TN0611654</td>
                         <td>087652345678</td>
+                        <td>Reg</td>
+                        <td>*****K2</td>
                         <td>Redeemed</td>
                         <td align="right">
                           &nbsp;
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>12/08/2018</td>
                         <td>TN0611321</td>
                         <td>083456789143</td>
+                        <td>Reg</td>
+                        <td>*****JZ</td>
                         <td>Terkirim</td>
                         <td align="right">
                           <a href="" class="button bordered-btn">Batalkan</a>
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>12/08/2018</td>
                         <td>TN0611113</td>
                         <td>081223432345</td>
+                        <td>VIP</td>
+                        <td>*****12</td>
                         <td>Redeemed</td>
                         <td align="right">
                           &nbsp;
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>12/08/2018</td>
                         <td>TN0611289</td>
                         <td>082316821281</td>
+                        <td>Reg</td>
+                        <td>*****GK</td>
                         <td>Terkirim</td>
                         <td align="right">
                           <a href="" class="button bordered-btn">Batalkan</a>
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>12/08/2018</td>
                         <td>TN0611987</td>
                         <td>081234567891</td>
+                        <td>Reg</td>
+                        <td>*****TZ</td>
                         <td>Redeemed</td>
                         <td align="right">
                           &nbsp;
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>12/08/2018</td>
                         <td>TN0611654</td>
                         <td>087652345678</td>
+                        <td>Reg</td>
+                        <td>*****8V</td>
                         <td>Redeemed</td>
                         <td align="right">
                           &nbsp;
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>12/08/2018</td>
                         <td>TN0611321</td>
                         <td>083456789143</td>
+                        <td>Reg</td>
+                        <td>*****1V</td>
                         <td>Terkirim</td>
                         <td align="right">
                           <a href="" class="button bordered-btn">Batalkan</a>
                         </td>
                       </tr>
                       <tr>
-                        <td>12 Agustus 2018</td>
+                        <td>12/08/2018</td>
                         <td>TN0611113</td>
                         <td>081223432345</td>
+                        <td>Reg</td>
+                        <td>*****V9</td>
                         <td>Redeemed</td>
                         <td align="right">
                           &nbsp;
