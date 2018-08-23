@@ -3694,6 +3694,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/p-tren.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/p-tren-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/paytren-launching-2.css": {
 		"aP": 1,
 		"bl": 0,
@@ -4792,6 +4802,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/images\/logo-ptren.png": {
+		"ft": 32768,
+		"iS": 8927,
+		"oA": 0,
+		"oAP": "\/images\/logo-ptren.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/logogram.png": {
 		"ft": 32768,
 		"iS": 2179,
@@ -4812,6 +4833,39 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/images\/paket-1.jpeg": {
+		"ft": 16384,
+		"iS": 96855,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/paket-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/paket-2.jpeg": {
+		"ft": 16384,
+		"iS": 103355,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/paket-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/paket-3.jpeg": {
+		"ft": 16384,
+		"iS": 84368,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/paket-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/paper-plane.png": {
@@ -5090,7 +5144,7 @@
 		},
 	"\/images\/vaganza_bg.jpg": {
 		"ft": 16384,
-		"iS": 685021,
+		"iS": 59374,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/images\/vaganza_bg.jpg",
@@ -5589,6 +5643,27 @@
 		"oAP": "\/oldhtml\/undermaintenance.html",
 		"oF": 0
 		},
+	"\/p-tren\/about.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/p-tren\/about.html",
+		"oF": 0
+		},
+	"\/p-tren\/buy-step.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/p-tren\/buy-step.html",
+		"oF": 0
+		},
+	"\/p-tren\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/p-tren\/index.html",
+		"oF": 0
+		},
 	"\/package.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -5597,6 +5672,34 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/paytren_vaganza\/faq-duta.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paytren_vaganza\/faq-duta.html",
+		"oF": 0
+		},
+	"\/paytren_vaganza\/form-mitra-1.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paytren_vaganza\/form-mitra-1.html",
+		"oF": 0
+		},
+	"\/paytren_vaganza\/history-serial.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paytren_vaganza\/history-serial.html",
+		"oF": 0
+		},
+	"\/paytren_vaganza\/index-duta-success.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paytren_vaganza\/index-duta-success.html",
+		"oF": 0
+		},
 	"\/paytren_vaganza\/index-duta.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -5604,18 +5707,32 @@
 		"oAP": "\/paytren_vaganza\/index-duta.html",
 		"oF": 0
 		},
-	"\/paytren_vaganza\/index-mitra.html": {
+	"\/paytren_vaganza\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/paytren_vaganza\/index-mitra.html",
+		"oAP": "\/paytren_vaganza\/index.html",
 		"oF": 0
 		},
-	"\/paytren_vaganza\/login.html": {
+	"\/paytren_vaganza\/konfirmasi-serial.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/paytren_vaganza\/login.html",
+		"oAP": "\/paytren_vaganza\/konfirmasi-serial.html",
+		"oF": 0
+		},
+	"\/paytren_vaganza\/redeem-serial.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paytren_vaganza\/redeem-serial.html",
+		"oF": 0
+		},
+	"\/paytren_vaganza\/redeem-success.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paytren_vaganza\/redeem-success.html",
 		"oF": 0
 		},
 	"\/paytren_vaganza\/vaganza.html": {
@@ -5837,6 +5954,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/p-tren.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/p-tren.css",
+		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/scss\/paytren-launching-2.css": {
 		"aP": 1,
 		"bl": 0,
@@ -5909,7 +6039,7 @@
 		"oA": 0,
 		"oAP": "\/css\/vaganza.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/scss\/world-cup.scss": {

@@ -38,7 +38,8 @@ header {
 		}
 	}
 	.small-logo {
-		max-height: 55px;
+		max-height: 50px;
+		padding: 5px 0;
 	}
 	@include breakpoint(medium down) {
 		padding: 0;
@@ -46,8 +47,9 @@ header {
 }
 
 .big-logo {
+	padding: 7px 0;
 	img {
-		max-height: 65px;
+		max-height: 40px;
 	}
 }
 
@@ -139,6 +141,8 @@ header {
 	padding-bottom: 1rem;
 	@include breakpoint(medium down) {
 		padding-bottom: .3rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 		p {
 			text-align: justify;
 		}
@@ -156,6 +160,9 @@ header {
 }
 
 .product-listing-grid {
+	@include breakpoint(large) {
+		text-align: center;
+	}
 	.item {
 		background: white;
 		.img-box {
@@ -180,5 +187,17 @@ header {
 				font-weight: bold;
 			}
 		}
+	}
+}
+.ptren-price {
+	font-size: 24px;
+	font-weight: bold;
+}
+h2.page-title {
+	// font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 10px;
+	@include breakpoint(medium down) {
+		font-size: 24px;
 	}
 }

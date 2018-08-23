@@ -1,0 +1,200 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayTren Vaganza | BelanjaQu</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/vaganza.css">
+  </head>
+  <body class="vaganza">
+    <div class="header">
+      <!-- PayTren -->
+      <img src="../images/vaganza_title.png" alt="">
+      <!-- 2018 -->
+    </div>
+    <div class="section content-box">
+      <div class="row">
+        <div class="small-12 large-8 large-offset-2 column">
+          <div class="callout success" data-closable="slide-out-right">
+            <h5>Redeem Kode Booking Berhasil</h5>
+            <p><small>Tiket Elektronik Paytren Vaganza akan dikirimkan melalui SMS (OTP) dan email (QR). Tiket Paytren Vaganza dapat pula diakses melalui aplikasi BelanjaQu di menu e-tiket.</small></p>
+            <button class="close-button" aria-label="Dismiss alert" type="button" data-close="">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="block-white mb20">
+            <div class="row">
+              <div class="small-12 large-10 large-offset-1 column">
+                <div class="title-block pt10">
+                  Masukan Nomor Kode Booking
+                </div>
+                <form action="form-mitra-1.html">
+                  <div class="row">
+                    <div class="small-12 column mb20">
+                      <input type="text" id="email" name="">
+                    </div>
+                    <div class="small-12 column">
+                      <button class="button orange-btn expanded"><strong>SUBMIT</strong></button>
+                    </div>
+                  </div>
+                </form>
+                <div class="row mt10">
+                  <div class="small-12 column mb20">
+                    <p><small>Kode Booking hanya bisa didapatkan untuk pembelian melalui Duta Paytren. Untuk pembelian umum, silakan <a href="https://belanjaqu.co.id" target="_blank">klik disini untuk membeli melalui BelanjaQu</a></small>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-white mb20">
+            <div class="row">
+              <div class="small-12 large-10 large-offset-1 column mb20">
+                <div class="title-block pt10">
+                  Riwayat Redeem Tiket
+                </div>
+                <div class="table-responsive">
+                  <table class="small-text stack bb10">
+                    <thead>
+                      <tr>
+                        <td>No</td>
+                        <td>Tanggal</td>
+                        <td>ID</td>
+                        <td>No Handphone</td>
+                        <td align="right" style="text-align: right;">Action</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>12 Agustus 2018</td>
+                        <td>TN01233445</td>
+                        <td>082316821281</td>
+                        <td align="right">
+                          <a href="#" class="orange-link" data-open="lookQR">Lihat QR</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>12 Agustus 2018</td>
+                        <td>TN06119876</td>
+                        <td>081234567891</td>
+                        <td align="right">
+                          <a href="#" class="orange-link" data-open="lookQR">Lihat QR</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal" id="kode bookingModal" data-reveal escClose="true">
+      <button class="close-button" aria-label="Close alert" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <form action="" style="padding: 30px 10px 10px 10px">
+        <div class="mb20">
+          <label for="id"><strong>ID</strong></label>
+          <input type="text" id="id" name="">
+        </div>
+        <div class="mb20">
+          <label for="nama"><strong>NAMA</strong></label>
+          <input type="text" id="nama" name="">
+        </div>
+        <div class="mb20">
+          <label for="nohp"><strong>NO HANDPHONE</strong></label>
+          <input type="text" id="nohp" name="">
+        </div>
+        <div class="mb20">
+          <label for="email"><strong>EMAIL</strong></label>
+          <input type="email" id="email" name="">
+        </div>
+        <div class="pt10">
+          <button class="button orange-btn expanded"><strong>SUBMIT</strong></button>
+        </div>
+      </form>
+    </div>
+    <div class="reveal" id="lookQR" data-reveal escClose="true">
+      <button class="close-button" aria-label="Close alert" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="look-qr" style="padding: 30px 0 0 0">
+        <table class="small-text">
+          <thead>
+            <tr>
+              <td width="25%">QR CODE</td>
+              <td width="60%">DETAIL</td>
+              <td width="15%" class="tar">STATUS</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="https://assets.belanjaqu.co.id/uploads/ticket/qrcode/4607/622290-U000276-436539-BABAFC.png" alt="">
+              </td>
+              <td>
+                <span class="db"><strong>Feri Sandria</strong></span>
+                <span class="db">082345678910</span>
+                <span class="db">dummy@email.com</span>
+                <span class="db pt10 gray">622290-U000276-436539-BABAFC</span>
+              </td>
+              <td align="right">Used</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/min/app-min.js"></script>
+    <script>
+        var w       = $('.add-ticket-form'),
+        addBtn  = w.find('.add-ticket'),
+        vw      = w.find('.ticket-wrapper'),
+        count   = vw.children().length;
+    
+        count   = count+1;
+
+        addBtn.on('click tap', function(e){ 
+            var vField  =   
+                '<div class="ticket-box ticket'+count+'">' +
+                    '<div class="row">' +
+                        // '<div class="small-12 large-8 large-offset-2 column">' +
+                            '<div class="small-12 column"><a class="del-tic">HAPUS</a></div>' +
+                            '<div class="small-12 large-6 column">' +
+                                '<div class="mb20">' +
+                                  '<label><strong>ID</strong></label>' +
+                                  '<input type="text" id="ID">' +
+                                '</div>' +
+                            '</div>' +
+                            '<div class="small-12 large-6 column">' +
+                                '<div class="mb20">' +
+                                    '<label><strong>NO HANDPHONE</strong></label>' +
+                                    '<input type="text" id="noHandphone">' +
+                                '</div>' +
+                            '</div>' +
+                        // '</div>' +
+                    '</div>' +
+                '</div>';
+            count++;
+            vw.append(vField);
+            readOnly();
+            e.preventDefault();
+        });
+        w.on('click tap','.del-tic', function(){
+            $(this).parents('.ticket-box').remove();
+            --count;
+            $('.ticket-box').each(function(idx){
+                $(this).find(".idx").text(idx + 1);
+            });
+            readOnly();
+        });
+    </script>
+  </body>
+</html>
