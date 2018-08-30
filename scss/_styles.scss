@@ -3674,3 +3674,90 @@ body.simple-header {
 		font-size: $font-size-small;
 	}
 }
+.form-page {
+	background:#efefef;
+	.header {
+		background: white;
+		border-bottom: 1px solid #e6e6e6;
+		margin-bottom: 10px;
+		padding: 15px 0;
+		color: $black;
+		text-align: center;
+		img {
+			max-height: 35px;
+		}
+	}
+	.content-box {
+		padding-bottom: 60px;
+		@include breakpoint(large) {
+			padding-top: 20px;
+		}
+		p {margin-bottom: 5px;}
+		.block-white {
+			background: white;
+			padding: 2rem;
+			border-radius: 10px;
+			box-shadow: 2px 2px 4px rgba(0,0,0,.05);
+			border:$code-border-light;
+			@include breakpoint(large) {
+				padding: 3rem;
+				&.left-panel {
+					padding: 3rem 2rem;
+				}
+			}
+			.title-block {
+				padding-bottom: 10px;
+				font-size: $font-size-smaller;
+				font-weight: bold;
+				color: $dark-gray;
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+			}
+			.desc-text {
+				font-size: $font-size-small;
+				color:$dark-gray;
+			}
+			label {
+				font-size: $font-size-small;
+				font-weight: bold;
+			}
+			.table-responsive {
+				overflow-y: auto;
+				table {
+					border-collapse: inherit;
+					border: none;
+					thead tr td {
+						border-bottom: 1px solid $lighter-gray;
+					}
+					tr:nth-child(even) td {
+						background: white;
+						padding: 16px 13px 14px 13px;
+						border-top: 1px solid $lighter-gray;
+						border-bottom: 1px solid $lighter-gray;
+					}       
+					tr:nth-child(odd) td {
+						background: white;
+						padding: 16px 13px 14px 13px;
+					}
+					.button {
+						background: white;
+						margin-bottom: 0;
+						padding: 7px 14px;
+						font-weight: bold;
+						@include breakpoint (medium down) {
+							width: 100%;
+							// margin-bottom: 20px;
+							display: block;
+						}
+					}
+				}
+			}	
+			.add-more {
+				color: $orange;
+				font-weight: bold;
+				font-size: $font-size-smaller;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
