@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | BelanjaQu</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/foundation-datepicker.css">
+  </head>
+  <body class="simple-header">
+  <div class="off-canvas-wrapper">
+    <div class="page-container off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas-content" data-off-canvas-content>
+        <div class="header">
+          <div class="row">
+            <div class="small-4 column">
+              <a href="" class="checkout-back">
+                < Kembali
+              </a>
+            </div>
+            <div class="small-4 column">
+              <div class="tac page-title">Checkout</div>
+            </div>
+          </div>
+        </div>
+        <div class="section main-content new-checkout-page">
+          <div class="row">
+            <div class="small-12 large-8 large-offset-2 column block-white mb20">
+              <div class="simple-block-header">
+                Isi Data Pembelian Asuransi
+              </div> 
+              <div class="logistics">
+                <div class="item-group">
+                  <input type="hidden" name="order_id" id="order_id" value="20333">
+                  <div class="row">
+                    <div class="small-12 large-8 large-offset-2 column">
+                      <div class="fblock">
+                        <label for="" >Nama Pembeli</label>
+                        <input type="text">
+                      </div>
+                      <div class="fblock">
+                        <label for="" >Nomor KTP</label>
+                        <input type="text">
+                      </div>
+                      <div class="fblock">
+                        <label for="" >Nomor Handphone</label>
+                        <input type="text">
+                      </div>
+                      <div class="fblock">
+                        <label for="">Tanggal Lahir</label>
+                        <div class="row">
+                          <div class="small-4 column">
+                            <input type="text" placeholder="Tanggal">
+                          </div>
+                          <div class="small-4 column">
+                            <select name="" id="">
+                              <option value="">Bulan</option>
+                              <option value="">Januari</option>
+                              <option value="">Februari</option>
+                            </select>
+                          </div>
+                          <div class="small-4 column">
+                            <input type="text" placeholder="Tahun">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="fblock">
+                        <label for="">Tanggal Pembelian</label>
+                        <div class="input-group">
+                          <span class="input-group-label icon ic-list"></span>
+                          <input type="text" class="input-group-field" id="dp2">
+                        </div>
+                      </div>
+                      <div class="fblock">
+                        <label for="">Jenis Kelamin</label>
+                        <div class="mt10">
+                          <div style="display: inline-block; margin-right: 20px;">
+                            <label for="gender_male">
+                              <input type="radio" id="gender_male" name="gender" style="margin-bottom: 0;"> Laki-laki
+                            </label>
+                          </div>
+                          <div style="display: inline-block;">
+                            <label for="gender_female">
+                              <input type="radio" id="gender_female" name="gender". style="margin-bottom: 0;"> Perempuan
+                            </label>
+                          </div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 large-8 large-offset-2 column block-white mb20">
+              <div class="small-12 large-8 large-offset-2 column pt10">
+                <input type="checkbox" name="kodeVoucher" id="kodeVoucher">
+                <label for="kodeVoucher">Punya Voucher BelanjaQu ?</label>
+                <div class="fblock" id="voucherInput" style="display: none;">
+                  <label for="voucher">Kode Voucher</label>
+                  <div class="with-button posr">
+                    <input type="text" name="voucher_name" id="voucher_name" value="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 large-8 large-offset-2 column">
+              <a href="checkout-pay.html" class="button expanded" disabled>LANJUT BAYAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/min/slick.min.js"></script>
+    <script src="js/min/app-min.js"></script>
+    <script src="js/min/foundation-datepicker.js"></script>
+    <script>
+      // DATEPICKER
+        $('#dp2').fdatepicker({
+          initialDate: '28-09-2018', //HARI INI DEFAULTNYA
+          format: 'dd-mm-yyyy',
+          disableDblClickSelection: true,
+          leftArrow: '<i class="material-icons">keyboard_arrow_left</i>',
+          rightArrow: '<i class="material-icons">keyboard_arrow_right</i>',
+          closeButton: false,
+        });
+    </script>
+  </div>
+  </body>
+</html>
