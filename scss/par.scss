@@ -138,23 +138,12 @@ a {
 }
 
 .white-header {
-	.ptren-logo {
-		svg {
-			path {fill:white;}
-		}
-	}
+	
 	.btn-menu {
 		color:white;
 	}
 	.navbar-sticky {
-		.ptren-logo {
-			svg {
-				path {
-					&.sv2 {fill:#F26724;}
-					&.sv1 {fill:#4B4F54;}
-				}
-			}
-		}
+		
 	}
 	.top-menu {
 		ul {
@@ -180,12 +169,16 @@ a {
     	transition: all .5s cubic-bezier(.35, 0, .25, 1);
     	background-color:darken(#3f51b5,10)
 	}
+	&.orange-btn {
+		background:$orange;
+	}
 }
 
 header {
 	height: 62px;
 	position: relative;
 	background:transparent;
+	background:white;
 	@include breakpoint(large) {
 		height: 80px;
 	}
@@ -206,14 +199,6 @@ header {
 			margin-right: 4px;
 			margin-top: 4px;
 			margin-bottom: 4px;
-		}
-	}
-	.small-logo {
-		padding: 15px 20px;
-		display: inline-block;
-		svg {
-			max-height: 25px;
-			width: 100px;
 		}
 	}
 	@include breakpoint(medium down) {
@@ -283,16 +268,15 @@ header {
     }
 }
 
-.big-logo {
-	padding: 21px 0;
-	// margin-right: 100px;
+.par-logo {
+	width: 35%;
 	display: inline-block;
-	vertical-align: middle;
-	width: 37%;
-	a {display: block;}
-	svg {
-		max-height: 30px;
-		width: auto;
+	margin-top: 10px;
+	img {max-height: 60px;}
+	&.small-logo {
+		img {
+			max-height: 40px;
+		}
 	}
 }
 
@@ -428,9 +412,6 @@ header {
 		}
 	}
 }
-.slide-open {
-
-}
 
 .side-canvas-menu {
 	.side-menu-header {
@@ -517,8 +498,8 @@ section {
 		@extend .light-orange-bg;
 	}
 	.block-header {
-		padding-bottom: 30px;
-		margin-bottom: 30px;
+		padding-bottom: 20px;
+		margin-bottom: 40px;
 		&.with-border-bottom {
 			position: relative;
 			&:before {
@@ -583,22 +564,22 @@ section {
 }
 
 h1 {
-	font-size: 1.8rem;
+	font-size: 1.3rem;
     line-height: 2.2rem;
     @include breakpoint(medium) {
-		font-size: 2.2rem;
-		line-height: 3rem;
+		font-size: 1.6rem;
+		line-height: 2.2rem;
 		margin-bottom: 10px;
 	}
 }
 
 
 .block-title {
-	font-size: 1.8rem;
-    line-height: 2.1rem;
+	font-size: 1.6rem;
+    line-height: 2rem;
     @include breakpoint(medium) {
-		font-size: 2.2rem;
-		line-height: 2.8rem;
+		font-size: 1.8rem;
+		line-height: 2.2rem;
 		margin-bottom: 10px;
 	}
 }
@@ -642,11 +623,11 @@ h1 {
 	}
 	.hero-inner {
 		text-align: center;
-		padding-top: 50px;
+		padding-top: 40px;
 		padding-left: 10px;
 		padding-right: 10px;
 		@include breakpoint(large) {
-			padding-top: 80px;
+			padding-top: 60px;
 			padding-left: 0;
 			padding-right: 0;
 		}
@@ -666,23 +647,30 @@ h1 {
 	    max-width: 960px;
 	    vertical-align: middle;
 	    white-space: normal;
-    	text-align: center;	
+    	text-align: center;
+    	@include breakpoint(large) {
+    		padding-left: 40px;
+
+    	}
     	.heading-tag {
     		text-transform: uppercase;
     		color:orange;
     		font-weight: 700;
     		margin-bottom: 10px;
+    		// padding: 0 40px;
     	}
     	h1 {
     		text-shadow: 1px 1px 1px rgba(0,0,0,.05);
+    		// padding: 0 40px;
     	}
     	p {
-    		font-size: 1.1rem;
+    		// padding: 0 40px;
+    		font-size: 1rem;
     		max-width: 600px;
     		margin: 0 auto 10px;
     		text-shadow: 1px 1px 1px rgba(0,0,0,.05);
     		@include breakpoint(medium) {
-    			font-size: 1.3rem;
+    			font-size: 1.1rem;
     		}
     	}
     	.fblock {
@@ -691,6 +679,16 @@ h1 {
     			font-size: 1.1rem;
     		}
     	}
+	}
+	&.hero-pcp {
+		
+		@include breakpoint(large) {
+			
+		}
+		.hero-inner {
+			padding-top: 0;
+
+		}
 	}
 	&.home-hero {
 		h1 {
@@ -751,6 +749,86 @@ h1 {
 	}
 }
 
+.search-box {
+	margin-top: 20px;
+	@include breakpoint(large) {
+		margin-top: 40px;
+	}
+	.fblock {
+		margin-bottom: 10px;
+		margin-top: 0 !important;
+		input, select {
+			margin-bottom: 0;
+		}
+	}
+	h1,p{
+		@include breakpoint(large) {
+			padding: 0 15px
+		}
+	}
+	.box-header-text {
+		margin-bottom: 20px;
+	}
+	.input-group {
+		position: relative;
+		.ic-search {
+			position: absolute;
+			left: 10px;
+			top:50%;
+			margin-top: -10px;
+		}
+		input {
+			padding-left: 35px;
+		}
+	}
+	.loc-suggestion {
+		li {
+			display: inline-block;
+			margin-right: 5px;
+			margin-bottom: 5px;
+			a {
+				display: block;
+				font-size: $font-size-small;
+				color:$medium-gray;
+				padding: 3px 8px;
+				border:1px solid $medium-gray;
+				border-radius: 4px;
+				&:hover {
+					color:$orange;
+					border-color: $orange;
+				}
+			}
+		}
+	}
+}
+.search-block {
+	button {
+		margin: 0;
+	}
+	.input-group {
+		position: relative;
+		margin-bottom: 0;
+		input {
+			padding-left: 35px;
+		}
+	}
+	.ic-search {
+		position: absolute;
+		left: 10px;
+		top: 50%;
+		margin-top: -10px;
+	}
+	@include breakpoint(large) {
+		label {
+			float: left;
+			margin-right: 20px;
+		}
+		.input-wrap {
+			overflow: hidden;
+		}
+	}
+}
+
 .top-desc {
 	text-align: center;
 	padding-bottom: 1rem;
@@ -776,7 +854,7 @@ h1 {
 
 .product-listing-grid {
 	@include breakpoint(large) {
-		text-align: center;
+		// text-align: center;
 	}
 	&:hover {
 		.item {
@@ -804,22 +882,39 @@ h1 {
 		}
 		.desc-box {
 			padding: 20px;
-			
 			p {margin-bottom: 0;color:$black}
 			@include breakpoint(large) {
-				height: 130px;
+				// height: 130px;
 			}
 		}
 		.product-title {
 			color: $orange;
 			font-size: $font-size;
 			height: auto;
-			text-align: center;
+			// text-align: center;
 			font-weight: 400;
 		}
 		.product-price {
-			color: $black;
+			margin-top: 10px;
+			.currency {
+				font-size: .8rem;
+				font-weight: normal;
+			}
+			color: $orange;
 			text-align: center;
+			font-weight: bold;
+		}
+		.product-description {
+			text-align: left;
+			color:$black;
+			font-size: .9rem;
+			margin:10px 0;
+			ul {
+				li {
+					list-style-type: disc;
+					list-style-position: inside;
+				}
+			}
 		}
 		.btn-buy {
 			padding: 0 14px;
@@ -828,6 +923,15 @@ h1 {
 		}
 	}
 }
+
+.ibox {
+	box-shadow: 0 12px 22px rgba(178,49,49,0.08), 0 6px 11px rgba(178,49,49,0.04);
+	padding: 30px;
+	border-radius: 10px;
+	background:white;
+	border:1px solid #f7eeeb;
+}
+
 .ptren-price {
 	font-size: 24px;
 	font-weight: 700;
@@ -1188,6 +1292,7 @@ h2.page-title {
 
 footer {
 	background:white;
+	border-top: $code-border-light;
 	.footer-top {
 		padding: 20px 0;
 	}
@@ -1228,10 +1333,13 @@ footer {
 		}
 	}
 }
-.faq-block {
-	margin-bottom: 30px;
-    padding: 32px 32px;
-    border-radius: 6px;
-    background-color: #fff;
-    box-shadow: 0 12px 22px rgba(178, 49, 49, 0.08), 0 6px 11px rgba(178, 49, 49, 0.04);
+.pcp-content {
+	padding-top: 30px;
+}
+.pcp-search {
+	margin-bottom: 10px;
+	@include breakpoint(large) {
+		margin-bottom: 30px;
+	}
+	
 }
