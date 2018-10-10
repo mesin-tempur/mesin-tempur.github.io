@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
-    <title>Notifikasi | BelanjaQu</title>
+    <title>Kelola Toko | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -289,11 +289,13 @@
                   </ul>
                 </div>
                 <div class="nav-group">
-                  <div class="list-header">Kotak Masuk</div>
+                <div class="list-header">Pengelolaan Lainnya</div>
                   <ul>
-                    <li><a href="#">Notifikasi</a></li>
-                    <li><a href="#">Diskusi Produk <span class="counter">12</span></a></li>
-                    
+                    <li><a href="/cart/history">Riwayat Belanja <span class="counter">1</span> </a></li>
+                    <li><a href="/tickets/list">E-Ticket</a></li>
+                    <li><a href="/setting/my_notification">Notifikasi <span class="counter">0</span></a> </li>
+                    <li><a href="/setting/ulasan">Ulasan <span class="counter">0</span></a> </li>
+                    <li><a href="/messages">Pesan <span class="counter">0</span></a> </li>
                   </ul>
                 </div>
                 <div class="nav-group">
@@ -304,88 +306,168 @@
                 </div>
               </div>
             </div>
-            <div class="small-12 large-9 column no-padd">
-              <div class="block-header tac"><strong>Notifikasi</strong></div>
-              <div class="notif-list">
-                <div class="item new">  
-                  <div class="desc-box">
-                    <div class="notif-title ellipsis">Penjualan</div>
-                    <div class="notif-desc">Order Asuransi berhasil diverifikasi oleh admin.</div>
-                    <div class="notif-link">Silakan isi formulir asuransi <a href="./dash-form-finshop-jiwa.html">disini</a></div>
-                    <div class="notif-date">17 Sep 2018, 15:30</div>
+            <div class="small-12 large-9 column order-page no-padd">
+              <ul class="tabs bq-tabs">
+                <li class="tabs-title tac"><a href="./dash-pembelian.html">Belanja</a></li>
+                <li class="tabs-title is-active tac" aria-selected="true"><a href="./dash-pembelian-digital.html">
+                    Produk Digital <span class="counter-notif">1</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="tabs-content">
+                <div class="tabs-panel is-active">
+                  <ul class="tabs filter-tabs scrollable-x" data-tabs id="order-tabs">
+                    <li class="tabs-title is-active tac"><a href="#order-panel1" aria-selected="true">Semua Order</a></li>
+                    <li class="tabs-title tac"><a href="#order-panel2">E-Tiket</a></li>
+                    <li class="tabs-title tac"><a href="#order-panel3">FinTren</a></li>
+                    <li class="tabs-title tac"><a href="#order-panel4">PaytRen PAR</a></li>
+                  </ul>
+                  <div class="tabs-content flat-tabs-content" data-tabs-content="order-tabs">
+                    <div class="tabs-panel is-active" id="order-panel1">
+                      <ul class="order-list order-sum digital-product">
+                        <li>
+                          <div class="list-header clr">
+                            <span class="half">ID: 1000001</span>
+                            <span class="half tar">1/Jan/2016, 21:10</span>
+                          </div>
+                          <div class="list-body">
+                            <div class="item clr">
+                              <div class="img-box fl">
+                                <img src="https://assets.belanjaqu.co.id/uploads/product_image/image/1353017/thumb_WhatsApp_Image_2018-07-06_at_09.29.43.jpeg" alt="">
+                              </div>
+                              <div class="qtt-box fr">
+                                <div class="tac">QTY<br>1</div>
+                              </div>
+                              <div class="desc-box">
+                                <p>
+                                  <span class="elipsis dblock"><strong>Asuransi Jiwa FinTren</strong></span>
+                                  Rp 20.000 <br>
+                                </p>
+                              </div>
+                              <div class="form-cta">
+                                <a href="/dash-pembelian-form.html" class="button orange-btn">Form Belum Diisi, Isi Form Sekarang</a>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          
+                          <div class="list-footer clr">
+                            <span class="fl"><strong>Order Selesai</strong></span>
+                            <a href="dash-order-detail-digital.html" class="fr">Lihat Detail Order</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="list-header clr">
+                            <span class="half">ID: 1000001</span>
+                            <span class="half tar">1/Jan/2016, 21:10</span>
+                          </div>
+                          <div class="list-body">
+                            <div class="item clr">
+                              <div class="img-box fl">
+                                <img src="https://assets.belanjaqu.co.id/uploads/product_image/image/1353017/thumb_WhatsApp_Image_2018-07-06_at_09.29.43.jpeg" alt="">
+                              </div>
+                              <div class="qtt-box fr">
+                                <div class="tac">QTY<br>1</div>
+                              </div>
+                              <div class="desc-box">
+                                <p>
+                                  <span class="elipsis dblock"><strong>Asuransi Jiwa FinTren</strong></span>
+                                  Rp 20.000 <br>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="list-footer clr">
+                            <span class="fl"><strong>Order Selesai</strong></span>
+                            <a href="dash-order-detail-digital.html" class="fr">Lihat Detail Order</a>
+                          </div>
+                        </li>
+                      </ul> 
+                    </div>
+                    <div class="tabs-panel" id="order-panel2">
+                      <ul class="order-list order-sum digital-product">
+                        <li>
+                          <div class="list-header clr">
+                            <span class="half">ID: 1000001</span>
+                            <span class="half tar">1/Jan/2016, 21:10</span>
+                          </div>
+                          <div class="list-body">
+                            <div class="item clr">
+                              <div class="img-box fl">
+                                <img src="https://assets.belanjaqu.co.id/uploads/product_image/image/1353017/thumb_WhatsApp_Image_2018-07-06_at_09.29.43.jpeg" alt="">
+                              </div>
+                              <div class="qtt-box fr">
+                                <div class="tac">QTY<br>1</div>
+                              </div>
+                              <div class="desc-box">
+                                <p>
+                                  <span class="elipsis dblock"><strong>Asuransi Jiwa FinTren</strong></span>
+                                  Rp 20.000 <br>
+                                </p>
+                              </div>
+                              <div class="form-cta">
+                                <a href="/dash-pembelian-form.html" class="button orange-btn">Form Belum Diisi, Isi Form Sekarang</a>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          
+                          <div class="list-footer clr">
+                            <span class="fl"><strong>Order Selesai</strong></span>
+                            <a href="dash-order-detail-digital.html" class="fr">Lihat Detail Order</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="list-header clr">
+                            <span class="half">ID: 1000001</span>
+                            <span class="half tar">1/Jan/2016, 21:10</span>
+                          </div>
+                          <div class="list-body">
+                            <div class="item clr">
+                              <div class="img-box fl">
+                                <img src="https://assets.belanjaqu.co.id/uploads/product_image/image/1353017/thumb_WhatsApp_Image_2018-07-06_at_09.29.43.jpeg" alt="">
+                              </div>
+                              <div class="qtt-box fr">
+                                <div class="tac">QTY<br>1</div>
+                              </div>
+                              <div class="desc-box">
+                                <p>
+                                  <span class="elipsis dblock"><strong>Asuransi Jiwa FinTren</strong></span>
+                                  Rp 20.000 <br>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="list-footer clr">
+                            <span class="fl"><strong>Order Selesai</strong></span>
+                            <a href="dash-order-detail-digital.html" class="fr">Lihat Detail Order</a>
+                          </div>
+                        </li>
+                      </ul> 
+                    </div>
+                    <div class="tabs-panel" id="order-panel3">
+                      <div class="empty-result">
+                        <img src="./images/empty-order.png" alt="">
+                        <div class="text">
+                          <strong>Ooppss</strong> <br>
+                          Transaksi kamu masih kosong
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs-panel" id="order-panel4">
+                      <div class="empty-result">
+                        <img src="./images/empty-order.png" alt="">
+                        <div class="text">
+                          <strong>Ooppss</strong> <br>
+                          Transaksi kamu masih kosong
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  
-                </div>
-                <div class="item new">
-                  <a href="#">
-                    <div class="desc-box">
-                      <div class="notif-title ellipsis">Undangan Toko</div>
-                      <div class="notif-desc">Toko Exam mengundang kamu untuk menjadi pengurus toko</div>
-                      <div class="notif-link">
-                        <a href="">TOLAK</a>
-                        <span>atau</span>
-                        <a href="">TERIMA</a>
-                      </div>
-                      <div class="notif-date">11 menit yang lalu</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="item new">
-                  <a href="#">
-                    <div class="desc-box">
-                      <div class="notif-title ellipsis">Info Penjual</div>
-                      <div class="notif-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quibusdam, debitis magni consectetur obcaecati alias ab. Cum eius, debitis velit iusto soluta, natus quas nam, eaque deserunt magnam dolor. Illum.
-                        <div class="notif-link">
-                          <a href="https://www.google.com/" target="_blank">https://www.google.com/</a>
-                        </div>
-                      </div>
-                      <div class="notif-date">30 Agu 2018, 11:05</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="item new">
-                  <a href="dash-order.html">
-                    <div class="desc-box">
-                      <div class="notif-title ellipsis">Penjualan</div>
-                      <div class="notif-desc">Order ticket berhasil diverifikasi oleh admin</div>
-                      <div class="notif-date">17 Sep 2018, 15:30</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="#">
-                    <div class="desc-box">
-                      <div class="notif-title ellipsis">Info Pengguna</div>
-                      <div class="notif-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quibusdam, debitis magni consectetur obcaecati alias ab. Cum eius, debitis velit iusto soluta, natus quas nam, eaque deserunt magnam dolor. Illum.
-                        <div class="notif-link">
-                          <a href="https://www.google.com/" target="_blank">https://www.google.com/</a>
-                        </div>
-                      </div>
-                      <div class="notif-date">30 Agu 2018, 11:05</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="">
-                    <div class="desc-box">
-                      <div class="notif-title ellipsis">Pembelian</div>
-                      <div class="notif-desc">transaksi dengan invoice INV/1503630684/BELANJAQU tidak berhasil, saldo paytren telah di refund</div>
-                      <div class="notif-date">30 Agu 2018, 11:05</div>
-                    </div>
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="#">
-                    <div class="desc-box">
-                      <div class="notif-title ellipsis">Undangan Toko</div>
-                      <div class="notif-desc">Toko Exam mengundang kamu untuk menjadi pengurus toko</div>
-                      <div class="notif-date">11 menit yang lalu</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
+                </div>            
+              </div> 
             </div>
           </div>
           

@@ -3441,7 +3441,21 @@ footer {
 	.tabs {border: none;border-bottom: 1px solid $light-gray;margin-bottom:20px;}
 	.tabs-title {
 		border:none;
-		a {font-size:$font-size-small;color:$dark-gray;}
+		a {
+			font-size:$font-size-small;color:$dark-gray;
+			height: 57px;
+			.counter-notif {
+				position: relative;
+				display: inline-block;
+				top:auto;
+				right: auto;
+				margin-left: 3px;
+				margin-top: -5px;
+				height: 16px;
+				width: 16px;
+				line-height: 16px;
+			}
+		}
 		&.is-active {
 			border-bottom: 3px solid $primary-color;
 			a {background-color: transparent;color:$primary-color;font-weight: bold;}
@@ -3451,6 +3465,50 @@ footer {
 		border:none;
 		.tabs-panel {padding: 0;}
 	}
+}
+.filter-tabs {
+	border: none;
+	.tabs-title {
+		margin-right: 5px;
+		a {
+			font-size: $font-size-small;
+			color:$dark-gray;
+			border:$code-border-light;
+			border-radius: 20px;
+			padding: 15px;
+			&:focus {
+				background:transparent;
+			}
+			.counter-notif {
+				position: relative;
+				display: inline-block;
+				top:auto;
+				right: auto;
+				margin-left: 3px;
+				margin-top: -3px;
+				height: 14px;
+				width: 14px;
+				line-height: 14px;
+			}
+		}
+
+		&.is-active {
+			a {
+				background:transparent;
+				color:$primary-color;
+				border-color: $primary-color;
+			}
+		}
+	}
+}
+.flat-tabs-content {
+	border:none;
+	.tabs-panel {
+		margin-top: 20px;
+		padding: 0;
+		border:none;
+	}
+	
 }
 .label.info-label {
 	width: 20px;
@@ -3819,4 +3877,54 @@ body.simple-header {
 			}
 		}
 	}
+}
+
+.empty-result {
+	text-align: center;
+	padding: 40px 0;
+	.text {
+		margin-top: 30px;
+	}
+	img {max-width: 200px;max-height: 200px}
+}
+.scrollable-x {
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	.tabs-title {
+		display: inline-block;
+		float:none;
+	}
+}
+.digital-product {
+	.desc-box {
+		@include breakpoint (large) {
+			float: left;
+		}
+	}
+}
+.form-cta {
+	float: none;
+	width: 100%;
+	clear: both;
+	.button {width: 100%;margin-top: 10px;}
+	@include breakpoint (large) {
+		float: right;
+		width: auto;
+		margin-right: 20px;
+		clear: none;
+		.button {
+			width: auto;
+			margin-top: 0;
+		}
+	}
+}
+
+.action-box {
+	margin-top: 40px;
+	padding: 10px;
+	@include breakpoint (large) {padding:0}
 }
