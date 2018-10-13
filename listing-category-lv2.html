@@ -115,50 +115,105 @@
             <div class="side-filter filter-accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
               <section class="cat-filter accordion-item is-active" data-accordion-item>
                 <a href="#" class="list-title accordion-title">Kategori</a>
-                <ul class="accordion-content" data-tab-content>
-                  <li><a href="listing-lvl3.html">Pakaian</a></li>
-                  <li><a href="listing-lvl3.html">Celana</a></li>
-                  <li><a href="listing-lvl3.html">Jaket &amp; Sweater</a></li>
-                  <li><a href="listing-lvl3.html">Aksesoris</a></li>
-                  <li><a href="listing-lvl3.html">Sepatu &amp; Sandal</a></li>
-                  <li><a href="listing-lvl3.html">Kacamata</a></li>
-                  <li><a href="listing-lvl3.html">Jam Tangan</a></li>
+                <ul class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="ax2esw-accordion-label" aria-hidden="false" id="ax2esw-accordion" style="display: block;">
+                  <div class="fblock select-styling">
+                    <select name="cat-main-reveal" id="cat-main-reveal">
+                      <option selected="selected" value="fashion">Fashion</option>
+                      <option value="handphone-tablet">Handphone &amp; Tablet</option>
+                      <option value="komputer-laptop">Komputer &amp; Laptop</option>
+                      <option value="elektronik-rumah-tangga">Elektronik Rumah Tangga</option>
+                      <option value="tv-audio-game">Tv, Audio &amp; Game</option>
+                      <option value="kamera-foto-video">Kamera, Foto &amp; Video</option>
+                      <option value="kecantikan-kesehatan">Kecantikan &amp; Kesehatan</option>
+                      <option value="peralatan-rumah-tangga">Peralatan Rumah Tangga</option>
+                      <option value="mainan-hobi">Mainan &amp; Hobi</option>
+                      <option value="buku-souvenir">Buku &amp; Souvenir</option>
+                      <option value="makanan-minuman">Makanan &amp; Minuman</option>
+                      <option value="otomotif">Otomotif</option>
+                      <option value="olahraga">Olahraga</option>
+                      <option value="perawatan-bayi">Perawatan Bayi</option>
+                      <option value="keperluan-kantor">Keperluan Kantor</option>
+                      <option value="musik-film">Musik &amp; Film</option>
+                    </select>
+                  </div>
+                  <div class="fblock select-styling">
+                    <select name="sub-cat-main-reveal" id="sub-cat-main-reveal"><option value="">Semua Kategori</option>
+                      <option selected="selected" value="fashion-wanita">Fashion Wanita</option>
+                      <option value="fashion-pria">Fashion Pria</option>
+                      <option value="fashion-anak">Fashion Anak</option>
+                    </select>
+                  </div>
+                  <div class="fblock select-styling">
+                    <select name="sub-sub-cat-main-reveal" id="sub-sub-cat-main-reveal">
+                      <option value="">Semua Kategori</option>
+                      <option value="pakaian">Pakaian</option>
+                      <option value="celana">Celana</option>
+                      <option value="jaket-sweater">Jaket &amp; Sweater</option>
+                      <option value="aksesoris">Aksesoris</option>
+                      <option value="sepatu-sandal">Sepatu &amp; Sandal</option>
+                      <option value="kacamata">Kacamata</option>
+                      <option value="jam-tangan">Jam Tangan</option>
+                      <option value="perhiasan">Perhiasan</option>
+                      <option value="tas-koper-dompet">Tas,Koper &amp; Dompet</option>
+                    </select>
+                  </div>
                 </ul>
               </section>
               <section class="store-filter accordion-item" data-accordion-item>
-                <a href="#" class="list-title accordion-title">Diskon</a>
-                <ul class="style-checkbox accordion-content" data-tab-content>
-                  <li>
-                    <input type="checkbox" value="prdk-1" id="prdk-1">
-                    <label for="prdk-1">
-                      <span class="ic-chk"></span>
-                      <span class="text">Produk Diskon</span>
-                    </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" value="prdk-2" id="prdk-2">
-                    <label for="prdk-2">
-                      <span class="ic-chk"></span>
-                      <span class="text">Produk Cashback</span>
-                    </label>
-                  </li>
-                </ul>
+                <a href="#" class="list-title accordion-title">Lokasi Toko</a>
+                <div class="accordion-content" data-tab-content>
+                  <div class="mb10">
+                    <input type="search" placeholder="cari kota">
+                  </div>
+                  <ul class="style-checkbox">
+                    <li>
+                      <input type="checkbox" value="prdk-1" id="prdk-1">
+                      <label for="prdk-1">
+                        <span class="ic-chk"></span>
+                        <span class="text">DKI Jakarta</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="prdk-1" id="prdk-1">
+                      <label for="prdk-1">
+                        <span class="ic-chk"></span>
+                        <span class="text">Bandung Kota</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="prdk-2" id="prdk-2">
+                      <label for="prdk-2">
+                        <span class="ic-chk"></span>
+                        <span class="text">Surabaya Kota</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="prdk-2" id="prdk-2">
+                      <label for="prdk-2">
+                        <span class="ic-chk"></span>
+                        <span class="text">D.I. Yogyakarta</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="prdk-2" id="prdk-2">
+                      <label for="prdk-2">
+                        <span class="ic-chk"></span>
+                        <span class="text">Bogor Kota</span>
+                      </label>
+                    </li>
+                    
+                  </ul>
+                </div>
+                        
               </section>
-              <section class="store-filter accordion-item" data-accordion-item>
-                <a href="#" class="list-title accordion-title">Toko</a>
+              <section class="store-filter accordion-item payment-filter" data-accordion-item>
+                <a href="#" class="list-title accordion-title">Metode Bayar</a>
                 <ul class="style-checkbox accordion-content" data-tab-content>
                   <li>
-                    <input type="checkbox" value="store-1" id="store-1">
+                    <input type="checkbox" value="store-1" id="store-1" checked="">
                     <label for="store-1">
                       <span class="ic-chk"></span>
-                      <span class="text">Semua Toko</span>
-                    </label>
-                  </li>
-                  <li>
-                    <input type="checkbox" value="store-2" id="store-2">
-                    <label for="store-2">
-                      <span class="ic-chk"></span>
-                      <span class="text">Toko Premium</span>
+                      <span class="text">Pembayaran Paytren Emoney</span>
                     </label>
                   </li>
                 </ul>
@@ -394,52 +449,105 @@
                       <div class="side-cat">
                         <section class="cat-filter">
                           <div class="list-title">Kategori</div>
-                          <ul>
-                            <li><a href="listing-lvl3.html">Pakaian</a></li>
-                            <li><a href="listing-lvl3.html">Celana</a></li>
-                            <li><a href="listing-lvl3.html">Jaket &amp; Sweater</a></li>
-                            <li><a href="listing-lvl3.html">Aksesoris</a></li>
-                            <li><a href="listing-lvl3.html">Sepatu &amp; Sandal</a></li>
-                            <li><a href="listing-lvl3.html">Kacamata</a></li>
-                            <li><a href="listing-lvl3.html">Jam Tangan</a></li>
+                          <ul class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="ax2esw-accordion-label" aria-hidden="false" id="ax2esw-accordion" style="display: block;">
+                            <div class="fblock select-styling">
+                              <select name="cat-main-reveal" id="cat-main-reveal">
+                                <option selected="selected" value="fashion">Fashion</option>
+                                <option value="handphone-tablet">Handphone &amp; Tablet</option>
+                                <option value="komputer-laptop">Komputer &amp; Laptop</option>
+                                <option value="elektronik-rumah-tangga">Elektronik Rumah Tangga</option>
+                                <option value="tv-audio-game">Tv, Audio &amp; Game</option>
+                                <option value="kamera-foto-video">Kamera, Foto &amp; Video</option>
+                                <option value="kecantikan-kesehatan">Kecantikan &amp; Kesehatan</option>
+                                <option value="peralatan-rumah-tangga">Peralatan Rumah Tangga</option>
+                                <option value="mainan-hobi">Mainan &amp; Hobi</option>
+                                <option value="buku-souvenir">Buku &amp; Souvenir</option>
+                                <option value="makanan-minuman">Makanan &amp; Minuman</option>
+                                <option value="otomotif">Otomotif</option>
+                                <option value="olahraga">Olahraga</option>
+                                <option value="perawatan-bayi">Perawatan Bayi</option>
+                                <option value="keperluan-kantor">Keperluan Kantor</option>
+                                <option value="musik-film">Musik &amp; Film</option>
+                              </select>
+                            </div>
+                            <div class="fblock select-styling">
+                              <select name="sub-cat-main-reveal" id="sub-cat-main-reveal"><option value="">Semua Kategori</option>
+                                <option selected="selected" value="fashion-wanita">Fashion Wanita</option>
+                                <option value="fashion-pria">Fashion Pria</option>
+                                <option value="fashion-anak">Fashion Anak</option>
+                              </select>
+                            </div>
+                            <div class="fblock select-styling">
+                              <select name="sub-sub-cat-main-reveal" id="sub-sub-cat-main-reveal">
+                                <option value="">Semua Kategori</option>
+                                <option value="pakaian">Pakaian</option>
+                                <option value="celana">Celana</option>
+                                <option value="jaket-sweater">Jaket &amp; Sweater</option>
+                                <option value="aksesoris">Aksesoris</option>
+                                <option value="sepatu-sandal">Sepatu &amp; Sandal</option>
+                                <option value="kacamata">Kacamata</option>
+                                <option value="jam-tangan">Jam Tangan</option>
+                                <option value="perhiasan">Perhiasan</option>
+                                <option value="tas-koper-dompet">Tas,Koper &amp; Dompet</option>
+                              </select>
+                            </div>
                           </ul>
                         </section>
                       </div>
                       <div class="side-filter">
-                        <section class="store-filter">
-                          <div class="list-title">Diskon</div>
+                        <section class="store-filter store-loc">
+                          <div class="list-title">Lokasi Toko</div>
+                          <div class="mb10">
+                            <input type="search" placeholder="cari kota">
+                          </div>
+                          
                           <ul class="style-checkbox">
                             <li>
                               <input type="checkbox" value="prdk-1" id="prdk-1">
                               <label for="prdk-1">
                                 <span class="ic-chk"></span>
-                                <span class="text">Produk Diskon</span>
+                                <span class="text">DKI Jakarta</span>
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" value="prdk-1" id="prdk-1">
+                              <label for="prdk-1">
+                                <span class="ic-chk"></span>
+                                <span class="text">Bandung Kota</span>
                               </label>
                             </li>
                             <li>
                               <input type="checkbox" value="prdk-2" id="prdk-2">
                               <label for="prdk-2">
                                 <span class="ic-chk"></span>
-                                <span class="text">Produk Cashback</span>
+                                <span class="text">Surabaya Kota</span>
                               </label>
                             </li>
+                            <li>
+                              <input type="checkbox" value="prdk-2" id="prdk-2">
+                              <label for="prdk-2">
+                                <span class="ic-chk"></span>
+                                <span class="text">D.I. Yogyakarta</span>
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" value="prdk-2" id="prdk-2">
+                              <label for="prdk-2">
+                                <span class="ic-chk"></span>
+                                <span class="text">Bogor Kota</span>
+                              </label>
+                            </li>
+
                           </ul>
                         </section>
-                        <section class="store-filter">
-                          <div class="list-title">Toko</div>
+                        <section class="store-filter payment-filter">
+                          <div class="list-title">Metode Bayar</div>
                           <ul class="style-checkbox">
                             <li>
-                              <input type="checkbox" value="store-1" id="store-1">
+                              <input type="checkbox" value="store-1" id="store-1" checked="">
                               <label for="store-1">
                                 <span class="ic-chk"></span>
-                                <span class="text">Semua Toko</span>
-                              </label>
-                            </li>
-                            <li>
-                              <input type="checkbox" value="store-2" id="store-2">
-                              <label for="store-2">
-                                <span class="ic-chk"></span>
-                                <span class="text">Toko Premium</span>
+                                <span class="text">Pembayaran Paytren Emoney</span>
                               </label>
                             </li>
                           </ul>
@@ -465,15 +573,21 @@
               <div id="js-pcp-anchor" class="small-12 large-9 columns">
                 <div class="pcp-top">
                   <div class="row">
-                    <div class="small-12 large-6 columns pcp-counter">
+                    <div class="small-12 large-8 columns pcp-counter">
                       <h1>Fashion Pria</h1>
                       <small>Menampilkan 24 dari 1.100 produk</small>
                     </div>
-                    <div class="small-12 large-3 columns pcp-counter show-for-large">
-                      <select name="" id="">
-                        <option value="">Harga Termurah</option>
-                        <option value="">Harga Termahal</option>
+                    <div class="small-12 large-4 columns pcp-counter show-for-large">
+                      <select name="sort-opt" id="sort-opt-desk">
+                        <option value="terbaru">Produk Terbaru</option>
+                        <option value="termurah">Harga Termurah</option>
+                        <option value="termahal">Harga Termahal</option>
                       </select>
+                    </div>
+                    <div class="small-12 columns">
+                      <ul class="selected-filter">
+                        <li>Metode Bayar PayTren</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
