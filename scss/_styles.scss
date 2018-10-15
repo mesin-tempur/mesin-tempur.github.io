@@ -3969,3 +3969,52 @@ body.simple-header {
 	padding: 10px;
 	@include breakpoint (large) {padding:0}
 }
+
+// JAM OPERASIONAL TOKO
+.time-ops {
+	.clean-table {
+		margin-top: 10px;
+		border-collapse: separate;
+		border: none;
+		margin-bottom: 0;
+		tr {
+			background: #f8f8f8;
+		}
+	}
+	&.manage {
+		.clean-table {
+			margin-top: 10px;
+			border-collapse: separate;
+			border: none;
+			margin-bottom: 1rem;
+			tr {
+				background: white;
+			}
+		}
+		.button {
+			margin-left: 9px;
+		}
+	}
+}
+
+.time-modal {
+	font-size: $font-size-small;
+	.switch {
+		margin-bottom: 0;
+		margin-top: 8px;
+		.switch-paddle {
+			width: 4.5rem;
+		}
+		input:checked~.switch-paddle:after {
+			left: 3rem;
+		}
+		.switch-active {
+			left: 15.3%;
+		}
+	}
+	.time-input {
+		input {width: 45%;float: left;font-size: $font-size-small;}
+		span {width: 10%;float: left;text-align: center;display: block;line-height: 40px;}
+	}
+}
+	
