@@ -2490,6 +2490,19 @@ span.selected-cat-parent {
 		}
 	}
 }
+.voucher-code {
+	padding-top: 10px;
+	.button {
+		height: 39px;
+		border-radius: 0;
+		font-weight: bold;
+	}
+}
+.callout-voucher {
+	border-radius: 0 !important;
+	background: white !important;
+	border-color: $primary-color;
+}
 
 // STATIC PAGE
 .static-page {
@@ -3996,7 +4009,6 @@ body.simple-header {
 		}
 	}
 }
-
 .time-modal {
 	font-size: $font-size-small;
 	.switch {
@@ -4017,4 +4029,3 @@ body.simple-header {
 		span {width: 10%;float: left;text-align: center;display: block;line-height: 40px;}
 	}
 }
-	
