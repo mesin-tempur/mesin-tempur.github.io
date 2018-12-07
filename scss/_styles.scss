@@ -3932,7 +3932,51 @@ body.simple-header {
 		}
 	}
 }
-
+.code-verification {
+	text-align: center;
+	.simple-block-header {
+		padding-bottom: 0;
+	}
+	.form-input {
+		margin-top: 2rem;
+		margin-bottom: 20px;
+		input {
+			display: inline-block;
+			margin-right: 5px;
+			text-align: center;
+			font-size: $font-size-big;
+			font-weight: bold;
+			outline: none;
+			width: 60px;
+			transition: all .2s ease-in-out;
+			border-radius: 3px;
+			&:last-child {
+				margin-right: 0;
+			}
+	        &:focus {
+	        	border-color: $dark-gray;
+	        }
+	    }
+    }
+    @include breakpoint (medium down) {
+    	.form-input {
+			input {
+				font-size: $font-size-small;
+				width: 45px;
+				height: 35px;
+			}
+		}
+    }
+}
+.howtoget-token {
+	ol {
+		margin-top: 1rem;
+		margin-bottom: 0;
+		li {
+			border: none;
+		}
+	}
+}
 .empty-result {
 	text-align: center;
 	padding: 40px 0;
