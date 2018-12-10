@@ -1,0 +1,18 @@
+.sprites-desktop,
+.logo,
+.login-links-box,
+.edit-akun button,
+.dashboard-nav .nav-group:nth-child(3),
+.dashboard-nav .nav-group:last-child,
+.ep-flag,
+.payments .payments-option:first-child,
+.store-contact,
+.qr-box,
+.dompetqu-sum .inp10 .button,
+.acc-header .change-image,
+.acc-nav .bordered-list li:nth-child(4),
+.acc-nav .bordered-list li:nth-child(5),
+.acc-nav .bordered-list li:last-child {
+	display: none;
+	visibility: hidden;
+}

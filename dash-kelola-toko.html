@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
     <title>Kelola Toko | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/_styles.css">
   </head>
   <body>
   <div class="off-canvas-wrapper">
@@ -379,8 +380,40 @@
                         
                       </div>
                       <div class="fblock">
-                        <label for="telp">Jam Operasional Toko (opsional)</label>
-                        
+                        <label>Waktu Operasional Toko (untuk pengambilan ditempat)</label>
+                        <div class="time-ops manage">
+                          <table class="clean-table">
+                            <tr>
+                              <td width="20%">Minggu</td>
+                              <td width="80%" class="gray">Tutup</td>
+                            </tr>
+                            <tr>
+                              <td width="20%">Senin</td>
+                              <td width="80%" class="gray">08:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                              <td width="20%">Selasa</td>
+                              <td width="80%" class="gray">08:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                              <td width="20%">Rabu</td>
+                              <td width="80%" class="gray">08:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                              <td width="20%">Kamis</td>
+                              <td width="80%" class="gray">08:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                              <td width="20%">Jumat</td>
+                              <td width="80%" class="gray">08:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                              <td width="20%">Sabtu</td>
+                              <td width="80%" class="gray">08:00 - 17:00</td>
+                            </tr>
+                          </table>
+                          <a href="#" class="button bordered-btn" data-open="timeModal">Atur Waktu Operasional</a>
+                        </div>
                       </div>
                       <div class="fblock role-toko">
                         <label for="pengelola">Pengelola Toko</label>
@@ -504,7 +537,7 @@
         </div>
         <!-- END SEARCH REVEAL MODAL -->
         <!-- ADD ROLE MODAL -->
-        <div class="reveal full search-modal" id="roleModal" data-reveal escClose="true">
+        <div class="reveal search-modal" id="roleModal" data-reveal escClose="true">
           <button class="close-button" aria-label="Close alert" type="button" data-close>
             <span aria-hidden="true">&times;</span>
           </button>
@@ -527,6 +560,159 @@
           </div>
         </div>
         <!-- END ADD ROLE MODAL -->
+
+        <!-- MODAL ATUR TOKO -->
+        <div class="reveal" id="timeModal" data-reveal escClose="true">
+          <button class="close-button" aria-label="Close alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h2>Jam Buka</h2>
+          <form class="time-modal" action="" method="">
+            <div class="time-ops manage">
+              <table class="clean-table">
+                <tr>
+                  <td width="12%"><strong>Minggu</strong></td>
+                  <td width="18%">
+                    <div class="switch small">
+                      <input class="switch-input" id="sunday" type="checkbox" name="sunday">
+                      <label class="switch-paddle" for="sunday">
+                        <span class="switch-active" aria-hidden="true">Buka</span>
+                        <span class="switch-inactive" aria-hidden="true">Tutup</span>
+                      </label>
+                    </div>
+                  </td>
+                  <td width="70%">
+                    <div class="time-input input-sunday">
+                      <input type="text" id="" name="" value="08.00">
+                      <span>-</span>
+                      <input type="text" id="" name="" value="16.00">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="12%"><strong>Senin</strong></td>
+                  <td width="18%">
+                    <div class="switch small">
+                      <input class="switch-input" id="monday" type="checkbox" name="monday" checked="checked">
+                      <label class="switch-paddle" for="monday">
+                        <span class="switch-active" aria-hidden="true">Buka</span>
+                        <span class="switch-inactive" aria-hidden="true">Tutup</span>
+                      </label>
+                    </div>
+                  </td>
+                  <td width="70%">
+                    <div class="time-input input-monday">
+                      <input type="text" id="" name="" value="08.00">
+                      <span>-</span>
+                      <input type="text" id="" name="" value="16.00">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="12%"><strong>Selasa</strong></td>
+                  <td width="18%">
+                    <div class="switch small">
+                      <input class="switch-input" id="tuesday" type="checkbox" name="tuesday" checked="checked">
+                      <label class="switch-paddle" for="tuesday">
+                        <span class="switch-active" aria-hidden="true">Buka</span>
+                        <span class="switch-inactive" aria-hidden="true">Tutup</span>
+                      </label>
+                    </div>
+                  </td>
+                  <td width="70%">
+                    <div class="time-input input-tuesday">
+                      <input type="text" id="" name="" value="08.00">
+                      <span>-</span>
+                      <input type="text" id="" name="" value="16.00">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="12%"><strong>Rabu</strong></td>
+                  <td width="18%">
+                    <div class="switch small">
+                      <input class="switch-input" id="wednesday" type="checkbox" name="wednesday" checked="checked">
+                      <label class="switch-paddle" for="wednesday">
+                        <span class="switch-active" aria-hidden="true">Buka</span>
+                        <span class="switch-inactive" aria-hidden="true">Tutup</span>
+                      </label>
+                    </div>
+                  </td>
+                  <td width="70%">
+                    <div class="time-input input-wednesday">
+                      <input type="text" id="" name="" value="08.00">
+                      <span>-</span>
+                      <input type="text" id="" name="" value="16.00">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="12%"><strong>Kamis</strong></td>
+                  <td width="18%">
+                    <div class="switch small">
+                      <input class="switch-input" id="thursday" type="checkbox" name="thursday" checked="checked">
+                      <label class="switch-paddle" for="thursday">
+                        <span class="switch-active" aria-hidden="true">Buka</span>
+                        <span class="switch-inactive" aria-hidden="true">Tutup</span>
+                      </label>
+                    </div>
+                  </td>
+                  <td width="70%">
+                    <div class="time-input input-thursday">
+                      <input type="text" id="" name="" value="08.00">
+                      <span>-</span>
+                      <input type="text" id="" name="" value="16.00">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="12%"><strong>Jumat</strong></td>
+                  <td width="18%">
+                    <div class="switch small">
+                      <input class="switch-input" id="friday" type="checkbox" name="friday" checked="checked">
+                      <label class="switch-paddle" for="friday">
+                        <span class="switch-active" aria-hidden="true">Buka</span>
+                        <span class="switch-inactive" aria-hidden="true">Tutup</span>
+                      </label>
+                    </div>
+                  </td>
+                  <td width="70%">
+                    <div class="time-input input-friday">
+                      <input type="text" id="" name="" value="08.00">
+                      <span>-</span>
+                      <input type="text" id="" name="" value="16.00">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="12%"><strong>Sabtu</strong></td>
+                  <td width="18%">
+                    <div class="switch small">
+                      <input class="switch-input" id="saturday" type="checkbox" name="saturday" checked="checked">
+                      <label class="switch-paddle" for="saturday">
+                        <span class="switch-active" aria-hidden="true">Buka</span>
+                        <span class="switch-inactive" aria-hidden="true">Tutup</span>
+                      </label>
+                    </div>
+                  </td>
+                  <td width="70%">
+                    <div class="time-input input-saturday">
+                      <input type="text" id="" name="" value="08.00">
+                      <span>-</span>
+                      <input type="text" id="" name="" value="16.00">
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tar pr10">
+              <a href="#" class="button bordered-btn" data-close><strong>Batal</strong></a>
+              &nbsp;
+              <button class="button orange-btn"><strong>Simpan</strong></button>
+            </div>
+          </form>
+        </div>
+        <!-- MODAL ATUR TOKO -->
       </div>
     </div>
 
@@ -538,6 +724,90 @@
     <script src="js/min/app-min.js"></script>
     <script>
       $('.telepon').mask('00000000000000');
+
+      // Minggu
+      var sundayTime = $('#sunday'),
+        inputSunday  = $('.input-sunday');
+      if (sundayTime.is(':checked')) {
+          inputSunday.css('display', 'block');
+      } else {inputSunday.css('display', 'none');}
+      sundayTime.on('change', function() {
+        if(sundayTime.is(':checked')) {
+          inputSunday.css('display', 'block');
+        } else {inputSunday.css('display', 'none');}
+      });
+
+      // Senin
+      var mondayTime = $('#monday'),
+        inputMonday  = $('.input-monday');
+      if (mondayTime.is(':checked')) {
+          inputMonday.css('display', 'block');
+      } else {inputMonday.css('display', 'none');}
+      mondayTime.on('change', function() {
+        if(mondayTime.is(':checked')) {
+          inputMonday.css('display', 'block');
+        } else {inputMonday.css('display', 'none');}
+      });
+
+      // Selasa
+      var tuesdayTime = $('#tuesday'),
+        inputTuesday  = $('.input-tuesday');
+      if (tuesdayTime.is(':checked')) {
+          inputTuesday.css('display', 'block');
+      } else {inputTuesday.css('display', 'none');}
+      tuesdayTime.on('change', function() {
+        if(tuesdayTime.is(':checked')) {
+          inputTuesday.css('display', 'block');
+        } else {inputTuesday.css('display', 'none');}
+      });
+
+      // Rabu
+      var wednesdayTime = $('#wednesday'),
+        inputWednesday  = $('.input-wednesday');
+      if (wednesdayTime.is(':checked')) {
+          inputWednesday.css('display', 'block');
+      } else {inputWednesday.css('display', 'none');}
+      wednesdayTime.on('change', function() {
+        if(wednesdayTime.is(':checked')) {
+          inputWednesday.css('display', 'block');
+        } else {inputWednesday.css('display', 'none');}
+      });
+
+      // Kamis
+      var thursdayTime = $('#thursday'),
+        inputThursday  = $('.input-thursday');
+      if (thursdayTime.is(':checked')) {
+          inputThursday.css('display', 'block');
+      } else {inputThursday.css('display', 'none');}
+      thursdayTime.on('change', function() {
+        if(thursdayTime.is(':checked')) {
+          inputThursday.css('display', 'block');
+        } else {inputThursday.css('display', 'none');}
+      });
+
+      // Jumat
+      var fridayTime = $('#friday'),
+        inputFriday  = $('.input-friday');
+      if (fridayTime.is(':checked')) {
+          inputFriday.css('display', 'block');
+      } else {inputFriday.css('display', 'none');}
+      fridayTime.on('change', function() {
+        if(fridayTime.is(':checked')) {
+          inputFriday.css('display', 'block');
+        } else {inputFriday.css('display', 'none');}
+      });
+
+      // Sabtu
+      var saturdayTime = $('#saturday'),
+        inputSaturday  = $('.input-saturday');
+      if (saturdayTime.is(':checked')) {
+          inputSaturday.css('display', 'block');
+      } else {inputSaturday.css('display', 'none');}
+      saturdayTime.on('change', function() {
+        if(saturdayTime.is(':checked')) {
+          inputSaturday.css('display', 'block');
+        } else {inputSaturday.css('display', 'none');}
+      });
     </script>
   </div>
   </body>

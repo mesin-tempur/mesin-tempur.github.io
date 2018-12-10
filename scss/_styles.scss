@@ -2490,6 +2490,19 @@ span.selected-cat-parent {
 		}
 	}
 }
+.voucher-code {
+	padding-top: 10px;
+	.button {
+		height: 39px;
+		border-radius: 0;
+		font-weight: bold;
+	}
+}
+.callout-voucher {
+	border-radius: 0 !important;
+	background: white !important;
+	border-color: $primary-color;
+}
 
 // STATIC PAGE
 .static-page {
@@ -3919,7 +3932,51 @@ body.simple-header {
 		}
 	}
 }
-
+.code-verification {
+	text-align: center;
+	.simple-block-header {
+		padding-bottom: 0;
+	}
+	.form-input {
+		margin-top: 2rem;
+		margin-bottom: 20px;
+		input {
+			display: inline-block;
+			margin-right: 5px;
+			text-align: center;
+			font-size: $font-size-big;
+			font-weight: bold;
+			outline: none;
+			width: 60px;
+			transition: all .2s ease-in-out;
+			border-radius: 3px;
+			&:last-child {
+				margin-right: 0;
+			}
+	        &:focus {
+	        	border-color: $dark-gray;
+	        }
+	    }
+    }
+    @include breakpoint (medium down) {
+    	.form-input {
+			input {
+				font-size: $font-size-small;
+				width: 45px;
+				height: 35px;
+			}
+		}
+    }
+}
+.howtoget-token {
+	ol {
+		margin-top: 1rem;
+		margin-bottom: 0;
+		li {
+			border: none;
+		}
+	}
+}
 .empty-result {
 	text-align: center;
 	padding: 40px 0;
@@ -3968,4 +4025,51 @@ body.simple-header {
 	margin-top: 40px;
 	padding: 10px;
 	@include breakpoint (large) {padding:0}
+}
+
+// JAM OPERASIONAL TOKO
+.time-ops {
+	.clean-table {
+		margin-top: 10px;
+		border-collapse: separate;
+		border: none;
+		margin-bottom: 0;
+		tr {
+			background: #f8f8f8;
+		}
+	}
+	&.manage {
+		.clean-table {
+			margin-top: 10px;
+			border-collapse: separate;
+			border: none;
+			margin-bottom: 1rem;
+			tr {
+				background: white;
+			}
+		}
+		.button {
+			margin-left: 9px;
+		}
+	}
+}
+.time-modal {
+	font-size: $font-size-small;
+	.switch {
+		margin-bottom: 0;
+		margin-top: 8px;
+		.switch-paddle {
+			width: 4.5rem;
+		}
+		input:checked~.switch-paddle:after {
+			left: 3rem;
+		}
+		.switch-active {
+			left: 15.3%;
+		}
+	}
+	.time-input {
+		input {width: 45%;float: left;font-size: $font-size-small;}
+		span {width: 10%;float: left;text-align: center;display: block;line-height: 40px;}
+	}
 }
