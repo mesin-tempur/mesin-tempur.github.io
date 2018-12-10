@@ -7775,12 +7775,12 @@ h1 {
 
 .main-hero {
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   margin: 0 0 -3px;
   z-index: 10; }
   @media print, screen and (min-width: 64em) {
     .main-hero {
-      padding-bottom: 180px; } }
+      padding-bottom: 120px; } }
   .main-hero:before {
     position: absolute;
     z-index: -1;
@@ -7809,9 +7809,11 @@ h1 {
     background: white; }
   .main-hero .hero-inner {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 0px;
     padding-left: 10px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    position: relative;
+    z-index: 100; }
     @media print, screen and (min-width: 64em) {
       .main-hero .hero-inner {
         padding-top: 60px;
@@ -7881,13 +7883,16 @@ h1 {
     @media print, screen and (min-width: 64em) {
       .main-hero .hero-image {
         position: absolute;
-        left: 55%;
         margin-top: 0;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        left: 0;
+        right: 0; }
         .main-hero .hero-image .image-wrapper {
           max-height: 1000000px;
+          max-width: 1300px;
           width: 85%;
-          margin-top: -40px; }
+          margin-top: 50px;
+          float: right; }
         .main-hero .hero-image img {
           visibility: visible;
           -webkit-transform: translateY(0) scale(1);

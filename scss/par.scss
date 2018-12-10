@@ -587,11 +587,11 @@ h1 {
 // SECTION:: HERO
 .main-hero {
 	position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     margin: 0 0 -3px;
     z-index: 10;
     @include breakpoint(large) {
-    	padding-bottom: 180px;
+    	padding-bottom: 120px;
     }
     &:before {
     	position: absolute;
@@ -623,9 +623,11 @@ h1 {
 	}
 	.hero-inner {
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 0px;
 		padding-left: 10px;
 		padding-right: 10px;
+		position: relative;
+		z-index: 100;
 		@include breakpoint(large) {
 			padding-top: 60px;
 			padding-left: 0;
@@ -726,14 +728,18 @@ h1 {
     	margin-top: 10px;
 		@include breakpoint(large) {
 			position: absolute;
-			left: 55%;
+			// left: 55%;
 			// top: 5%;
 			margin-top: 0;
 			margin-bottom: 0;
+			left:0;
+			right: 0;
 			.image-wrapper {
 				max-height: 1000000px;
+				max-width: 1300px;
 				width: 85%;
-				margin-top: -40px;
+				margin-top: 50px;
+				float: right;
 			}
 			img {
 				visibility: visible;
