@@ -132,10 +132,9 @@
                                     <div class="grid-x">
                                         <div class="cell large-8">
                                             <div class="fblock search-block">
-                                                <div class="input-group">
-                                                  <!-- <span class="input-group-label">$</span> -->
+                                                <div class="input-group" id="ta-remote">
                                                   <span class="ic-search"></span>
-                                                  <input class="input-group-field" type="text" value="Bali">
+                                                  <input class="input-group-field typeahead" type="search" value="Bali">
                                                   <div class="input-group-button">
                                                     <button type="submit" class="button orange-btn">Cari</button>
                                                   </div>
@@ -359,6 +358,19 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="tac mt20">
+                                        <ul class="pagination" role="navigation" aria-label="Pagination">
+                                            <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+                                            <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+                                            <li><a href="#" aria-label="Page 2">2</a></li>
+                                            <li><a href="#" aria-label="Page 3">3</a></li>
+                                            <li><a href="#" aria-label="Page 4">4</a></li>
+                                            <li class="ellipsis" aria-hidden="true"></li>
+                                            <li><a href="#" aria-label="Page 12">12</a></li>
+                                            <li><a href="#" aria-label="Page 13">13</a></li>
+                                            <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -417,8 +429,37 @@
     <!-- <script src="../js/min/app-min.js"></script> -->
     <script src="../js/min/ptren-min.js"></script>
     <script src="../js/min/foundation-datepicker.js"></script>
+    <script src="../js/min/typeahead-min.js"></script>
     <script>
-      // DATEPICKER
+        // SEARCH
+        var place = new Bloodhound({
+            datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            prefetch: './dummy/place-names.json',
+            remote: {
+                url: './dummy/queries/%QUERY.json',
+                wildcard: '%QUERY'
+            }
+        });
+        $('#ta-remote .typeahead').typeahead(
+            {
+                hint: true,
+                highlight: true,
+                minLength: 0
+            }, 
+            {
+                name: 'place',
+                display: 'value',
+                source: place,
+                templates: {
+                suggestion: function(data) {
+                    return '<a href="' + data.url + '" class="suggestion-list"><strong>' + data.value + '</strong>';
+                    }
+                }
+            }
+        );
+        
+        // DATEPICKER
         $('#dp2').fdatepicker({
           initialDate: '28-09-2018', //HARI INI DEFAULTNYA
           format: 'dd-mm-yyyy',
