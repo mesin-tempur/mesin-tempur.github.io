@@ -782,6 +782,7 @@ h1 {
 			left: 10px;
 			top:50%;
 			margin-top: -10px;
+			z-index: 2;
 		}
 		input {
 			padding-left: 35px;
@@ -823,6 +824,7 @@ h1 {
 		left: 10px;
 		top: 50%;
 		margin-top: -10px;
+		z-index: 2;
 	}
 	@include breakpoint(large) {
 		label {
@@ -833,6 +835,27 @@ h1 {
 			overflow: hidden;
 		}
 	}
+}
+.suggestion-list {
+	color:$black;
+	display: block;
+	padding: 4px 13px;
+	font-size: $font-size-small;
+	&:hover {
+		color:$black;
+		background:$lighter-gray;
+	}
+}
+.tt-menu {
+	background: $white;
+	width: 100%;
+	border: 1px solid $dark-gray;
+	border-top: none;
+	padding: 6px 0;
+	margin-top: -3px;
+}
+.twitter-typeahead {
+	display: block !important;
 }
 
 .top-desc {
@@ -1290,6 +1313,16 @@ h2.page-title {
 		@include breakpoint(large) {
 			text-align: right;
 		}
+	}
+}
+
+.pagination {
+	.current {
+		background: $orange;
+		font-weight: bold;
+	}
+	.disabled {
+		color: $dark-gray;
 	}
 }
 
