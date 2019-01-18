@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lupa Password | BelanjaQu</title>
+    <title>Login | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -269,35 +269,54 @@
           <!-- END DESKTOP CATEGORY OPTION -->
           <div class="edit-akun">
             <div class="profile-pribadi">
-              <div class="block-header hide-for-large">Lupa Password</div>
+              <div class="block-header hide-for-large">Login Paytren</div>
               <div class="row">
-                <div class="small-12 large-6 large-offset-3 column">
+                <div class="small-12 large-5 large-offset-1 column">
                   <div class="inner-profile">
-                    <div class="block-header desktop-block-header show-for-large"><strong>Lupa Password</strong></div>
-                    <form action="/home/process_forgot_password" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="GllvEjHsaXCOOaMD+DONzx8DaB7Y/DDaboL8zyz5fFIw6Dz/aPUoBX9da3fBYeT/UXwAAsskjuJ8MoZeXQADYA==">
+                    <div class="block-header desktop-block-header show-for-large"><strong>Login Paytren</strong></div>
+                    <form class="password-toggle" action="/home/process_login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="SS1hFlX37yb6trbMY7pVLPdcaUpc3vT3KoZrpMncm6gkPKXRC+ZBd+DfDrMU/9GoyiSAwvIN8ZwR41sa5sa1CQ==">
                       <div class="fblock row">
                         <div class="label-wrap small-12 medium-3 columns">
-                          <label for="email">Email</label>
+                          <label for="paytren_id">ID Paytren</label>
                         </div>
                         <div class="label-wrap small-12 medium-9 columns">
-                          <input type="email" name="email" id="email" required="required">
+                          <input type="text" name="paytren_id" id="paytren_id" required="required">
                         </div>
                       </div>
-                      <!-- <div class="fblock row">
+                      <div class="fblock row">
                         <div class="label-wrap small-12 medium-3 columns">
-                          <label for="email">No HP</label>
+                          <label for="password">Password</label>
                         </div>
-                        <div class="label-wrap small-12 medium-9 columns">
-                          <input type="number" name="phone" id="phone" required="required">
-                        </div>
-                      </div> -->
-                      <div class="fblock field-submit row">
-                        <div class="small-12 medium-9 medium-push-3 columns">
-                          <button type="submit" class="button expanded action-btn">Kirim</button>
+                        <div class="label-wrap small-12 medium-9 columns posr with-button">
+                          <input type="password" name="password" id="password" required="required">
+                          <a href="javascript:;" class="pass-btn button-show verifikasi-btn inside-input-btn" style=" right: 17px;"><small>SHOW</small></a>
+                          <a href="javascript:;" class="pass-btn button-hide verifikasi-btn inside-input-btn" style="display:none; right: 17px;"><small>HIDE</small></a>
                         </div>
                       </div>
-                      <p><a href="">Lupa Email? Klik disini</a></p>
+                      <div class="fblock field-submit row submit-group">
+                        <div class="small-12 columns">
+                          <button type="submit" class="button expanded action-btn"><strong>LOGIN</strong></button>
+                        </div>
+                      </div>
                     </form>
+                  </div>
+                </div>
+                <div class="small-12 large-5 column">
+                  <div class="inner-profile">
+                    <div class="login-separator"><span class="gray">atau</span></div>
+                    <div class="fblock other-login-method">
+                      <a href="login.html" class="button bordered-btn expanded">
+                        <img src="images/email_logo.png" class="login-img" alt="Email">
+                        <span class="text">Login dengan Email</span>
+                      </a>
+                      <a href="#" class="button bordered-btn expanded">
+                        <img src="images/facebook_logo.png" class="login-img" alt="Facebook">
+                        <span class="text">Login dengan Facebook</span>
+                      </a>
+                    </div>
+                    <div class="fblock registration-link">
+                      <a href="#" class="button expanded btn-daftar">DAFTAR BARU</a>
+                    </div>
                   </div>
                 </div>
               </div>
