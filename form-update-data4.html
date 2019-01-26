@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | BelanjaQu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -58,52 +58,6 @@
         </div>
       </div>
       <!-- END SIDE MENU -->
-      <div class="js-search-main search-main-screen">
-        <header>
-          <div class="row">
-            <div class="small-12 column">
-              <form action="">
-                <div class="search-modal">
-                  <div class="js-searchbar input-search-box block-fill">
-                    <input type="search" placeholder="Cari produk">
-                  </div>
-                  <div class="submit-search block-add">
-                    <button type="submit" class="searchbar-submit js-searchbar-submit"> 
-                      <span class="icon ic-search"></span><span class="visuallyhidden">Search</span> 
-                    </button>
-                  </div>
-                  <div class="block-add cancel-search">
-                    <a href="#" class="js-dismiss-search">Batal</a>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </header>
-        <div class="suggestion-box">
-          <ul class="product-searches-field">
-            <ul>
-              <li>
-                <a href="/searches/alat-musik-aksesoris/products/iphone">iphone <small>di Semua Kategori</small></a>
-              </li>
-              <li>
-                <a href="/searches/power-bank/products/iphone">iphone <small>Handphone</small></a>
-              </li>
-            </ul>
-            <ul class="filled-suggestion">
-              <li>
-                <a href="#">iphone <span class="suggestion-fill">4</span></a>
-              </li>
-              <li>
-                <a href="#">iphone <span class="suggestion-fill">5s</span></a>
-              </li>
-              <li>
-                <a href="#">iphone <span class="suggestion-fill">case</span></a>
-              </li>
-            </ul>
-          </ul>
-        </div>
-      </div>
       <div class="off-canvas-content" data-off-canvas-content>
         <header>
           <div class="top-header show-for-large">
@@ -187,7 +141,7 @@
             </div>
           </div>
         </header>
-        <div class="section main-content acc-page">
+        <div class="section main-content">
           <!-- DESKTOP CATEGORY OPTION -->
           <div id="js-dark-overlay" class="dark-overlay" style="display:none;opacity:0;"></div>
           <div class="content-top show-for-large">
@@ -256,72 +210,44 @@
                     </ul>
                   </div>
                 </div>
-                <ul class="inline-block marketing-list">
-                  <li><a href="#">Double Cashback</a></li>
-                  <li><a href="#">Back to School</a></li>
-                  <li><a href="#">Hijab Festival</a></li>
-                  <li><a href="#">Parade Buku</a></li>
-                  <li><a href="#">MusikQu</a></li>
+                <ul class="inline-block breadcrumbs">
+                  <li><a href="#">home</a></li>
+                  <li class="current">Jungle Land</li>
                 </ul>
               </div>
             </div>
           </div>
           <!-- END DESKTOP CATEGORY OPTION -->
-          <div class="edit-akun">
-            <div class="profile-pribadi">
-              <div class="block-header hide-for-large">Login Paytren</div>
-              <div class="row">
-                <div class="small-12 large-5 large-offset-1 column">
-                  <div class="inner-profile">
-                    <div class="block-header desktop-block-header show-for-large"><strong>Login Paytren</strong></div>
-                    <form class="password-toggle" action="/home/process_login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="SS1hFlX37yb6trbMY7pVLPdcaUpc3vT3KoZrpMncm6gkPKXRC+ZBd+DfDrMU/9GoyiSAwvIN8ZwR41sa5sa1CQ==">
-                      <div class="fblock row">
-                        <div class="label-wrap small-12 medium-3 columns">
-                          <label for="paytren_id">ID Paytren</label>
-                        </div>
-                        <div class="label-wrap small-12 medium-9 columns">
-                          <input type="text" name="paytren_id" id="paytren_id" required="required">
-                        </div>
-                      </div>
-                      <div class="fblock row">
-                        <div class="label-wrap small-12 medium-3 columns">
-                          <label for="password">Password</label>
-                        </div>
-                        <div class="label-wrap small-12 medium-9 columns posr with-button">
-                          <input type="password" name="password" id="password" required="required">
-                          <a href="javascript:;" class="pass-btn button-show verifikasi-btn inside-input-btn" style=" right: 17px;"><small>SHOW</small></a>
-                          <a href="javascript:;" class="pass-btn button-hide verifikasi-btn inside-input-btn" style="display:none; right: 17px;"><small>HIDE</small></a>
-                        </div>
-                      </div>
-                      <div class="fblock field-submit row submit-group">
-                        <div class="small-12 columns">
-                          <button type="submit" class="button expanded action-btn"><strong>LOGIN</strong></button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="small-12 large-5 column">
-                  <div class="inner-profile">
-                    <div class="login-separator"><span class="gray">atau</span></div>
-                    <div class="fblock other-login-method">
-                      <a href="login.html" class="button bordered-btn expanded">
-                        <img src="images/email_logo.png" class="login-img" alt="Email">
-                        <span class="text">Login dengan Email</span>
-                      </a>
-                      <a href="#" class="button bordered-btn expanded">
-                        <img src="images/facebook_logo.png" class="login-img" alt="Facebook">
-                        <span class="text">Login dengan Facebook</span>
-                      </a>
+          <section class="static-page">
+            <div class="row">
+              <div class="large-8 large-offset-2 column">
+                <div class="row " style="margin-top: 40px;" >
+                  <div class="large-4 column">
+                    <div class="tac mt20" style="margin:20px 0 40px;">
+                      <img src="./images/success.png" alt="">
                     </div>
-                    <div class="fblock registration-link">
-                      <a href="#" class="button expanded btn-daftar">DAFTAR BARU</a>
+                  </div>
+                  <div class="large-8 column">
+                    <h5><strong>Yuhuu! Perubahan data Kamu berhasil</strong></h5>
+                    <p class="">Terimakasih atas waktunya, Silakan melanjutkan aktivitasmu di belanjaqu.co.id</p>
+                    <div class="bottom-link" style="margin: 20px 0 40px;">
+                      <div class="row">
+                        <div class="large-12 column">
+                          <a href="login-email.html" class="button"><strong>Kembali Login</strong></a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
+                <!-- <h4 class="block-header white-block mt10 tac">Verifikasi Email</h4> -->
+                <div class="content">
+                  
+                  
+                </div>
+                
+              </div>    
+            </div>    
+          </section>
         </div>
         <footer>
           <div class="section footer-top">
@@ -414,13 +340,8 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="js/min/jquery.mask.min.js"></script>
     <script src="js/min/slick.min.js"></script>
     <script src="js/min/app-min.js"></script>
-    <script>
-      passwordVisibility();
-      $('.telepon').mask('00000000000000');
-    </script>
   </div>
   </body>
 </html>

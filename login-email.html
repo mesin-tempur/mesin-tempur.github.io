@@ -269,23 +269,34 @@
           <!-- END DESKTOP CATEGORY OPTION -->
           <div class="edit-akun">
             <div class="profile-pribadi">
-              <div class="block-header hide-for-large"><strong>Pengumuman</strong></div>
+              <div class="block-header hide-for-large">Login Email</div>
               <div class="row">
                 <div class="small-12 large-5 large-offset-1 column">
                   <div class="inner-profile">
-                    <div class="block-header desktop-block-header show-for-large tac"><strong>Pengumuman</strong></div>
-                    <form action="form-update-data1.html" method="post">
+                    <div class="block-header desktop-block-header show-for-large"><strong>Login Email</strong></div>
+                    <form class="password-toggle" action="/home/process_login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="SS1hFlX37yb6trbMY7pVLPdcaUpc3vT3KoZrpMncm6gkPKXRC+ZBd+DfDrMU/9GoyiSAwvIN8ZwR41sa5sa1CQ==">
                       <div class="fblock row">
-                        <div class="label-wrap small-12 columns">
-                          Mulai hari ini di belanjaqu tidak dapat lagi melakukan login melalui ID Paytren.
-                          <span class="db pt10">
-                            Silakan melakukan perubahan login disini
-                          </span>
+                        <div class="label-wrap small-12 medium-3 columns">
+                          <label for="email">Email</label>
+                        </div>
+                        <div class="label-wrap small-12 medium-9 columns">
+                          <input type="text" name="email" id="email" required="required">
                         </div>
                       </div>
+                      <div class="fblock row">
+                        <div class="label-wrap small-12 medium-3 columns">
+                          <label for="password">Password</label>
+                        </div>
+                        <div class="label-wrap small-12 medium-9 columns posr with-button">
+                          <input type="password" name="password" id="password" required="required">
+                          <a href="javascript:;" class="pass-btn button-show verifikasi-btn inside-input-btn" style=" right: 17px;"><small>SHOW</small></a>
+                          <a href="javascript:;" class="pass-btn button-hide verifikasi-btn inside-input-btn" style="display:none; right: 17px;"><small>HIDE</small></a>
+                        </div>
+                      </div>
+                      <p class="tar gray">Lupa Password? <a href="">Klik disini</a></p>
                       <div class="fblock field-submit row submit-group">
                         <div class="small-12 columns">
-                          <button type="submit" class="button expanded action-btn"><strong>Perbarui Data</strong></button>
+                          <button type="submit" class="button expanded action-btn"><strong>LOGIN</strong></button>
                         </div>
                       </div>
                     </form>
@@ -295,9 +306,9 @@
                   <div class="inner-profile">
                     <div class="login-separator"><span class="gray">atau</span></div>
                     <div class="fblock other-login-method">
-                      <a href="login-email.html" class="button bordered-btn expanded">
-                        <img src="images/email_logo.png" class="login-img" alt="Email">
-                        <span class="text">Login dengan Email</span>
+                      <a href="login.html" class="button bordered-btn expanded">
+                        <img src="images/paytren_logo.png" class="login-img" alt="Paytren">
+                        <span class="text">Login dengan Paytren</span>
                       </a>
                       <a href="#" class="button bordered-btn expanded">
                         <img src="images/facebook_logo.png" class="login-img" alt="Facebook">
