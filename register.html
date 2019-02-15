@@ -269,11 +269,10 @@
           <!-- END DESKTOP CATEGORY OPTION -->
           <div class="edit-akun">
             <div class="profile-pribadi">
-              <div class="block-header hide-for-large">Daftar</div>
               <div class="row">
                 <div class="small-12 large-5 large-offset-1 column">
                   <div class="inner-profile">
-                    <div class="block-header desktop-block-header show-for-large"><strong>Daftar</strong></div>
+                    <div class="block-header desktop-block-header"><strong>Daftar</strong></div>
                     <form class="new_user" id="new_user" action="/home/process_registration" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="U3z7ZEQoI559pq9eNREzv0ZoSUkPBZWA9bbkBGZUzhd5zaiJHTFi64zCZyoMQ1qPCBchVRzdK7jnBp6VF62xJQ==">
                       <div class="fblock row">
                         <div class="label-wrap small-12 medium-3 columns">
@@ -318,7 +317,20 @@
                 <div class="small-12 large-5 column">
                   <div class="inner-profile">
                     <div class="login-separator"><span>Sudah punya akun?</span></div>
-                    <a href="login.html" class="button expanded orange-btn">Login disini</a>
+                    <div class="fblock other-login-method">
+                      <a href="login-email.html" class="button bordered-btn expanded">
+                        <img src="images/email_logo.png" class="login-img" alt="Email">
+                        <span class="text">Login dengan Email</span>
+                      </a>
+                      <a href="login.html" class="button bordered-btn expanded">
+                        <img src="images/paytren_logo.png" class="login-img" alt="Paytren">
+                        <span class="text">Login dengan Paytren</span>
+                      </a>
+                      <a href="#" class="button bordered-btn expanded">
+                        <img src="images/facebook_logo.png" class="login-img" alt="Facebook">
+                        <span class="text">Login dengan Facebook</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
