@@ -4240,3 +4240,24 @@ body.simple-header {
 		span {width: 10%;float: left;text-align: center;display: block;line-height: 40px;}
 	}
 }
+.verification-page {
+	text-align: center;
+	width: 33%;
+	margin: 0 auto;
+	border: $code-border-light;
+	margin-top: 3rem;
+	padding: 4rem 1.5rem;
+	border-radius: 6px;
+	@include breakpoint (medium down) {
+		width: 100%;
+		border: none;
+		padding: 0;
+		border-radius: 0;
+	}
+}
+.otp-section {
+	font-size: $font-size-small;
+}
+.btn-verificate {
+	padding: 0 1rem;
+}
