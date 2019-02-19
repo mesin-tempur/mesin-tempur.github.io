@@ -7,6 +7,7 @@
     <title>Edit Akun | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/foundation-datepicker.css">
+    <link rel="stylesheet" href="css/jquery-pincode-autotab.css">
   </head>
   <body>
   <div class="off-canvas-wrapper">
@@ -312,26 +313,28 @@
             </div>
             <div class="small-12 large-9 column">
               <div class="edit-akun">
-                <div class="block-header">Profile Pribadi</div>
+                <h2 class="db pt20 pb10"><strong>Profile Pribadi</strong></h2>
                 <div class="row profile-pribadi">
                   <div class="small-12 column">
                     <form action="akun.html">
                       <div class="fblock">
-                        <label for="nama">Nama</label>
+                        <label for="nama">Nama Lengkap</label>
                         <input type="text" id="nama" value="Neng Geulis">
                       </div>
                       <div class="fblock">
-                        <label for="telp">Telepon</label>
+                        <label for="telp">Nomor HP</label>
                         <div class="posr with-button">
                           <input type="text" id="telp" class="telepon" value="087724772227">
-                          <a href="#" class="verifikasi-btn inside-input-btn"><small>VERIFIKASI</small></a>
+                          <a href="#" class="verifikasi-btn inside-input-btn" data-open="showOTP"><small>VERIFIKASI</small></a>
+                          <!-- <small class="green inside-input-btn">Terverifikasi</small> -->
                         </div>
                       </div>
                       <div class="fblock">
                         <label for="email">Email</label>
                         <div class="posr with-button">
                           <input type="text" id="email" value="ibrahim.rama@gmail.com">
-                          <span class="icon ic-checkmark inside-input-btn"></span>
+                          <!-- <a href="#" class="verifikasi-btn inside-input-btn" data-open="showActivate"><small>VERIFIKASI</small></a> -->
+                          <small class="gray inside-input-btn">Terverifikasi</small>
                         </div>
                       </div>
                       <div class="fblock">
@@ -440,6 +443,69 @@
           </div>
         </div>
         <!-- END SEARCH REVEAL MODAL -->
+
+        <!-- MODAL OTP -->
+        <div class="reveal full" id="showOTP" data-reveal escClose="true">
+          <button class="close-button" aria-label="Close alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <form class="verification-page">
+            <div class="otp-section">
+              <strong class="db pb10">Masukan Kode OTP</strong>
+              <p class="gray">
+                Kode OTP telah dikirimkan melalui SMS ke <strong class="db">082316821281</strong>
+              </p>
+            </div>
+            <div class="jpa">
+              <input type="tel" class="form-control" maxlength="1">
+              <input type="tel" class="form-control" maxlength="1">
+              <input type="tel" class="form-control" maxlength="1">
+              <input type="tel" class="form-control" maxlength="1">
+              <input type="tel" class="form-control" maxlength="1">
+              <input type="tel" class="form-control" maxlength="1">
+            </div>
+            <div class="btn-verificate">
+              <button type="submit" class="button expanded"><strong>Verifikasi</strong></button>
+            </div>
+            <div class="pt10">
+              <small class="db pb5">Tidak menerima OTP?</small>
+              <a href="#" class="orange-link"><strong>Kirim Ulang</strong></a>
+              <span class="gray">(00:59)</span>
+            </div>
+          </form>
+        </div>
+
+        <!-- MODAL OTP -->
+        <div class="reveal full" id="showActivate" data-reveal escClose="true">
+          <button class="close-button" aria-label="Close alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <form class="verification-page">
+            <div class="otp-section">
+              <strong class="db pb10">Masukan Kode Verifikasi</strong>
+              <p class="gray">
+                Kode Verifikasi telah dikirimkan melalui Email ke <strong class="db">ferisandria@belanjaqu.co.id</strong>
+              </p>
+            </div>
+            <div class="jpa">
+              <input type="tel" class="form-control" maxlength="1">
+              <input type="tel" class="form-control" maxlength="1">
+              <input type="tel" class="form-control" maxlength="1">
+              <input type="tel" class="form-control" maxlength="1">
+              <input type="tel" class="form-control" maxlength="1">
+              <input type="tel" class="form-control" maxlength="1">
+            </div>
+            <div class="btn-verificate">
+              <button type="submit" class="button expanded"><strong>Verifikasi</strong></button>
+            </div>
+            <div class="pt10">
+              <small class="db pb5">Tidak menerima Kode Verifikasi?</small>
+              <a href="#" class="orange-link"><strong>Kirim Ulang</strong></a>
+              <span class="gray">(00:59)</span>
+            </div>
+          </form>
+        </div>
+
       </div>
     </div>
 
@@ -449,17 +515,22 @@
     <script src="js/min/app-min.js"></script>
     <script src="js/min/jquery.mask.min.js"></script>
     <script src="js/min/foundation-datepicker.js"></script>
+    <script src="js/jquery-pincode-autotab.js"></script>
     <script>
       $('.telepon').mask('00000000000000');
+
       // DATEPICKER
-        $('#dp1').fdatepicker({
-          initialDate: '23-11-2017',
-          format: 'dd-mm-yyyy',
-          disableDblClickSelection: true,
-          leftArrow: '<i class="material-icons">keyboard_arrow_left</i>',
-          rightArrow: '<i class="material-icons">keyboard_arrow_right</i>',
-          closeButton: false,
-        });
+      $('#dp1').fdatepicker({
+        initialDate: '23-11-2017',
+        format: 'dd-mm-yyyy',
+        disableDblClickSelection: true,
+        leftArrow: '<i class="material-icons">keyboard_arrow_left</i>',
+        rightArrow: '<i class="material-icons">keyboard_arrow_right</i>',
+        closeButton: false,
+      });
+
+      // AUTO TAB INPUT
+      $(".jpa input").jqueryPincodeAutotab();
     </script>
   </div>
   </body>
