@@ -3780,6 +3780,13 @@ body.simple-header {
 		@include breakpoint(medium down) {
 			font-weight: bold;
 		}
+		.pay-logo {
+			img {
+				width: auto;
+				height: 17px;
+				margin-right: 10px;
+			}
+		}
 	}
 	.header-sticky {
 		width: 100%;
@@ -3790,10 +3797,20 @@ body.simple-header {
 		border-bottom: $code-border-light;
 		margin-bottom: 10px;
 		color:$white;
+		@include breakpoint(medium down) {
+			margin-bottom: 0;
+		}
 		.checkout-back {
 			font-size: $font-size-small;
 			text-align: left;
 			color:$white;
+		}
+		&.paytren {
+			background-color: white;
+			color: $black;
+			.checkout-back {
+				color: $black;
+			}
 		}
 	}
 }
@@ -3806,6 +3823,14 @@ body.simple-header {
 		background:$white;
 		@include breakpoint (large) {
 			padding: 20px 0;
+		}
+		&.paytren {
+			padding: 2rem 1rem 1.5rem 1rem;
+			border: $code-border-light;
+			@include breakpoint(medium down) {
+				padding: 1.2rem 1.3rem 1rem 1.3rem;
+				border: none;
+			}
 		}
 	}
 	.address-block {
@@ -4135,12 +4160,27 @@ body.simple-header {
 		}
     }
 }
+.token-field {
+	padding: .3rem 0 1rem 0 !important;
+	input {
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
 .howtoget-token {
+	padding: 1rem;
 	ol {
-		margin-top: 1rem;
+		margin-top: .8rem;
 		margin-bottom: 0;
 		li {
 			border: none;
+			list-style-type:disc;
+			list-style-position: outside;
+			padding: 2px 0;
 		}
 	}
 }
@@ -4254,7 +4294,11 @@ body.simple-header {
 		padding: 0;
 		border-radius: 0;
 	}
+	.paytren-checkout {
+		text-align: left;
+	}
 }
+
 .otp-section {
 	font-size: $font-size-small;
 }

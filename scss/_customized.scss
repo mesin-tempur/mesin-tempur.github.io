@@ -325,3 +325,56 @@ $sprites-size: 150px 50px;
     border: 0!important;
     clip: rect(0 0 0 0)!important;
 }
+
+.custom-radio {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: $font-size;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:last-child {margin-bottom: 0;}
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        &:checked ~ .checkmark {
+            background-color: white;
+            border: 1px solid $primary-color;
+            &:after {
+                display: block;
+            }
+        }
+    }
+    .checkmark {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        border: 1px solid $dark-gray;
+        border-radius: 50%;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 4px;
+            top: 4px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: $primary-color;
+        }
+    }
+    &.radio-small {
+        font-size: $font-size-small;
+        padding-top: 6px;
+        .checkmark {
+            top: 9px;
+        }
+    }
+}
