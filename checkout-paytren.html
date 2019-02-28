@@ -4,78 +4,79 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout PayTren BelanjaQu</title>
+    <title>Checkout Paytren BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/jquery-pincode-autotab.css">
   </head>
   <body class="simple-header">
   <div class="off-canvas-wrapper">
     <div class="page-container off-canvas-wrapper-inner" data-off-canvas-wrapper>
       <div class="off-canvas-content" data-off-canvas-content>
-        <div class="header">
+        <div class="header paytren">
           <div class="row">
             <div class="small-4 column">
-              <a href="" class="checkout-back">
+              <a href="checkout-2.html" class="checkout-back">
                 < Kembali
               </a>
             </div>
             <div class="small-4 column">
-              <div class="tac page-title">Checkout</div>
+              <div class="tac page-title">
+                <span class="pay-logo">
+                  <img src="../images/payment/paytren.png" alt="paytren">
+                </span>
+                Paytren
+              </div>
             </div>
           </div>
         </div>
         <div class="section main-content new-checkout-page">
-          <div class="order-list">
-            <div class="row">
-              <div class="small-12 large-8 large-offset-2 column block-white mb10">
-                <div class="payments">
-                  <div class="item-group">
-                    <div class="row">
-                      <div class="small-12 large-8 large-offset-2 column">
-                        <form class="verification-page">
-                          <div class="code-verification">
-                            <div class="simple-block-header">
-                              Masukan Token
-                            </div>
-                            <div class="form-input">
-                              <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                              <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                              <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                              <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                              <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                              <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-                            </div>
-                            <div class="pt10">
-                              <a href="#" class="orange-link">Kirim ulang token</a>
-                              <span class="gray">(00:59)</span>
-                            </div>
-                          </div>  
-                        </form>
+          <div class="row">
+            <div class="small-12 large-6 large-offset-3 column block-white paytren mb20">
+              <div class="row">
+                <div class="small-12 large-8 large-offset-2 column">
+                  <form action="">
+                    <div class="fblock mt10 mb15">
+                      <label><strong>Pilih Pembayaran</strong></label>
+                      <!-- <span class="help-text red">Silakan pilih pembayaran !</span> -->
+                      <label class="custom-radio radio-small">
+                        Saldo Emoney Paytren <span class="fr orange">Rp. 265.000</span>
+                        <input type="radio" name="paytren_method" value="">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="custom-radio radio-small">
+                        PUT Reward <span class="fr orange">265.000 PUT</span>
+                        <input type="radio" name="paytren_method" value="">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="custom-radio radio-small">
+                        PUT Bagi Hasil <span class="fr orange">265.000 PUT</span>
+                        <input type="radio" name="paytren_method" value="">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="fblock mt15">
+                      <label for="no_hp"><strong>Masukkan ID Paytren</strong></label>
+                      <input type="tel" id="no_hp" name="">
+                    </div>
+                    <div class="fblock mt20">
+                      <label for="token"><strong>Masukkan Kode Bayar</strong></label>
+                      <div class="jpa token-field">
+                        <input type="tel" class="form-control" maxlength="1">
+                        <input type="tel" class="form-control" maxlength="1">
+                        <input type="tel" class="form-control" maxlength="1">
+                        <input type="tel" class="form-control" maxlength="1">
+                        <input type="tel" class="form-control" maxlength="1">
+                        <input type="tel" class="form-control" maxlength="1">
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="small-12 large-8 large-offset-2 column block-white">
-                <div class="simple-block-header">
-                    Cara Mendapatkan Token
-                </div>
-                <div class="payments">
-                  <div class="item-group">
-                    <div class="row">
-                      <div class="small-12 large-8 large-offset-2 column">
-                        <div class="howtoget-token">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum eos vel nulla consequatur iure quibusdam laudantium dicta eius fugit nesciunt dolorum odit, doloremque assumenda sint! Quisquam ipsum dolorem quidem, totam.
-                          <ol>
-                            <li>Step one dipisicing elit. Temporibus vel aspernatur, illum tempora ullam ipsum libero autem eos.</li>
-                            <li>Step two harum porro ab perspiciatis, pariatur illo quaerat ex sed enim consequatur, provident.</li>
-                            <li>Step three fugit nesciunt dolorum odit, doloremque assumenda sint! Quisquam ipsum dolorem quidem, totam.</li>
-                            <li>Step four dipisicing elit. Temporibus vel aspernatur, illum tempora ullam ipsum libero autem eos.</li>
-                            <li>Step five harum porro ab perspiciatis, pariatur illo quaerat ex sed enim consequatur, provident.</li>
-                          </ol>
-                        </div>
-                      </div>
+                    <div class="fblock">
+                      <input type="submit" name="commit" value="BAYAR" class="button expanded" id="submit-button-checkout-bank">
                     </div>
-                  </div>
+                    <a href="javascript:;" class="db pt10 mb20 tac" data-open="howToGetToken">
+                      <span class="gray">Bagaimana cara mendapatkan Kode Bayar? </span>
+                      <strong class="db">Klik Disini</strong>
+                    </a>
+                  </form>
                 </div>
               </div>
             </div>
@@ -83,56 +84,30 @@
         </div>
       </div>
     </div>
+
+    <div class="reveal" id="howToGetToken" data-reveal escClose="true">
+      <button class="close-button" aria-label="Close alert" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="howtoget-token">
+        <strong>Cara Mendapatkan Kode Bayar</strong>
+        <ol class="dotted">
+          <li>Buka &amp; login aplikasi Paytren</li>
+          <li>Pilih menu <strong>Bayar</strong></li>
+          <li>Klik tombol <strong>Kode Bayar</strong></li>
+          <li>Masukkan PIN Transaksi</li>
+        </ol>
+      </div>
+    </div>
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/jquery-pincode-autotab.js"></script>
     <script src="js/min/app-min.js"></script>
     <script>
-      $(function() {
-        'use strict';
-
-        var body = $('body');
-
-        function goToNextInput(e) {
-          var key = e.which,
-            t = $(e.target),
-            sib = t.next('input');
-
-          if (key != 9 && (key < 48 || key > 57)) {
-            e.preventDefault();
-            return false;
-          }
-
-          if (key === 9) {
-            return true;
-          }
-
-          if (!sib || !sib.length) {
-            sib = body.find('input').eq(0);
-          }
-          sib.select().focus();
-        }
-
-        function onKeyDown(e) {
-          var key = e.which;
-
-          if (key === 9 || (key >= 48 && key <= 57)) {
-            return true;
-          }
-
-          e.preventDefault();
-          return false;
-        }
-        
-        function onFocus(e) {
-          $(e.target).select();
-        }
-
-        body.on('keyup', 'input', goToNextInput);
-        body.on('keydown', 'input', onKeyDown);
-        body.on('click', 'input', onFocus);
-
-      });
+      // AUTO TAB INPUT
+      $(".jpa input").jqueryPincodeAutotab();
     </script>
   </div>
   </body>
