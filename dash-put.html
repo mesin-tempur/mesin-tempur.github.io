@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | BelanjaQu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>PUT | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -187,7 +187,7 @@
             </div>
           </div>
         </header>
-        <div class="section main-content acc-page">
+        <div class="section main-content store-edit">
           <!-- DESKTOP CATEGORY OPTION -->
           <div id="js-dark-overlay" class="dark-overlay" style="display:none;opacity:0;"></div>
           <div class="content-top show-for-large">
@@ -256,70 +256,189 @@
                     </ul>
                   </div>
                 </div>
-                <ul class="inline-block marketing-list">
-                  <li><a href="#">Double Cashback</a></li>
-                  <li><a href="#">Back to School</a></li>
-                  <li><a href="#">Hijab Festival</a></li>
-                  <li><a href="#">Parade Buku</a></li>
-                  <li><a href="#">MusikQu</a></li>
+                <ul class="inline-block breadcrumbs">
+                  <li><a href="#">home</a></li>
+                  <li><a href="#">fashion</a></li>
+                  <li class="current">fashion pria</li>
                 </ul>
               </div>
             </div>
           </div>
           <!-- END DESKTOP CATEGORY OPTION -->
-          <div class="edit-akun">
-            <div class="profile-pribadi">
-              <!-- <div class="block-header hide-for-large"><strong>Pengumuman</strong></div> -->
-              <div class="row">
-                <div class="small-12 large-5 large-offset-1 column">
-                  <div class="inner-profile">
-                    <div class="block-header desktop-block-header tac"><strong>Pengumuman</strong></div>
-                    <form action="form-update-data1.html" method="post">
-                      <div class="fblock row">
-                        <div class="label-wrap small-12 columns taj">
-                          Silakan melakukan perbarui data untuk dapat login menggunakan Paytren (Khusus VP/TN/EP).
-                        </div>
-                        <div class="small-12 columns mt10 mb10">
-                          <a href=""><span class="black">Diluar ID tersebut silakan daftar baru </span><strong>Klik Disini</strong></a>
-                        </div>
-                      </div>
-                      <div class="fblock field-submit row">
-                        <div class="small-12 columns">
-                          <button type="submit" class="button expanded"><strong>Perbarui Data</strong></button>
-                        </div>
-                        <div class="tac">
-                          <a href="form-update-data1.html"><span class="gray">Sudah punya Token? </span><strong>Klik Disini</strong></a>
-                        </div>
-                      </div>
-                    </form>
+          <div class="row">
+            <div class="large-3 show-for-large column">
+              <div class="dashboard-nav">
+                <div class="nav-group">
+                  <div class="top-user">
+                    <a href="/setting/index" class="clr">
+                      <div class="ava"><img src="http://belanjaqu.co.id/assets/dummy/default-avatar.jpg" alt=""></div>
+                      <div class="menu-list-title"><span>Halo<strong> Rama Ibrahim</strong></span></div>
+                    </a>
                   </div>
                 </div>
-                <div class="small-12 large-5 column">
-                  <div class="inner-profile">
-                    <div class="login-separator"><span class="gray">atau</span></div>
-                    <div class="fblock other-login-method">
-                      <a href="login-email.html" class="button bordered-btn expanded">
-                        <img src="images/email_logo.png" class="login-img" alt="Email">
-                        <span class="text">Login dengan Email</span>
-                      </a>
-                      <a href="#" class="button bordered-btn expanded">
-                        <img src="images/facebook_logo.png" class="login-img" alt="Facebook">
-                        <span class="text">Login dengan Facebook</span>
-                      </a>
+                <div>
+                  <a href="#" class="button expanded">Buka Toko Baru</a>
+                </div>
+                <div class="nav-group">
+                  <div class="list-header">Pengelolaan Toko</div>
+                  <ul>
+                    <li><a href="#">ProdukQu</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Kelola Toko</a></li>
+                    <li><a href="#">Laci Toko</a></li>
+                  </ul>
+                </div>
+                <div class="nav-group">
+                  <div class="list-header">Kotak Masuk</div>
+                  <ul>
+                    <li><a href="#">Notifikasi</a></li>
+                    <li><a href="#">Diskusi Produk <span class="counter">12</span></a></li>
+                    
+                  </ul>
+                </div>
+                <div class="nav-group">
+                  <!-- <div class="list-header">Kotak Masuk</div> -->
+                  <ul>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="block-header hide-for-large">PUT</div>
+            <div class="small-12 large-9 column">
+            <div class="block-header show-for-large">PUT</div>
+              <div class="dompetqu-sum">
+                <div class="bq-tabs">
+                  <ul class="tabs" data-tabs id="laci-tabs">
+                    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">PUT Bagi Hasil</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">PUT Reward</a></li>
+                  </ul>
+                  <div class="tabs-content" data-tabs-content="laci-tabs">
+                    <div class="tabs-panel is-active" id="panel1">
+                      <div class="row">
+                        <div class="small-12 column">
+                          <div class="saldo-sum">
+                            <div class="supersmall tac">Jumlah PUT Kamu</div>
+                            <div class="superbig fwb tac orange">514.000 <small>PUT</small></div>
+                          </div>
+                          <div class="row">
+                            <div class="small-12 large-4 large-offset-4 column">
+                              <label>Transaksi Bulan</label>
+                              <select name="" id="" class="mb20">
+                                <option value="">Januari</option>
+                                <option value="">Februari</option>
+                                <option value="">Maret</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="small-12 column">
+                          <div class="cm-title">
+                            Riwayat Transaksi
+                            <a href="" class="fr with-right-arrow">Lihat Semua</a>
+                          </div>
+                          <table class="small-text">
+                            <thead>
+                              <tr>
+                                <td width="32%">Tanggal</td>
+                                <td width="32%">Keterangan</td>
+                                <td width="36%" align="right" style="text-align: right">Jumlah (PUT)</td>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="gray">21/12/2017</td>
+                                <td>Pembelian Macbook Pro 2018 256GB</td>
+                                <td align="right">- 11.500 PUT</td>
+                              </tr>
+                              <tr>
+                                <td class="gray">16/12/2017</td>
+                                <td>Pembelian Sepatu New Ballance di belanjaqu</td>
+                                <td align="right">- 11.500 PUT</td>
+                              </tr>
+                              <tr>
+                                <td class="gray">15/12/2017</td>
+                                <td>Pembelian Kaos Polos di belanjaqu</td>
+                                <td align="right">- 11.500 PUT</td>
+                              </tr>
+                              <tr>
+                                <td class="gray">14/12/2017</td>
+                                <td>Pembelian apaya</td>
+                                <td align="right">- 11.500 PUT</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
                     </div>
-                    <div class="fblock registration-link">
-                      <a href="register.html" class="button expanded btn-daftar">DAFTAR BARU</a>
+                    <div class="tabs-panel" id="panel2">
+                      <div class="row">
+                        <div class="small-12 column">
+                          <div class="saldo-sum">
+                            <div class="supersmall tac">Jumlah PUT Kamu</div>
+                            <div class="superbig fwb tac orange">436.000 <small>PUT</small></div>
+                          </div>
+                          <div class="row">
+                            <div class="small-12 large-4 large-offset-4 column">
+                              <label>Transaksi Bulan</label>
+                              <select name="" id="" class="mb20">
+                                <option value="">Januari</option>
+                                <option value="">Februari</option>
+                                <option value="">Maret</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="small-12 column">
+                          <div class="cm-title">
+                            Riwayat Transaksi
+                            <a href="" class="fr with-right-arrow">Lihat Semua</a>
+                          </div>
+                          <table class="small-text">
+                            <thead>
+                              <tr>
+                                <td width="32%">Tanggal</td>
+                                <td width="32%">Keterangan</td>
+                                <td width="36%" align="right" style="text-align: right">Jumlah (PUT)</td>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="gray">21/12/2017</td>
+                                <td>Pembelian Macbook Pro 2018 256GB</td>
+                                <td align="right">- 11.500 PUT</td>
+                              </tr>
+                              <tr>
+                                <td class="gray">16/12/2017</td>
+                                <td>Pembelian Sepatu New Ballance di belanjaqu</td>
+                                <td align="right">- 11.500 PUT</td>
+                              </tr>
+                              <tr>
+                                <td class="gray">15/12/2017</td>
+                                <td>Pembelian Kaos Polos di belanjaqu</td>
+                                <td align="right">- 11.500 PUT</td>
+                              </tr>
+                              <tr>
+                                <td class="gray">14/12/2017</td>
+                                <td>Pembelian apaya</td>
+                                <td align="right">- 11.500 PUT</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
         <footer>
           <div class="section footer-top">
             <div class="row hide-for-large">
-              <div class="small-12 column">
+              <div class="small-12 large-8 large-offset-2 column">
                 <a href="#">
                   <span class="ic-mail"></span>
                   <span class="text">Hubungi Kami</span>
@@ -389,9 +508,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
           <div class="fblock">
-            <form action="">
-              <input id="searchInput" type="search" placeholder="Cari produk atau toko">
-            </form>
+            <input id="searchInput" type="search" placeholder="Cari produk atau toko">
           </div>
           <div class="suggestion-box">
             <ul>
@@ -401,6 +518,110 @@
           </div>
         </div>
         <!-- END SEARCH REVEAL MODAL -->
+        <!-- LACI MODAL -->
+        <div class="reveal" id="laciModal" data-reveal escClose="true">
+          <button class="close-button" aria-label="Close alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div style="padding: 30px 10px 20px 10px">
+            <div class="row mb20 border-bottom">
+              <div class="small-6 large-4 column"><label for="">ID Penarikan</label> <strong>WDR1234</strong></div>
+              <div class="small-6 large-4 column"><label for="">Tanggal</label> <strong>12/12/2017</strong></div>
+              <div class="small-6 large-4 column"><label for="">Status</label> <strong>Transfered</strong></div>
+              <div class="small-6 large-4 column"><label for="">Bank Tujuan</label> <strong>BCA 46234234</strong></div>
+              <div class="small-12 large-4 column end"><label for="">Tanggal Transfer</label> <strong>21/12/2017</strong></div>
+            </div>
+            <hr>
+            <div class="tac mb10"><strong>List Order Laci</strong></div>
+            <table class="small-text">
+              <thead>
+                <tr>
+                  <td width="32%">No Order</td>
+                  <td width="32%">Invoice</td>
+                  <td width="36%" align="right" style="text-align: right">Jumlah (Rp)</td>
+                </tr>
+                </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#">093767</a></td>
+                  <td>INV/1508225628</td>
+                  <td align="right">200.000</td>
+                </tr>
+                <tr>
+                  <td><a href="#">093487</a></td>
+                  <td>INV/1508225223</td>
+                  <td align="right">114.000</td>
+                </tr>
+                <tr>
+                  <td><a href="#">093887</a></td>
+                  <td>INV/1508225465</td>
+                  <td align="right">150.000</td>
+                </tr>
+                <tr>
+                  <td><a href="#">093433</a></td>
+                  <td>INV/1508225946</td>
+                  <td align="right">50.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        <div class="reveal" id="requestModal" data-reveal escClose="true">
+          <button class="close-button" aria-label="Close alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div style="padding: 30px 10px 20px 10px">
+            <div class="mb20">
+              Request Penarikan Dana Laci Toko Sebesar <strong>Rp. 516.000</strong> ke rekening:
+            </div>
+            <div>
+              <div class="edit-akun">
+                <div class="block-alamat" style="margin:0;">
+                  <div class="cm-title">
+                    Rama Ibrahim
+                    <!-- <a href="/setting/edit_bank_transfer/13830" class="fr">edit</a> -->
+                  </div>
+                  <div class="row">
+                    <div class="small-12 column">
+                      <div class="fblock input-radio address-block">
+                        <input type="radio" name="status" id="status_13830" value="13830" class="bank-status" checked="checked">
+                        <label for="status_13830">
+                        <p>No rekening 4370841191</p>
+                        <p>Nama Bank Bank Mandiri</p>
+                        <!-- <p style="margin-left: 40px">Cabang: A. Yani Bandung</p> -->
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-alamat" style="margin:0;">
+                  <div class="cm-title">
+                    Rama Ibrahim
+                    <!-- <a href="/setting/edit_bank_transfer/13830" class="fr">edit</a> -->
+                  </div>
+                  <div class="row">
+                    <div class="small-12 column">
+                      <div class="fblock input-radio address-block">
+                        <input type="radio" name="status" id="status_13831" value="13830" class="bank-status">
+                        <label for="status_13831">
+                          <p>No rekening 4370841191</p>
+                          <p>Nama Bank BCA</p>
+                          <!-- <p style="margin-left: 40px">Cabang: A. Yani Bandung</p> -->
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt20">
+              <a href="#" class="button expanded">Kirim Request</a>
+            </div>
+          </div>
+          
+        </div>
+        <!-- END ADD ROLE MODAL -->
       </div>
     </div>
 
@@ -411,7 +632,6 @@
     <script src="js/min/slick.min.js"></script>
     <script src="js/min/app-min.js"></script>
     <script>
-      passwordVisibility();
       $('.telepon').mask('00000000000000');
     </script>
   </div>
