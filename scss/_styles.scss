@@ -818,17 +818,13 @@ header {
 
 	}
 	a {
-		color: $blue;
+		color: $orange;
 		height: 44px;
 		line-height: 44px;
 		padding: 0 15px;
 		position: absolute;
 		right: 0;
 		top: 0;
-		&:after {
-			content: "\27F6";
-			margin-left: 4px;
-		}
 	}
 }
 .fancy-title {
@@ -1942,6 +1938,12 @@ span.discount {
 				}
 			}
 		}
+	}
+}
+
+.small-mobile {
+	@include breakpoint (medium down) {
+		font-size: 15px;
 	}
 }
 
