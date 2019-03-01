@@ -1941,6 +1941,12 @@ span.discount {
 	}
 }
 
+.small-mobile {
+	@include breakpoint (medium down) {
+		font-size: 15px;
+	}
+}
+
 
 .desktop-block-header {
 	background-color: transparent;
