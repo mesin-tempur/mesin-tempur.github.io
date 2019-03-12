@@ -1242,6 +1242,17 @@ h1 {
 	}
 }
 
+.search-title {
+	display: block;
+	font-weight: normal;
+	font-size: $font-size-small;
+	margin: 0 1rem 1rem 1rem;
+	@include breakpoint(large) {
+		text-align: center;
+		font-size: $font-size-big;
+	}
+}
+
 .ibox {
 	-webkit-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.14);
     box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.14);
