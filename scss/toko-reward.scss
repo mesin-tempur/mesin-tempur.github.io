@@ -157,7 +157,7 @@ a {
 .button {
 	box-shadow: 0 4px 8px rgba(63, 49, 178, .1), 0 2px 6px rgba(63, 49, 178, .04);
 	background-color: $blue-paytren;
-	&:hover {
+	&:hover, &:focus {
     	box-shadow: 0 5px 9px rgba(63, 49, 178, .1), 0 4px 8px rgba(63, 49, 178, .06);
     	-webkit-transition: all .5s cubic-bezier(.35, 0, .25, 1);
     	transition: all .5s cubic-bezier(.35, 0, .25, 1);
@@ -1582,6 +1582,32 @@ h2.page-title {
 	@include breakpoint(large) {
 		width: 80%;
 		height: 80%;
+	}
+}
+
+.modal-product-reward {
+	padding: .5rem;
+	font-weight: normal;
+	p {
+		margin-bottom: 25px;
+		text-align: center;
+	}
+	.button {
+		margin-bottom: 8px;
+		box-shadow: none;
+		&.primary {
+			background-color: $blue-paytren;
+			color: white;
+			font-weight: bold;
+			&:hover {
+		    	background-color:darken($blue-paytren,6)
+			}
+		}
+		&.bordered-btn {
+			&:hover {
+		    	background-color:darken($lighter-gray,6)
+			}
+		}
 	}
 }
 
