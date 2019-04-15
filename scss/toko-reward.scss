@@ -185,6 +185,7 @@ header {
 	@include breakpoint(large) {
 		height: 70px;
 	}
+	border-bottom: $code-border-light;
 	.btn-menu {
 		float: right;
 		color: $black;
@@ -301,14 +302,6 @@ header {
 			max-height: 40px;
 		}
 	}
-}
-.backtoblq {
-	font-weight: normal;
-	font-size: $font-size-small;
-	float: right;
-	margin-top: 19px;
-	padding-right: 8px;
-	color: $dark-gray;
 }
 
 .top-menu {
@@ -972,7 +965,51 @@ h1 {
 		
 	}
 }
-
+.backtoblq {
+	position: relative;
+	display: block;
+	padding: 1rem 1rem 1rem 3.2rem;
+	font-weight: bold;
+	color: $black;
+	svg {
+		position: absolute;
+		left: 1rem;
+		top: 20px;
+		width: 16px;
+		height: 16px;
+	}
+	&:hover {
+		color: $black;
+	}
+	@include breakpoint(large) {
+		padding: 1.7rem 1rem 1.7rem 3.2rem;
+		svg {
+			top: 31px;
+		}
+	}
+}
+.store-tabs {
+	text-align: center;
+	padding: .5rem 1rem 1.1rem 1rem;
+	a {
+		width: 100%;
+		display: block;
+		padding: 8px;
+		border: 1px solid $dark-gray;
+		border-radius: 50px;
+		font-weight: normal;
+		color: $dark-gray;
+		&.active {
+			border: 1px solid $blue-paytren;
+			color: $blue-paytren;
+			font-weight: bold;
+		}
+	}
+	@include breakpoint(large) {
+		margin-top: .6rem;
+		padding: .5rem 3rem 1.1rem 3rem;
+	}
+}
 .search-box {
 	margin-top: 0;
 	@include breakpoint(large) {
@@ -1133,6 +1170,7 @@ h1 {
 
 .product-listing-grid {
 	.item {
+		position: relative;
 		display: inline-block;
 		width: 24%;
 		margin-right: 0.8%;
@@ -1168,6 +1206,7 @@ h1 {
 		}
 		.product-price {
 			margin-top: 10px;
+			height: 52px;
 			.striked {
 				text-decoration: line-through;
 				font-weight: lighter;
@@ -1196,6 +1235,19 @@ h1 {
 					list-style-position: inside;
 				}
 			}
+		}
+		.discount {
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: #FFFF00;
+			color: $red;
+			font-size: $font-size-small;
+			font-weight: bold;
+			padding: 4px 6px;
+			border-radius: 4px;
+			margin-top: 5px;
+			margin-right: 5px;
 		}
 		.btn-buy {
 			padding: 0 14px;
