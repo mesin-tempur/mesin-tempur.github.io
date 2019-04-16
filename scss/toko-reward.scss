@@ -1723,5 +1723,14 @@ footer {
 	@include breakpoint(large) {
 		margin-bottom: 30px;
 	}
-	
+}
+.more-product {
+	padding: 0 1rem .8rem 1rem;
+	.button {
+		box-shadow: none;
+		background-color: white;
+		border-color: $blue-paytren;
+		font-weight: bold;
+		color: $blue-paytren;
+	}
 }
