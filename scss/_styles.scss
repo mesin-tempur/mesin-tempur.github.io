@@ -915,6 +915,26 @@ header {
 		margin-bottom: -.2rem;
 		img {max-height: 30px;}
 	}
+	&.new-price {
+		// background-color: $lighter-gray;
+		.member-price {
+			height: 65px;
+			margin-top: 8px;
+			label {
+				font-size: .6rem;
+				text-transform: uppercase;
+				letter-spacing: 2.5px;
+				font-weight: bold;
+			}
+			.striked {
+				display: block;
+				margin-top: 1px;
+			}
+		}
+		.put-price {
+			top: 8px;
+		}
+	}
 }
 span.discount {
 	color: white;
@@ -1794,6 +1814,42 @@ span.discount {
 	.link-group {
 		padding: 10px 0;
 		// background:$lighter-gray;
+	}
+}
+.pdp-table-price {
+	border-color: $light-gray;
+	thead {
+		border: none;
+		background-color: white;
+		tr td {
+			border-bottom: 1px solid $light-gray;
+		}
+	}
+	tbody {
+		border: none;
+		tr:nth-child(even) td {
+			background: white;
+			padding: 16px 13px 14px 13px;
+			border-top: 1px solid $light-gray;
+			border-bottom: 1px solid $light-gray;
+		}       
+		tr:nth-child(odd) td {
+			background: white;
+			padding: 16px 13px 14px 13px;
+		}
+		.striked {
+			text-decoration: line-through;
+			font-size: $font-size-small;
+		}
+	}
+	@include breakpoint (medium down) {
+		font-size: $font-size-small;
+		tbody {
+			.striked {
+				text-decoration: line-through;
+				font-size: $font-size-smaller;
+			}
+		}
 	}
 }
 
