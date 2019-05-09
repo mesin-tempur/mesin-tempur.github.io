@@ -2016,6 +2016,15 @@ span.discount {
 .saldo-sum {
 	padding: 20px 0;
 }
+.prod-analytics {
+	background-color: $lighter-gray;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	div {text-align: center;}
+	.number {font-weight: bold;}
+	.legend {font-size: $font-size-smaller;color:$dark-gray;}
+	// a {color: $black;}
+}
 
 // Buku Alamat
 .block-alamat {
@@ -3598,7 +3607,27 @@ footer {
 }
 
 .bq-tabs {
-	.tabs {border: none;border-bottom: 1px solid $light-gray;margin-bottom:20px;}
+	.tabs {
+		border: none;
+		border-bottom: 1px solid $light-gray;
+		margin-bottom:20px;
+		&.affiliate-tabs {
+			@include breakpoint(medium down) {
+				.tabs-title {
+					border:none;
+					a {
+						font-size:$font-size-small;color:$dark-gray;
+						height: 50px;
+						padding: 1.25rem .7rem;
+					}
+					&.is-active {
+						border-bottom: 3px solid $primary-color;
+						a {background-color: transparent;color:$primary-color;font-weight: bold;}
+					}
+				}
+			}
+		}
+	}
 	.tabs-title {
 		border:none;
 		a {
