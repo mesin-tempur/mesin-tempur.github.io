@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | BelanjaQu</title>
+    <title>Checkout | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body class="simple-header">
@@ -153,6 +153,28 @@
                       </div>
                     </li>
                     <li class="accordion-item" data-accordion-item>
+                      <input type="radio" class="hidden radio-qr-pay" name="payments" id="pay_3" value="pay_3">
+                      <a href="#" class="accordion-title qr-pay">
+                        <span class="pay-logo">
+                          <img src="../images/payment/qr.png" alt="Scan QR" style="margin-top: -2px;">
+                        </span>
+                        <span class="text-pay">
+                          SCAN QR
+                          <span class="fr">
+                            Rp 268.000
+                          </span>
+                        </span>
+                      </a>
+                      <div class="accordion-content" data-tab-content>
+                        <strong class="dblock">Ketentuan pembayaran :</strong>
+                        <ol>
+                          <li>Metode pembayaran ini menggunakan SCAN QR dengan aplikasi <strong>OVO, GO-PAY, LinkAja, DANA, dan Go Mobile</strong>.</li>
+                          <li>Download aplikasi tersebut di Play Store atau di App Store.</li>
+                          <li>Pembayaran akan diproses di halaman SCAN QR.</li>
+                        </ol>
+                      </div>
+                    </li>
+                    <!-- <li class="accordion-item" data-accordion-item>
                       <input type="radio" class="hidden radio-yap-pay" name="payments" id="pay_3" value="pay_3">
                       <a href="#" class="accordion-title yap-pay">
                         <span class="pay-logo">
@@ -181,7 +203,7 @@
                           <li>Masukkan PIN.</li>
                         </ol>
                       </div>
-                    </li>
+                    </li> -->
                     <!-- <li class="accordion-item" data-accordion-item>
                       <input type="radio" class="hidden radio-indomaret-pay" name="payments" id="pay_4" value="pay_4">
                       <a href="#" class="accordion-title indomaret-pay">
@@ -315,15 +337,18 @@
       $('.transfer-pay').click(function(){
         $('.radio-transfer-pay').trigger('click');
       });
-      $('.yap-pay').click(function(){
-        $('.radio-yap-pay').trigger('click');
+      $('.qr-pay').click(function(){
+        $('.radio-qr-pay').trigger('click');
       });
-      $('.indomaret-pay').click(function(){
-        $('.radio-indomaret-pay').trigger('click');
-      });
-      $('.alfamart-pay').click(function(){
-        $('.radio-alfamart-pay').trigger('click');
-      });
+      // $('.yap-pay').click(function(){
+      //   $('.radio-yap-pay').trigger('click');
+      // });
+      // $('.indomaret-pay').click(function(){
+      //   $('.radio-indomaret-pay').trigger('click');
+      // });
+      // $('.alfamart-pay').click(function(){
+      //   $('.radio-alfamart-pay').trigger('click');
+      // });
       // $('input').on('change', function() {
       //    alert($('input[name=payments]:checked').val()); 
       // });
