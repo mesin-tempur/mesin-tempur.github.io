@@ -307,6 +307,21 @@
             </div>
         </div>
     </div>
+    <div class="reveal" id="promoModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="modal-body">
+            <div class="modal-product-reward">
+                <img src="./dummy/banner-promo.jpeg" alt="Promo">
+                <div class="grid-x grid-margin-x pt20">
+                    <div class="small-6 cell">
+                        <a href="javascript:;" class="button bordered-btn expanded" data-close aria-label="Close reveal">Tutup</a>
+                    </div>
+                    <div class="small-6 cell">
+                        <a href="https://belanjaqu.co.id/product/detail/rbt-dunia-dalam-genggaman_1558343016" class="button primary expanded">BELI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/what-input/what-input.js"></script>
     <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
@@ -316,6 +331,9 @@
     <script src="../js/min/foundation-datepicker.js"></script>
     <script src="../js/min/typeahead-min.js"></script>
     <script>
+        // PROMO
+        $('#promoModal').foundation("open");
+
         // SEARCH
         var place = new Bloodhound({
             datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
