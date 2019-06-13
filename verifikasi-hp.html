@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganti Email</title>
+    <title>Verifikasi </title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/jquery-pincode-autotab.css">
   </head>
@@ -12,16 +12,16 @@
   <div class="off-canvas-wrapper">
     <div class="page-container off-canvas-wrapper-inner" data-off-canvas-wrapper>
       <div class="off-canvas-content" data-off-canvas-content>
-        <div class="header paytren">
+        <div class="header">
           <div class="row">
             <div class="small-4 column">
-              <a href="register-verifikasi.html" class="checkout-back">
+              <a href="akun-edit.html" class="checkout-back">
                 < Kembali
               </a>
             </div>
             <div class="small-4 column">
               <div class="tac page-title">
-                <strong>Ganti Email</strong>
+                <strong>Verifikasi</strong>
               </div>
             </div>
           </div>
@@ -33,15 +33,26 @@
                 <div class="small-12 large-8 large-offset-2 column">
                   <form action="">
                     <div class="fblock mt10">
-                      Email Kamu sebelumnya <strong>feri@gmail.com</strong>
+                      Kode OTP telah dikirimkan melalui SMS ke nomor <strong>082316821281</strong>
                     </div>
                     <div class="fblock mt15">
-                      <label class="gray"><strong>Masukkan email baru</strong></label>
-                      <input type="email">
+                      <label for="token" class="gray"><strong>Masukkan Kode OTP</strong></label>
+                      <div class="jpa token-field">
+                        <input type="tel" class="form-control" maxlength="1">
+                        <input type="tel" class="form-control" maxlength="1">
+                        <input type="tel" class="form-control" maxlength="1">
+                        <input type="tel" class="form-control" maxlength="1">
+                        <input type="tel" class="form-control" maxlength="1">
+                        <input type="tel" class="form-control" maxlength="1">
+                      </div>
                     </div>
-                    <div class="fblock mt15 pb10">
-                      <input type="submit" name="commit" value="Ganti" class="button expanded" id="submit-button-checkout-bank">
+                    <div class="fblock">
+                      <input type="submit" name="commit" value="Verifikasi" class="button expanded" id="submit-button-checkout-bank">
                     </div>
+                    <span class="db pt10 mb20 tac">
+                      <span class="db gray">Tidak menerima OTP? </span>
+                      <a href=""><strong>Kirim Ulang</strong> <span class="gray">(0:55)</span></a>
+                    </span>
                   </form>
                 </div>
               </div>
