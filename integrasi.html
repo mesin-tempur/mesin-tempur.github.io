@@ -1,15 +1,17 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en"> 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | BelanjaQu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Integrasi | BelanjaQu</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/foundation-datepicker.css">
+    <link rel="stylesheet" href="css/jquery-pincode-autotab.css">
   </head>
   <body>
   <div class="off-canvas-wrapper">
-    <div class="page-container off-canvas-wrapper-inner" data-off-canvas-wrapper>
+    <div class="page-container off-canvas-wrapper-inner">
       <!-- SIDE MENU -->
       <div class="menu-overlay hidden js-slide-off"></div>
       <div class="js-slide-menu bq-slide-menu bq-slide-menu-left side-canvas-menu">
@@ -138,9 +140,19 @@
                 <a href="index.html"><span class="sprites-desktop logo-desktop"></span></a>
               </div>
               <div class="main-search">
-                <form action="" class="clr">
+                <form action="" class="clr desktop-main-search">
                   <div class="search-left">
-                    <input type="search" placeholder="cari produk atau toko">
+                    <input type="search" class="js-desktop-search-input" placeholder="Cari produk atau toko">
+                    <div class="desktop-search-rec">
+                        <div class="suggestion-box">
+                          <ul class="product-searches-field">
+                            <div class="mb10">Pencarian Produk ditemukan: 10</div>
+                            <ul>
+                              <li><a href="/searches/perkakas/products/iphone">iphone <small>di Perkakas</small></a></li><li><a href="/searches/alat-musik-aksesoris/products/iphone">iphone <small>di Alat Musik &amp; Aksesoris</small></a></li><li><a href="/searches/power-bank/products/iphone">iphone <small>di Power Bank</small></a></li><li><a href="/searches/charger/products/iphone">iphone <small>di Charger</small></a></li><li><a href="/searches/jam-tangan19/products/iphone">iphone <small>di Jam Tangan</small></a></li><li><a href="/searches/kabel/products/iphone">iphone <small>di Kabel</small></a></li><li><a href="/searches/casing-cover/products/iphone">iphone <small>di Casing &amp; Cover</small></a></li><li><a href="/searches/smartphone/products/iphone">iphone <small>di Smartphone</small></a></li><li><a href="/searches/pelindung-layar/products/iphone">iphone <small>di Pelindung Layar</small></a></li><li><a href="/searches/aksesoris-handphone-lainnya/products/iphone">iphone <small>di Aksesoris Handphone Lainnya</small></a></li><hr>Pencarian Toko ditemukan: 0
+                            </ul>
+                          </ul>
+                        </div>
+                    </div>
                   </div>
                   <div class="search-right">
                     <button type="submit"><span class="ic-search"></span></button>
@@ -187,7 +199,7 @@
             </div>
           </div>
         </header>
-        <div class="section main-content acc-page">
+        <div class="section main-content">
           <!-- DESKTOP CATEGORY OPTION -->
           <div id="js-dark-overlay" class="dark-overlay" style="display:none;opacity:0;"></div>
           <div class="content-top show-for-large">
@@ -256,64 +268,83 @@
                     </ul>
                   </div>
                 </div>
-                <ul class="inline-block marketing-list">
-                  <li><a href="#">Double Cashback</a></li>
-                  <li><a href="#">Back to School</a></li>
-                  <li><a href="#">Hijab Festival</a></li>
-                  <li><a href="#">Parade Buku</a></li>
-                  <li><a href="#">MusikQu</a></li>
-                </ul>
               </div>
             </div>
           </div>
           <!-- END DESKTOP CATEGORY OPTION -->
-          <div class="edit-akun">
-            <div class="profile-pribadi">
-              <!-- <div class="block-header hide-for-large">Login</div> -->
-              <div class="row">
-                <div class="small-12 large-5 large-offset-1 column">
-                  <div class="inner-profile">
-                    <div class="block-header desktop-block-header"><strong>Login</strong></div>
-                    <form class="password-toggle" action="/home/process_login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="SS1hFlX37yb6trbMY7pVLPdcaUpc3vT3KoZrpMncm6gkPKXRC+ZBd+DfDrMU/9GoyiSAwvIN8ZwR41sa5sa1CQ==">
-                      <div class="fblock row">
-                        <div class="label-wrap small-12 columns">
-                          <label for="email">Email / Nomor HP</label>
-                        </div>
-                        <div class="label-wrap small-12 columns">
-                          <input type="text" name="email" id="email" required="required">
-                        </div>
-                      </div>
-                      <div class="fblock row">
-                        <div class="label-wrap small-12 columns">
-                          <label for="password">Password</label>
-                        </div>
-                        <div class="label-wrap small-12 columns posr with-button">
-                          <input type="password" name="password" id="password" required="required">
-                          <a href="javascript:;" class="pass-btn button-show verifikasi-btn inside-input-btn" style=" right: 17px;"><small>SHOW</small></a>
-                          <a href="javascript:;" class="pass-btn button-hide verifikasi-btn inside-input-btn" style="display:none; right: 17px;"><small>HIDE</small></a>
-                        </div>
-                      </div>
-                      <a href="forgot-password-email.html" class="db tar"><span class="gray">Lupa Password? </span><strong>Klik Disini</strong></a>
-                      <div class="fblock field-submit row submit-group">
-                        <div class="small-12 columns">
-                          <button type="submit" class="button expanded action-btn"><strong>LOGIN</strong></button>
-                        </div>
-                      </div>
-                    </form>
+          <div class="row">
+            <div class="large-3 show-for-large column">
+              <div class="dashboard-nav">
+                <div class="nav-group">
+                  <div class="top-user">
+                    <a href="/setting/index" class="clr">
+                      <div class="ava"><img src="http://belanjaqu.co.id/assets/dummy/default-avatar.jpg" alt=""></div>
+                      <div class="menu-list-title"><span>Halo<strong> Rama Ibrahim</strong></span></div>
+                    </a>
                   </div>
                 </div>
-                <div class="small-12 large-5 column">
-                  <div class="inner-profile">
-                    <div class="login-separator"><span class="gray">atau</span></div>
-                    <div class="fblock other-login-method">
-                      <a href="#" class="button bordered-btn expanded">
-                        <img src="images/facebook_logo.png" class="login-img" alt="Facebook">
-                        <span class="text">Login dengan Facebook</span>
-                      </a>
-                    </div>
-                    <div class="fblock registration-link">
-                      <a href="register.html" class="button expanded btn-daftar">DAFTAR BARU</a>
-                    </div>
+                <div>
+                  <a href="#" class="button expanded">Buka Toko Baru</a>
+                </div>
+                <div class="nav-group">
+                  <div class="list-header">Pengelolaan Toko</div>
+                  <ul>
+                    <li><a href="#">ProdukQu</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Kelola Toko</a></li>
+                    <li><a href="#">Laci Toko</a></li>
+                  </ul>
+                </div>
+                <div class="nav-group">
+                  <div class="list-header">Kotak Masuk</div>
+                  <ul>
+                    <li><a href="#">Notifikasi</a></li>
+                    <li><a href="#">Diskusi Produk <span class="counter">12</span></a></li>
+                    
+                  </ul>
+                </div>
+                <div class="nav-group">
+                  <!-- <div class="list-header">Kotak Masuk</div> -->
+                  <ul>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="small-12 large-9 column">
+              <div class="edit-akun">
+                <h2 class="db pt20 pb10"><strong>Integrasi Akun</strong></h2>
+                <div class="row profile-pribadi">
+                  <div class="small-12 column">
+                    <form action="akun.html">
+                      <!-- INI UNTUK YG PERNAH INTEGRASI, BISA DI UBAH ID NYA -->
+                      <!-- <div class="fblock">
+                        <label for="nama">ID Paytren</label>
+                        <div class="input-group">
+                          <input class="input-group-field" type="text" value="TN0611289" disabled="disabled">
+                          <div class="input-group-button">
+                            <input type="submit" class="button" value="Ubah">
+                          </div>
+                        </div>
+                      </div> -->
+                      <div class="fblock">
+                        <label for="nama">ID Paytren</label>
+                        <div class="input-group">
+                          <input class="input-group-field" type="text" disabled="disabled">
+                          <div class="input-group-button">
+                            <a href="javascript:;" class="button" data-open="integrasiPaytren">Integrasikan</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="fblock">
+                        <label for="telp">ID Facebook</label>
+                        <input type="text" disabled="disabled">
+                      </div>
+                      <div class="fblock">
+                        <label for="email">Afiliasi Code</label>
+                        <input type="text" disabled="disabled">
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -323,7 +354,7 @@
         <footer>
           <div class="section footer-top">
             <div class="row hide-for-large">
-              <div class="small-12 column">
+              <div class="small-12 large-8 large-offset-2 column">
                 <a href="#">
                   <span class="ic-mail"></span>
                   <span class="text">Hubungi Kami</span>
@@ -393,9 +424,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
           <div class="fblock">
-            <form action="">
-              <input id="searchInput" type="search" placeholder="Cari produk atau toko">
-            </form>
+            <input id="searchInput" type="search" placeholder="Cari produk atau toko">
           </div>
           <div class="suggestion-box">
             <ul>
@@ -404,20 +433,42 @@
             </ul>
           </div>
         </div>
-        <!-- END SEARCH REVEAL MODAL -->
+      </div>
+    </div>
+
+    <div class="reveal" id="integrasiPaytren" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <div class="modal-body">
+        <div class="modal-product-reward">
+          <form action="">
+            <div class="row pt10 mb20">
+              <div class="small-12 column">
+                <div class="fblock">
+                  <label><strong>Masukkan ID Paytren</strong></label>
+                  <input type="text">
+                </div>
+                <div class="fblock">
+                  <label><strong>Masukkan PIN Paytren</strong></label>
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-6 column">
+                <a href="javascript:;" class="button bordered-btn expanded" data-close aria-label="Close reveal">Batal</a>
+              </div>
+              <div class="small-6 column">
+                <button type="submit" class="button primary expanded">Integrasikan</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="js/min/jquery.mask.min.js"></script>
-    <script src="js/min/slick.min.js"></script>
     <script src="js/min/app-min.js"></script>
-    <script>
-      passwordVisibility();
-      $('.telepon').mask('00000000000000');
-    </script>
   </div>
   </body>
 </html>
