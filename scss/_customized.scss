@@ -24,6 +24,7 @@ ul, ul ul, ol ul, ul ol, ol ol {margin-left: 0;}
 ul li {list-style: none;}
 ul.dotted {li {list-style-type:disc;list-style-position: inside;}}
 small {font-size: $font-size-small;}
+.smallest {font-size: 0.8125rem;}
 
 :focus {outline: none;}
 .gap-main {margin:20px 0;}
