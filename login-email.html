@@ -272,14 +272,14 @@
               <!-- <div class="block-header hide-for-large">Login</div> -->
               <div class="row">
                 <div class="small-12 large-5 large-offset-1 column">
-                  <div class="callout success mt10">
+                  <!-- <div class="callout success mt10">
                     <strong>Ada info terbaru di Virtual Office :</strong>
                     <ul class="dotted mb10">
                       <li>Ketentuan Bonus, Komisi & Reward</li>
                       <li>Pernyataan Komitmen</li>
                     </ul>
                     <a href="http://bit.ly/BonusKomisiReward" target="_blank" class="orange-link">Klik Disini</a>
-                  </div>
+                  </div> -->
                   <div class="inner-profile">
                     <div class="block-header desktop-block-header"><strong>Login</strong></div>
                     <form class="password-toggle" action="/home/process_login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="SS1hFlX37yb6trbMY7pVLPdcaUpc3vT3KoZrpMncm6gkPKXRC+ZBd+DfDrMU/9GoyiSAwvIN8ZwR41sa5sa1CQ==">
@@ -312,7 +312,8 @@
                 </div>
                 <div class="small-12 large-5 column">
                   <div class="inner-profile">
-                    <div class="login-separator"><span class="gray">atau</span></div>
+                    <div class="login-separator"><span>atau</span></div>
+                    <!-- <span class="db tac gray mb10">Belum punya akun?</span> -->
                     <div class="fblock registration-link">
                       <a href="register.html" class="button expanded btn-daftar">DAFTAR BARU</a>
                     </div>
@@ -321,9 +322,6 @@
                         <img src="images/facebook_logo.png" class="login-img" alt="Facebook">
                         <span class="text">Login dengan Facebook</span>
                       </a>
-                    </div>
-                    <div class="fblock pt10">
-                      <span class="red">*</span>&nbsp;<small><i>Jika Kamu user ID Paytren lama, yang ingin memverifikasi.</i> <a href="">Hubungi Pusat Bantuan</a>.</small>
                     </div>
                   </div>
                 </div>
@@ -419,6 +417,22 @@
       </div>
     </div>
 
+    <div class="reveal" id="promoModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+      <div class="modal-body">
+        <div class="modal-product-reward">
+          <img src="https://treninet.belanjaqu.co.id/user/images/banner-komitmen2.png" alt="Promo">
+          <div class="row pt20">
+            <div class="small-6 column">
+              <a href="javascript:;" class="button bordered-btn expanded mb10" data-close aria-label="Close reveal">Tutup</a>
+            </div>
+            <div class="small-6 column">
+              <a href="https://office.paytren.co.id/login" class="button primary expanded mb10">Login Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
@@ -426,6 +440,7 @@
     <script src="js/min/slick.min.js"></script>
     <script src="js/min/app-min.js"></script>
     <script>
+      $('#promoModal').foundation("open");
       passwordVisibility();
       $('.telepon').mask('00000000000000');
     </script>
