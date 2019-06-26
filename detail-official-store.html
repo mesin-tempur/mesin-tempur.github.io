@@ -285,9 +285,28 @@
           <div class="pdp-main-content">
             <div class="row">
               <div class="small-12 large-4 column">
-                <div class="main-product-images slide-with-arrow slide-with-dotts" data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"dots": true,"infinite":false}'>
+                <div class="main-product-images">
                   <div><a href="#"><img src="./dummy/detail-1.png" alt=""></a></div>
                   <div><a href="#"><img src="./dummy/detail-2.png" alt=""></a></div>
+                  <div>
+                    <a href="#">
+                      <iframe title="video" src="https://www.youtube.com/embed/bN5z6qPcblg?rel=0&amp;modestbranding=1&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen="" width="100%" style="height:340px;"></iframe>
+                    </a>
+                  </div>
+                  <div><a href="#"><img src="https://assets.belanjaqu.co.id/uploads/product_image/image/1624526/thumb_buff-001-1.jpg" alt=""></a></div>
+                  <div><a href="#"><img src="https://assets.belanjaqu.co.id/uploads/product_image/image/1624506/thumb_mlb-023-1.jpg" alt=""></a></div>
+                </div>
+                <div class="slider-thumb">
+                  <div><a href="#"><img src="./dummy/detail-1.png" alt=""></a></div>
+                  <div><a href="#"><img src="./dummy/detail-2.png" alt=""></a></div>
+                  <div class="video-thumb">
+                    <a href="javascript:;" data-open="playVideo">
+                      <img src="https://assets.belanjaqu.co.id/uploads/product_image/image/1624527/thumb_mlb-031-1.jpg" alt="">
+                      <img src="./images/click-video.png" class="click-video" alt="">
+                    </a>
+                  </div>
+                  <div><a href="#"><img src="https://assets.belanjaqu.co.id/uploads/product_image/image/1624526/thumb_buff-001-1.jpg" alt=""></a></div>
+                  <div><a href="#"><img src="https://assets.belanjaqu.co.id/uploads/product_image/image/1624506/thumb_mlb-023-1.jpg" alt=""></a></div>
                 </div>
               </div>
               <div class="small-12 large-5 column">
@@ -454,9 +473,6 @@
                 </ul>
                 <div class="tabs-content" data-tabs-content="pdp-tabs">
                   <div class="tabs-panel is-active" id="panel1">
-                    <ul class="pdp-more-info">
-                      <iframe title="video" src="https://www.youtube.com/embed/bN5z6qPcblg?rel=0&amp;modestbranding=1&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen="" width="100%"></iframe>
-                    </ul>
                     <ul class="pdp-more-info">
                       <li>
                         <span class="fl">Kondisi</span>
@@ -871,7 +887,6 @@
           </button>
         </div>
         <!-- END PRODUCT NOTE REVEAL MODAL -->
-
       </div>
     </div>
 
@@ -880,7 +895,26 @@
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/min/slick.min.js"></script>
     <script src="js/min/app-min.js"></script>
-    <script>$('.main-product-images').slick();$('.cm-slide').slick();descToggle()</script>
+    <script>
+      $('.main-product-images').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        infinite: false,
+        asNavFor: '.slider-thumb'
+      });
+      $('.slider-thumb').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.main-product-images',
+        dots: false,
+        infinite: false,
+        focusOnSelect: true
+      });
+      $('.cm-slide').slick();
+      descToggle()
+    </script>
     <script>fxdBottom();</script>
   </div>
   </body>
