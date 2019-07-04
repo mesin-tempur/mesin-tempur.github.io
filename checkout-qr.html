@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCAN QR</title>
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/jquery-pincode-autotab.css">
   </head>
   <body class="simple-header">
   <div class="off-canvas-wrapper">
@@ -47,7 +46,7 @@
                       <img src="../images/payment/qrn.jpeg" alt="qr">
                       <div class="time-count">
                         <span class="dblock pb5">Batas Waktu Pembayaran :</span>
-                        <div class="countdown bigger"></div>
+                        <div id="time-countdown" class="bigger"></div>
                         <!-- <div class="dib">
                           00
                           <span class="db gray">Jam</span>
@@ -127,34 +126,15 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="js/jquery-pincode-autotab.js"></script>
     <script src="js/min/app-min.js"></script>
-    <!-- <script src="js/min/jquery.countdown.min.js"></script> -->
+    <script src="js/min/jquery.countdown.min.js"></script>
     <script>
-      var timer2 = "30:00";
-      var interval = setInterval(function() {
-
-
-        var timer = timer2.split(':');
-        //by parsing integer, I avoid all extra string processing
-        var minutes = parseInt(timer[0], 10);
-        var seconds = parseInt(timer[1], 10);
-        --seconds;
-        minutes = (seconds < 0) ? --minutes : minutes;
-        if (minutes < 0) clearInterval(interval);
-        seconds = (seconds < 0) ? 59 : seconds;
-        seconds = (seconds < 10) ? '0' + seconds : seconds;
-        //minutes = (minutes < 10) ?  minutes : minutes;
-        $('.countdown').html('00:' + minutes + ':' + seconds);
-        timer2 = minutes + ':' + seconds;
-      }, 1000);
-
-      // $(".timer-count")
-      //   .countdown("2019/07/05", function(event) {
-      //     $(this).text(
-      //       event.strftime('%H:%M:%S')
-      //     );
-      //   });
+      $("#time-countdown")
+        .countdown("2019/07/04 15:00:00", function(event) {
+          $(this).text(
+            event.strftime('%H:%M:%S')
+          );
+        });
     </script>
   </div>
   </body>
