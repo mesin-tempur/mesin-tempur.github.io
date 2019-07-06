@@ -117,6 +117,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	background: transparent;
 	.main-content {
 		padding-top: 20px;
+		&.pt0 {
+			padding-top: 0;
+		}
 		@include breakpoint(large) {
 			padding-top: 95px;
 			padding-bottom: 60px;
@@ -155,7 +158,7 @@ a {
 }
 
 .button {
-	box-shadow: 0 4px 8px rgba(63, 49, 178, .1), 0 2px 6px rgba(63, 49, 178, .04);
+	// box-shadow: 0 4px 8px rgba(63, 49, 178, .1), 0 2px 6px rgba(63, 49, 178, .04);
 	background-color: $blue-paytren;
 	&:hover, &:focus {
     	box-shadow: 0 5px 9px rgba(63, 49, 178, .1), 0 4px 8px rgba(63, 49, 178, .06);
@@ -987,6 +990,12 @@ h1 {
 			top: 31px;
 		}
 	}
+	&.large-back {
+		padding: 1.5rem 1rem 1.5rem 3.2rem;
+		svg {
+			top: 28px;
+		}
+	}
 }
 .store-tabs {
 	text-align: center;
@@ -1128,7 +1137,7 @@ h1 {
 .search-link {
 	position: relative;
 	margin-top: -4px;
-	margin-bottom: 1.1rem;
+	margin-bottom: 1rem;
 	padding: 0 13px;
 	.ic-search {
 		position: absolute;
@@ -1138,11 +1147,22 @@ h1 {
 	}
 	a {
 		display: block;
-		background-color: $lighter-gray;
+		background-color: $white;
 		padding: 9px 8px 9px 40px;
+		border: $code-border;
 		border-radius: 4px;
 		color: $dark-gray;
 		font-weight: normal;
+	}
+	&.search-large {
+		padding: 0;
+		.ic-search {
+			top: 11px;
+			left: 13px;
+		}
+		a {
+			padding: 9px 8px 9px 40px;
+		}
 	}
 }
 .top-desc {
@@ -1165,6 +1185,35 @@ h1 {
 			margin: 5px 0 20px 0;
 		}
 		border: 1px solid black;
+	}
+}
+
+.title-section {
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin: 20px 15px 20px 15px;
+	padding-bottom: 11px;
+	border-bottom: 1px dashed $medium-gray;
+	a {
+		float: right;
+		font-weight: normal;
+		font-size: $font-size;
+		color: $blue-paytren;
+		&:after {
+			vertical-align: middle;
+			font-size: .8rem;
+		}
+	}
+	@include breakpoint(large) {
+		text-align: center;
+		font-size: 1.7rem;
+		margin: 0 45px 35px 45px;
+		padding-bottom: 18px;
+		a {
+			float: none;
+			display: block;
+			font-size: $font-size-big;
+		}
 	}
 }
 
@@ -1198,9 +1247,9 @@ h1 {
 			p {margin-bottom: 0;color:$black}
 		}
 		.product-title {
-			color: $blue-paytren;
+			color: $black;
 			font-size: $font-size;
-			font-weight: normal;
+			font-weight: bold;
 			height: 48px;
 			overflow: hidden;
 		}
@@ -1215,14 +1264,45 @@ h1 {
 			}
 			.currency {
 				font-size: .8rem;
-				font-weight: normal;
+				font-weight: bold;
 				color: $dark-gray;
 				margin-left: 1px;
-				vertical-align: middle;
 			}
 			color: $black;
 			font-weight: bold;
 			font-size: $font-size-bigger;
+			&.special-price {
+				height: 105px;
+				margin-top: 6px;
+				color: $orange;
+				font-size: $font-size-bigger;
+				.currency {
+					font-size: $font-size;
+					color: $orange;
+				}
+				.striked {
+					font-weight: lighter;
+					margin-top: 3px;
+					color: $dark-gray;
+				}
+				.normal-price {
+					font-size: $font-size;
+					color: $orange;
+					font-weight: normal;
+					.currency {
+						font-weight: normal;
+					}
+				}
+				small {
+					display: block;
+					margin-top: 10px;
+					text-transform: uppercase;
+					font-size: .7rem;
+					letter-spacing: 1.2px;
+					color: $black;
+					font-style: italic;
+				}
+			}
 		}
 		.product-description {
 			text-align: left;
