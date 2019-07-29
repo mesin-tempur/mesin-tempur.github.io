@@ -4279,6 +4279,15 @@ body.simple-header {
 			}
 		}
 	}
+	&.radio-option {
+		.accordion-title {
+			padding-left: 1rem;
+			input {vertical-align: middle;margin-bottom: 0;}
+			&:after {
+				display: none;
+			}
+		}
+	}
 	@include breakpoint (medium down) {
 		padding: 0 4px 30px 4px;
 		.accordion-title {
