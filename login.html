@@ -269,34 +269,23 @@
           <!-- END DESKTOP CATEGORY OPTION -->
           <div class="edit-akun">
             <div class="profile-pribadi">
-              <div class="block-header hide-for-large">Login</div>
+              <!-- <div class="block-header hide-for-large"><strong>Pengumuman</strong></div> -->
               <div class="row">
                 <div class="small-12 large-5 large-offset-1 column">
                   <div class="inner-profile">
-                    <div class="block-header desktop-block-header show-for-large"><strong>Login</strong></div>
-                    <form class="password-toggle" action="/home/process_login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="SS1hFlX37yb6trbMY7pVLPdcaUpc3vT3KoZrpMncm6gkPKXRC+ZBd+DfDrMU/9GoyiSAwvIN8ZwR41sa5sa1CQ==">
+                    <div class="block-header desktop-block-header tac"><strong>Pengumuman</strong></div>
+                    <form action="form-update-data1.html" method="post">
                       <div class="fblock row">
-                        <div class="label-wrap small-12 medium-3 columns">
-                          <label for="email">Email / HP</label>
-                        </div>
-                        <div class="label-wrap small-12 medium-9 columns">
-                          <input type="text" name="email" id="email" required="required">
+                        <div class="label-wrap small-12 columns">
+                          <div class="small-mobile">Silakan melakukan perbarui data untuk dapat login menggunakan Paytren (Khusus VP/TN/EP). Diluar ID tersebut silakan <strong>daftar baru.</strong></div>
                         </div>
                       </div>
-                      <div class="fblock row">
-                        <div class="label-wrap small-12 medium-3 columns">
-                          <label for="password">Password</label>
-                        </div>
-                        <div class="label-wrap small-12 medium-9 columns posr with-button">
-                          <input type="password" name="password" id="password" required="required">
-                          <a href="javascript:;" class="pass-btn button-show verifikasi-btn inside-input-btn" style=" right: 17px;"><small>SHOW</small></a>
-                          <a href="javascript:;" class="pass-btn button-hide verifikasi-btn inside-input-btn" style="display:none; right: 17px;"><small>HIDE</small></a>
-                        </div>
-                      </div>
-                      <a href="/lupa-katasandi.html">Lupa Password</a>
-                      <div class="fblock field-submit row submit-group">
+                      <div class="fblock field-submit row">
                         <div class="small-12 columns">
-                          <button type="submit" class="button expanded action-btn">Login</button>
+                          <button type="submit" class="button expanded"><strong>Perbarui Data</strong></button>
+                        </div>
+                        <div class="tac">
+                          <a href="form-update-data1.html"><span class="gray">Sudah punya Token? </span><strong>Klik Disini</strong></a>
                         </div>
                       </div>
                     </form>
@@ -304,13 +293,19 @@
                 </div>
                 <div class="small-12 large-5 column">
                   <div class="inner-profile">
-                    <div class="login-separator"><span>atau</span></div>
-                    <div class="fblock other-login-method">
-                      <a href="#" class="button expanded btn-fb"><span class="text"><span class="ic-fb"></span>Login via Facebook</span></a>
-                      <a href="#" class="button expanded btn-paytren"><span class="l-paytren"></span><span class="text">Login via PayTren</span></a>
-                    </div>
+                    <div class="login-separator"><span class="gray">atau</span></div>
                     <div class="fblock registration-link">
-                      <a href="#" class="button expanded btn-daftar">DAFTAR BARU</a>
+                      <a href="register.html" class="button expanded btn-daftar">DAFTAR BARU</a>
+                    </div>
+                    <div class="fblock other-login-method">
+                      <a href="login-email.html" class="button bordered-btn expanded">
+                        <img src="images/email_logo.png" class="login-img" alt="Email">
+                        <span class="text">Login dengan Email</span>
+                      </a>
+                      <a href="#" class="button bordered-btn expanded">
+                        <img src="images/facebook_logo.png" class="login-img" alt="Facebook">
+                        <span class="text">Login dengan Facebook</span>
+                      </a>
                     </div>
                   </div>
                 </div>

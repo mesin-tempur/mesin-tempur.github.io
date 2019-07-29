@@ -269,46 +269,47 @@
           <!-- END DESKTOP CATEGORY OPTION -->
           <div class="edit-akun">
             <div class="profile-pribadi">
-              <div class="block-header hide-for-large">Daftar</div>
               <div class="row">
                 <div class="small-12 large-5 large-offset-1 column">
                   <div class="inner-profile">
-                    <div class="block-header desktop-block-header show-for-large"><strong>Daftar</strong></div>
-                    <form class="new_user" id="new_user" action="/home/process_registration" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="U3z7ZEQoI559pq9eNREzv0ZoSUkPBZWA9bbkBGZUzhd5zaiJHTFi64zCZyoMQ1qPCBchVRzdK7jnBp6VF62xJQ==">
+                    <div class="block-header desktop-block-header"><strong>Daftar</strong></div>
+                    <form class="new_user" id="new_user" action="otp.html" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="U3z7ZEQoI559pq9eNREzv0ZoSUkPBZWA9bbkBGZUzhd5zaiJHTFi64zCZyoMQ1qPCBchVRzdK7jnBp6VF62xJQ==">
                       <div class="fblock row">
-                        <div class="label-wrap small-12 medium-3 columns">
+                        <div class="label-wrap small-12 columns">
                           <label for="email">Email</label>
+                          <i><small class="gray">Pastikan email Kamu aktif.</small></i>
                         </div>
-                        <div class="label-wrap small-12 medium-9 columns">
+                        <div class="label-wrap small-12 columns">
                           <input required="required" type="email" name="user[email]" id="user_email">
                         </div>
                       </div>
                       <div class="fblock row">
-                        <div class="label-wrap small-12 medium-3 columns">
-                          <label for="pasang-hp">Nomor HP</label>
+                        <div class="label-wrap small-12 columns">
+                          <label for="pasang-hp">Nomor HP <span class="red">*</span></label>
+                          <i><small class="gray">Pastikan Nomor HP Kamu aktif.</small></i>
                         </div>
-                        <div class="input-wrap small-12 medium-9 columns">
+                        <div class="input-wrap small-12 columns">
                           <input required="required" type="number" name="user[phone]" id="user_phone">
                         </div>
                       </div>
                       <div class="fblock row">
-                        <div class="label-wrap small-12 medium-3 columns">
-                          <label for="password">Password</label>
+                        <div class="label-wrap small-12 columns">
+                          <label for="password">Password <span class="red">*</span></label>
                         </div>
-                        <div class="label-wrap small-12 medium-9 columns">
+                        <div class="label-wrap small-12 columns">
                           <input required="required" type="password" name="user[password]" id="user_password">
                         </div>
                       </div>
                       <div class="fblock row">
-                        <div class="label-wrap small-12 medium-3 columns">
-                          <label for="re-password">Ulangi Password</label>
+                        <div class="label-wrap small-12 columns">
+                          <label for="re-password">Ulangi Password <span class="red">*</span></label>
                         </div>
-                        <div class="label-wrap small-12 medium-9 columns">
+                        <div class="label-wrap small-12 columns">
                           <input type="password" name="confirmation_password" id="confirmation_password" required="required">
                         </div>
                       </div>
-                      <div class="fblock field-submit row">
-                        <div class="small-12 medium-9 medium-push-3 columns">
+                      <div class="fblock field-submit row pt10">
+                        <div class="small-12 columns">
                           <button type="submit" class="button expanded action-btn">Daftar</button>
                         </div>
                       </div>
@@ -317,13 +318,15 @@
                 </div>
                 <div class="small-12 large-5 column">
                   <div class="inner-profile">
-                    <div class="login-separator"><span>atau</span></div>
+                    <div class="login-separator"><span class="gray">atau</span></div>
                     <div class="fblock other-login-method">
-                      <a href="#" class="button expanded btn-fb"><span class="text"><span class="ic-fb"></span>Daftar via Facebook</span></a>
-                      <a href="#" class="button expanded btn-paytren"><span class="l-paytren"></span><span class="text">Login via PayTren</span></a>
+                      <a href="#" class="button bordered-btn expanded">
+                        <img src="images/facebook_logo.png" class="login-img" alt="Facebook">
+                        <span class="text">Daftar dengan Facebook</span>
+                      </a>
                     </div>
-                    <div class="fblock registration-link">
-                      <a href="login.html" class="button expanded btn-daftar">Sudah punya akun? Login</a>
+                    <div class="tac pt10 pb20">
+                      <a href="login-email.html"><span class="gray">Sudah punya akun? </span><strong>Login Disini</strong></a>
                     </div>
                   </div>
                 </div>

@@ -271,6 +271,40 @@
               <div class="cart-list order-list">
                 <div class="item-group">
                   <div class="block-header">
+                    <a href="#">Toko Treni Net</a>
+                    <!-- <a href="#" class="fr"><span class="icon ic-chat"></span></a> -->
+                  </div>
+                  <div class="list-body">
+                    <div class="item clr">
+                      <div class="img-box fl">
+                        <img src="./dummy/prod-thumb-1.png" alt="">
+                      </div>
+                      <div class="qtt-box fr with-inc">
+                        <input type="number" class="numbers" value="1"> 
+                      </div>
+                      <div class="desc-box">
+                        <p>
+                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
+                          Rp 850.000 <br>
+                          Warna hitam tapi agak ke ungu hijauan ya
+                        </p>
+                        <a href="javascript:;" data-open="editCatatan"><small>Edit Catatan</small></a>
+                        <span class="gray">&nbsp;-&nbsp;</span>
+                        <a href="" class="red-link"><small>Hapus Produk</small></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-footer clr">
+                    <div class="total-sum">
+                      <strong>TOTAL</strong>
+                      <span class="gray"><small>sebelum ongkir</small></span>
+                      <span class="fr"><small>Rp</small> <strong>850.000</strong></span>
+                    </div>
+                    <a href="#" class="button expanded" data-open="integrateModal">Bayar Transaksi Ini</a>
+                  </div>
+                </div>
+                <div class="item-group">
+                  <div class="block-header">
                     <a href="#">Toko Sepatu Jaya</a>
                     <!-- <a href="#" class="fr"><span class="icon ic-chat"></span></a> -->
                   </div>
@@ -315,40 +349,6 @@
                       <strong>TOTAL</strong>
                       <span class="gray"><small>sebelum ongkir</small></span>
                       <span class="fr"><small>Rp</small> <strong>1.700.000</strong></span>
-                    </div>
-                    <a href="checkout-1.html" class="button expanded">Bayar Transaksi Ini</a>
-                  </div>
-                </div>
-                <div class="item-group">
-                  <div class="block-header">
-                    <a href="#">Toko Subur</a>
-                    <!-- <a href="#" class="fr"><span class="icon ic-chat"></span></a> -->
-                  </div>
-                  <div class="list-body">
-                    <div class="item clr">
-                      <div class="img-box fl">
-                        <img src="./dummy/prod-thumb-1.png" alt="">
-                      </div>
-                      <div class="qtt-box fr with-inc">
-                        <input type="number" class="numbers" value="1"> 
-                      </div>
-                      <div class="desc-box">
-                        <p>
-                          <span class="elipsis dblock"><strong>Sepatu New Balance Gray Metalic</strong></span>
-                          Rp 850.000 <br>
-                          Warna hitam tapi agak ke ungu hijauan ya
-                        </p>
-                        <a href="javascript:;" data-open="editCatatan"><small>Edit Catatan</small></a>
-                        <span class="gray">&nbsp;-&nbsp;</span>
-                        <a href="" class="red-link"><small>Hapus Produk</small></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-footer clr">
-                    <div class="total-sum">
-                      <strong>TOTAL</strong>
-                      <span class="gray"><small>sebelum ongkir</small></span>
-                      <span class="fr"><small>Rp</small> <strong>850.000</strong></span>
                     </div>
                     <a href="checkout-1.html" class="button expanded">Bayar Transaksi Ini</a>
                   </div>
@@ -447,26 +447,22 @@
         <!-- END SEARCH REVEAL MODAL -->
 
         <!-- PRODUCT NOTE REVEAL MODAL -->
-        <div class="reveal" id="editCatatan" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="reveal" id="integrateModal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
           <form action="">
             <div class="modal-body">
-              <div class="order-list mt15">
-                <div class="item clr">
-                  <div class="img-box fl">
-                    <img src="http://belanjaqu.co.id/uploads/product_image/image/65603/thumb_DISTORI2.jpg" alt="">
-                  </div>
-                  <div class="desc-box">
-                    <p class="normal-text">
-                      <span class="elipsis dblock"><strong>Efek gitar distorsi SS1,harga cuci gudang no PHP</strong></span>
-                      Rp 152.000
-                    </p>
-                  </div>
-                </div>
+              <div class="mt10 pt20">
+                Produk hanya bisa dibeli oleh Mitra Treni. Silakan integrasikan ID Treni Kamu.
               </div>
               <div class="mt10">
-                <textarea name="product-note" rows="2" placeholder="Tulis catatan untuk produk ini, contoh : warna / ukuran">Warna hitam tapi agak ke ungu hijauan ya</textarea>
-                <br>
-                <input type="submit" class="button expanded" value="SIMPAN">
+                <div class="fblock">
+                  <label for="id"><strong>Masukkan ID</strong></label>
+                  <input type="text" id="id">
+                </div>
+                <div class="fblock mb20">
+                  <label for="pin"><strong>Masukkan PIN</strong></label>
+                  <input type="text" id="pin">
+                </div>
+                <input type="submit" class="button expanded" value="Integrasikan">
               </div>
             </div>
           </form>
