@@ -114,9 +114,13 @@ input[type=number]::-webkit-outer-spin-button {
         margin-left: -0.625rem !important;
         margin-right: -0.625rem !important;
     }
+    .m-dblock {
+        display: block;
+    }
 }
 
 // MARGIN
+.mb5 {margin-bottom: 5px;}
 .mb10 {margin-bottom: 10px;}
 .mb15 {margin-bottom: 15px;}
 .mb20 {margin-bottom: 20px;}
@@ -434,3 +438,4 @@ $sprites-size: 150px 50px;
         }
     }
 }
+
