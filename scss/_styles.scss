@@ -4304,6 +4304,52 @@ body.simple-header {
 		}
 	}
 }
+.score-calculate {
+	border: 1px solid $green;
+	padding: .9rem 1rem .8rem 1rem;
+	border-radius: 6px;
+	margin: 20px 0 23px 0;
+	.row {
+		.small-6 {
+			&:first-child {
+				position: relative;
+				color: $dark-gray;
+				&:after {
+					position: absolute;
+					right: 15px;
+					content: ":";
+				}
+			}
+			&:last-child {
+				font-weight: bold;
+				color: $green;
+			}
+		}
+	}
+	@include breakpoint(large) {
+		margin: 25px 0 27px 0;
+	}
+}
+.list-price {
+	margin: 23px 0 20px 0;
+	padding-top: 25px;
+	border-top: 1px dashed $light-gray;
+	font-size: $font-size-small;
+	ul {
+		margin-bottom: 0;
+		li {
+			display: inline-block;
+			width: 100%;
+			padding-bottom: 4px;
+			&:last-child {
+				padding-bottom: 0;
+			}
+			.fr {
+				color: $dark-gray;
+			}
+		}
+	}
+}
 .btn-fixm {
 	@include breakpoint (medium down) {
 		position: fixed;
