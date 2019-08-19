@@ -354,8 +354,26 @@ $sprites-size: 150px 50px;
     border: none !important;
     .mid-img {
         width: 310px;
+        border: 1px solid #000000;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
         @include breakpoint(large) {
             width: 400px;
+        }
+    }
+    .black-btn {
+        width: 310px;
+        background-color: #000000;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        font-weight: bold;
+        @include breakpoint(large) {
+            width: 400px;
+        }
+        &:hover, &:active {
+            background-color: #000000;
         }
     }
     .close-transparent {
