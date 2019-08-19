@@ -352,6 +352,12 @@ $sprites-size: 150px 50px;
 .transparent-modal {
     background: transparent !important;
     border: none !important;
+    .mid-img {
+        width: 310px;
+        @include breakpoint(large) {
+            width: 400px;
+        }
+    }
     .close-transparent {
         right: 1.5rem;
         top: 1rem;
@@ -360,6 +366,11 @@ $sprites-size: 150px 50px;
         padding: 3px 9px 0 9px;
         border-radius: 39px;
         font-weight: bold;
+        @include breakpoint(large) {
+            right: 5.8rem;
+            top: 1.1rem;
+            padding: 3px 9px 0 9px;
+        }
     }
 }
 
