@@ -349,6 +349,20 @@ $sprites-size: 150px 50px;
     margin-top: 0 !important;
 }
 
+.transparent-modal {
+    background: transparent !important;
+    border: none !important;
+    .close-transparent {
+        right: 1.5rem;
+        top: 1rem;
+        background-color: #000000;
+        color: $white;
+        padding: 3px 9px 0 9px;
+        border-radius: 39px;
+        font-weight: bold;
+    }
+}
+
 .visuallyhidden {
     position: absolute!important;
     overflow: hidden!important;
