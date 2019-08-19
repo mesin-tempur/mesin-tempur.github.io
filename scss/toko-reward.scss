@@ -1717,9 +1717,25 @@ h2.page-title {
 	}
 }
 
+.transparent-modal {
+	background: transparent !important;
+	border: none !important;
+	.close-transparent {
+		right: 1.8rem;
+    	top: 1.3rem;
+		background-color: #000000;
+		color: $white;
+		padding: 0 8px 2px 8px;
+		border-radius: 39px;
+		font-weight: normal;
+	}
+}
 .modal-product-reward {
 	padding: .5rem;
 	font-weight: normal;
+	.mid-img {
+		width: 310px;
+	}
 	p {
 		margin-bottom: 25px;
 		text-align: center;
