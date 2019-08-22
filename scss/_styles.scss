@@ -2038,6 +2038,9 @@ span.discount {
 	&.white-block {
 		background-color:white;
 	}
+	&.title-login {
+		padding: 5px 0 15px 0 !important;
+	}
 }
 .with-button {
 	input {
@@ -4648,4 +4651,36 @@ body.simple-header {
 }
 .btn-verificate {
 	padding: 0 1rem;
+}
+.not-have-password {
+	background: -moz-linear-gradient(45deg, #ff7664 0%, #ffa992 100%);
+	background: -webkit-linear-gradient(45deg, #ff7664 0%,#ffa992 100%);
+	background: linear-gradient(45deg, #ff7664 0%,#ffa992 100%);
+	color: $white;
+	margin: 0.625rem 0;
+	padding: 1.2rem 1.2rem 1.6rem 1.2rem;
+	border-radius: 6px;
+	text-align: center;
+	font-size: $font-size-small;
+	a {
+		display: block;
+		background-color: $white;
+		color: #ff7664;
+		font-weight: bold;
+		padding: 8px 14px;
+		margin-top: 13px;
+		border-radius: 50px;
+		font-size: $font-size-small;
+		transition: all .4s;
+	}
+	@include breakpoint(large) {
+		padding: 1rem;
+		font-size: $font-size;
+		a {
+			display: inline-block;
+			padding: 8px 23px 7px 23px;
+			margin-left: 8px;
+			margin-top: 0;
+		}
+	}
 }
