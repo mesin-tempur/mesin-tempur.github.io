@@ -25,6 +25,7 @@ ul li {list-style: none;}
 ul.dotted {li {list-style-type:disc;list-style-position: inside;}}
 small {font-size: $font-size-small;}
 .smallest {font-size: 0.8125rem;}
+.fs-i {font-style: italic;}
 
 :focus {outline: none;}
 .gap-main {margin:20px 0;}
@@ -478,6 +479,16 @@ $sprites-size: 150px 50px;
         tr:nth-child(odd) td {
             background: white;
             padding: 3px;
+        }
+    }
+    &.border-top-bottom {
+        padding: 13px 0 11px 0;
+        border: 1px solid $light-gray;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        table {
+            font-size: $font-size;
         }
     }
 }
