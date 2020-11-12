@@ -48,7 +48,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1AB0B7,
+  primary: #fe0002,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
@@ -58,19 +58,19 @@ $lighter-gray: #f1f1f1;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #565656;
-$white: #fefefe;
+$black: rgba(0,0,0,.8);
+$blacked: #000000;
+$white: #ffffff;
 $white-smoke: #fafafa;
-$blue: #5d6dc7;
+$blue: #0f4c8a;
 $blue-paytren: #2a78ff;
-$yellow: #ffc000;
+$yellow: #FFD424;
 $red: #f23b51;
 $orange: #f2815a;
 $green: #339900;
 $body-background: $white;
 $body-font-color: $black;
-// $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-$body-font-family: 'proximanova', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Roboto', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -86,6 +86,7 @@ $font-size-big:    1.1rem;
 $font-size-bigger: 1.3rem;
 $font-size-small:   .9rem;
 $font-size-smaller: .8rem;
+$font-size-smallest: .75rem;
 
 @include add-foundation-colors;
 
@@ -250,7 +251,7 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: 0.75em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
@@ -411,7 +412,7 @@ $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0.25);
 $maincontent-class: 'off-canvas-content';
-$maincontent-shadow: 0 0 10px rgba($black, 0.5);
+$maincontent-shadow: none;
 
 // 24. Orbit
 // ---------

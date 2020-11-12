@@ -1,0 +1,874 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Simulasi - Persada Computer</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-lightbox.css">
+    <link rel="icon" type="image/ico" href="../images/favicon.ico">
+  </head>
+  <body>
+  <div class="off-canvas-wrapper">
+    <div class="page-container off-canvas-wrapper-inner">
+      <div class="menu-overlay hidden js-slide-off"></div>
+      <div class="js-slide-menu bq-slide-menu bq-slide-menu-left side-canvas-menu">
+        <div class="side-menu-header">
+          <img src="../images/logo.svg" alt="Logo" style="height: 26px;">
+          <span class="js-slide-off">
+            <i class="mdi mdi-close"></i>
+          </span>
+        </div>
+        <div class="row">
+          <div class="small-12 column m-px-0">
+            <div class="sm-greeting">
+              <a href="login.html" class="dblock">
+                <div class="fwb big">Selamat Datang!</div>
+                <div class="small gray">Buat akun Kamu atau masuk disini</div>
+                <div class="sm-arrow-right">
+                  <i class="mdi mdi-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+            <ul class="side-menu-list">
+              <li>
+                <a href="simulation.html">
+                  <div class="icon">
+                    <i class="mdi mdi-desktop-mac"></i>
+                  </div>
+                  <div class="menu-list-title">Simulasi PC</div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="icon">
+                    <i class="mdi mdi-help"></i>
+                  </div>
+                  <div class="menu-list-title">Bantuan & Hubungi Kami</div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="icon">
+                    <i class="mdi mdi-message-text-outline"></i>
+                  </div>
+                  <div class="menu-list-title">Kirim Saran Kepada Kami</div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="side-menu-list bb-none">
+              <li>
+                <a href="">
+                  <div class="menu-list-title">FAQ</div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="menu-list-title">Kebijakan Privasi</div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="menu-list-title">Syarat & Ketentuan</div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li class="sml-notlink">
+                Versi 1.1
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END SIDE MENU -->
+
+      <div class="js-search-main search-main-screen">
+        <header>
+          <div class="row">
+            <div class="small-12 column">
+              <form action="">
+                <div class="search-modal">
+                  <div class="js-searchbar input-search-box block-fill">
+                    <input type="search" placeholder="Cari produk apa kak..">
+                  </div>
+                  <div class="submit-search block-add">
+                    <button type="submit" class="searchbar-submit js-searchbar-submit"> 
+                      <i class="mdi mdi-magnify"></i><span class="visuallyhidden">Search</span> 
+                    </button>
+                  </div>
+                  <div class="block-add cancel-search">
+                    <a href="#" class="js-dismiss-search small fw500">Batal</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </header>
+        <div class="suggestion-box">
+          <ul class="product-searches-field">
+            <ul class="filled-suggestion">
+              <li>
+                <a href="#">gaming <span class="suggestion-fill">di kategori Processor</span></a>
+              </li>
+              <li>
+                <a href="#">gaming <span class="suggestion-fill">di kategori Memory</span></a>
+              </li>
+              <li>
+                <a href="#">gaming <span class="suggestion-fill">di kategori Motherboard</span></a>
+              </li>
+              <li>
+                <a href="#">gaming <span class="suggestion-fill">di kategori VGA Card</span></a>
+              </li>
+              <li>
+                <a href="#">gaming <span class="suggestion-fill">di kategori Hardisk</span></a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="off-canvas-content">
+        <header>
+          <div class="row">
+            <div class="xsmall-12 columns hide-for-large">
+              <div class="d-flex aic jcsb mb5">
+                <div class="d-flex aic">
+                  <a href="#" class="js-menu-button js-menu-left">
+                    <i class="mdi mdi-menu"></i>
+                  </a>
+                  <a href="index.html" class="logo fl">
+                     <img src="../images/logo.svg" alt="Logo" style="height: 26px;">
+                  </a>
+                </div>
+                <a href="cart.html" class="btn-cart-mobile">
+                  <i class="mdi mdi-cart"></i>
+                  <!-- <span class="counter-notif">9+</span> -->
+                </a>
+              </div>
+            </div>
+            <!-- LARGE / DESKTOP HEADER START -->
+            <div class="large-8 xlarge-9 columns show-for-large">
+              <div class="logo-new">
+                <a href="index.html">
+                  <img src="../images/logo.svg" alt="Logo">
+                </a>
+              </div>
+              <div class="main-search">
+                <form action="" class="clr desktop-main-search">
+                  <div class="search-left">
+                    <input type="search" class="js-desktop-search-input" placeholder="Cari produk apa kak..">
+                    <div class="desktop-search-rec">
+                      <div class="suggestion-box">
+                        <ul class="product-searches-field">
+                          <ul>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori Notebook</small>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori Processor</small>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori Memory</small>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori Motherboard</small>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori VGA Card</small>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori Hardisk</small>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori SSD</small>
+                              </a>
+                            </li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search-right">
+                    <button type="submit"><i class="mdi mdi-magnify"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="build-pc-desktop">
+                <a href="simulation.html" class="button small-btn">
+                  <i class="mdi mdi-desktop-mac"></i>Simulasi
+                </a>
+              </div>
+            </div>
+            <div class="large-4 xlarge-3 columns show-for-large tar">
+              <div class="header-links cart-links-box separator separator-right" type="button" data-toggle="cart-dropdown" data-options="align:right">
+                <a href="cart.html">
+                  <i class="mdi mdi-cart white"></i>
+                  <!-- <span class="counter-notif">9+</span> -->
+                </a>
+                <div class="dropdown-pane ddc-box" id="cart-dropdown" data-dropdown data-hover="true" data-hover-pane="true">
+                  <div class="pane-body">
+                    <div class="if-empty">
+                      <div class="ife-img">
+                        <img src="../images/categories/lcd.svg" alt="">
+                      </div>
+                      <div class="text">Belum Ada Produk</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-links login-links-box">
+                <a href="login.html" class="button small-btn bordered-btn white-btn mb0">
+                  Masuk
+                </a>
+              </div>
+              <div class="header-links login-links-box">
+                <a href="register.html" class="button small-btn bordered-btn mb0">
+                  Daftar
+                </a>
+              </div>
+            </div>
+            <!-- LARGE / DESKTOP HEADER END -->
+          </div>
+          <div class="row top-searchbar hide-for-large">
+            <div class="small-12 column pt5">
+              <form action="">
+                <div class="search-modal">
+                  <div class="js-searchbar-overlay input-search-box block-fill">
+                    <input type="search" placeholder="Cari produk apa kak..">
+                  </div>
+                  <div class="submit-search block-add">
+                    <button type="submit" class="searchbar-submit js-searchbar-submit-overlay">
+                      <i class="mdi mdi-magnify"></i><span class="visuallyhidden">Search</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </header>
+        <div class="section main-content">
+          <div class="row">
+            <div class="large-12 column m-px-0">
+              <div class="product-briefing">
+                <div class="pb-left">
+                  <div class="pbl-images pbli-lightbox">
+                    <div>
+                      <a href="https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/10/20/ad03fadc-b4cd-4541-b5b1-c734bec5b63f.jpg.webp">
+                        <div class="precision-img">
+                          <img src="https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/10/20/ad03fadc-b4cd-4541-b5b1-c734bec5b63f.jpg.webp" alt="">
+                        </div>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/10/20/2c55bd85-b57e-45bc-815c-5546d993ba0d.jpg.webp">
+                        <div class="precision-img">
+                          <img src="https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/10/20/2c55bd85-b57e-45bc-815c-5546d993ba0d.jpg.webp" alt="">
+                        </div>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/10/20/722beb88-db89-4ec3-9647-2e7698e7f37e.jpg.webp">
+                        <div class="precision-img">
+                          <img src="https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/10/20/722beb88-db89-4ec3-9647-2e7698e7f37e.jpg.webp" alt="">
+                        </div>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/10/20/ad03fadc-b4cd-4541-b5b1-c734bec5b63f.jpg.webp">
+                        <div class="precision-img">
+                          <img src="https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/10/20/ad03fadc-b4cd-4541-b5b1-c734bec5b63f.jpg.webp" alt="">
+                        </div>
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/10/20/2c55bd85-b57e-45bc-815c-5546d993ba0d.jpg.webp">
+                        <div class="precision-img">
+                          <img src="https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/10/20/2c55bd85-b57e-45bc-815c-5546d993ba0d.jpg.webp" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- <div class="slider-thumb">
+                    <div>
+                      <div class="precision-img">
+                        <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/28/264a5616-9003-4810-aebe-6f89db7ec198.jpg.webp" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="precision-img">
+                        <img src="https://assets.belanjaqu.co.id/uploads/product_image/image/1624526/thumb_buff-001-1.jpg" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="precision-img">
+                        <img src="https://assets.belanjaqu.co.id/uploads/product_image/image/1624506/thumb_mlb-023-1.jpg" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="precision-img">
+                        <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/28/264a5616-9003-4810-aebe-6f89db7ec198.jpg.webp" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="precision-img">
+                        <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/28/264a5616-9003-4810-aebe-6f89db7ec198.jpg.webp" alt="">
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="pb-right">
+                  <div class="pbr-title">
+                    Armaggeddon Xtreme XC32HD 32 Curved FullHD 165HZ Monitor Gaming
+                  </div>
+                  <div class="pbr-price">
+                    <div class="pbrp-disc">Rp4.000.000</div>
+                    <div class="pbrp-final">Rp3.450.000</div>
+                    <div class="pbrpd-label">23%<span class="show-for-large">&nbsp;OFF</span></div>
+                  </div>
+                  <div class="pbr-info">
+                    <div class="pbri-top">
+                      <div class="pbri-item">
+                        <span>120</span> Terjual
+                      </div>
+                      <div class="pbri-item">
+                        <span>30</span> Diminati
+                      </div>
+                    </div>
+                    <div class="pbri-bottom">
+                      <div class="pbrs-text small fw500">Share:</div>
+                      <div class="pbrs-list">
+                        <a href="" class="pbrsl-item">
+                          <img class="radius-circle" src="../images/share/whatsapp.png" alt="Whats App">
+                        </a>
+                        <a href="" class="pbrsl-item">
+                          <img src="../images/share/copy.png" alt="Copy">
+                        </a>
+                        <a href="" class="pbrsl-item">
+                          <img class="radius-4" src="../images/share/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="" class="pbrsl-item">
+                          <img class="radius-circle" src="../images/share/line.png" alt="Line">
+                        </a>
+                        <a href="" class="pbrsl-item">
+                          <img src="../images/share/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="" class="pbrsl-item">
+                          <img src="../images/share/gplus.png" alt="Google Plus">
+                        </a>
+                      </div>  
+                    </div>
+                  </div>
+                  <div class="pbr-actions">
+                    <a href="javascript:;" class="button expanded fwb buynow-modal">BELI SEKARANG</a>
+                  </div>
+                </div>
+              </div>
+              <div class="pb-desc">
+                <div class="pbd-title">Rincian Produk</div>
+                <div class="pbd-top">
+                  <div class="pbd-info">
+                    <div class="pbdi-left">Kategori</div>
+                    <div class="pbdi-right">
+                      <a href="product-listing-filter.html">LCD</a>
+                    </div>
+                  </div>
+                  <div class="pbd-info">
+                    <div class="pbdi-left">Brand</div>
+                    <div class="pbdi-right">
+                      <a href="product-listing-filter.html">Armaggeddon</a>
+                    </div>
+                  </div>
+                  <div class="pbd-info">
+                    <div class="pbdi-left">Stok</div>
+                    <div class="pbdi-right">44425</div>
+                  </div>
+                  <div class="pbd-info">
+                    <div class="pbdi-left">SKU</div>
+                    <div class="pbdi-right">FAT00005</div>
+                  </div>
+                  <div class="pbd-info">
+                    <div class="pbdi-left">Kondisi</div>
+                    <div class="pbdi-right">44425</div>
+                  </div>
+                  <div class="pbd-info">
+                    <div class="pbdi-left">Berat</div>
+                    <div class="pbdi-right">11000gr</div>
+                  </div>
+                </div>
+                <div class="pbd-bottom">
+                  <div class="pbd-title">Deskripsi</div>
+                  <div class="pbdr-desc">
+                    Armaggeddon XC32HD-S Curve Gaming Monitor 32″ 2ms 165Hz
+                    <br>
+                    - Screen Curvature : R1500
+                    <br>
+                    - Screen Size : 32"
+                    <br>
+                    - HD Resolution : 1920 x 1080
+                    <br>
+                    - Refresh Rate : 165hz
+                    <br>
+                    - Response Time :2ms
+                    <br>
+                    - Screen Tilt : -5° / 15°
+                    <br>
+                    - Vesa Wall Mount : 100 x 100
+                    <br>
+                    - Viewing Angle : 178/178
+                    <br>
+                    - Display Colors : 16.7 Million
+                    <br>
+                    - Zero Bezal
+                    <br>
+                    - Brightness : 300cd /m2
+                    <br>
+                    - Anti-Blue Ray
+                    <br>
+                    - Flicker Free
+                    <br>
+                    - AMD Free Sync
+                    <br>
+                    - Nvidia G-Sync
+                    <br>
+                    ----------------------------------
+                    <br>
+                    - DP Input (DP Cable Included)
+                    <br>
+                    - HDMI Input (HDMI Cable Included)
+                    <br>
+                    - USB Inpur
+                    <br>
+                    - Audio Output
+                    <br>
+                    - 3 Year Warranty
+                    <br><br>
+                    DI ANJURKAN MENGGUNAKAN PACKING KAYU , JIKA TIDAK MENAMBAHKAN PACKING KAYU JIKA ADA KERUSAKAAN BUKAN TANGGUNG JAWAB KAMI ..
+                    <br><br>
+                    LINK PACKING KAYU :
+                    <br>
+                    <a href="">https://www.persadacomputer.com/packing-kayu-standard</a>
+                  </div>
+                </div>
+              </div>
+              <div class="home-card">
+                <div class="hc-title hc-title-link">
+                  <span>PRODUK SERUPA</span>
+                  <a href="product-listing-filter.html" class="small">
+                    Lihat Semua<i class="mdi mdi-chevron-right"></i>
+                  </a>
+                </div>
+                <div class="product-plate pp-slider">
+                  <div class="product-item">
+                    <div class="pi-box">
+                      <a class="product-clickable" href="product-detail.html">
+                        <div class="pi-top">
+                          <div class="pit-disc">-23%</div>
+                          <div class="pit-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/28/264a5616-9003-4810-aebe-6f89db7ec198.jpg.webp" style="object-fit: contain">
+                            <!-- <img src="../images/empty-img.svg" style="object-fit: contain"> -->
+                          </div>
+                        </div>
+                        <div class="pi-bottom">
+                          <div class="pib-title">
+                            COLORFUL SSD 128GB NVME CN600 128 GB NVME M2
+                          </div>
+                          <div class="pib-price">
+                            <div class="pibp-normal">
+                              <span class="pibp-currency">Rp</span>
+                              <span class="pibp-price ellipsis">365.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="pi-box">
+                      <a class="product-clickable" href="product-detail.html">
+                        <div class="pi-top">
+                          <div class="pit-disc">-40%</div>
+                          <div class="pit-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2020/10/8/22637125/22637125_d21dfd6a-f28e-4144-a4f7-08e8a8365ace_620_620.webp" style="object-fit: contain">
+                          </div>
+                        </div>
+                        <div class="pi-bottom">
+                          <div class="pib-title">
+                            PC Gaming Sultan Intel Core i9 10900K/RTX 3090 24GB /Ram 32GB/NVME 512
+                          </div>
+                          <div class="pib-price">
+                            <div class="pibp-normal">
+                              <span class="pibp-currency">Rp</span>
+                              <span class="pibp-price ellipsis">365.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="pi-box">
+                      <a class="product-clickable" href="product-detail.html">
+                        <div class="pi-top">
+                          <div class="pit-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/9/22/6a9d5981-4846-4d1e-b08a-7341af7567ff.jpg.webp" style="object-fit: contain">
+                          </div>
+                        </div>
+                        <div class="pi-bottom">
+                          <div class="pib-title">
+                            MONITOR LED SPC SM-19HD 19 Inch VGA HDMI Garansi Resmi
+                          </div>
+                          <div class="pib-price">
+                            <div class="pibp-normal">
+                              <span class="pibp-currency">Rp</span>
+                              <span class="pibp-price ellipsis">740.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="pi-box">
+                      <a class="product-clickable" href="product-detail.html">
+                        <div class="pi-top">
+                          <div class="pit-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/22/8da2a96b-98d8-4fef-a51b-370701c17c35.jpg.webp" style="object-fit: contain">
+                          </div>
+                        </div>
+                        <div class="pi-bottom">
+                          <div class="pib-title">
+                            PC Gaming Ryzen 9 3950X /32GB/RTX 2080 SUPER/ NVME 512GB
+                          </div>
+                          <div class="pib-price">
+                            <div class="pibp-normal">
+                              <span class="pibp-currency">Rp</span>
+                              <span class="pibp-price ellipsis">37.000.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="pi-box">
+                      <a class="product-clickable" href="product-detail.html">
+                        <div class="pi-top">
+                          <div class="pit-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/20/722beb88-db89-4ec3-9647-2e7698e7f37e.jpg.webp" style="object-fit: contain">
+                          </div>
+                        </div>
+                        <div class="pi-bottom">
+                          <div class="pib-title">
+                            Armaggeddon Xtreme XC32HD 32 Curved FullHD 165HZ Monitor Gaming
+                          </div>
+                          <div class="pib-price">
+                            <div class="pibp-normal">
+                              <span class="pibp-currency">Rp</span>
+                              <span class="pibp-price ellipsis">3.625.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="pi-box">
+                      <a class="product-clickable" href="product-detail.html">
+                        <div class="pi-top">
+                          <div class="pit-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/23/2ff6af4a-c818-4889-a495-d9c14e62061a.jpg.webp" style="object-fit: contain">
+                          </div>
+                        </div>
+                        <div class="pi-bottom">
+                          <div class="pib-title">
+                            GEIL DDR4 EVO X II RGB LED PC28800 Dual Channel 16GB (2x8GB)
+                          </div>
+                          <div class="pib-price">
+                            <div class="pibp-normal">
+                              <span class="pibp-currency">Rp</span>
+                              <span class="pibp-price ellipsis">1.350.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="pi-box">
+                      <a class="product-clickable" href="product-detail.html">
+                        <div class="pi-top">
+                          <div class="pit-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/28/264a5616-9003-4810-aebe-6f89db7ec198.jpg.webp" style="object-fit: contain">
+                          </div>
+                        </div>
+                        <div class="pi-bottom">
+                          <div class="pib-title">
+                            COLORFUL SSD 128GB NVME CN600 128 GB NVME M2
+                          </div>
+                          <div class="pib-price">
+                            <div class="pibp-normal">
+                              <span class="pibp-currency">Rp</span>
+                              <span class="pibp-price ellipsis">365.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="pi-box">
+                      <a class="product-clickable" href="product-detail.html">
+                        <div class="pi-top">
+                          <div class="pit-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2020/10/8/22637125/22637125_d21dfd6a-f28e-4144-a4f7-08e8a8365ace_620_620.webp" style="object-fit: contain">
+                          </div>
+                        </div>
+                        <div class="pi-bottom">
+                          <div class="pib-title">
+                            PC Gaming Sultan Intel Core i9 10900K/RTX 3090 24GB /Ram 32GB/NVME 512
+                          </div>
+                          <div class="pib-price">
+                            <div class="pibp-normal">
+                              <span class="pibp-currency">Rp</span>
+                              <span class="pibp-price ellipsis">365.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="pi-box">
+                      <a class="product-clickable" href="product-detail.html">
+                        <div class="pi-top">
+                          <div class="pit-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/9/22/6a9d5981-4846-4d1e-b08a-7341af7567ff.jpg.webp" style="object-fit: contain">
+                          </div>
+                        </div>
+                        <div class="pi-bottom">
+                          <div class="pib-title">
+                            MONITOR LED SPC SM-19HD 19 Inch VGA HDMI Garansi Resmi
+                          </div>
+                          <div class="pib-price">
+                            <div class="pibp-normal">
+                              <span class="pibp-currency">Rp</span>
+                              <span class="pibp-price ellipsis">740.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="pi-box">
+                      <a class="product-clickable" href="product-detail.html">
+                        <div class="pi-top">
+                          <div class="pit-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/22/8da2a96b-98d8-4fef-a51b-370701c17c35.jpg.webp" style="object-fit: contain">
+                          </div>
+                        </div>
+                        <div class="pi-bottom">
+                          <div class="pib-title">
+                            PC Gaming Ryzen 9 3950X /32GB/RTX 2080 SUPER/ NVME 512GB
+                          </div>
+                          <div class="pib-price">
+                            <div class="pibp-normal">
+                              <span class="pibp-currency">Rp</span>
+                              <span class="pibp-price ellipsis">37.000.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="pi-box">
+                      <a class="product-clickable" href="product-detail.html">
+                        <div class="pi-top">
+                          <div class="pit-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/20/722beb88-db89-4ec3-9647-2e7698e7f37e.jpg.webp" style="object-fit: contain">
+                          </div>
+                        </div>
+                        <div class="pi-bottom">
+                          <div class="pib-title">
+                            Armaggeddon Xtreme XC32HD 32 Curved FullHD 165HZ Monitor Gaming
+                          </div>
+                          <div class="pib-price">
+                            <div class="pibp-normal">
+                              <span class="pibp-currency">Rp</span>
+                              <span class="pibp-price ellipsis">3.625.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <div class="pi-box">
+                      <a class="product-clickable" href="product-detail.html">
+                        <div class="pi-top">
+                          <div class="pit-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/23/2ff6af4a-c818-4889-a495-d9c14e62061a.jpg.webp" style="object-fit: contain">
+                          </div>
+                        </div>
+                        <div class="pi-bottom">
+                          <div class="pib-title">
+                            GEIL DDR4 EVO X II RGB LED PC28800 Dual Channel 16GB (2x8GB)
+                          </div>
+                          <div class="pib-price">
+                            <div class="pibp-normal">
+                              <span class="pibp-currency">Rp</span>
+                              <span class="pibp-price ellipsis">1.350.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="copyright">
+            <div class="row">
+              <div class="small-12 large-4 columns">
+                <div class="m-tac">©2020 Persada Komputer</div>
+              </div>
+              <div class="small-12 large-8 columns show-for-large">
+                <div class="footer-action">
+                  <a href="">Bantuan & Hubungi Kami</a>
+                  <a href="">Kirim Saran</a>
+                  <a href="">FAQ</a>
+                  <a href="">Kebijakan Privasi</a>
+                  <a href="">Syarat & Ketentuan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div id="js-dark-overlay" class="dark-overlay"></div>
+    <div class="short-modal note-modal">
+      <div class="bottom-modal-title">
+        <a href="javascript:;" class="bottom-modal-close">
+          <i class="mdi mdi-close"></i>
+        </a>
+        Pembelian
+      </div>
+      <div class="bottom-modal-content">
+        <form action="" method="" class="p1rem">
+          <div class="dd-cart pt0">
+            <div class="ddc-item reset-hover m-x0 pt5">
+              <div class="ddci-img">
+                <img src="https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/10/20/ad03fadc-b4cd-4541-b5b1-c734bec5b63f.jpg.webp" style="object-fit: contain">
+              </div>
+              <div class="dcci-desc ellipsis">
+                <div class="ddci-title ellipsis">
+                  Armaggeddon Xtreme XC32HD 32 Curved FullHD 165HZ Monitor Gaming
+                </div>
+                <div class="ddci-price">
+                  <span class="ddcip-currency">Rp</span>
+                  <span class="ddcip-price ellipsis">1.350.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb1rem">
+            <label class="small fwb">Catatan untuk produk ini</label>
+            <textarea name="" id="" rows="2" placeholder="Contoh, warna / ukuran (Opsional)" spellcheck="false"></textarea>
+          </div>
+          <div class="pt5 mb10">
+            <div class="row">
+              <div class="small-12 large-6 column m-px-0 l-pl-0 m-mb1rem">
+                <button class="button bordered-btn light-primary expanded mb0">Masukkan Keranjang</button>
+              </div>
+              <div class="small-12 large-6 column m-px-0 l-pr-0">
+                <button class="button expanded mb0" type="submit">Lanjut Bayar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/min/slick.min.js"></script>
+    <script src="../js/slick-lightbox.js"></script>
+    <!-- <script src="../js/min/app-min.js"></script> -->
+    <script src="../js/app.js"></script>
+    <script>
+      $('.pbl-images').slickLightbox({
+        slick: {
+          itemSelector: 'a',
+          navigateByKeyboard: true,
+          dots: true,
+          infinite: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+              }
+            }
+          ]
+        }
+      });
+      $('.buynow-modal').click(function(){
+        $('.short-modal').addClass('active');
+        $('#js-dark-overlay').css({
+          visibility: "visible",
+          opacity: "1",
+          zIndex: "201"
+        });
+        $('.pbr-actions').css({opacity: "0"});
+      });
+      $('.bottom-modal-close').click(function(){
+        $('.short-modal').removeClass('active');
+        $('.dark-overlay').css({
+          visibility: "hidden",
+          opacity: "0",
+          zIndex: "110"
+        });
+        $('.pbr-actions').css({opacity: "1"});
+      });
+    </script>
+  </div>
+  </body>
+</html>

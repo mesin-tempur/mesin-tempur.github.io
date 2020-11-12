@@ -1,0 +1,670 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Keranjang - Persada Computer</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/select2.css">
+    <link rel="icon" type="image/ico" href="../images/favicon.ico">
+  </head>
+  <body>
+  <div class="off-canvas-wrapper">
+    <div class="page-container off-canvas-wrapper-inner">
+      <div class="menu-overlay hidden js-slide-off"></div>
+      <div class="js-slide-menu bq-slide-menu bq-slide-menu-left side-canvas-menu">
+        <div class="side-menu-header">
+          <img src="../images/logo.svg" alt="Logo" style="height: 26px;">
+          <span class="js-slide-off">
+            <i class="mdi mdi-close"></i>
+          </span>
+        </div>
+        <div class="row">
+          <div class="small-12 column m-px-0">
+            <div class="sm-greeting">
+              <a href="login.html" class="dblock">
+                <div class="fwb big">Selamat Datang!</div>
+                <div class="small gray">Buat akun Kamu atau masuk disini</div>
+                <div class="sm-arrow-right">
+                  <i class="mdi mdi-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+            <ul class="side-menu-list">
+              <li>
+                <a href="simulation.html">
+                  <div class="icon">
+                    <i class="mdi mdi-desktop-mac"></i>
+                  </div>
+                  <div class="menu-list-title">Simulasi PC</div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="icon">
+                    <i class="mdi mdi-help"></i>
+                  </div>
+                  <div class="menu-list-title">Bantuan & Hubungi Kami</div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="icon">
+                    <i class="mdi mdi-message-text-outline"></i>
+                  </div>
+                  <div class="menu-list-title">Kirim Saran Kepada Kami</div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="side-menu-list bb-none">
+              <li>
+                <a href="">
+                  <div class="menu-list-title">FAQ</div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="menu-list-title">Kebijakan Privasi</div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="menu-list-title">Syarat & Ketentuan</div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li class="sml-notlink">
+                Versi 1.1
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END SIDE MENU -->
+
+      <div class="js-search-main search-main-screen">
+        <header>
+          <div class="row">
+            <div class="small-12 column">
+              <form action="">
+                <div class="search-modal">
+                  <div class="js-searchbar input-search-box block-fill">
+                    <input type="search" placeholder="Cari produk apa kak..">
+                  </div>
+                  <div class="submit-search block-add">
+                    <button type="submit" class="searchbar-submit js-searchbar-submit"> 
+                      <i class="mdi mdi-magnify"></i><span class="visuallyhidden">Search</span> 
+                    </button>
+                  </div>
+                  <div class="block-add cancel-search">
+                    <a href="#" class="js-dismiss-search small fw500">Batal</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </header>
+        <div class="suggestion-box">
+          <ul class="product-searches-field">
+            <ul class="filled-suggestion">
+              <li>
+                <a href="#">gaming <span class="suggestion-fill">di kategori Processor</span></a>
+              </li>
+              <li>
+                <a href="#">gaming <span class="suggestion-fill">di kategori Memory</span></a>
+              </li>
+              <li>
+                <a href="#">gaming <span class="suggestion-fill">di kategori Motherboard</span></a>
+              </li>
+              <li>
+                <a href="#">gaming <span class="suggestion-fill">di kategori VGA Card</span></a>
+              </li>
+              <li>
+                <a href="#">gaming <span class="suggestion-fill">di kategori Hardisk</span></a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="off-canvas-content m-white-bg">
+        <header>
+          <div class="row">
+            <div class="xsmall-12 columns hide-for-large">
+              <div class="d-flex aic jcsb mb5">
+                <div class="d-flex aic">
+                  <a href="#" class="js-menu-button js-menu-left">
+                    <i class="mdi mdi-menu"></i>
+                  </a>
+                  <a href="index.html" class="logo fl">
+                     <img src="../images/logo.svg" alt="Logo" style="height: 26px;">
+                  </a>
+                </div>
+                <a href="cart.html" class="btn-cart-mobile">
+                  <i class="mdi mdi-cart"></i>
+                  <!-- <span class="counter-notif">9+</span> -->
+                </a>
+              </div>
+            </div>
+            <!-- LARGE / DESKTOP HEADER START -->
+            <div class="large-8 xlarge-9 columns show-for-large">
+              <div class="logo-new">
+                <a href="index.html">
+                  <img src="../images/logo.svg" alt="Logo">
+                </a>
+              </div>
+              <div class="main-search">
+                <form action="" class="clr desktop-main-search">
+                  <div class="search-left">
+                    <input type="search" class="js-desktop-search-input" placeholder="Cari produk apa kak..">
+                    <div class="desktop-search-rec">
+                      <div class="suggestion-box">
+                        <ul class="product-searches-field">
+                          <ul>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori Notebook</small>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori Processor</small>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori Memory</small>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori Motherboard</small>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori VGA Card</small>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori Hardisk</small>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                gaming <small>di kategori SSD</small>
+                              </a>
+                            </li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search-right">
+                    <button type="submit"><i class="mdi mdi-magnify"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="build-pc-desktop">
+                <a href="simulation.html" class="button small-btn">
+                  <i class="mdi mdi-desktop-mac"></i>Simulasi
+                </a>
+              </div>
+            </div>
+            <div class="large-4 xlarge-3 columns show-for-large tar">
+              <div class="header-links cart-links-box separator separator-right" type="button" data-toggle="cart-dropdown" data-options="align:right">
+                <a href="cart.html">
+                  <i class="mdi mdi-cart white"></i>
+                  <!-- <span class="counter-notif">9+</span> -->
+                </a>
+                <div class="dropdown-pane ddc-box" id="cart-dropdown" data-dropdown data-hover="true" data-hover-pane="true">
+                  <div class="pane-body">
+                    <div class="if-empty">
+                      <div class="ife-img">
+                        <img src="../images/categories/lcd.svg" alt="">
+                      </div>
+                      <div class="text">Belum Ada Produk</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-links login-links-box">
+                <a href="login.html" class="button small-btn bordered-btn white-btn mb0">
+                  Masuk
+                </a>
+              </div>
+              <div class="header-links login-links-box">
+                <a href="register.html" class="button small-btn bordered-btn mb0">
+                  Daftar
+                </a>
+              </div>
+            </div>
+            <!-- LARGE / DESKTOP HEADER END -->
+          </div>
+          <div class="row top-searchbar hide-for-large">
+            <div class="small-12 column pt5">
+              <form action="">
+                <div class="search-modal">
+                  <div class="js-searchbar-overlay input-search-box block-fill">
+                    <input type="search" placeholder="Cari produk apa kak..">
+                  </div>
+                  <div class="submit-search block-add">
+                    <button type="submit" class="searchbar-submit js-searchbar-submit-overlay">
+                      <i class="mdi mdi-magnify"></i><span class="visuallyhidden">Search</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </header>
+        <div class="section main-content">
+          <div class="row">
+            <div class="large-12 column m-px-0">
+              <div class="split-page cart-plate">
+                <div class="sp-left">
+                  <div class="title-section m-red-accent">
+                    <div class="ts-left"></div>
+                    <div class="ts-text white-bg">Keranjang Belanja</div>
+                    <div class="ts-right"></div>
+                  </div>
+                  <!-- <div class="cp-empty">
+                    <div class="cpe-img">
+                      <img src="../images/categories/lcd.svg" alt="Empty Cart">
+                    </div>
+                    <div class="cpe-text">
+                      <div class="gray big">Keranjang belanja masih kosong..</div>
+                    </div>
+                  </div> -->
+                  <div class="cp-list">
+                    <div class="cpl-top d-flex aic jcsb">
+                      <div class="flex-1">
+                        <label class="custom-checkbox">
+                          Pilih Semua <span class="gray">(0/5)</span>
+                          <input id="select-all" type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="cplt-delete"><a href="">Hapus</a></div>
+                    </div>
+                    <div class="cpl-plate">
+                      <div class="cplp-item">
+                        <div class="cplpi-left">
+                          <label class="custom-checkbox">
+                            <input class="select-product" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="cplpi-right">
+                          <div class="precision-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/28/264a5616-9003-4810-aebe-6f89db7ec198.jpg.webp">
+                          </div>
+                          <div class="cplpir-desc ellipsis">
+                            <div class="cplpird-title ellipsis">
+                              <a href="product-detail.html">COLORFUL SSD 128GB NVME CN600 128 GB NVME M2</a>
+                            </div>
+                            <div class="cplpird-price ellipsis">
+                              <span class="line-through gray smallest mr5">Rp410.000</span>
+                              <span class="fw500 primary">Rp365.000</span>
+                            </div>
+                            <div class="cplpird-note gray">
+                              Tidak ada catatan
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cplp-action">
+                        <div class="cplpa-left l-ml15">
+                          <a href="javascript:;" class="small call-shortm">Ubah Catatan</a>
+                        </div>
+                        <div class="cplpa-right d-flex aic">
+                          <div class="mr15">
+                            <a href="" class="delete-btn"><i class="mdi mdi-delete"></i></a>
+                          </div>
+                          <div class="qty-group">
+                            <div class="sirq-btn minus-numb">
+                              <i class="mdi mdi-minus"></i>
+                            </div>
+                            <input class="sirq-input" type="number" value="1" min="1" max="99">
+                            <div class="sirq-btn plus-numb">
+                              <i class="mdi mdi-plus"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cpl-plate">
+                      <div class="cplp-item">
+                        <div class="cplpi-left">
+                          <label class="custom-checkbox">
+                            <input class="select-product" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="cplpi-right">
+                          <div class="precision-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2020/10/8/22637125/22637125_d21dfd6a-f28e-4144-a4f7-08e8a8365ace_620_620.webp">
+                          </div>
+                          <div class="cplpir-desc ellipsis">
+                            <div class="cplpird-title ellipsis">
+                              <a href="product-detail.html">PC Gaming Sultan Intel Core i9 10900K/RTX 3090 24GB /Ram 32GB/NVME 512</a>
+                            </div>
+                            <div class="cplpird-price ellipsis">
+                              <span class="fw500 primary">Rp740.000</span>
+                            </div>
+                            <div class="cplpird-note gray">
+                              Tidak ada catatan
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cplp-action">
+                        <div class="cplpa-left l-ml15">
+                          <a href="javascript:;" class="small call-shortm">Ubah Catatan</a>
+                        </div>
+                        <div class="cplpa-right d-flex aic">
+                          <div class="mr15">
+                            <a href="" class="delete-btn"><i class="mdi mdi-delete"></i></a>
+                          </div>
+                          <div class="qty-group">
+                            <div class="sirq-btn minus-numb">
+                              <i class="mdi mdi-minus"></i>
+                            </div>
+                            <input class="sirq-input" type="number" value="1" min="1" max="99">
+                            <div class="sirq-btn plus-numb">
+                              <i class="mdi mdi-plus"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cpl-plate">
+                      <div class="cplp-item">
+                        <div class="cplpi-left">
+                          <label class="custom-checkbox">
+                            <input class="select-product" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="cplpi-right">
+                          <div class="precision-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/23/2ff6af4a-c818-4889-a495-d9c14e62061a.jpg.webp">
+                          </div>
+                          <div class="cplpir-desc ellipsis">
+                            <div class="cplpird-title ellipsis">
+                              <a href="product-detail.html">GEIL DDR4 EVO X II RGB LED PC28800 Dual Channel 16GB (2x8GB)</a>
+                            </div>
+                            <div class="cplpird-price ellipsis">
+                              <span class="fw500 primary">1.350.000</span>
+                            </div>
+                            <div class="cplpird-note gray">
+                              Tidak ada catatan
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cplp-action">
+                        <div class="cplpa-left l-ml15">
+                          <a href="javascript:;" class="small call-shortm">Ubah Catatan</a>
+                        </div>
+                        <div class="cplpa-right d-flex aic">
+                          <div class="mr15">
+                            <a href="" class="delete-btn"><i class="mdi mdi-delete"></i></a>
+                          </div>
+                          <div class="qty-group">
+                            <div class="sirq-btn minus-numb">
+                              <i class="mdi mdi-minus"></i>
+                            </div>
+                            <input class="sirq-input" type="number" value="1" min="1" max="99">
+                            <div class="sirq-btn plus-numb">
+                              <i class="mdi mdi-plus"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cpl-plate">
+                      <div class="cplp-item">
+                        <div class="cplpi-left">
+                          <label class="custom-checkbox">
+                            <input class="select-product" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="cplpi-right">
+                          <div class="precision-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/VqbcmM/2020/10/28/264a5616-9003-4810-aebe-6f89db7ec198.jpg.webp">
+                          </div>
+                          <div class="cplpir-desc ellipsis">
+                            <div class="cplpird-title ellipsis">
+                              <a href="product-detail.html">COLORFUL SSD 128GB NVME CN600 128 GB NVME M2</a>
+                            </div>
+                            <div class="cplpird-price ellipsis">
+                              <span class="line-through gray smallest mr5">Rp410.000</span>
+                              <span class="fw500 primary">Rp365.000</span>
+                            </div>
+                            <div class="cplpird-note gray">
+                              Tidak ada catatan
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cplp-action">
+                        <div class="cplpa-left l-ml15">
+                          <a href="javascript:;" class="small call-shortm">Ubah Catatan</a>
+                        </div>
+                        <div class="cplpa-right d-flex aic">
+                          <div class="mr15">
+                            <a href="" class="delete-btn"><i class="mdi mdi-delete"></i></a>
+                          </div>
+                          <div class="qty-group">
+                            <div class="sirq-btn minus-numb">
+                              <i class="mdi mdi-minus"></i>
+                            </div>
+                            <input class="sirq-input" type="number" value="1" min="1" max="99">
+                            <div class="sirq-btn plus-numb">
+                              <i class="mdi mdi-plus"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cpl-plate">
+                      <div class="cplp-item">
+                        <div class="cplpi-left">
+                          <label class="custom-checkbox">
+                            <input class="select-product" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="cplpi-right">
+                          <div class="precision-img">
+                            <img src="https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2020/10/8/22637125/22637125_d21dfd6a-f28e-4144-a4f7-08e8a8365ace_620_620.webp">
+                          </div>
+                          <div class="cplpir-desc ellipsis">
+                            <div class="cplpird-title ellipsis">
+                              <a href="product-detail.html">PC Gaming Sultan Intel Core i9 10900K/RTX 3090 24GB /Ram 32GB/NVME 512</a>
+                            </div>
+                            <div class="cplpird-price ellipsis">
+                              <span class="fw500 primary">Rp740.000</span>
+                            </div>
+                            <div class="cplpird-note gray">
+                              Tidak ada catatan
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cplp-action">
+                        <div class="cplpa-left l-ml15">
+                          <a href="javascript:;" class="small call-shortm">Ubah Catatan</a>
+                        </div>
+                        <div class="cplpa-right d-flex aic">
+                          <div class="mr15">
+                            <a href="" class="delete-btn"><i class="mdi mdi-delete"></i></a>
+                          </div>
+                          <div class="qty-group">
+                            <div class="sirq-btn minus-numb">
+                              <i class="mdi mdi-minus"></i>
+                            </div>
+                            <input class="sirq-input" type="number" value="1" min="1" max="99">
+                            <div class="sirq-btn plus-numb">
+                              <i class="mdi mdi-plus"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sp-right">
+                  <div class="spr-content">
+                    <div class="sprc-title show-for-large">Ringkasan belanja</div>
+                    <div class="sprc-order">
+                      <!-- <div class="sprc-item">
+                        <div>Sub Total</div>
+                        <div class="gray">Rp183.600</div>
+                      </div> -->
+                      <div class="sprc-item">
+                        <div>Total Harga</div>
+                        <div class="primary fw500">Rp4.910.000</div>
+                      </div>
+                    </div>
+                    <!-- <button class="button expanded normal fwb mb0">
+                      CHECKOUT
+                    </button> -->
+                    <a href="checkout.html" class="button expanded normal fwb mb0">
+                      CHECKOUT
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="abs-bottom">
+          <div class="copyright">
+            <div class="row">
+              <div class="small-12 large-4 columns">
+                <div class="m-tac">©2020 Persada Komputer</div>
+              </div>
+              <div class="small-12 large-8 columns show-for-large">
+                <div class="footer-action">
+                  <a href="">Bantuan & Hubungi Kami</a>
+                  <a href="">Kirim Saran</a>
+                  <a href="">FAQ</a>
+                  <a href="">Kebijakan Privasi</a>
+                  <a href="">Syarat & Ketentuan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div id="js-dark-overlay" class="dark-overlay"></div>
+    <div class="short-modal note-modal">
+      <div class="bottom-modal-title">
+        <a href="javascript:;" class="bottom-modal-close">
+          <i class="mdi mdi-close"></i>
+        </a>
+        Ubah Catatan
+      </div>
+      <div class="bottom-modal-content">
+        <form action="" method="" class="p1rem">
+          <div class="dd-cart pt0">
+            <div class="ddc-item reset-hover m-x0 pt5">
+              <div class="ddci-img">
+                <img src="https://ecs7.tokopedia.net/img/cache/700/VqbcmM/2020/10/20/ad03fadc-b4cd-4541-b5b1-c734bec5b63f.jpg.webp" style="object-fit: contain">
+              </div>
+              <div class="dcci-desc ellipsis">
+                <div class="ddci-title ellipsis">
+                  Armaggeddon Xtreme XC32HD 32 Curved FullHD 165HZ Monitor Gaming
+                </div>
+                <div class="ddci-price">
+                  <span class="ddcip-currency">Rp</span>
+                  <span class="ddcip-price ellipsis">1.350.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb1rem">
+            <label class="small fwb">Catatan untuk produk ini</label>
+            <textarea name="" id="" rows="2" placeholder="Contoh, warna / ukuran (Opsional)" spellcheck="false">Lorem ipsum dolor, sit amet</textarea>
+          </div>
+          <div class="pt5 mb10">
+            <div class="row">
+              <div class="small-6 column pl-0">
+                <button class="button bordered-btn light-primary expanded mb0">Batal</button>
+              </div>
+              <div class="small-6 column pr-0">
+                <button class="button expanded mb0" type="submit">Simpan</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/min/slick.min.js"></script>
+    <!-- <script src="../js/min/app-min.js"></script> -->
+    <script src="../js/app.js"></script>
+    <script>
+      // Select All
+      var selectAll = $('#select-all'),
+          deleteArea = $('.cplt-delete');
+          selectProduct = $('.select-product');
+
+      selectAll.on('change', function() {
+        if (selectAll.is(':checked')) {
+          deleteArea.css('display', 'block');
+          selectProduct.attr('checked', true);
+        } else {
+          deleteArea.css('display', 'none');
+          selectProduct.attr('checked', false);
+        }
+      });
+
+      $('.call-shortm').click(function(){
+        $('.short-modal').addClass('active');
+        $('#js-dark-overlay').css({
+          visibility: "visible",
+          opacity: "1",
+          zIndex: "201"
+        });
+        $('.sp-right').css({opacity: "0"});
+      });
+      $('.bottom-modal-close').click(function(){
+        $('.short-modal').removeClass('active');
+        $('.dark-overlay').css({
+          visibility: "hidden",
+          opacity: "0",
+          zIndex: "110"
+        });
+        $('.sp-right').css({opacity: "1"});
+      });
+    </script>
+  </div>
+  </body>
+</html>
