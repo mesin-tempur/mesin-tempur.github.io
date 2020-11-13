@@ -2468,6 +2468,21 @@ header {
 			margin-right: -.3rem;
 		}
 	}
+	.sc-payment {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: $black;
+		img {
+			max-height: 22px;
+    		margin-right: .625rem;
+		}
+		i {
+			font-size: 20px;
+			color: $dark-gray;
+			margin-right: -.3rem;
+		}
+	}
 	.sc-insurance {
 		display: flex;
 		align-items: center;
@@ -2491,6 +2506,28 @@ header {
 					max-height: 15px;
 		    		margin-right: .625rem;
 				}
+			}
+		}
+	}
+	.payment-list {
+		.title-payment {
+			color: $dark-gray;
+			margin-bottom: .75rem;
+		}
+		.custom-radio {
+			padding-top: .75rem;
+			margin-bottom: .75rem;
+			border-top: 1px solid rgba(0,0,0,.06);
+			.payment-label {
+				display: flex;
+				align-items: center;
+				img {
+					max-height: 30px;
+		    		margin-right: 1.25rem;
+				}
+			}
+			.checkmark {
+				top: 18px;
 			}
 		}
 	}
