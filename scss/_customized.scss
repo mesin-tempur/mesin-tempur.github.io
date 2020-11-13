@@ -12,6 +12,12 @@
 // FONT
 .mdi {
     font-size: 24px;
+    &.size20 {
+        font-size: 20px;
+    }
+    &.size18 {
+        font-size: 18px;
+    }
 }
 
 // DISPLAY
@@ -76,7 +82,7 @@ ul.dotted {li {list-style-type:disc;list-style-position: inside;}}
 .black {color: $black;}
 .green {color: $green;}
 .yellow {color: $yellow;}
-.orange-link {color:$orange;&:hover{color:$orange;}}
+.blue-link {color:$blue;&:hover{color:$primary-color;}}
 .gray-link {color:$dark-gray;&:hover{color:$black;}}
 .red-link {color:$red;&:hover{color:$red;}}
 .fwb{font-weight: bold !important;}
@@ -386,6 +392,7 @@ input[type=number]::-webkit-outer-spin-button {
 .mr10 {margin-right: 10px;}
 .mr15 {margin-right: 15px;}
 .mr20 {margin-right: 20px;}
+.mr625 {margin-right: .625rem;}
 .ml10 {margin-left: 10px;}
 .ml15 {margin-left: 15px;}
 .ml20 {margin-left: 20px;}
@@ -604,6 +611,11 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 0!important;
     border: 0!important;
     clip: rect(0 0 0 0)!important;
+}
+.hidden-file {
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
 }
 
 .custom-radio {

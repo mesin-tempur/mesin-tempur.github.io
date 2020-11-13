@@ -2420,7 +2420,7 @@ header {
 			justify-content: center;
 		}
 		span {
-			font-weight: bold;
+			font-weight: 500;
 			font-size: $font-size-big;
 		}
 	}
@@ -2531,6 +2531,22 @@ header {
 			}
 		}
 	}
+	.sc-transfer {
+		display: flex;
+		align-items: center;
+		border-top: 1px solid rgba(0,0,0,.07);
+		border-bottom: 1px solid rgba(0,0,0,.07);
+		padding: .625rem 0;
+		margin: .3rem 0;
+		justify-content: space-between;
+		img {
+			max-height: 32px;
+		}
+		i {
+			font-size: 20px;
+			margin-left: .625rem;
+		}
+	}
 	&.sc-address {
 		.custom-radio {
 			padding-top: .2rem;
@@ -2607,6 +2623,63 @@ header {
 	@include breakpoint (medium down) {
 		.fb-contain {
 			padding: 1rem;
+		}
+	}
+}
+.box-upload {
+	background-color: $lighter-gray;
+	padding: 1.3rem;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+	flex-direction: column;
+	cursor: pointer;
+	.bu-icon {
+		position: relative;
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		background-color: $dark-gray;
+		i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 1.75rem;
+			color: $white;
+    		margin-top: 1px;
+		}
+	}
+	.bu-text {
+		position: relative;
+		margin-top: .8rem;
+		font-size: $font-size-small;
+		line-height: 1;
+		z-index: 1;
+	}
+	&.uploaded {
+		position: relative;
+		border: $code-border-light;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 6px;
+			background-image: linear-gradient(top, transparent, rgba(0, 0, 0, .1), rgba(0, 0, 0, .6));
+		}
+		.bu-icon {
+			background-color: rgba(0, 0, 0, .6);
+		}
+		.bu-text {
+			color: $white;
+			text-shadow: 0 2px 3px rgba(0,0,0,.3);
 		}
 	}
 }
