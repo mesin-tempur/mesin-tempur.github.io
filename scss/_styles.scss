@@ -588,10 +588,10 @@ header {
 	}
 	&.simple-page {
 		padding-top: 3rem;
-		padding-bottom: 4rem;
+		padding-bottom: 4.3rem;
 		@include breakpoint(medium down) {
 			padding-top: 0;
-			padding-bottom: 0;
+			padding-bottom: 3.8rem;
 		}
 	}
 }
@@ -2507,6 +2507,9 @@ header {
 		&.sc-address {
 			padding: 1rem 0 0 0;
 		}
+		.sc-summary {
+			padding-bottom: .25rem;
+		}
 	}
 }
 .bottom-link {
@@ -2561,18 +2564,12 @@ header {
 	bottom: 0;
 	.fb-contain {
 		background-color: $white;
-		padding: 0 1rem 1.5rem 1rem;
-		.mb625rem {
-			padding-top: .95rem;
-			border-top: 1px solid rgba(0,0,0,.06);
-		}
+		padding: 1.25rem 1rem;
+		border-top: 1px solid rgba(0,0,0,.06);
 	}
 	@include breakpoint (medium down) {
 		.fb-contain {
-			padding: 0 1rem 1.1rem 1rem;
-			.mb625rem {
-				padding-top: .9rem;
-			}
+			padding: 1rem;
 		}
 	}
 }
