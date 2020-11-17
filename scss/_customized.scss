@@ -87,6 +87,7 @@ ul.dotted {li {list-style-type:disc;list-style-position: inside;}}
 .red-link {color:$red;&:hover{color:$red;}}
 .fwb{font-weight: bold !important;}
 .fw500{font-weight: 500;}
+.fwn{font-weight: normal;}
 .normal-text {font-size: $font-size;}
 .small {font-size: .9rem;}
 .big {font-size: 1.1rem;}
@@ -167,6 +168,10 @@ input[type=number]::-webkit-outer-spin-button {
             color: $primary-color;
             border: 1px solid #cacaca;
             border-left: none;
+            &.bg-gray {
+                background-color: $lighter-gray;
+                color: #00a0a7;
+            }
         }
     }
 }
@@ -283,6 +288,10 @@ input[type=number]::-webkit-outer-spin-button {
             background-color: $lighter-gray;
         }
     }
+    &.pi-w100 {
+        width: 100px;
+        padding-top: 100px;
+    }
 }
 .radius-circle {
     border-radius: 50% !important;
@@ -329,6 +338,21 @@ input[type=number]::-webkit-outer-spin-button {
         object-fit: contain;
         max-height: 100% !important;
     }
+}
+
+// Rateyo
+// .jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group {
+//     display: flex;
+// }
+// .jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group svg {
+//     flex: 1;
+//     margin-right: 2px;
+// }
+.jq-ry-normal-group svg {
+  fill: #bbbbbb;
+}
+.jq-ry-rated-group svg {
+  fill: #FFC200;
 }
 
 @include breakpoint (medium down) {
@@ -380,7 +404,7 @@ input[type=number]::-webkit-outer-spin-button {
 // MARGIN
 .mb5 {margin-bottom: 5px;}
 .mb10 {margin-bottom: 10px;}
-.mb1rem {margin-bottom: 1rem;}
+.mb1rem {margin-bottom: 1rem !important;}
 .mb625rem {margin-bottom: .625rem;}
 .mb15 {margin-bottom: 15px;}
 .mb20 {margin-bottom: 20px;}
@@ -406,8 +430,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 // PADDING
 .py-1rem {padding-top: 1rem;padding-bottom: 1rem;} 
-.px-13rem {padding-left: 1.3rem;padding-right: 1.3rem;} 
-.p1rem {padding: 1rem;} 
+.px-13rem {padding-left: 1.3rem;padding-right: 1.3rem;}
+.pt1rem {padding-top: 1rem;}
+.p1rem {padding: 1rem;}
 .pt10 {padding-top: 10px;}
 .pt20 {padding-top: 20px;}
 .pt5 {padding-top: 5px;}
@@ -424,7 +449,9 @@ input[type=number]::-webkit-outer-spin-button {
 .inp20 {padding: 20px;}
 .p0 {padding: 0 !important;}
 .pt0 {padding-top: 0 !important;}
+.pr0 {padding-right: 0 !important;}
 .pb0 {padding-bottom: 0 !important;}
+.pl0 {padding-left: 0 !important;}
 .px-0 {
     padding-left: 0;
     padding-right: 0;
@@ -443,6 +470,7 @@ input[type=number]::-webkit-outer-spin-button {
     .l-ml15 {margin-left: 15px;}
     .l-mt20 {margin-top: 20px;}
     .l-pt10 {padding-top: 10px;}
+    .l-pb10 {padding-bottom: 10px;}
     .l-pt20 {padding-top: 20px;}
     .l-pr1rem {padding-right: 1rem;}
     .l-pl1rem {padding-left: 1rem;}
@@ -455,14 +483,20 @@ input[type=number]::-webkit-outer-spin-button {
     .l-pr-0 {
         padding-right: 0;
     }
+    .l-white-bg {
+        background-color: $white;
+    }
 }
 @include breakpoint (medium down) {
     .m-pt10 {padding-top: 10px;}
     .m-mb10 {margin-bottom: 10px;}
+    .m-mb15 {margin-bottom: 15px;}
     .m-mb1rem {margin-bottom: 1rem;}
     .m-mr10 {margin-right: 10px;}
     .m-ml10 {margin-left: 10px;}
     .m-block {display: block;}
+    .m-p1rem {padding: 1rem;}
+    .m-pt0 {padding-top: 0 !important;}
 }
 
 // BORDER
@@ -495,6 +529,14 @@ input[type=number]::-webkit-outer-spin-button {
     &.small-btn {
         padding: .3em 1em;
     }
+    &.btn-sameinput {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 39px;
+        padding: 0 1em;
+        margin-bottom: 0;
+    }
 }
 .button.disabled, .button.disabled:focus, .button.disabled:hover, .button[disabled], .button[disabled]:focus, .button[disabled]:hover {
     color: #acacac;
@@ -516,7 +558,7 @@ input[type=number]::-webkit-outer-spin-button {
     max-height: none;
     overflow-y: visible;
 }
-.off-canvas-content, .off-canvas-content {
+.off-canvas-content {
     min-height: 100vh;
     background-color: $lighter-gray;
     &.white-bg {
@@ -526,6 +568,9 @@ input[type=number]::-webkit-outer-spin-button {
         @include breakpoint(medium down) {
             background-color: $white;   
         }
+    }
+    &.overflow-hidden {
+        overflow: hidden;
     }
 }
 
@@ -828,5 +873,12 @@ input[type=number]::-webkit-outer-spin-button {
     i {
         font-size: 22px;
     }
+}
+
+.floated-link {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
 
