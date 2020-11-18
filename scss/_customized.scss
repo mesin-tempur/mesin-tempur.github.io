@@ -429,10 +429,13 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 // PADDING
-.py-1rem {padding-top: 1rem;padding-bottom: 1rem;} 
+.py-625rem {padding-top: .625rem;padding-bottom: .625rem;}
+.py-1rem {padding-top: 1rem;padding-bottom: 1rem;}
 .px-13rem {padding-left: 1.3rem;padding-right: 1.3rem;}
-.pt1rem {padding-top: 1rem;}
 .p1rem {padding: 1rem;}
+.pt1rem {padding-top: 1rem;}
+.pt625rem {padding-top: .625rem;}
+.pb625rem {padding-bottom: .625rem;}
 .pt10 {padding-top: 10px;}
 .pt20 {padding-top: 20px;}
 .pt5 {padding-top: 5px;}
