@@ -1785,7 +1785,7 @@ header {
 		}
 		.sp-right {
 			width: 100%;
-			margin-top: 1.5rem;
+			margin-top: .625rem;
 			// transition: all .2s ease-in-out;
 			.spr-content {
 				position: relative;
@@ -1813,9 +1813,10 @@ header {
 	.sp-code {
 		display: flex;
 		align-items: center;
-		padding: 1.5rem;
-		margin-bottom: 2rem;
-		background-color: $white-smoke;
+		// padding: 1.25rem;
+		margin-top: .2rem;
+		margin-bottom: 1.5rem;
+		// background-color: $white-smoke;
 		border-radius: 4px;
 		.spc-left {
 			label {
@@ -1828,75 +1829,105 @@ header {
 			padding-left: 1.5rem;
 		}	
 	}
-	.sp-item {
-		margin-bottom: 1rem;
-		&:last-child {
-			margin-bottom: 0;
-		}
-		.spi-title {
-			font-size: $font-size-bigger;
-			margin-top: 2.5rem;
-			margin-bottom: .5rem;
-			color: $dark-gray;
-		}
+	.sp-compatibility {
+		background-color: $white-smoke;
+		padding: .95rem 1.25rem 1.25rem 1.25rem;
+		border-radius: 4px;
 		label {
 			font-size: $font-size-small;
 			font-weight: 500;
 		}
-		.simulation-input {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			.si-left {
-				flex: 1;
+		.spc-choice {
+			.custom-radio {
+				font-weight: normal;
+				padding-left: 25px;
+				margin-right: 1.5rem;
+				margin-bottom: 0;
 			}
-			.si-right {
-				padding-left: 1.5rem;
+		}
+		.show-compatibility {
+			border-top: 1px solid rgba(0,0,0,.06);
+			margin-top: 1.15rem;
+			padding-top: 1rem;
+		}
+	}
+	.spi-title {
+		position: relative;
+		margin-top: 1rem;
+		// margin-bottom: .5rem;
+		padding-bottom: 1rem;
+		color: $dark-gray;
+		border-bottom: 1px solid rgba(0,0,0,.06);
+		cursor: pointer;
+		&.atfirst {
+			margin-top: 1.5rem;
+		}
+		.mdi {
+			position: absolute;
+			bottom: 11px;
+			right: -.3rem;
+			font-size: 20px;
+			transition: all 0.3s;
+			color: $medium-gray;
+		}
+		&.active {
+			// margin-top: 2rem;
+			// padding-bottom: .5rem;
+			.mdi {
+				bottom: 12px;
+				transform: rotate(-90deg);
+			}
+		}
+		&:last-child {
+			border-bottom-color: $white;
+			&.active {
+				border-bottom-color: rgba(0,0,0,.06);
+			}
+		}
+	}
+	.spc-build {
+		padding-top: 1rem;
+		padding-bottom: 1.25rem;
+		.sp-item {
+			margin-bottom: 1rem;
+			label {
+				font-size: $font-size-small;
+				font-weight: 500;
+			}
+			.simulation-input {
 				display: flex;
 				align-items: center;
-				.sir-price {
+				justify-content: space-between;
+				.si-left {
+					flex: 1;
+				}
+				.si-right {
+					padding-left: 1.5rem;
 					display: flex;
 					align-items: center;
-					justify-content: center;
-					width: 150px;
-					padding: 0 .7rem;
-					margin-left: 1.5rem;
-					height: 2.4375rem;
-					background-color: $lighter-gray;
-					border-radius: 4px;
+					.sir-price {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 150px;
+						padding: 0 .7rem;
+						margin-left: 1.5rem;
+						height: 2.4375rem;
+						background-color: $lighter-gray;
+						border-radius: 4px;
+					}
 				}
+			}
+			&:last-child {
+				margin-bottom: 0;
 			}
 		}
 	}
 	@include breakpoint (medium down) {
-		.sp-item {
-			margin-bottom: 1.3rem;
-			label {
-				font-weight: bold;
-			}
-			.simulation-input {
-				display: block;
-				.si-left {
-					margin-bottom: .625rem;
-				}
-				.si-right {
-					padding-left: 0;
-					.sir-price {
-						width: 100%;
-						height: 2rem;
-						margin-left: .625rem;
-						background-color: $white-smoke;
-						font-size: $font-size-small;
-					}
-				}
-			}
-		}
 		.sp-code {
 			display: block;
-			padding: 1rem;
-			padding-top: .65rem;
-			margin-bottom: 1.5rem;
-			background-color: #faf1f1;
+			margin-top: 0;
+			margin-bottom: .95rem;
 			.spc-left {
 				label {
 					font-size: $font-size-small;
@@ -1907,6 +1938,53 @@ header {
 			.spc-right {
 				padding-left: 0;
 			}	
+		}
+		.sp-compatibility {
+			background-color: transparent;
+			padding: 0 0 .45rem 0;
+			border-radius: 0;
+			.spc-choice {
+				display: block;
+				.custom-radio {
+					margin-bottom: .25rem;
+				}
+			}
+			.show-compatibility {
+				margin-top: 1.1rem;
+				padding-top: .9rem;
+			}
+		}
+		.spi-title {
+			font-size: $font-size-small;
+			&.atfirst {
+				margin-top: 1rem;
+			}
+		}
+		.spc-build {
+			padding-top: .75rem;
+			padding-bottom: 1rem;
+			.sp-item {
+				margin-bottom: 1.3rem;
+				label {
+					font-weight: bold;
+				}
+				.simulation-input {
+					display: block;
+					.si-left {
+						margin-bottom: .625rem;
+					}
+					.si-right {
+						padding-left: 0;
+						.sir-price {
+							width: 100%;
+							height: 2rem;
+							margin-left: .625rem;
+							background-color: $white-smoke;
+							font-size: $font-size-small;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -1975,9 +2053,11 @@ header {
 .table-simulation {
 	padding-bottom: 6rem;
 	table {
+		position: relative;
 		th {
 			padding: 1rem 1rem .9rem 1rem;
 			background-color: $white;
+			border-bottom: 1px solid rgba(0,0,0,.06);
 			&:before {
 				bottom: .8em !important;
 			}
@@ -2064,6 +2144,11 @@ header {
 				color: $primary-color;
 			}
 		}
+	}
+}
+.dataTables_scrollHead {
+	@include breakpoint (medium down) {
+		overflow-x: auto !important;
 	}
 }
 
@@ -4507,7 +4592,10 @@ footer {
 	}
 }
 @media print {
-	header, footer, .ts-filsort {
+	body {
+		padding: 1.5rem 1rem;
+	}
+	header, footer, .ts-filsort, .short-modal {
 		display: none;
 	}
 	.dataTable > thead > tr > th[class*="sort"]:before, 
@@ -4526,6 +4614,9 @@ footer {
     }
     .print-logo {
     	display: block;
+    }
+    .dataTables_scrollBody {
+    	max-height: 100% !important;
     }
 	.ts-bottom {
 		display: block;
