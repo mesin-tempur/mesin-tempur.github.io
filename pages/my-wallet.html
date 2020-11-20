@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
-    <title>Pesanan Saya - Persada Computer</title>
+    <title>Dompet PSD - Persada Computer</title>
     <link rel="stylesheet" href="../css/app.css">
     <link rel="icon" type="image/ico" href="../images/favicon.ico">
   </head>
@@ -228,9 +228,15 @@
                   <li class="is-dropdown-submenu-parent" role="menuitem" aria-haspopup="true" aria-label="Account" data-is-click="false" data-alignment="right">
                     <a href="javascript:;"><img src="https://tinyfac.es/data/avatars/475605E3-69C5-4D2B-8727-61B7BB8C4699-500w.jpeg" alt=""></a>
                     <ul class="menu sub-menu submenu is-dropdown-submenu first-sub vertical" data-submenu role="menu">
-                      <li class="notlink ellipsis">
+                      <!-- <li class="notlink ellipsis">
                         <i class="mdi mdi-wallet-outline"></i>
                         <div class="ellipsis">Rp 347.000</div>
+                      </li> -->
+                      <li>
+                        <a href="my-account.html">
+                          <i class="mdi mdi-wallet-outline"></i>
+                          Rp347.000
+                        </a>
                       </li>
                       <li>
                         <a href="my-account.html">
@@ -290,13 +296,20 @@
                       <div class="menu-list-title">Akun Saya</div>
                     </a>
                   </div>
+                  <!-- <div class="myac-wallet">
+                    <div class="myacw-left d-flex aic">
+                      <i class="mdi mdi-wallet-outline"></i>
+                      My Wallet
+                    </div>
+                    <div class="myacw-right fw500">Rp 347rb</div>
+                  </div> -->
                   <div class="myac-menu">
-                    <a href="my-wallet.html" class="myacm-item">
+                    <a href="javascript:;" class="myacm-item active">
                       <div class="icon icon-primary">
                         <i class="mdi mdi-wallet-outline"></i>
                       </div>
                       <div class="menu-list-title ellipsis">
-                        Dompet PSD <span class="gray">(Rp347.000)</span>
+                        Dompet PSD
                       </div>
                       <div class="sm-arrow-right">
                         <i class="mdi mdi-chevron-right"></i>
@@ -311,7 +324,7 @@
                         <i class="mdi mdi-chevron-right"></i>
                       </div>
                     </a>
-                    <a href="javascript:;" class="myacm-item active">
+                    <a href="my-order.html" class="myacm-item">
                       <div class="icon icon-primary">
                         <i class="mdi mdi-package-variant-closed"></i>
                       </div>
@@ -350,7 +363,7 @@
                         <i class="mdi mdi-chevron-right"></i>
                       </div>
                     </a>
-                    <a href="my-account-address.html" class="myacm-item">
+                    <a href="my-account-address-add.html" class="myacm-item">
                       <div class="icon">
                         <i class="mdi mdi-map-marker-radius"></i>
                       </div>
@@ -380,33 +393,102 @@
                   </div>
                 </div>
               </div>
-              <div class="small-12 large-9 column l-white-bg">
+              <div class="small-12 large-9 column white-bg m-px-1rem">
                 <div class="row">
-                  <div class="small-12 large-8 large-offset-2 column m-px-0">
-                    <div class="mya-content mya-padding m-pt0">
-                      <div class="white-bg m-p1rem">
-                        <div class="show-for-large">
-                          <div class="title-section">
-                            <div class="ts-left"></div>
-                            <div class="ts-text tst-small white-bg">Pesanan Saya</div>
-                            <div class="ts-right"></div>
+                  <div class="small-12 large-8 large-offset-2 column">
+                    <div class="mya-content mya-padding">
+                      <div class="show-for-large">
+                        <div class="title-section">
+                          <div class="ts-left"></div>
+                          <div class="ts-text tst-small white-bg">Dompet PSD</div>
+                          <div class="ts-right"></div>
+                        </div>
+                      </div>
+                      <div class="fp-title hide-for-large">
+                        <a href="my-account.html"><i class="mdi mdi-arrow-left"></i></a>
+                        Dompet PSD
+                      </div>
+                      <div class="wallet-card">
+                        <div class="wc-content">
+                          <div class="wpc-balance ellipsis">
+                            <div class="small">Dana Tersedia</div>
+                            <div class="wpcb-ammount fwb">
+                              <span>Rp&nbsp;</span>
+                              <span class="superbig ellipsis">347.000</span>
+                            </div>
+                          </div>
+                          <div class="wpc-action">
+                            <a href="javascript:;" class="button mb0 call-shortm">Tarik Dana</a>
                           </div>
                         </div>
-                        <div class="fp-title hide-for-large mb1rem">
-                          <a href="my-account.html"><i class="mdi mdi-arrow-left"></i></a>
-                          Pesanan Saya
-                        </div>
-                        <div class="cp-empty cpe-center">
-                          <div class="cpe-img">
-                            <img src="../images/categories/lcd.svg" alt="Empty Cart">
+                        <div class="wc-accent1"></div>
+                        <div class="wc-accent2"></div>
+                      </div>
+                      <div class="custom-tabs">
+                        <ul class="tabs mb0" data-tabs id="laci-tabs">
+                          <li class="tabs-title is-active"><a href="#wallet_trx" aria-selected="true">Transaksi</a></li>
+                          <li class="tabs-title"><a data-tabs-target="wallet_cashout" href="#wallet_cashout">Riwayat Penarikan</a></li>
+                        </ul>
+                        <div class="tabs-content" data-tabs-content="laci-tabs">
+                          <div class="tabs-panel is-active" id="wallet_trx">
+                            <div class="list-trx">
+                              <a href="my-order-detail.html" class="lt-item">
+                                <div class="lti-left">
+                                  <div>Pengembalian Dana</div>
+                                  <div class="gray smallest">22-11-2020</div>
+                                </div>
+                                <div class="lti-right tar">
+                                  <div class="fw500">+ Rp469.000</div>
+                                  <div class="gray smallest">Berhasil</div>
+                                </div>
+                              </a>
+                              <a href="my-order-detail.html" class="lt-item">
+                                <div class="lti-left">
+                                  <div>Pembelian</div>
+                                  <div class="gray smallest">21-11-2020</div>
+                                </div>
+                                <div class="lti-right tar">
+                                  <div class="fw500">- Rp365.000</div>
+                                  <div class="gray smallest">Berhasil</div>
+                                </div>
+                              </a>
+                              <a href="my-order-detail.html" class="lt-item">
+                                <div class="lti-left">
+                                  <div>Pengembalian Dana</div>
+                                  <div class="gray smallest">20-11-2020</div>
+                                </div>
+                                <div class="lti-right tar">
+                                  <div class="fw500">+ Rp99.000</div>
+                                  <div class="gray smallest">Berhasil</div>
+                                </div>
+                              </a>
+                            </div>
                           </div>
-                          <div class="cpe-text">
-                            <div class="gray">Belum ada Pesanan</div>
+                          <div class="tabs-panel" id="wallet_cashout">
+                            <div class="list-trx">
+                              <div class="lt-item">
+                                <div class="lti-left">
+                                  <div>Mandiri 7108732991</div>
+                                  <div class="gray smallest">16-11-2020</div>
+                                </div>
+                                <div class="lti-right tar">
+                                  <div class="fw500">- Rp876.000</div>
+                                  <div class="green smallest">Transfered</div>
+                                </div>
+                              </div>
+                              <div class="lt-item">
+                                <div class="lti-left">
+                                  <div>BCA 46234234</div>
+                                  <div class="gray smallest">15-11-2020</div>
+                                </div>
+                                <div class="lti-right tar">
+                                  <div class="fw500">- Rp420.000</div>
+                                  <div class="gray smallest">Pending</div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="cpe-button">
-                            <a href="index-logged.html" class="button">Belanja Sekarang</a>
-                          </div>
-                        </div>
+                        </div>      
                       </div>
                     </div>
                   </div>
@@ -455,6 +537,37 @@
     </div>
 
     <div id="js-dark-overlay" class="dark-overlay"></div>
+    <div class="short-modal note-modal">
+      <div class="bottom-modal-title">
+        <a href="javascript:;" class="bottom-modal-close">
+          <i class="mdi mdi-close"></i>
+        </a>
+        Tarik Dana
+      </div>
+      <div class="bottom-modal-content">
+        <form action="" method="">
+          <div class="p1rem">
+            <div class="mb1rem">
+              <label class="fwb small">Jumlah Penarikan</label>
+              <input type="number">
+              <div class="pt5 fs-i supersmall gray">Minimal penarikan Rp 10.000</div>
+            </div>
+            <div class="mb1rem">
+              <label class="fwb small">Rekening Bank</label>
+              <a href="" class="button bordered-btn expanded mb0">+ Tambah Rekening Bank</a>
+            </div>
+            <div class="pt10 row">
+              <div class="small-6 column pl-0">
+                <a href="javascript:;" class="button bordered-btn light-primary expanded mb0 cancel-modal">Batal</a>
+              </div>
+              <div class="small-6 column pr-0">
+                <button class="button expanded mb0" type="submit">Konfirmasi</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/what-input/what-input.js"></script>

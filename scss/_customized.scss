@@ -64,8 +64,6 @@ a:focus, a:hover {
 ul, ul ul, ol ul, ul ol, ol ol {margin-left: 0;}
 ul li {list-style: none;}
 ul.dotted {li {list-style-type:disc;list-style-position: inside;}}
-.small, small {font-size: $font-size-small;}
-.smallest {font-size: 0.8125rem;}
 .fs-i {font-style: italic;}
 
 :focus {outline: none;}
@@ -89,10 +87,11 @@ ul.dotted {li {list-style-type:disc;list-style-position: inside;}}
 .fw500{font-weight: 500;}
 .fwn{font-weight: normal;}
 .normal-text {font-size: $font-size;}
-.small {font-size: .9rem;}
+.small, small {font-size: $font-size-small;}
+.smallest {font-size: 0.8125rem;}
+.supersmall {font-size: .8rem;}
 .big {font-size: 1.1rem;}
 .bigger {font-size: 1.3rem;}
-.supersmall {font-size: .8rem;}
 .superbig {font-size: 1.9rem;}
 .upcase {text-transform: uppercase;}
 .tac {text-align: center;}

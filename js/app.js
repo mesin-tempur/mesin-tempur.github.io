@@ -601,7 +601,14 @@ $('.bottom-modal-close').click(function(){
 		zIndex: "110"
 	});
 });
-
+$('.cancel-modal').click(function(){
+	$('.short-modal').removeClass('active');
+	$('.dark-overlay').css({
+		visibility: "hidden",
+		opacity: "0",
+		zIndex: "110"
+	});
+});
 // Sticky on scroll
 // $(window).scroll(function() {
 //     if ($(this).scrollTop() > 1) {

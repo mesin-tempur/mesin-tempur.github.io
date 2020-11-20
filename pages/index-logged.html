@@ -7,6 +7,7 @@
     <title>Persada Computer</title>
     <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/rateyo.min.css">
     <link rel="icon" type="image/ico" href="../images/favicon.ico">
   </head>
   <body>
@@ -35,14 +36,18 @@
               </a>
             </div>
             <ul class="side-menu-list">
-              <li class="my-wallet">
-                <div class="d-flex aic jcsb">
-                  <div class="myaw-left d-flex aic">
+              <li>
+                <a href="my-wallet.html">
+                  <div class="icon">
                     <i class="mdi mdi-wallet-outline"></i>
-                    My Wallet
                   </div>
-                  <div class="myaw-right fw500">Rp 347.000</div>
-                </div>
+                  <div class="menu-list-title">
+                    Dompet PSD <span class="gray">(Rp347.000)</span>
+                  </div>
+                  <div class="sm-arrow-right">
+                    <i class="mdi mdi-chevron-right"></i>
+                  </div>
+                </a>
               </li>
               <li>
                 <a href="my-simulation.html">
@@ -435,9 +440,11 @@
                   <li class="is-dropdown-submenu-parent" role="menuitem" aria-haspopup="true" aria-label="Account" data-is-click="false" data-alignment="right">
                     <a href="javascript:;"><img src="../images/empty-user.svg" alt=""></a>
                     <ul class="menu sub-menu submenu is-dropdown-submenu first-sub vertical" data-submenu role="menu">
-                      <li class="notlink ellipsis">
-                        <i class="mdi mdi-wallet-outline"></i>
-                        <div class="ellipsis">Rp 347.000</div>
+                      <li>
+                        <a href="my-wallet.html">
+                          <i class="mdi mdi-wallet-outline"></i>
+                          Rp347.000
+                        </a>
                       </li>
                       <li>
                         <a href="my-account.html">
@@ -2092,8 +2099,17 @@
     <script src="../bower_components/what-input/what-input.js"></script>
     <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="../js/min/slick.min.js"></script>
+    <script src="../js/min/rateyo.min.js"></script>
     <!-- <script src="../js/min/app-min.js"></script> -->
     <script src="../js/app.js"></script>
+    <script>
+      $('.product-rating').rateYo({
+        rating: 5,
+        starWidth: "12px",
+        spacing: "1px",
+        readOnly: true
+      });
+    </script>
   </div>
   </body>
 </html>
