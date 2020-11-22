@@ -657,6 +657,20 @@ header {
     	max-height: 356px;
     }
 }
+.bottom-modal-action {
+    background-color: $white;
+    padding: 1rem;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top: .0625rem solid rgba(0,0,0,.07);
+    @include breakpoint(medium down) {
+    	position: fixed;
+    	bottom: 0;
+    	width: 100%;
+	    border-bottom-left-radius: 0;
+	    border-bottom-right-radius: 0;
+    }
+}
 .share-content {
 	display: flex;
     flex-wrap: wrap;
@@ -720,6 +734,27 @@ header {
 	    	}
 	    	&.active {
 		        transform: translateY(0);
+		    }
+    	}
+    }
+    &.scrollable-modal {
+    	max-width: 500px;
+    	.bottom-modal-content {
+    		max-height: 360px;
+    		border-bottom-left-radius: 0;
+    		border-bottom-right-radius: 0;
+    	}
+    	@include breakpoint(medium down) {
+    		background-color: $white;
+    		top: 0;
+    		transform: translateY(120%);
+	    	&.active {
+		        transform: translateY(0);
+		    }
+		    .bottom-modal-content {
+		    	max-height: 90vh;
+		    	height: 90vh;
+		    	padding-bottom: 4rem;
 		    }
     	}
     }
@@ -2911,7 +2946,7 @@ header {
 				align-items: center;
 				img {
 					max-height: 30px;
-		    		margin-right: 1.25rem;
+		    		margin-right: 1rem;
 				}
 			}
 			.checkmark {
@@ -4580,7 +4615,7 @@ footer {
 	    width: 220px;
 	    height: 220px;
 	    border-radius: 50%;
-	    background: rgba(255, 255, 255, .04);
+	    background: rgba(255, 255, 255, .07);
 	}
 	.wc-accent2 {
 	    position: absolute;
@@ -4589,16 +4624,17 @@ footer {
 	    border-radius: 50%;
 	    top: 45px;
 	    left: -97px;
-	    background: rgba(255, 255, 255, .04);
+	    background: rgba(255, 255, 255, .07);
 	}
 	@include breakpoint(medium down) {
 		margin-top: -.45rem;
-    	height: 90px;
+    	height: 84px;
 		.wc-content {
-			height: 90px;
+			height: 84px;
 			padding: 0 1.2rem;
 			.wpc-balance {
 				.wpcb-ammount {
+					margin-top: 7px;
 					.superbig {
 						font-size: $font-size-bigger;
 					}
@@ -4612,12 +4648,11 @@ footer {
 		    }
 		}
 		.wc-accent1 {
-		    top: -150px;
-		    left: 78px;
+		    left: -110px;
 		}
 		.wc-accent2 {
-		    top: 30px;
-		    left: -97px;
+			top: 40px;
+		    left: -140px;
 		}
 	}
 }
@@ -4632,6 +4667,26 @@ footer {
 		color: $black;
 		&:last-child {
 			border-bottom: none;
+		}
+		.lti-left {
+			flex: 1;
+			padding-right: 1rem;
+		}
+	}
+}
+.cashout-rek {
+	border-top: 1px solid rgba(0,0,0,.06);
+	margin-top: .25rem;
+	margin-bottom: .625rem;
+	padding-top: .4rem;
+	padding-bottom: .2rem;
+	.custom-radio {
+		padding-top: .55rem;
+		div {
+			line-height: 1.4;
+			&.gray {
+				padding-bottom: .25rem;
+			}
 		}
 	}
 }

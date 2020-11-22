@@ -468,7 +468,7 @@
                             <div class="list-trx">
                               <div class="lt-item">
                                 <div class="lti-left">
-                                  <div>Mandiri 7108732991</div>
+                                  <div>No. Rekening: 7108732991</div>
                                   <div class="gray smallest">16-11-2020</div>
                                 </div>
                                 <div class="lti-right tar">
@@ -478,7 +478,7 @@
                               </div>
                               <div class="lt-item">
                                 <div class="lti-left">
-                                  <div>BCA 46234234</div>
+                                  <div>No. Rekening: 46234234</div>
                                   <div class="gray smallest">15-11-2020</div>
                                 </div>
                                 <div class="lti-right tar">
@@ -537,7 +537,7 @@
     </div>
 
     <div id="js-dark-overlay" class="dark-overlay"></div>
-    <div class="short-modal note-modal">
+    <div class="short-modal scrollable-modal">
       <div class="bottom-modal-title">
         <a href="javascript:;" class="bottom-modal-close">
           <i class="mdi mdi-close"></i>
@@ -545,27 +545,54 @@
         Tarik Dana
       </div>
       <div class="bottom-modal-content">
-        <form action="" method="">
-          <div class="p1rem">
-            <div class="mb1rem">
-              <label class="fwb small">Jumlah Penarikan</label>
-              <input type="number">
-              <div class="pt5 fs-i supersmall gray">Minimal penarikan Rp 10.000</div>
+        <div class="p1rem">
+          <div class="mb1rem">
+            <label class="fwb small">Jumlah Penarikan</label>
+            <div class="input-group ig-label-left">
+              <div class="input-group-button small">Rp</div>
+              <input type="number" class="input-group-field">
             </div>
-            <div class="mb1rem">
-              <label class="fwb small">Rekening Bank</label>
-              <a href="" class="button bordered-btn expanded mb0">+ Tambah Rekening Bank</a>
-            </div>
-            <div class="pt10 row">
-              <div class="small-6 column pl-0">
-                <a href="javascript:;" class="button bordered-btn light-primary expanded mb0 cancel-modal">Batal</a>
-              </div>
-              <div class="small-6 column pr-0">
-                <button class="button expanded mb0" type="submit">Konfirmasi</button>
-              </div>
-            </div>
+            <div class="pt15rem fs-i supersmall gray">Minimal penarikan Rp 10.000</div>
           </div>
-        </form>
+          <label class="fwb small">Rekening Bank</label>
+          <!-- <a href="my-account-bank-add.html" class="button bordered-btn expanded mb0">+ Tambah Rekening Bank</a> -->
+          <div class="cashout-rek">
+            <label class="custom-radio radio-small">
+              <div class="gray">PT. BANK MANDIRI</div>
+              <div class="fw500">4370841191</div>
+              <div>a.n Feri Sandria</div>
+              <input type="radio" name="no_rek">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="cashout-rek">
+            <label class="custom-radio radio-small">
+              <div class="gray">PT. BANK RAKYAT INDONESIA (BRI) (PERSERO)</div>
+              <div class="fw500">008 924 5666</div>
+              <div>a.n Feri Sandria</div>
+              <input type="radio" name="no_rek">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="cashout-rek">
+            <label class="custom-radio radio-small">
+              <div class="gray">Bank Central Asia</div>
+              <div class="fw500">237 301 8881</div>
+              <div>a.n Feri Sandria</div>
+              <input type="radio" name="no_rek">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row bottom-modal-action">
+        <div class="small-6 column pl-0">
+          <a href="javascript:;" class="button bordered-btn light-primary expanded mb0 cancel-modal">Batal</a>
+        </div>
+        <div class="small-6 column pr-0">
+          <!-- <button class="button expanded mb0" type="submit" disabled="disabled">Konfirmasi</button> -->
+          <button class="button expanded mb0" type="submit">Konfirmasi</button>
+        </div>
       </div>
     </div>
 
