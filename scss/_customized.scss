@@ -593,6 +593,9 @@ input[type=number]::-webkit-outer-spin-button {
     &.overflow-hidden {
         overflow: hidden;
     }
+    &.error-page {
+        background-color: $blacked;
+    }
 }
 
 // VARIABLES
