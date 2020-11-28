@@ -2650,6 +2650,7 @@ header {
 .cart-plate {
 	margin-bottom: 6rem;
 	.title-section {
+		padding-bottom: 1.75rem;
 		.ts-text {
 			font-size: 1.5rem;
 			padding: 0 1.75rem;
@@ -2657,6 +2658,7 @@ header {
 	}
 	@include breakpoint (medium down) {
 		.title-section {
+			padding-bottom: 1.25rem;
 			.ts-text {
 				font-size: $font-size-bigger;
 				padding: 0 1.5rem;
@@ -2667,7 +2669,7 @@ header {
 			margin-bottom: 10rem;
 			.cp-list {
 				padding: 0;
-				margin-top: .5rem;
+				// margin-top: .5rem;
 			}
 		}
 		.sp-right {
@@ -2741,7 +2743,7 @@ header {
 				}
 			}
 			.cplpi-right {
-				padding-left: 32px;
+				// padding-left: 32px;
 				width: 100%;
 				flex: 1;
 				display: flex;
@@ -2774,7 +2776,7 @@ header {
 			align-items: center;
 			justify-content: flex-start;
 			margin-top: 1rem;
-			margin-left: 32px;
+			// margin-left: 32px;
 			.cplpa-left {
 				order: 2;
 				a {
