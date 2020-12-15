@@ -27,15 +27,23 @@
           <div class="row mb1rem">
             <div class="small-12 large-6 large-offset-3 column white-bg m-px-1rem">
               <div class="row">
-                <div class="small-12 large-8 large-offset-2 column">
+                <div class="small-12 large-8 large-offset-2 column pb10">
                   <div class="simple-section">
-                    <div class="fw500 pb5">Pastikan bukti pembayaran menampilkan:</div>
+                    <!-- <div class="callout">
+                      <div class="tac">Error Alert</div>
+                    </div> -->
+                    <div class="d-flex jcsb">
+                      <div>Total Bayar</div>
+                      <div class="fw500">Rp27.000.000</div>
+                    </div>
+                    <!-- <hr> -->
+                    <!-- <div class="fw500 pb5">Pastikan bukti pembayaran menampilkan:</div>
                     <ul class="dotted mb0">
                       <li class="pt5">Tanggal & waktu transfer</li>
                       <li class="pt5">Status Berhasil</li>
                       <li class="pt5">Detail Penerima</li>
                       <li class="pt5">Jumlah Transfer</li>
-                    </ul>
+                    </ul> -->
                     <input class="hidden-file" type="file" id="uploadComfirm" name="" accept="image/jpeg, .jpeg, .jpg, image/png, .png">
                     <label for="uploadComfirm" class="box-upload">
                       <div class="bu-icon">
@@ -49,7 +57,28 @@
                       </div>
                       <div class="bu-text">Upload Bukti Transfer</div>
                     </label> -->
-                    <div class="mt20 smallest gray tac">(Format .JPG .JPEG .PNG max 10 MB)</div>
+                    <div class="mt10 mb1rem smallest gray tac">(Format .JPG .JPEG .PNG max 10 MB)</div>
+                    <div class="mb1rem">
+                      <label class="fwb small">Bank Tujuan</label>
+                      <select name="">
+                        <option value="" selected="selected" disabled="disabled">Pilih Bank</option>
+                        <option value="">Bank Central Asia (BCA) : 008 924 5666 a/n PT. Persada Computer</option>
+                        <option value="">Bank Mandiri : 008 924 5666 a/n PT. Persada Computer</option>
+                        <option value="">Bank Rakyat Indonesia (BRI) : 008 924 5666 a/n PT. Persada Computer</option>
+                      </select>
+                    </div>
+                    <div class="mb1rem">
+                      <label class="fwb small">Nama Pemilik</label>
+                      <input type="text">
+                    </div>
+                    <div class="mb1rem">
+                      <label class="fwb small">Nomor Rekening</label>
+                      <input type="number">
+                    </div>
+                    <div class="mb1rem">
+                      <label class="fwb small">Keterangan</label>
+                      <textarea name="" rows="1" placeholder="Opsional"></textarea>
+                    </div>
                     <div class="mt20">
                       <a href="" class="button expanded fwb mb0">Konfirmasi</a>
                     </div>

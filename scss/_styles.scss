@@ -1062,6 +1062,21 @@ header {
 			    align-items: center;
 			    z-index: 1;
 		    }
+		    .pit-preorder {
+		    	background-color: rgba(49,53,59,0.68);
+				border-radius: 3px;
+				font-weight: bold;
+				font-size: $font-size-smallest;
+				line-height: 1.2;
+				color: $white;
+				position: absolute;
+				left: 4px;
+				bottom: 4px;
+				height: 20px;
+				display: inline;
+				padding: 3px 5px;
+			    z-index: 1;
+		    }
 		    .pit-img {
 		    	position: relative;
 		    	width: 100%;
@@ -2398,12 +2413,26 @@ header {
 				border-bottom: none;
 				padding-bottom: 0;
 				.pbri-top {
+					flex-wrap: wrap;
 					.pbri-item {
-						width: 50%;
+						width: 33.33%;
 						text-align: center;
 						font-size: $font-size-smaller;
+						margin-left: 0;
+						padding-left: .625rem;
+						padding-right: .625rem;
 						span {
 							font-size: $font-size-small;
+						}
+						&.pbri-preorder {
+							width: 100%;
+							padding-left: 0;
+							padding-right: 0;
+							border-right: 0;
+							border-bottom: 1px solid rgba(0,0,0,.06);
+							margin-bottom: .625rem;
+							padding-bottom: .6rem;
+							text-align-last: left;
 						}
 					}
 				}
@@ -2959,7 +2988,6 @@ header {
 	.sc-transfer {
 		display: flex;
 		align-items: center;
-		border-top: 1px solid rgba(0,0,0,.07);
 		border-bottom: 1px solid rgba(0,0,0,.07);
 		padding: .625rem 0;
 		margin: .3rem 0;
@@ -2970,6 +2998,9 @@ header {
 		i {
 			font-size: 20px;
 			margin-left: .625rem;
+		}
+		&:last-child {
+			border-bottom: none;
 		}
 	}
 	&.sc-address {
