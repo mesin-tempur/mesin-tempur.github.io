@@ -780,24 +780,26 @@ header {
 		a {
 			img {
 		    	transition: all 300ms ease;
+		    	width: 100%;
 			}
 		}
 		@include breakpoint(large) {
-			padding: 45px 20px;
+			// padding: 45px 20px;
+			padding: 35px 0;
 			a {
 				img {
 					border-radius: 8px;
-					transform: scale(0.95);
+					// transform: scale(0.95);
 				}
 			}
 		}
-		&.slick-center {
-			a {
-				img {
-				    transform: scale(1.1);
-				}
-			}
-		}
+		// &.slick-center {
+		// 	a {
+		// 		img {
+		// 		    transform: scale(1.1);
+		// 		}
+		// 	}
+		// }
 	}
 }
 
@@ -1063,15 +1065,16 @@ header {
 			    z-index: 1;
 		    }
 		    .pit-preorder {
-		    	background-color: rgba(49,53,59,0.68);
+		    	background-color: $light-gray;
+			    color: $black;
 				border-radius: 3px;
-				font-weight: bold;
+				font-weight: 500;
 				font-size: $font-size-smallest;
 				line-height: 1.2;
-				color: $white;
+				// color: $white;
 				position: absolute;
-				left: 4px;
-				bottom: 4px;
+				right: 4px;
+				top: 4px;
 				height: 20px;
 				display: inline;
 				padding: 3px 5px;
@@ -3643,50 +3646,50 @@ footer {
 
 .floating-wa {
 	position: fixed;
-	bottom: 6.5%;
-	right: 3%;
-	display: flex;
-	align-items: center;
-	border-radius: 4px;
+	right: 2.5%;
+	bottom: 5%;
+	// display: flex;
+	// align-items: center;
+	// border-radius: 4px;
 	z-index: 11;
 	box-shadow: 0 .5rem .6rem 0 rgba(0,0,0,.1);
-	.fa-text {
-		color: $black;
-		font-size: $font-size-small;
-		font-weight: 500;
-		height: 40px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: $white;
-		padding: 0 .75rem;
-		border-top-left-radius: 4px;
-		border-bottom-left-radius: 4px;
-		border: 2px solid #1BD741;
-		transition: all 0.3s;
-	}
+	// .fa-text {
+	// 	color: $black;
+	// 	font-size: $font-size-small;
+	// 	font-weight: 500;
+	// 	height: 40px;
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// 	background-color: $white;
+	// 	padding: 0 .75rem;
+	// 	border-top-left-radius: 4px;
+	// 	border-bottom-left-radius: 4px;
+	// 	border: 2px solid #1BD741;
+	// 	transition: all 0.3s;
+	// }
 	.fa-img {
 		img {
-			width: 40px;
-			height: 40px;
+			width: 50px;
+			height: 50px;
 		}
 	}
-	&:hover {
-		.fa-text {
-			background-color: #e8fbec;
-		}
-	}
+	// &:hover {
+	// 	.fa-text {
+	// 		background-color: #e8fbec;
+	// 	}
+	// }
 	@include breakpoint (medium down) {
-		right: .625rem;
-		bottom: .625rem;
-		.fa-text {
-			border-width: 1px;
-		}
-		&:hover {
-			.fa-text {
-				background-color: $white;
-			}
-		}
+		right: 1rem;
+		bottom: 1rem;
+		// .fa-text {
+		// 	border-width: 1px;
+		// }
+		// &:hover {
+		// 	.fa-text {
+		// 		background-color: $white;
+		// 	}
+		// }
 	}
 }
 

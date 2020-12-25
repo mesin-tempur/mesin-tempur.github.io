@@ -406,8 +406,8 @@ $('.full-banner').slick({
         {
 	        breakpoint: 768,
 	        settings: {
-				centerMode: true,
-				centerPadding: '220px',
+				// centerMode: true,
+				// centerPadding: '220px',
 	            arrows: true
 	        }
         }
